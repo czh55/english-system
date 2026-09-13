@@ -39,7 +39,12 @@ node scripts/render-site.mjs
 
 本地预览：`cd docs && python3 -m http.server 8765`
 
-## 内容约定
+## GitHub Pages
+
+- 仓库：https://github.com/czh55/english-system  
+- 站点：https://czh55.github.io/english-system/（Settings → Pages：`main` / `/docs`）
+- 自定义域（若已绑定）：http://chenzhiheng.cn/english-system/
+
 
 每条条目含 `id`、`module`、溯源 `examples[].source`（如 `drama:meigui-de-gushi:e01:s3-q1`）。
 场景 chunks 可通过 `links` 挂到 function / phrases 的 `id`。
