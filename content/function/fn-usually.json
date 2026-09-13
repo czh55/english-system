@@ -1,0 +1,17 @@
+{
+  "id": "fn-usually",
+  "module": "function",
+  "lemma": "usually",
+  "zh": "通常",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "Usually in a case like this, somebody filed a complaint.",
+      "zh": "一般这种情况，都是有人举报。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 18
+}

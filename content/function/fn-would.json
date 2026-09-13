@@ -1,0 +1,17 @@
+{
+  "id": "fn-would",
+  "module": "function",
+  "lemma": "would",
+  "zh": "会（虚拟）",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "Why would you break up with me at the best moment of my life?\" \"Wouldn't breaking up at your worst moment hurt even mor…",
+      "zh": "你为什么要在我最好的时候跟我分手啊？」「那在你不好的时候分不是更扎吗？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 440
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-find-out",
+  "module": "function",
+  "lemma": "find out",
+  "zh": "查明",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Stop asking. The more you find out, the more you'll hesitate—and the harder the decision gets.\" \"What if? What if there…",
+      "zh": "别问了，问多了你会犹豫，更不好决定了。」「万一呢？万一有机会呢？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 10
+}

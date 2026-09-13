@@ -1,0 +1,17 @@
+{
+  "id": "fn-go",
+  "module": "function",
+  "lemma": "go",
+  "zh": "去",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "The three words that waste the most feelings and experience are: I can't let go.",
+      "zh": "最浪费感情和经历的三个字，就是舍不得。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 705
+}

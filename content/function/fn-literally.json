@@ -1,0 +1,17 @@
+{
+  "id": "fn-literally",
+  "module": "function",
+  "lemma": "literally",
+  "zh": "简直",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Why can't anyone forge the Soul Knight's signature? Because it's literally two people's signatures—two kinds of handwri…",
+      "zh": "为什么别人就模仿不了闪灵骑士的签名啊？因为这压根就是两个人的签名，两种笔迹。为什么就没人想得到呢？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1
+}

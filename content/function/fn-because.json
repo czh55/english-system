@@ -1,0 +1,18 @@
+{
+  "id": "fn-because",
+  "module": "function",
+  "lemma": "because",
+  "zh": "因为",
+  "tags": [
+    "priority",
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "Uncle Fan asking to see me is definitely not because of my looks.",
+      "zh": "范叔找我聊，肯定不是因为我的美貌。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 252
+}

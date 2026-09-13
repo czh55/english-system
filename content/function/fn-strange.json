@@ -1,0 +1,17 @@
+{
+  "id": "fn-strange",
+  "module": "function",
+  "lemma": "strange",
+  "zh": "奇怪",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "Who are you calling a strange bird? Whoever tries to steal Boss Bao's business—I'm talking about them.",
+      "zh": "你说谁是怪东西？谁抢宝总的生意，我就讲谁。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 12
+}

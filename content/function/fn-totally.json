@@ -1,0 +1,17 @@
+{
+  "id": "fn-totally",
+  "module": "function",
+  "lemma": "totally",
+  "zh": "完全",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "Director Sheng was personally promoted by Dean Wang—doesn't that mean it's totally over?",
+      "zh": "盛主任是王院长一手提拔起来的，这不彻底完犊子了吗？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1
+}

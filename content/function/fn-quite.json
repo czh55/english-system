@@ -1,0 +1,17 @@
+{
+  "id": "fn-quite",
+  "module": "function",
+  "lemma": "quite",
+  "zh": "相当",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "I gave him the sack verbally, but that's not really what I wanted. He's still quite suited to the job.",
+      "zh": "我口头上辞退了他，但其实这也并非真正我所想，他还是挺适合这份工作的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 47
+}

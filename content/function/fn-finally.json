@@ -1,0 +1,17 @@
+{
+  "id": "fn-finally",
+  "module": "function",
+  "lemma": "finally",
+  "zh": "最终",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "It looks like the Zhiyuan investment money is finally coming through — that eases the worst of our cash crunch.",
+      "zh": "志远投资的钱我应该是可以拿到了，这下也算是解了燃眉之急了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 88
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-situation",
+  "module": "function",
+  "lemma": "situation",
+  "zh": "情况",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Your situation has changed, and you have to change with it. You're Guyan now — not Wang Hai anymore.",
+      "zh": "我们现在处境发生了改变，但是你要为这个改变做出点变化吧。你现在是孤烟，不是王海了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 13
+}

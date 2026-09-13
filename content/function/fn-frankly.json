@@ -1,0 +1,17 @@
+{
+  "id": "fn-frankly",
+  "module": "function",
+  "lemma": "frankly",
+  "zh": "坦白说",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "The cost: all the upfront money for the script, wardrobe, camera, sound, directing—every department. Frankly, you'd be …",
+      "zh": "代价就是前期剧本的创作，服化道、摄录美、导演，所有部门的前期款，你都得赔了。可以这么跟你说吧，你在这个圈里也算废了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 2
+}

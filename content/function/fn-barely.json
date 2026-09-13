@@ -1,0 +1,17 @@
+{
+  "id": "fn-barely",
+  "module": "function",
+  "lemma": "barely",
+  "zh": "几乎不",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "If what He Han burdens me with is an unplaceable feeling, then what Gu Yan imposes on me now is a weight I can barely b…",
+      "zh": "如果何韩困扰我的是无处安放之情，那么孤烟此时强加于我的，也是不可承受之重。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 27
+}

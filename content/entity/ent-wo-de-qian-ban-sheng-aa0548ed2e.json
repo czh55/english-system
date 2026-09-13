@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-de-qian-ban-sheng-aa0548ed2e",
+  "module": "entity",
+  "lemma": "平儿",
+  "zh": "平儿",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-de-qian-ban-sheng",
+  "examples": [
+    {
+      "en": "I want you. I want Ping'er. I want our family together. I want you to leave Ling Ling—whatever she asks, I'll give it. I want her to give my husband back.",
+      "zh": "我要你，我要平儿，我要我们一家人在一起过日子。我要你离开凌玲——她有什么要求我都给，我要她把我的男人还给我。",
+      "source": "drama:wo-de-qian-ban-sheng:5:s10-q1"
+    },
+    {
+      "en": "I can't let go of you, of this home, of letting Ping'er become a child of a single-parent family.",
+      "zh": "我舍不得你，我舍不得这个家，我舍不得让平儿变成单亲家庭的孩子。",
+      "source": "drama:wo-de-qian-ban-sheng:6:s4-q3"
+    }
+  ],
+  "tags": [
+    "魏之皓",
+    "子君与俊生子"
+  ],
+  "freq": 2
+}

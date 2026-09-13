@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>蟹 逅 伦 敦！ · english-system</title>
+<style>
+:root {
+  --bg: #0c1222;
+  --surface: rgba(255,255,255,0.045);
+  --border: rgba(255,255,255,0.1);
+  --text: #e8eef7;
+  --muted: #93a4bd;
+  --accent: #5ec8c0;
+  --accent2: #7eb6ff;
+  --accent3: #e8b86d;
+  --ok: #6ed3a1;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", serif;
+  --font-body: "Avenir Next", "PingFang SC", "Helvetica Neue", sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(900px 500px at 12% -10%, rgba(94,200,192,0.16), transparent 55%),
+    radial-gradient(700px 420px at 90% 0%, rgba(126,182,255,0.12), transparent 50%),
+    var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.65;
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 28px 20px 80px; }
+nav.top {
+  display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+  padding: 14px 0 22px; border-bottom: 1px solid var(--border); margin-bottom: 28px;
+}
+nav.top .brand {
+  font-family: var(--font-display);
+  font-size: 1.15rem; font-weight: 700; color: var(--text); margin-right: auto;
+}
+nav.top a { color: var(--muted); font-size: 0.9rem; }
+nav.top a.active { color: var(--accent); }
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 2.9rem);
+  letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px;
+}
+.hero p { color: var(--muted); max-width: 42rem; }
+.grid4 {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 28px 0;
+}
+@media (max-width: 820px) { .grid4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .grid4 { grid-template-columns: 1fr; } }
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px 16px; display: block; color: inherit;
+}
+.card:hover { border-color: rgba(94,200,192,0.45); text-decoration: none; }
+.card .kicker { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.card h2 { font-size: 1.15rem; margin: 8px 0 6px; font-family: var(--font-display); }
+.card p { color: var(--muted); font-size: 0.88rem; }
+.path {
+  background: linear-gradient(135deg, rgba(94,200,192,0.12), rgba(126,182,255,0.08));
+  border: 1px solid var(--border); border-radius: 16px; padding: 22px 20px; margin-top: 8px;
+}
+.path h2 { font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 8px; }
+.path ol { margin: 12px 0 0 1.2rem; color: var(--muted); }
+.path li { margin: 8px 0; }
+.path strong { color: var(--text); }
+.search {
+  width: 100%; margin: 8px 0 18px; padding: 12px 14px; border-radius: 10px;
+  border: 1px solid var(--border); background: rgba(0,0,0,0.25); color: var(--text);
+  font-size: 1rem;
+}
+.meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 16px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.lemma { font-weight: 700; color: var(--accent); }
+.zh { color: var(--text); }
+.freq { color: var(--accent3); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag {
+  display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;
+  background: rgba(126,182,255,0.12); color: var(--accent2); margin: 0 4px 4px 0;
+}
+.ex { display: block; color: var(--muted); font-size: 0.82rem; margin-top: 4px; }
+.ex .en { color: #c9d7ea; }
+.group { margin: 28px 0; }
+.group h2 { font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 6px; }
+.group .desc { color: var(--muted); margin-bottom: 12px; }
+.frame { font-weight: 700; color: var(--accent); }
+.usage { color: var(--muted); font-size: 0.85rem; }
+.scene-list a.card { margin-bottom: 12px; }
+.scene-block {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px; margin: 16px 0;
+}
+.scene-block h3 { font-family: var(--font-display); margin-bottom: 4px; }
+.sent { margin: 12px 0; padding: 10px 0; border-top: 1px solid var(--border); }
+.sent .pair { display: grid; gap: 4px; }
+.sent .label { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.08em; }
+.note { color: var(--accent3); font-size: 0.82rem; margin-top: 4px; }
+.para { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.para li { margin: 8px 0 8px 1rem; }
+.chunk-link { margin-left: 6px; font-size: 0.8rem; }
+.external { margin: 10px 0 18px; font-size: 0.9rem; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="top">
+  <a class="brand" href="../index.html">english-system</a>
+  <a class="" href="../index.html">首页</a>
+  <a class="" href="../function/index.html">非实体词</a>
+  <a class="" href="../phrases/index.html">话术结构</a>
+  <a class="active" href="../scenarios/index.html">场景实训</a>
+  <a class="" href="../entity/index.html">实体词</a>
+</nav>
+
+<header class="hero"><h1>蟹 逅 伦 敦！</h1><p>Crab Encounter London</p></header>
+<p class="external"><a href="https://czh55.github.io/language_paraphrase/crab-london-场景英译.html" target="_blank" rel="noopener">打开原场景学习卡（音频 / 截图）↗</a></p>
+<section class="scene-block" id="s1">
+  <h3>S1 · 开场：帕丁顿熊的比喻</h3>
+  <p class="meta">Opening: The Paddington Metaphor · 00:00–00:51</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>伦敦有一只非常著名的小熊，就是帕丁顿熊。</div></div>
+  <div><span class="label">EN</span><div>There's a famous little bear in London, Paddington Bear.</div></div>
+</div><div class="note">开场介绍：There's a…（比 There is 更口语），famous little bear（little 增加亲切感，不是 small）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>他是从很远的秘鲁坐船过来的。</div></div>
+  <div><span class="label">EN</span><div>He came all the way from Peru by boat.</div></div>
+</div><div class="note">大老远过来 → all the way from…（强调距离之远，口语高频）；坐船 → by boat</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>我觉得我跟他特别的像，也是从大老远的地方坐飞机过来的。</div></div>
+  <div><span class="label">EN</span><div>I feel like I'm a lot like him, I also came from far away, but by plane.</div></div>
+</div><div class="note">很像他 → a lot like him（比 very similar to 更自然）；大老远 → far away（不必直译 big old far）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>但我大概不是果酱，带的是一箱子的设备。</div></div>
+  <div><span class="label">EN</span><div>Instead of marmalade, I brought a suitcase full of gear.</div></div>
+</div><div class="note">果酱 → marmalade（英式橙皮果酱，帕丁顿熊最爱，不是 jam）；一箱 → a suitcase full of；设备 → gear（泛指拍摄设备）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>帕丁顿来到伦敦时，脖子上挂着一张写着「请照顾好这只熊」的纸条。</div></div>
+  <div><span class="label">EN</span><div>When Paddington arrived in London, he had a tag around his neck that said &quot;please look after this bear.&quot;</div></div>
+</div><div class="note">纸条 → tag（行李牌/标签，不是 note/paper）；照顾 → look after（英式表达，比 take care of 更常用）；脖子上挂着 → had a tag around his neck</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>第一次来到伦敦的我也想借用一下这句话：请照顾好这只蟹。</div></div>
+  <div><span class="label">EN</span><div>As a first-timer in London, I'd like to borrow that line: please look after this crab.</div></div>
+</div><div class="note">第一次来的人 → first-timer（口语名词）；借用这句话 → borrow that line（比 use that sentence 更自然）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>在真正站在这里之前，我对伦敦的认识其实还蛮零碎的。</div></div>
+  <div><span class="label">EN</span><div>Before standing here, my knowledge of London was pretty scattered.</div></div>
+</div><div class="note">零碎的 → scattered（比 fragmented/piecemeal 更口语）；蛮…的 → pretty…（口语缓冲词）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>大本钟、阴晴不定的天气，还有电影里那些似曾相识的街道。</div></div>
+  <div><span class="label">EN</span><div>Big Ben, unpredictable weather, and streets that felt familiar from movies.</div></div>
+</div><div class="note">阴晴不定 → unpredictable（不是 cloudy-sunny）；似曾相识 → felt familiar from…（feel familiar 更地道，比 looked familiar 更主观）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>所以这一次我想认真当一回游客，也想看看那些电影里的地方现实中到底是什么样的。</div></div>
+  <div><span class="label">EN</span><div>So this time I want to be a proper tourist and see what those movie locations actually look like in real life.</div></div>
+</div><div class="note">认真当游客 → proper tourist（proper = 货真价实的、合格的）；电影取景地 → movie locations；现实中 → in real life</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>欢迎收看本期的邂逅时间——伦敦。</div></div>
+  <div><span class="label">EN</span><div>Welcome to this episode of Encounter Time, London.</div></div>
+</div><div class="note">本期 → this episode（视频/vlog 专用）；邂逅 → encounter（通识词，比 chance meeting 简洁）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>大老远过来</strong> → all the way from Peru. / all the way over from China. / from as far away as...<div><code>all the way from</code> · <code>all the way over</code> · <code>far away</code> </div></li><li><strong>带着设备而非果酱</strong> → Instead of marmalade, I brought a suitcase full of gear.<div><code>instead of</code> · <code>a suitcase full of</code> · <code>gear</code> <a class="chunk-link" href="../function/index.html#fn-instead-of">→ function</a></div></li><li><strong>借用这句话</strong> → borrow that line / steal that line / let me quote that<div><code>borrow that line</code> · <code>steal that line</code> · <code>quote that</code> </div></li><li><strong>认真当一回游客</strong> → be a proper tourist / do the whole tourist thing / play tourist for real<div><code>proper tourist</code> · <code>play tourist</code> · <code>for real</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s2">
+  <h3>S2 · 初到伦敦：大本钟与天气</h3>
+  <p class="meta">First Impressions: Big Ben &amp; Weather · 00:55–01:20</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>家人们到伦敦了！</div></div>
+  <div><span class="label">EN</span><div>Hey guys, we made it to London.</div></div>
+</div><div class="note">到了 → made it（比 arrived 更口语，含「终于到了」的成就感）；家人们 → guys（Vlog 通用称呼，不是 family members）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>既然是第一次来，那有些游客作业总还是要交一下的。后面是大本钟。</div></div>
+  <div><span class="label">EN</span><div>Since it's my first time, I gotta do the obligatory tourist stuff. Big Ben is right behind me.</div></div>
+</div><div class="note">游客作业 → obligatory tourist stuff（obligatory = 必须打卡的，比 must-do 更具体）；就在后面 → right behind me（right 强调方位）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>但今天一到伦敦这个天气就非常典型，特别的伦敦——阴雨绵绵的。</div></div>
+  <div><span class="label">EN</span><div>But the weather today is just so typical, so London, drizzly and grey.</div></div>
+</div><div class="note">特别伦敦 → so London（名词当形容词用，地道口语）；阴雨绵绵 → drizzly and grey（drizzle = 毛毛雨）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>但是据说其实伦敦全年的降雨量没有上海多，这个你改心。</div></div>
+  <div><span class="label">EN</span><div>Apparently London's annual rainfall is actually less than Shanghai's, let that sink in.</div></div>
+</div><div class="note">全年降雨量 → annual rainfall；你想想 → let that sink in（「细品一下」的高频说法，比 think about it 更有冲击力）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>主要是它每次都是下一点点毛毛雨。可能这就是为什么经常看到伦敦人下雨天不打伞的原因吧。</div></div>
+  <div><span class="label">EN</span><div>It's mainly because it's always just a light drizzle. Maybe that's why you often see Londoners not bothering with umbrellas.</div></div>
+</div><div class="note">毛毛雨 → light drizzle；懒得打伞 → not bothering with umbrellas（bother = 费那个劲、麻烦，比 don't use umbrellas 更传神）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>到了某地</strong> → We made it to London! / We're here! / Touchdown London!<div><code>made it</code> · <code>we're here</code> · <code>touchdown</code> </div></li><li><strong>必须打卡的游客项目</strong> → the obligatory tourist stuff / the must-do tourist checklist / the standard tourist routine<div><code>obligatory</code> · <code>must-do</code> · <code>tourist stuff</code> <a class="chunk-link" href="../function/index.html#fn-must">→ function</a></div></li><li><strong>典型伦敦天气</strong> → so typical, so London / classic London / peak London / couldn't be more London<div><code>so typical</code> · <code>so London</code> · <code>classic</code> · <code>peak London</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s3">
+  <h3>S3 · 新冠纪念墙</h3>
+  <p class="meta">COVID Memorial Wall · 01:21–01:44</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>我后面这个墙上全都是爱心。</div></div>
+  <div><span class="label">EN</span><div>The wall behind me is covered in hearts.</div></div>
+</div><div class="note">全是爱心 → covered in hearts（covered in = 被…覆盖，比 full of 更有画面感）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>但这里每颗爱心都代表一位新冠逝者。</div></div>
+  <div><span class="label">EN</span><div>But each heart here represents someone who passed away from COVID.</div></div>
+</div><div class="note">代表 → represents（不是 means）；逝者 → someone who passed away（passed away 比 died 更委婉）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>墙上全是…</strong> → covered in hearts / plastered with hearts / full of hearts<div><code>covered in</code> · <code>plastered with</code> · <code>full of</code> </div></li><li><strong>因新冠去世</strong> → passed away from COVID / died of COVID / lost their life to COVID<div><code>passed away from</code> · <code>died of</code> · <code>lost their life to</code> <a class="chunk-link" href="../function/index.html#fn-life">→ function</a></div></li></ul></div>
+</section>
+<section class="scene-block" id="s4">
+  <h3>S4 · 落地第一顿：炸鱼薯条 &amp; 中餐</h3>
+  <p class="meta">First Meal: Fish &amp; Chips &amp; Chinese · 01:44–02:36</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>落地伦敦的第一顿当然要吃炸鱼薯条了。</div></div>
+  <div><span class="label">EN</span><div>For my first meal in London, fish and chips was a no-brainer.</div></div>
+</div><div class="note">落地第一顿 → first meal in London；理所当然的选择 → a no-brainer（比 an obvious choice 更口语）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>我们找到一家从1988年开到现在、号称英国顶尖的老店。</div></div>
+  <div><span class="label">EN</span><div>We found a place that's been around since 1988, supposedly one of the best in the UK.</div></div>
+</div><div class="note">开到现在 → been around since（比 been open since 更口语）；号称 → supposedly（暗示「据说是，但不确定」）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>还碰到一个当地人跟我们说这是伦敦最好吃的炸鱼薯条。</div></div>
+  <div><span class="label">EN</span><div>Even ran into a local who told us it's the best fish and chips in London.</div></div>
+</div><div class="note">碰到某人 → ran into（偶遇，比 met 更口语）；当地人 → a local（名词，非常常用）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>最好吃不敢说，但伦敦第一顿的仪式感算是有了。</div></div>
+  <div><span class="label">EN</span><div>Can't say if it's the best, but at least we got that first-meal-in-London ritual out of the way.</div></div>
+</div><div class="note">不敢说 → can't say if…（比 I'm not sure 更口语）；仪式感有了 → got that ritual out of the way（解除仪式负担，比 completed the ritual 更地道）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>仪式归仪式，但中国胃是不一样的。所以我们来了一家从某个年代开到现在的老店。</div></div>
+  <div><span class="label">EN</span><div>Rituals aside, a Chinese stomach is a different story. So we came to this long-standing spot.</div></div>
+</div><div class="note">仪式归仪式 → rituals aside（aside = 暂且不论）；中国胃 → a Chinese stomach（直译即可，英语完全理解这个文化概念）；是另一回事 → is a different story</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>来看看这个西安的肉夹馍，折算下来一百多块钱一份。</div></div>
+  <div><span class="label">EN</span><div>Check out this Xi'an-style roujiamo, works out to over a hundred yuan each.</div></div>
+</div><div class="note">换来 → check out（Vlog 展示用语）；折算下来 → works out to（换算/结果，高频口语）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>中餐出了国，价格是涨了，魅力倒是一点没打折。</div></div>
+  <div><span class="label">EN</span><div>Chinese food abroad, the price goes up, but the appeal doesn't drop one bit.</div></div>
+</div><div class="note">魅力 → appeal（比 charm 更中性，适用于食物）；一点没打折扣 → doesn't drop one bit（口语强调，比 doesn't decrease at all 更有力）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>理所当然的选择</strong> → a no-brainer / an obvious choice / goes without saying<div><code>no-brainer</code> · <code>obvious choice</code> · <code>goes without saying</code> <a class="chunk-link" href="../function/index.html#fn-choice">→ function</a></div></li><li><strong>仪式感完成了</strong> → got that ritual out of the way / checked that box / ticked that off the list<div><code>out of the way</code> · <code>checked that box</code> · <code>ticked off</code> </div></li><li><strong>中餐出国：价格涨了魅力不减</strong> → the price goes up, but the appeal doesn't drop one bit / still just as good / every bit as tempting<div><code>doesn't drop one bit</code> · <code>just as good</code> · <code>every bit as</code> <a class="chunk-link" href="../function/index.html#fn-just">→ function</a><a class="chunk-link" href="../phrases/index.html#ph-not-just-x-but-y">→ phrases</a><a class="chunk-link" href="../phrases/index.html#ph-at-the-very-least">→ phrases</a></div></li><li><strong>折算下来</strong> → works out to / comes to / adds up to / that's about<div><code>works out to</code> · <code>comes to</code> · <code>adds up to</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s5">
+  <h3>S5 · 酒吧景观位</h3>
+  <p class="meta">Bar with a View · 02:36–02:56</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>伦敦还有一家挺有名的酒吧，但是我没有预约，最后只能坐在了吧台位。</div></div>
+  <div><span class="label">EN</span><div>There's this pretty famous bar in London, but I didn't have a reservation, so I ended up at the counter.</div></div>
+</div><div class="note">挺有名的 → pretty famous（pretty 作副词 = 相当）；最后只能 → ended up at（结果落在了，口语高频）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>但是没有想到这个临时的座位真的是全场景佳的景观位。</div></div>
+  <div><span class="label">EN</span><div>But who would've thought, this last-minute seat turned out to be the best view in the whole place.</div></div>
+</div><div class="note">没想到 → who would've thought（修辞反问，比 surprisingly 更口语）；临时座位 → last-minute seat；竟然是 → turned out to be</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>怎么样，体验感拉满吧？不过账单也一样。</div></div>
+  <div><span class="label">EN</span><div>Pretty amazing experience, right? Though the bill was just as impressive.</div></div>
+</div><div class="note">体验感拉满 → amazing experience（比 off the charts 更简洁）；账单也一样 → the bill was just as impressive（just as = 和体验一样令人印象深刻）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>结果却坐了吧台</strong> → I ended up at the counter / I wound up at the bar / I had to settle for the bar seat<div><code>ended up</code> · <code>wound up</code> · <code>settle for</code> </div></li><li><strong>没想到却是最佳位置</strong> → who would've thought it turned out to be the best view / turns out / surprisingly enough<div><code>who would've thought</code> · <code>turned out to be</code> · <code>surprisingly</code> <a class="chunk-link" href="../function/index.html#fn-would">→ function</a><a class="chunk-link" href="../phrases/index.html#ph-i-would-rather-die-than">→ phrases</a></div></li><li><strong>体验感拉满</strong> → a top-tier experience / the experience was off the charts / couldn't have asked for more<div><code>top-tier</code> · <code>off the charts</code> · <code>couldn't ask for more</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s6">
+  <h3>S6 · 自然历史博物馆</h3>
+  <p class="meta">Natural History Museum · 02:58–04:23</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>虽然伦敦是第一次来，但有些画面早就在电影里面见过了。</div></div>
+  <div><span class="label">EN</span><div>Even though it's my first time in London, some of these scenes I've already seen in movies.</div></div>
+</div><div class="note">画面 → scenes（不是 pictures/images）；在电影里见过 → seen in movies（最简单直接）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>比如眼前的这个帕丁顿车站，是不是还挺熟悉的？</div></div>
+  <div><span class="label">EN</span><div>Like Paddington Station right here, does it look familiar?</div></div>
+</div><div class="note">是不是挺眼熟 → does it look familiar?（口语反问，比 don't you recognize it 更自然）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>今天我们就拿电影当地图，看看银幕外的伦敦。</div></div>
+  <div><span class="label">EN</span><div>Today we're using movies as our map to see London beyond the screen.</div></div>
+</div><div class="note">拿电影当地图 → using movies as our map（as = 当作）；银幕外 → beyond the screen（比 outside the movie 更优雅）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>跟随着帕丁顿熊的足迹，我来到了英国的自然历史博物馆，这里就是帕丁顿熊差点被抓起做成标本的地方。</div></div>
+  <div><span class="label">EN</span><div>Following Paddington's footsteps, I ended up at the Natural History Museum, the very place where Paddington was almost turned into a stuffed specimen.</div></div>
+</div><div class="note">足迹 → footsteps；正是那个地方 → the very place where（very 表示强调=正是）；做成标本 → turned into a stuffed specimen</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>哇这里真的好壮观！挑高非常的高，像一个城堡一样。</div></div>
+  <div><span class="label">EN</span><div>Wow this place is absolutely stunning, the ceiling is so high, it's like a castle.</div></div>
+</div><div class="note">壮观 → stunning（比 magnificent 更口语）；挑高 → the ceiling is so high（ceiling = 天花板高度即挑高）；像城堡 → like a castle</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>这个大厅里面最值得看的就是这个被吊起来的蓝鲸化石。</div></div>
+  <div><span class="label">EN</span><div>The main thing to see in this hall is the blue whale skeleton hanging from the ceiling.</div></div>
+</div><div class="note">最值得看 → the main thing to see（比 the most worth seeing 更自然）；蓝鲸化石 → blue whale skeleton；吊起来 → hanging from the ceiling</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>它整个动作就是一个向下俯冲捕食的动作，我感觉站在它下面特别的小。</div></div>
+  <div><span class="label">EN</span><div>It's posed mid-dive, like it's swooping down to catch prey. I feel so tiny standing underneath it.</div></div>
+</div><div class="note">定格在俯冲动作 → posed mid-dive（mid- = 在半空中/过程中）；俯冲捕食 → swooping down to catch prey；特别小 → so tiny（比 very small 更有冲击力）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>这些化石看着确实挺震撼的，但这里还有很多动物标本，真的每一只都栩栩如生。</div></div>
+  <div><span class="label">EN</span><div>The fossils are genuinely impressive, but there are also loads of animal specimens here, every single one looks so lifelike.</div></div>
+</div><div class="note">震撼 → genuinely impressive（genuinely = 真的，不是夸张）；很多 → loads of（英式口语，比 many 更自然）；栩栩如生 → lifelike（比 vivid 更贴标本语境）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>能近距离看到这么多难得一见的标本，确实挺厉害的。</div></div>
+  <div><span class="label">EN</span><div>Getting to see so many rare specimens up close is pretty amazing.</div></div>
+</div><div class="note">近距离 → up close（比 at a close distance 更简洁）；难得一见的 → rare（比 hard to see 更简洁）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>只是关于它们生前的故事咱就不了解了。希望它们都是在生命结束以后才以这种方式被留在这里的。</div></div>
+  <div><span class="label">EN</span><div>Though I don't really know the stories of how they lived. I just hope they ended up here after their lives ran their natural course.</div></div>
+</div><div class="note">生前故事 → the stories of how they lived；生命自然终结后 → after their lives ran their natural course（委婉表达「不是被杀死做标本」，比 after a natural death 更优美）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>银幕外</strong> → beyond the screen / off-screen / the real thing / in real life<div><code>beyond the screen</code> · <code>off-screen</code> · <code>in real life</code> <a class="chunk-link" href="../function/index.html#fn-life">→ function</a></div></li><li><strong>跟随某人的足迹</strong> → following someone's footsteps / retracing someone's steps / walking in someone's path<div><code>following footsteps</code> · <code>retracing steps</code> · <code>walking in path</code> </div></li><li><strong>特别小</strong> → so tiny / feel dwarfed / feel puny / feel so small<div><code>so tiny</code> · <code>feel dwarfed</code> · <code>feel so small</code> <a class="chunk-link" href="../function/index.html#fn-feel">→ function</a></div></li><li><strong>栩栩如生</strong> → lifelike / so realistic / true to life / uncannily real<div><code>lifelike</code> · <code>so realistic</code> · <code>true to life</code> <a class="chunk-link" href="../phrases/index.html#ph-like-say-for-instance">→ phrases</a><a class="chunk-link" href="../function/index.html#fn-life">→ function</a></div></li></ul></div>
+</section>
+<section class="scene-block" id="s7">
+  <h3>S7 · 诺丁山 &amp; 电影书店</h3>
+  <p class="meta">Notting Hill &amp; the Bookshop · 04:27–05:10</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>不知道有多少人是先看了《诺丁山》，后来才知道伦敦真的有这个地方叫诺丁山。</div></div>
+  <div><span class="label">EN</span><div>I wonder how many people watched Notting Hill first and only later found out it's an actual place in London.</div></div>
+</div><div class="note">不知道有多少人 → I wonder how many people…（wonder = 好奇/想知道）；后来才知道 → only later found out（found out = 发现/得知）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>电影里那间小小的旅行书店，也成了很多人记住这里的原因。</div></div>
+  <div><span class="label">EN</span><div>That tiny travel bookshop in the movie is what made this place stick in so many people's minds.</div></div>
+</div><div class="note">旅行书店 → travel bookshop（不是 travel bookstore，英式用法）；记住这里 → stick in people's minds（stick = 留在记忆里，比 remember 更形象）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>这就是电影中男女主角相遇的142号店，但实际上它并不是一家书店，而是一个纪念品商店。</div></div>
+  <div><span class="label">EN</span><div>This is number 142, where the leads meet in the film, but it's not actually a bookshop, it's a souvenir store.</div></div>
+</div><div class="note">男女主角 → the leads（主演的简称，比 the main characters 更专业）；纪念品商店 → souvenir store</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>实际上电影中书店的灵感是来自有生活的这家书店，但有意思的是这里其实也没有真的拍过电影。剧组只是照着当时的书店在摄影棚里重新搭了一间。</div></div>
+  <div><span class="label">EN</span><div>The real-life inspiration for the bookshop was actually this other bookstore, but funnily enough, they never filmed there either. The crew just built a replica of it on a soundstage.</div></div>
+</div><div class="note">灵感来源 → the real-life inspiration；有意思的是 → funnily enough（英式口语）；照原样搭了一间 → built a replica；摄影棚 → on a soundstage</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>你看电影不一定是真的，但它确实能让一条街变成让全世界人都来打卡的地方——这个倒是真的。</div></div>
+  <div><span class="label">EN</span><div>Movies may not be real, but they can definitely turn a street into a place people from all over the world come to check out, that part is very real.</div></div>
+</div><div class="note">打卡 → come to check out（比 take photos 更贴旅行打卡含义）；这个倒是真的 → that part is very real（精妙转折，呼应前句的 not real）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>后来才发现</strong> → only later found out / it wasn't until later that I realized / only discovered afterwards<div><code>found out</code> · <code>later</code> · <code>discovered</code> <a class="chunk-link" href="../function/index.html#fn-later">→ function</a></div></li><li><strong>留在记忆里</strong> → stick in someone's mind / make an impression / leave a mark / be etched in memory<div><code>stick in mind</code> · <code>make an impression</code> · <code>leave a mark</code> <a class="chunk-link" href="../function/index.html#fn-make">→ function</a><a class="chunk-link" href="../function/index.html#fn-leave">→ function</a></div></li><li><strong>有意思的是</strong> → funnily enough / ironically / the funny thing is / here's the twist<div><code>funnily enough</code> · <code>ironically</code> · <code>the twist</code> <a class="chunk-link" href="../function/index.html#fn-enough">→ function</a></div></li></ul></div>
+</section>
+<section class="scene-block" id="s8">
+  <h3>S8 · 裁缝街 &amp; Kingsman</h3>
+  <p class="meta">Savile Row &amp; Kingsman · 05:20–06:41</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>这里就是伦敦的裁缝街，有的店铺已经开了几百年了。</div></div>
+  <div><span class="label">EN</span><div>This is Savile Row, some of these shops have been around for centuries.</div></div>
+</div><div class="note">裁缝街 → Savile Row（专有名词，不用翻译）；开了几百年 → been around for centuries（been around = 一直存在）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>听说这边一套定制西装要几千英镑，要等六个星期。</div></div>
+  <div><span class="label">EN</span><div>I heard a bespoke suit here costs a few thousand pounds and takes six weeks.</div></div>
+</div><div class="note">定制西装 → bespoke suit（bespoke = 量身定做，英式核心词汇，不是 custom-made）；几千英镑 → a few thousand pounds（pounds 不要省略）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>不过让这条街出圈的不只是西装，而是一部叫 Kingsman 的电影。</div></div>
+  <div><span class="label">EN</span><div>But what really put this street on the map wasn't just the suits, it was a movie called Kingsman.</div></div>
+</div><div class="note">出圈/出名 → put this street on the map（经典习语，比 make it famous 更地道）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>你看这写的 Kingsman。这家店是1849年的时候开的。</div></div>
+  <div><span class="label">EN</span><div>See it says Kingsman right here. This shop first opened in 1849.</div></div>
+</div><div class="note">你看 → See（Vlog 引导观众看画面）；这写着 → it says… right here（right here 强调当前画面）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>据说当时《王牌特工》的导演就是在这里量体裁衣的时候突然来了灵感，于是就拍了这部电影。</div></div>
+  <div><span class="label">EN</span><div>Apparently the director of Kingsman was here getting fitted when inspiration struck, and that's how the movie was born.</div></div>
+</div><div class="note">量体裁衣 → getting fitted（西装量体的固定说法）；突然来了灵感 → inspiration struck（strike = 突然降临，比 got inspiration 更生动）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>来看看这件西装的价格。好贵，两万多。</div></div>
+  <div><span class="label">EN</span><div>Let's take a look at the price of this suit. So expensive, over twenty thousand.</div></div>
+</div><div class="note">来看看 → let's take a look at（Vlog 引导句式）；好贵 → so expensive（夸张脱口而出，比 very expensive 更口语）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>走进去之后才发现它们写了不让我们拍摄，但我还是偷偷摸摸拍了一点。好像也没有制止我，整个偷感非常重。</div></div>
+  <div><span class="label">EN</span><div>After walking in, I noticed a sign saying no filming, but I still snuck in a few shots. They didn't seem to stop me either, so the whole thing felt super sneaky.</div></div>
+</div><div class="note">写着不让拍 → a sign saying no filming；偷偷摸摸拍了 → snuck in a few shots（snuck = sneak 过去式，偷偷做）；偷感重 → super sneaky（sneaky = 鬼鬼祟祟的）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>我悄悄看了一下，它里面的衣服价格还蛮高的，要两千多磅一件。就是普通黑色的西装，可能只是我看不出它的特别之处。</div></div>
+  <div><span class="label">EN</span><div>I took a quiet look, the prices inside are pretty steep, over two thousand pounds a piece. It was just a plain black suit, maybe I just can't tell what makes it special.</div></div>
+</div><div class="note">价格蛮高 → pretty steep（steep = 价格高得吓人）；一件 → a piece（服装量词）；看不出特别之处 → can't tell what makes it special（比 can't see why it's special 更自然）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>不过这地方特别有名，像很多英国的政要，比如丘吉尔、威廉王子，都在这边定制过西装。</div></div>
+  <div><span class="label">EN</span><div>But this place is seriously famous, loads of British figures like Churchill and Prince William have had suits made here.</div></div>
+</div><div class="note">政要 → British figures（figures = 重要人物，比 politicians 更宽泛）；定制过西装 → have had suits made here（have something done 句型，意为让别人给自己做）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>让这里出名</strong> → put this street on the map / made this street famous / put this street in the spotlight<div><code>put on the map</code> · <code>made famous</code> · <code>in the spotlight</code> <a class="chunk-link" href="../function/index.html#fn-put-on">→ function</a></div></li><li><strong>突然来了灵感</strong> → inspiration struck / he got the idea / a lightbulb went off / it hit him<div><code>inspiration struck</code> · <code>got the idea</code> · <code>went off</code> · <code>hit him</code> </div></li><li><strong>偷偷拍了</strong> → snuck in a few shots / secretly filmed a bit / got some sneaky footage / stole a few clips<div><code>snuck in</code> · <code>secretly filmed</code> · <code>sneaky footage</code> </div></li><li><strong>价格很高</strong> → pretty steep / pretty pricey / on the expensive side / not cheap at all<div><code>pretty steep</code> · <code>pricey</code> · <code>on the expensive side</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s9">
+  <h3>S9 · 最后一天：晴天伦敦</h3>
+  <p class="meta">Final Day: Sunny London · 06:44–07:19</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>在伦敦的这几天，雨就没怎么停过，但到了最后一天——哎，天晴了。</div></div>
+  <div><span class="label">EN</span><div>The rain barely let up during my days in London, but on the final day, hey, the sun came out.</div></div>
+</div><div class="note">没怎么停过 → barely let up（let up = 减弱/停止，高频天气表达）；天晴了 → the sun came out（比 it stopped raining 更有画面感）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>大本钟还是那个大本钟，可太阳一出来，看起来就像换了一座城市。</div></div>
+  <div><span class="label">EN</span><div>Big Ben is still Big Ben, but when the sun comes out, it feels like a whole different city.</div></div>
+</div><div class="note">还是那个大本钟 → Big Ben is still Big Ben（修辞重复，不变的是标志建筑）；像换了个城市 → a whole different city（whole = 完全，强调反差之大）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>至于伦敦到底是什么样，我第一次来确实说不太清。</div></div>
+  <div><span class="label">EN</span><div>As for what London is really like, honestly, I can't quite put my finger on it after just one visit.</div></div>
+</div><div class="note">说不太清 → can't quite put my finger on it（经典习语 = 无法准确描述/指出，比 can't describe it 更地道）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>电影里的那些地方算是找到了，但电影之外的伦敦可能还得再来几次。</div></div>
+  <div><span class="label">EN</span><div>I managed to find all those movie locations, but the London beyond the movies? Might take a few more trips.</div></div>
+</div><div class="note">总算找到了 → managed to find（managed to = 经过努力做到了）；电影之外的伦敦 → the London beyond the movies（beyond 呼应开头的 beyond the screen）；还得再来 → might take a few more trips</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>当然也欢迎屏幕前的你来分享一下，你眼中的伦敦是什么样子。</div></div>
+  <div><span class="label">EN</span><div>And of course, I'd love for you guys to share, what does London look like through your eyes?</div></div>
+</div><div class="note">欢迎你分享 → I'd love for you guys to share（Vlog 结尾互动句）；你眼中 → through your eyes（比 in your opinion 更形象诗意）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>雨没停过</strong> → barely let up / hardly stopped / almost never let up / was pretty much nonstop<div><code>barely let up</code> · <code>hardly stopped</code> · <code>nonstop</code> <a class="chunk-link" href="../function/index.html#fn-barely">→ function</a><a class="chunk-link" href="../function/index.html#fn-hardly">→ function</a></div></li><li><strong>说不太清</strong> → can't quite put my finger on it / can't really pin it down / hard to sum up<div><code>put my finger on it</code> · <code>pin it down</code> · <code>sum up</code> </div></li><li><strong>总算做到了</strong> → managed to find / was able to track down / did get to see / checked off<div><code>managed to</code> · <code>track down</code> · <code>checked off</code> </div></li></ul></div>
+</section>
+<section class="scene-block"><h3>今日可练</h3><ol><li><span class="zh">用「made it / all the way from」表达「终于到了、从很远的地方来」</span><div class="ex"><span class="en">We made it to London! I came all the way from China for this.</span></div></li><li><span class="zh">用「ended up at… / turned out to be…」表达意料之外的结果</span><div class="ex"><span class="en">I ended up at the counter, but it turned out to be the best seat in the house.</span></div></li><li><span class="zh">用「put… on the map」表达「让某地出名」</span><div class="ex"><span class="en">That one movie put this tiny street on the map for tourists around the world.</span></div></li><li><span class="zh">用「can't quite put my finger on it」表达「说不清楚、无法准确描述」</span><div class="ex"><span class="en">I can't quite put my finger on what makes this city so special, but I love it.</span></div></li></ol></section>
+<footer>语料来自 drama-analysis / language_paraphrase · 本站只做结构化学习壳</footer>
+</div>
+</body>
+</html>

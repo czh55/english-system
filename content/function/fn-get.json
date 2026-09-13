@@ -1,0 +1,17 @@
+{
+  "id": "fn-get",
+  "module": "function",
+  "lemma": "get",
+  "zh": "得到/变得",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "Love life, and get plenty of sleep.",
+      "zh": "热爱生活，多睡觉。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 475
+}

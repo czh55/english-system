@@ -1,0 +1,23 @@
+{
+  "id": "fn-still",
+  "module": "function",
+  "lemma": "still",
+  "zh": "仍然",
+  "tags": [
+    "priority",
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "Leaving at night means you're still dating, living separate lives. Leaving in the morning means you've accept…",
+      "zh": "晚上走，代表着这两个人还是在谈恋爱，生活各过各的；但早上走，就代表你已经接受了要一起生活。",
+      "source": "drama:english-vocab"
+    },
+    {
+      "en": "Leaving at night means you're still dating, living separate lives. Leaving in the morning means you've accepted living …",
+      "zh": "晚上走，代表着这两个人还是在谈恋爱，生活各过各的；但早上走，就代表你已经接受了要一起生活。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 526
+}

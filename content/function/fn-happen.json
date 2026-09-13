@@ -1,0 +1,17 @@
+{
+  "id": "fn-happen",
+  "module": "function",
+  "lemma": "happen",
+  "zh": "发生",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "I've read your self-criticism. The same mistake will absolutely not be allowed to happen a second time.",
+      "zh": "你的检讨书我已经看过了，同样的问题绝对不允许再发生第二次。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 31
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-system.local/schemas/function.schema.json",
+  "title": "Function / non-entity word entry",
+  "type": "object",
+  "required": ["id", "module", "lemma", "zh", "tags"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^fn-" },
+    "module": { "const": "function" },
+    "lemma": { "type": "string", "minLength": 1 },
+    "zh": { "type": "string" },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "connect",
+          "modal",
+          "degree",
+          "time",
+          "filler",
+          "verb",
+          "adj",
+          "noun",
+          "phrasal",
+          "priority"
+        ]
+      }
+    },
+    "examples": {
+      "type": "array",
+      "items": { "$ref": "common.json#/definitions/example" }
+    },
+    "freq": { "type": "integer", "minimum": 0 }
+  },
+  "additionalProperties": false
+}

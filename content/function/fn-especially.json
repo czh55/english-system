@@ -1,0 +1,17 @@
+{
+  "id": "fn-especially",
+  "module": "function",
+  "lemma": "especially",
+  "zh": "尤其",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "Also, learn to appreciate beautiful things — especially beautiful women.",
+      "zh": "要学会欣赏美的东西，尤其是美女。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 21
+}

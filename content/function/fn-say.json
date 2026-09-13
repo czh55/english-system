@@ -1,0 +1,17 @@
+{
+  "id": "fn-say",
+  "module": "function",
+  "lemma": "say",
+  "zh": "说",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "He didn't say he minded.\" \"But did he say he didn't?",
+      "zh": "他没说不乐意啊。」「那还说乐意了吗？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 297
+}

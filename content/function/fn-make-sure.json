@@ -1,0 +1,17 @@
+{
+  "id": "fn-make-sure",
+  "module": "function",
+  "lemma": "make sure",
+  "zh": "确保",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "She's too drunk, something's not right—let's make sure nothing happens to her.",
+      "zh": "喝多了，意思不太对，别出什么事。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 19
+}

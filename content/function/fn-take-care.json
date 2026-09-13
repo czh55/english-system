@@ -1,0 +1,17 @@
+{
+  "id": "fn-take-care",
+  "module": "function",
+  "lemma": "take care",
+  "zh": "保重/照料",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "My assistant is mine to take care of. Thanks, but no thanks.",
+      "zh": "我的助理我来照顾，谢谢你的好意。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 63
+}

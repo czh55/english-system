@@ -1,0 +1,17 @@
+{
+  "id": "fn-understand",
+  "module": "function",
+  "lemma": "understand",
+  "zh": "理解",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "I understand — you have spine. Take out the parts about He Han. We'll talk again later.",
+      "zh": "我明白，你是有骨气的。合同里有关何韩的部分，去掉。我们找时间再聊。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 85
+}

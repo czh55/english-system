@@ -1,0 +1,17 @@
+{
+  "id": "fn-forget",
+  "module": "function",
+  "lemma": "forget",
+  "zh": "忘记",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "This year's Author Night, I should be the Most Satisfying Author. Don't forget to watch the livestream.",
+      "zh": "今年作者之夜，我应该是年度欣慰作者，到时候你们可记得看直播啊。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 53
+}

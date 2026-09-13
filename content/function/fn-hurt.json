@@ -1,0 +1,17 @@
+{
+  "id": "fn-hurt",
+  "module": "function",
+  "lemma": "hurt",
+  "zh": "伤害",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "I'm protecting the bigger picture. I care about you. I don't want to hurt you.",
+      "zh": "我在顾全大局，我在乎你，我不想伤害你。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 87
+}

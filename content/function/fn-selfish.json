@@ -1,0 +1,17 @@
+{
+  "id": "fn-selfish",
+  "module": "function",
+  "lemma": "selfish",
+  "zh": "自私",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "You don't want to leave this internet cafe, so you expect everyone to stay here as managers forever. Isn't that selfish…",
+      "zh": "你不想离开这个网吧，你就希望别人一辈子都陪着你在这里当网管——你不也是只想着自己吗？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 10
+}

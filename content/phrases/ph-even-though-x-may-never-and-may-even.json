@@ -1,0 +1,26 @@
+{
+  "id": "ph-even-though-x-may-never-and-may-even",
+  "module": "phrases",
+  "frame_en": "Even though X may never... and may even...",
+  "frame_zh": "虽然可能…甚至可能…",
+  "usage": "双重让步",
+  "group": "转折让步类",
+  "group_id": "group-1",
+  "examples": [
+    {
+      "en": "but\"He can be impulsive, but he's really warm-hearted.\"",
+      "zh": "他虽然有点冲动吧，但挺热心肠的。",
+      "source": "drama:english-phrases:group-1",
+      "ctx": "🎬 问心2 第9集 · 方筱然对周筱风评价他的前男友欧阳妲：那天他主动冲上去帮小眉解围，虽然有点冲动，但确实热心肠。"
+    },
+    {
+      "en": "on the surface\"He looks colder than anyone on the surface, but deep down he's softer than anyone.\"",
+      "zh": "他就是表面上看着比谁都冷，其实内心比谁都软。",
+      "source": "drama:english-phrases:group-1",
+      "ctx": "🎬 问心2 第13集 · 张正评价周筱风：对病人、同事、家人都掏心掏肺，唯独对自己苛刻——\"面冷心软\"就是这种人的画像。"
+    }
+  ],
+  "tags": [
+    "group-1"
+  ]
+}

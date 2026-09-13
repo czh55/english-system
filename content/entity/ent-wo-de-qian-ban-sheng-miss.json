@@ -1,0 +1,17 @@
+{
+  "id": "ent-wo-de-qian-ban-sheng-miss",
+  "module": "entity",
+  "lemma": "Miss吴",
+  "zh": "吴大娘",
+  "type": "person",
+  "aliases": [
+    "Miss吴"
+  ],
+  "drama": "wo-de-qian-ban-sheng",
+  "examples": [],
+  "tags": [
+    "邬君梅",
+    "特别出演"
+  ],
+  "freq": 0
+}

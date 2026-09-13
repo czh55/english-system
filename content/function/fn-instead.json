@@ -1,0 +1,17 @@
+{
+  "id": "fn-instead",
+  "module": "function",
+  "lemma": "instead",
+  "zh": "反而",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "Don't write buildup—buildup gives away the hand. Write dialogue instead. The more and denser, the better.",
+      "zh": "不要写蓄势，蓄势容易暴露笔迹。你就写对白，对白越多、越密越好。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 28
+}

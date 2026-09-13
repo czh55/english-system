@@ -1,0 +1,17 @@
+{
+  "id": "fn-future",
+  "module": "function",
+  "lemma": "future",
+  "zh": "未来",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Past, present, and future — all the praise and glory I receive should belong first and foremost to Lin Zhanqiao.",
+      "zh": "我过去、现在、直到未来，所有得到的赞美与荣誉，首先都应该属于林展翘。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 73
+}

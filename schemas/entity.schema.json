@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-system.local/schemas/entity.schema.json",
+  "title": "Entity word entry",
+  "type": "object",
+  "required": ["id", "module", "lemma", "zh", "type"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^ent-" },
+    "module": { "const": "entity" },
+    "lemma": { "type": "string", "minLength": 1 },
+    "zh": { "type": "string", "minLength": 1 },
+    "type": { "enum": ["person", "place", "object", "other"] },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "drama": { "type": "string" },
+    "examples": {
+      "type": "array",
+      "items": { "$ref": "common.json#/definitions/example" }
+    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "freq": { "type": "integer", "minimum": 0 }
+  },
+  "additionalProperties": false
+}

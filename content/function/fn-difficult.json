@@ -1,0 +1,17 @@
+{
+  "id": "fn-difficult",
+  "module": "function",
+  "lemma": "difficult",
+  "zh": "困难",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "The Power Gang's present predicament should end with me. I must not leave the Chief in a difficult position.",
+      "zh": "权力帮如今的困境，也当由我结束，不能让帮主为难。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 2
+}

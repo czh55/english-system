@@ -1,0 +1,17 @@
+{
+  "id": "fn-decision",
+  "module": "function",
+  "lemma": "decision",
+  "zh": "决定",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "I've made my decision about the Southwest office — I'm going.",
+      "zh": "去西南分部的事情，我想好了——我去。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 34
+}

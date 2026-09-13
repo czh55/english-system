@@ -1,0 +1,24 @@
+{
+  "id": "fn-enough",
+  "module": "function",
+  "lemma": "enough",
+  "zh": "足够",
+  "tags": [
+    "priority",
+    "degree",
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "Iron pens, authors that flow by. I am the pen—I can afford to wait. But you can't. You'll be replaced soon en…",
+      "zh": "铁打的笔，流水的作者。我是笔，我不怕等，但你等不了。你很快就会被取代，好自为之。",
+      "source": "drama:english-vocab"
+    },
+    {
+      "en": "Iron pens, authors that flow by. I am the pen—I can afford to wait. But you can't. You'll be replaced soon enough. Look…",
+      "zh": "铁打的笔，流水的作者。我是笔，我不怕等，但你等不了。你很快就会被取代，好自为之。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 160
+}

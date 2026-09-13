@@ -1,0 +1,17 @@
+{
+  "id": "fn-if",
+  "module": "function",
+  "lemma": "if",
+  "zh": "如果",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "If it were there, it'd be left by some other woman.",
+      "zh": "要是有的话，就是别的女人留下来的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1538
+}

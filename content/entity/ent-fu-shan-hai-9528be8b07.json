@@ -1,0 +1,26 @@
+{
+  "id": "ent-fu-shan-hai-9528be8b07",
+  "module": "entity",
+  "lemma": "唐方",
+  "zh": "唐方",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "Tang Fang of the Tang clan requests an audience with Master Yu. I carry a keepsake of an old friend of yours—I beg you to open your mouth but one word.",
+      "zh": "唐门唐方，求见玉门主。我这儿有玉先生故友之物，请求先生开一字尊口。",
+      "source": "drama:fu-shan-hai:4:s7-q2"
+    },
+    {
+      "en": "If word of Father's injury ever leaks out, there will be no road left for us but death.",
+      "zh": "倘若爹爹受伤的消息一旦泄露出去，唐方便只有死路一条。",
+      "source": "drama:fu-shan-hai:9:s4-q4"
+    }
+  ],
+  "tags": [
+    "李凯馨",
+    "唐门中人"
+  ],
+  "freq": 2
+}

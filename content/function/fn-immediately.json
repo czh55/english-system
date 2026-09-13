@@ -1,0 +1,17 @@
+{
+  "id": "fn-immediately",
+  "module": "function",
+  "lemma": "immediately",
+  "zh": "立刻",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "Stop the Sansan serialization of The Parting List immediately and cut all ties with Zhao Lanxin. Do you agree? ... Fine…",
+      "zh": "以三三名字续写的《一水别验单》立刻停更，解除与赵兰心的所有合作，你同意吗？……好，记住你今天说过的话。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 10
+}

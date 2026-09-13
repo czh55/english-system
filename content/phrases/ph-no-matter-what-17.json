@@ -1,0 +1,26 @@
+{
+  "id": "ph-no-matter-what-17",
+  "module": "phrases",
+  "frame_en": "...no matter what.",
+  "frame_zh": "无论如何",
+  "usage": "放句尾收束",
+  "group": "无条件类",
+  "group_id": "group-4",
+  "examples": [
+    {
+      "en": "no matter what\"No matter what, people matter more than money.\"",
+      "zh": "不管怎么说，人比钱重要。",
+      "source": "drama:english-phrases:group-4",
+      "ctx": "🎬 问心2 第7集 · 周筱风劝重病、怕花钱拖累家人的鲁大东——用\"不管怎么说\"先把一切条件排除，只留最核心的价值观。"
+    },
+    {
+      "en": "no matter how\"No matter how thin or crooked the vein, you hit it on the first try.\"",
+      "zh": "无论是多细多歪的血管，你都能一次就扎成功。",
+      "source": "drama:english-phrases:group-4",
+      "ctx": "🎬 问心2 第15集 · 叶思思夸小卿护士扎针技术好——\"no matter how\"后面接形容词，表\"无论多难/多差/多极端\"。"
+    }
+  ],
+  "tags": [
+    "group-4"
+  ]
+}

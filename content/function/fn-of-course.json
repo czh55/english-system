@@ -1,0 +1,17 @@
+{
+  "id": "fn-of-course",
+  "module": "function",
+  "lemma": "of course",
+  "zh": "当然",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Of course—I spent a fortune. Rest assured, I'm far more careful than you.",
+      "zh": "当然了，我花了那么多钱，你放心，我比你要小心多了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 66
+}

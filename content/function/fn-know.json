@@ -1,0 +1,17 @@
+{
+  "id": "fn-know",
+  "module": "function",
+  "lemma": "know",
+  "zh": "知道",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "I promise I won't help you.\" \"You didn't even go to the hospital — how do you know which medicine to buy?",
+      "zh": "我保证不帮你。」「你都没去医院，怎么知道买什么药？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 538
+}

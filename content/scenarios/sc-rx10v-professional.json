@@ -1,0 +1,464 @@
+{
+  "id": "sc-rx10v-professional",
+  "module": "scenarios",
+  "slug": "rx10v-professional",
+  "title": "来自胖卡的冲击：索尼RX10V上手测试！",
+  "title_en": "Sony RX10V Hands-On Test: The Fat Card Strikes Back",
+  "date": "2026-08-01",
+  "platform": "bilibili",
+  "source_url": "https://www.bilibili.com/video/BV1V2gh6BEDo",
+  "external_html": "https://czh55.github.io/language_paraphrase/rx10v-professional-场景英译.html",
+  "scenes": [
+    {
+      "id": "s1",
+      "title_cn": "开箱：胖卡复活",
+      "title_en": "Unboxing: The Fat Card is Back",
+      "time": "00:00–00:13",
+      "sentences": [
+        {
+          "zh": "这台刚拆开的胖卡，我们已经迫不及待地想要上手测试一下了。",
+          "en": "This Fat Card just came out of the box, and I can't wait to get my hands on it and run a few tests.",
+          "note": "Fat Card → 索尼长焦机的昵称，直译比音译更形象",
+          "audio": "audio/rx10v-professional/s1-01.mp3"
+        },
+        {
+          "zh": "对于超大变焦镜头的机身来说，到底表现怎么样？",
+          "en": "For a body built around a super-zoom lens, how does it actually perform?",
+          "note": "Fat Card → 索尼长焦机的昵称，直译比音译更形象",
+          "audio": "audio/rx10v-professional/s1-02.mp3"
+        },
+        {
+          "zh": "今天我们就来一场关于索尼胖卡的真实拍摄测试。",
+          "en": "Today we're doing a real-world shooting test of the Sony Fat Card.",
+          "note": "Fat Card → 索尼长焦机的昵称，直译比音译更形象",
+          "audio": "audio/rx10v-professional/s1-03.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "迫不及待想试试",
+          "en": "can't wait to get my hands on it",
+          "chunks": [
+            "can't wait to get my hands on"
+          ]
+        },
+        {
+          "label": "真实性能测试",
+          "en": "a real-world shooting test",
+          "chunks": [
+            "real-world shooting test"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title_cn": "胖卡的意义：长焦用户的最佳选择",
+      "title_en": "Why the Fat Card Matters: The Long-Zoom Champion",
+      "time": "00:14–00:38",
+      "sentences": [
+        {
+          "zh": "索尼这台胖卡最大的意义，就是让对长焦端有硬性需求的用户可以有更加专业对口的选择。",
+          "en": "The biggest value of this Fat Card is that it gives users who absolutely need long telephoto range a much more professional, purpose-built option.",
+          "note": "can't wait to get my hands on it → 相机评测开场标配，比 test 更有上手把玩的兴奋感",
+          "audio": "audio/rx10v-professional/s2-01.mp3"
+        },
+        {
+          "zh": "最近两年摄影行业在迅速变化，垂直兴趣领域的拍摄需求反而在增加。",
+          "en": "The photography industry has been changing fast over the last two years, and demand for niche-interest shooting is actually growing.",
+          "note": "can't wait to get my hands on it → 相机评测开场标配，比 test 更有上手把玩的兴奋感",
+          "audio": "audio/rx10v-professional/s2-02.mp3"
+        },
+        {
+          "zh": "演唱会记录、轻量化观鸟、航空航天和火车等小众兴趣类拍摄。",
+          "en": "Concert recording, lightweight birding, aerospace and plane spotting, train photography — all these niche genres.",
+          "note": "can't wait to get my hands on it → 相机评测开场标配，比 test 更有上手把玩的兴奋感",
+          "audio": "audio/rx10v-professional/s2-03.mp3"
+        },
+        {
+          "zh": "用户对可以方便携带、价格合适、拥有更长焦端的拍摄工具都有了更强烈的需求。",
+          "en": "Users now have a much stronger demand for a portable, reasonably priced shooting tool with longer reach.",
+          "note": "can't wait to get my hands on it → 相机评测开场标配，比 test 更有上手把玩的兴奋感",
+          "audio": "audio/rx10v-professional/s2-04.mp3"
+        },
+        {
+          "zh": "这也是索尼的胖卡五代能够重新复活的原因。",
+          "en": "That's exactly why Sony brought the Fat Card Mark V back to life.",
+          "note": "can't wait to get my hands on it → 相机评测开场标配，比 test 更有上手把玩的兴奋感",
+          "audio": "audio/rx10v-professional/s2-05.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "硬性需求更专业的选择",
+          "en": "a purpose-built option for users who absolutely need long reach",
+          "chunks": [
+            "purpose-built"
+          ]
+        },
+        {
+          "label": "长焦工具需求更强烈",
+          "en": "a much stronger demand for longer telephoto tools",
+          "chunks": [
+            "absolutely need"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-absolutely"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title_cn": "镜头：24-600mm 蔡司加持",
+      "title_en": "The Lens: 24-600mm with Zeiss Heritage",
+      "time": "00:38–00:55",
+      "sentences": [
+        {
+          "zh": "这台相机最大的亮点就是用了一颗24-600毫米等效焦段规格的镜头。",
+          "en": "The biggest highlight of this camera is its lens: a 24-to-600-millimeter equivalent zoom.",
+          "note": "super-zoom lens → 超大变焦镜头，比 big zoom 专业",
+          "audio": "audio/rx10v-professional/s3-01.mp3"
+        },
+        {
+          "zh": "当然还是和上代一样，蔡司也参与了设计。",
+          "en": "And just like the previous generation, Zeiss was involved in the lens design as well.",
+          "note": "super-zoom lens → 超大变焦镜头，比 big zoom 专业",
+          "audio": "audio/rx10v-professional/s3-02.mp3"
+        },
+        {
+          "zh": "为了解决过往介于专业全画幅相机和普通消费机之间的需求空档。",
+          "en": "To fill the gap that existed between professional full-frame cameras and regular consumer compacts.",
+          "note": "super-zoom lens → 超大变焦镜头，比 big zoom 专业",
+          "audio": "audio/rx10v-professional/s3-03.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "最大卖点是24-600mm镜头",
+          "en": "the biggest highlight is a 24-600mm equivalent lens",
+          "chunks": [
+            "24-to-600-millimeter"
+          ]
+        },
+        {
+          "label": "填补专业和消费级的空档",
+          "en": "to fill the gap between professional and consumer",
+          "chunks": [
+            "equivalent zoom"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title_cn": "传感器与处理器：全面升级",
+      "title_en": "Sensor & Processor: A Complete Overhaul",
+      "time": "00:55–01:09",
+      "sentences": [
+        {
+          "zh": "索尼给RX10V搭配了全新设计的堆栈式CMOS。",
+          "en": "Sony equipped the RX10V with a newly designed stacked CMOS sensor.",
+          "note": "purpose-built → 为特定目的打造的（比 specialized 更精准）",
+          "audio": "audio/rx10v-professional/s4-01.mp3"
+        },
+        {
+          "zh": "以及和全画幅机型A1M2配置相同的BIONZ XR二代影像处理器。",
+          "en": "Plus a BIONZ XR Mark II image processor — the same one used in full-frame models like the A1 II.",
+          "note": "purpose-built → 为特定目的打造的（比 specialized 更精准）",
+          "audio": "audio/rx10v-professional/s4-02.mp3"
+        },
+        {
+          "zh": "让整体画质的提升相比于上一代非常明显。",
+          "en": "The overall image quality improvement over the previous generation is really significant.",
+          "note": "purpose-built → 为特定目的打造的（比 specialized 更精准）",
+          "audio": "audio/rx10v-professional/s4-03.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "配备了全新堆栈式CMOS",
+          "en": "equipped with a newly designed stacked CMOS sensor",
+          "chunks": [
+            "stacked CMOS"
+          ]
+        },
+        {
+          "label": "处理器和全幅机器一样",
+          "en": "the same image processor used in full-frame bodies",
+          "chunks": [
+            "image processor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title_cn": "机身设计：重1111克，粗在镜头",
+      "title_en": "Body Design: 1111g, Bulk is in the Glass",
+      "time": "01:09–01:27",
+      "sentences": [
+        {
+          "zh": "胖卡五代全机的重量为1111克。",
+          "en": "The RX10V weighs eleven-eleven grams in total.",
+          "note": "niche-interest → 小众兴趣（比 small interest 更地道）",
+          "audio": "audio/rx10v-professional/s5-01.mp3"
+        },
+        {
+          "zh": "整体大小在收纳状态下，和索尼全幅机型加上镜头体积类似。",
+          "en": "When fully collapsed, its overall size is similar to a Sony full-frame body with a lens attached.",
+          "note": "niche-interest → 小众兴趣（比 small interest 更地道）",
+          "audio": "audio/rx10v-professional/s5-02.mp3"
+        },
+        {
+          "zh": "说它胖，主要还是胖在配套的镜头上。",
+          "en": "The \"fat\" part is really all in the lens.",
+          "note": "niche-interest → 小众兴趣（比 small interest 更地道）",
+          "audio": "audio/rx10v-professional/s5-03.mp3"
+        },
+        {
+          "zh": "为了保证足够的进光量，以及600毫米端的防抖功能，RX10V的镜头明显粗了不少。",
+          "en": "To guarantee enough light intake and proper stabilization at 600 millimeters, the RX10V's lens is noticeably beefier.",
+          "note": "niche-interest → 小众兴趣（比 small interest 更地道）",
+          "audio": "audio/rx10v-professional/s5-04.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "1111克全机重量",
+          "en": "eleven-eleven grams in total",
+          "chunks": [
+            "weighs in total"
+          ]
+        },
+        {
+          "label": "镜头明显粗了",
+          "en": "noticeably beefier",
+          "chunks": [
+            "fully collapsed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title_cn": "三大优势 vs 手机超长焦",
+      "title_en": "Three Advantages vs Phone Super-Telephoto",
+      "time": "01:27–01:53",
+      "sentences": [
+        {
+          "zh": "很多用户关心一个问题：和目前主打超长焦拍摄功能的手机来对比。",
+          "en": "A question many people ask: how does it compare to smartphone super-telephoto cameras?",
+          "note": "equivalent zoom → 等效变焦（摄影专业术语）",
+          "audio": "audio/rx10v-professional/s6-01.mp3"
+        },
+        {
+          "zh": "胖卡的优势有三个。",
+          "en": "The Fat Card has three advantages.",
+          "note": "equivalent zoom → 等效变焦（摄影专业术语）",
+          "audio": "audio/rx10v-professional/s6-02.mp3"
+        },
+        {
+          "zh": "第一，更大的光学镜头和专业影像处理器，带来更直观的画质提升表现。",
+          "en": "First, a larger optical lens and professional image processor give you visibly better image quality.",
+          "note": "equivalent zoom → 等效变焦（摄影专业术语）",
+          "audio": "audio/rx10v-professional/s6-03.mp3"
+        },
+        {
+          "zh": "第二，防抖和对焦的升级，加上更符合人体工程学的机身外形，让拍摄体验更加出色。",
+          "en": "Second, improved stabilization and autofocus, plus a more ergonomic body design, make the shooting experience significantly better.",
+          "note": "equivalent zoom → 等效变焦（摄影专业术语）",
+          "audio": "audio/rx10v-professional/s6-04.mp3"
+        },
+        {
+          "zh": "第三，最关键的——胖卡五代可以在超长焦上为用户提供一个画质、重量、价格的合理平衡。",
+          "en": "Third, and most importantly — the Fat Card gives you a sensible balance of image quality, weight, and price at super-telephoto range.",
+          "note": "equivalent zoom → 等效变焦（摄影专业术语）",
+          "audio": "audio/rx10v-professional/s6-05.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "三大优势概括",
+          "en": "three key advantages",
+          "chunks": [
+            "how does it compare"
+          ]
+        },
+        {
+          "label": "在画质、重量、价格间取得平衡",
+          "en": "a sensible balance of image quality, weight, and price",
+          "chunks": [
+            "visibly better"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title_cn": "无竞争对手的孤独",
+      "title_en": "No Competition in Sight",
+      "time": "01:53–02:10",
+      "sentences": [
+        {
+          "zh": "索尼胖卡五代其实在目前并没有明确的竞争对手。",
+          "en": "The RX10V actually has no clear competitor in the current market.",
+          "note": "fill the gap → 填补空白（比 fill the empty space 更自然）",
+          "audio": "audio/rx10v-professional/s7-01.mp3"
+        },
+        {
+          "zh": "尼康的P1100那块CMOS太小。",
+          "en": "The Nikon P1100 — its sensor is just too small.",
+          "note": "fill the gap → 填补空白（比 fill the empty space 更自然）",
+          "audio": "audio/rx10v-professional/s7-02.mp3"
+        },
+        {
+          "zh": "半幅机身加上类似腾龙50-400或者28-300的镜头，在焦段便携性和使用体验上，并不见得比索尼RX10V明显胜出。",
+          "en": "An APS-C body with something like a Tamron 50-400 or 28-300 — in terms of zoom range, portability, and overall user experience, it doesn't really beat the RX10V by any meaningful margin.",
+          "note": "fill the gap → 填补空白（比 fill the empty space 更自然）",
+          "audio": "audio/rx10v-professional/s7-03.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "没有真正对手",
+          "en": "no clear competitor",
+          "chunks": [
+            "no clear competitor"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-clear"
+            }
+          ]
+        },
+        {
+          "label": "半幅+长焦没有明显优势",
+          "en": "doesn't really beat the RX10V by any meaningful margin",
+          "chunks": [
+            "sensor is too small"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title_cn": "四代传奇：二手市场的神话",
+      "title_en": "The Mark IV Legend: A Second-Hand Myth",
+      "time": "02:10–02:23",
+      "sentences": [
+        {
+          "zh": "给大家一点小小的信息震撼。",
+          "en": "Let me hit you with a little fun fact.",
+          "note": "stacked CMOS → 堆栈式CMOS（比 layered sensor 更常用）",
+          "audio": "audio/rx10v-professional/s8-01.mp3"
+        },
+        {
+          "zh": "索尼9年前的胖卡四代，在前几年因为停产和演唱会用户的疯狂追捧，在二手市场曾一度涨价到14000元左右的高位。",
+          "en": "Sony's nine-year-old RX10 IV — after it was discontinued, concert-goers went absolutely crazy for it, and second-hand prices once soared to around fourteen thousand yuan.",
+          "note": "stacked CMOS → 堆栈式CMOS（比 layered sensor 更常用）",
+          "audio": "audio/rx10v-professional/s8-02.mp3"
+        },
+        {
+          "zh": "到现在，四代依然也是热门租赁机型。",
+          "en": "To this day, the Mark IV is still a hot rental item.",
+          "note": "stacked CMOS → 堆栈式CMOS（比 layered sensor 更常用）",
+          "audio": "audio/rx10v-professional/s8-03.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "涨价到14000元",
+          "en": "second-hand prices soared to around fourteen thousand yuan",
+          "chunks": [
+            "hit you with a fun fact"
+          ]
+        },
+        {
+          "label": "至今仍是热门租赁机器",
+          "en": "still a hot rental item",
+          "chunks": [
+            "discontinued"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title_cn": "总结：长焦轻量化的最佳选择",
+      "title_en": "Verdict: The Best Lightweight Telephoto Choice",
+      "time": "02:23–02:38",
+      "sentences": [
+        {
+          "zh": "索尼对市场的敏感，也正是对胖卡五代需求人群的明确回应。",
+          "en": "Sony's sensitivity to the market is a clear response to the people who actually need the Fat Card Mark V.",
+          "note": "visibly better → 肉眼可见的提升（比 clearly better 更生动）",
+          "audio": "audio/rx10v-professional/s9-01.mp3"
+        },
+        {
+          "zh": "如果你希望有一台可以替代你专业长枪短炮的体积重量，同时也有不错的画质表现。",
+          "en": "If you want a camera that replaces the bulk and weight of your pro telephoto setup, while still delivering solid image quality.",
+          "note": "visibly better → 肉眼可见的提升（比 clearly better 更生动）",
+          "audio": "audio/rx10v-professional/s9-02.mp3"
+        },
+        {
+          "zh": "轻量化享受长焦拍摄的乐趣，那索尼这台胖卡五代还真就是你匹配度很高的选择。",
+          "en": "Enjoy the fun of lightweight telephoto shooting — the Sony RX10V really is a near-perfect match for you.",
+          "note": "visibly better → 肉眼可见的提升（比 clearly better 更生动）",
+          "audio": "audio/rx10v-professional/s9-03.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "替代专业装备体积",
+          "en": "replaces the bulk and weight of a pro telephoto setup",
+          "chunks": [
+            "clear response"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-clear"
+            }
+          ]
+        },
+        {
+          "label": "轻量化长焦之选",
+          "en": "a near-perfect match",
+          "chunks": [
+            "replaces the bulk and weight"
+          ]
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "zh": "迫不及待想试试一个新设备",
+      "en": "I can't wait to get my hands on this new gear and test it out.",
+      "audio": "audio/rx10v-professional/practice-0.mp3"
+    },
+    {
+      "zh": "给超级变焦镜头的用户一个专业选择",
+      "en": "It gives users who need super-telephoto range a proper, purpose-built choice.",
+      "audio": "audio/rx10v-professional/practice-1.mp3"
+    },
+    {
+      "zh": "这是这款相机最大的卖点",
+      "en": "That's the single biggest selling point of this camera.",
+      "audio": "audio/rx10v-professional/practice-2.mp3"
+    },
+    {
+      "zh": "它替代了你那套沉重的专业长焦装备",
+      "en": "It replaces the bulky, heavy pro telephoto rig you've been lugging around.",
+      "audio": "audio/rx10v-professional/practice-3.mp3"
+    }
+  ],
+  "tags": [
+    "bilibili"
+  ]
+}

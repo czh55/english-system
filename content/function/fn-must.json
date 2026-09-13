@@ -1,0 +1,18 @@
+{
+  "id": "fn-must",
+  "module": "function",
+  "lemma": "must",
+  "zh": "必须",
+  "tags": [
+    "priority",
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "The fact that you tried writing 'Si You Gu Ren Zui' — that must not leave this room.",
+      "zh": "你试写过《私有故人罪》这件事情，是不能往外说的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 416
+}

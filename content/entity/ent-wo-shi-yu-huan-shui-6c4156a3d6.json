@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-shi-yu-huan-shui-6c4156a3d6",
+  "module": "entity",
+  "lemma": "徐二炮",
+  "zh": "徐二炮",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-shi-yu-huan-shui",
+  "examples": [
+    {
+      "en": "Xu Erpao was brought to justice thanks to Comrade Yu Huanshui's act of bravery.",
+      "zh": "徐二炮能顺利归案，得益于余欢水同志见义勇为的行为。",
+      "source": "drama:wo-shi-yu-huan-shui:6:s4-q3"
+    },
+    {
+      "en": "When Xu Erpao lunged with his knife and you pressed forward instead of retreating—were you nervous at that moment?\" \"Not really.",
+      "zh": "面对徐二炮伺过来的尖刀，您不退反进，那一刻，您紧张吗？」「没太紧张。",
+      "source": "drama:wo-shi-yu-huan-shui:6:s5-q2"
+    }
+  ],
+  "tags": [
+    "张隽溢",
+    "余欢水误撞上的通缉犯（公交见义勇为对象）"
+  ],
+  "freq": 2
+}

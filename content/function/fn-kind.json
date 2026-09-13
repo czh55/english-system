@@ -1,0 +1,17 @@
+{
+  "id": "fn-kind",
+  "module": "function",
+  "lemma": "kind",
+  "zh": "善良",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "Growing up she never let me wear dresses or heels, so now everything I earn goes on clothes and makeup — I guess it's a…",
+      "zh": "从小她就不让我穿裙子和皮鞋，所以长大以后我赚的钱，都用来买衣服和化妆品，算是一种叛逆吧。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 97
+}

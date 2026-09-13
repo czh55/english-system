@@ -1,0 +1,17 @@
+{
+  "id": "fn-talk-about",
+  "module": "function",
+  "lemma": "talk about",
+  "zh": "谈论",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "If he didn't sit by my side reading, what would the two of us even talk about? Nothing. So reading is better than silen…",
+      "zh": "他要不坐在我身边读书，那我们两个能聊什么呀？没啥聊的。所以还不如就读读书。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 15
+}

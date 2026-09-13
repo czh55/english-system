@@ -1,0 +1,17 @@
+{
+  "id": "fn-fear",
+  "module": "function",
+  "lemma": "fear",
+  "zh": "恐惧",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Being strong is sometimes just a race with no prize. He Han can't save me, just like I couldn't save her when she passe…",
+      "zh": "坚强有时只是一场没有奖励的比赛。何韩拯救不了我，就像何为去世的时候，我也拯救不了她。但至少这一场无法言说的恐惧和失落，我们知道对方感同身…",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 46
+}

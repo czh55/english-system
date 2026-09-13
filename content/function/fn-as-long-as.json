@@ -1,0 +1,17 @@
+{
+  "id": "fn-as-long-as",
+  "module": "function",
+  "lemma": "as long as",
+  "zh": "只要",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "As long as she knows that when she needs me, I'll take care of it—that's enough.",
+      "zh": "她只要知道她有事我会管她的，就好了呀。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 99
+}

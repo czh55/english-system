@@ -1,0 +1,17 @@
+{
+  "id": "fn-seriously",
+  "module": "function",
+  "lemma": "seriously",
+  "zh": "说真的",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Surpassing He Han isn't hard—I already have. I never once took him seriously. The true peak is the Soul Knight.",
+      "zh": "超越何韩不是什么困难的事情，我现在就已经超越了。我从来就没有把何韩放在眼里——已有的巅峰，是闪灵骑士。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 15
+}

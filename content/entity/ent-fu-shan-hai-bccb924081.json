@@ -1,0 +1,26 @@
+{
+  "id": "ent-fu-shan-hai-bccb924081",
+  "module": "entity",
+  "lemma": "唐柔",
+  "zh": "唐柔",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "Which of our righteous deeds was ever safe? Even if I, Tang Rou, am afraid, the Pear-Blossom Needles at my waist certainly aren't.",
+      "zh": "我们哪次行侠仗义没有危险？就算我唐柔害怕，我腰间的暴雨梨花针可不会怕。",
+      "source": "drama:fu-shan-hai:2:s1-q3"
+    },
+    {
+      "en": "Tang Rou, there's something I must tell you—beware of a person holding an umbrella.",
+      "zh": "唐柔，有句话我一定嘱咐你——小心一个撑伞的人。",
+      "source": "drama:fu-shan-hai:2:s7-q1"
+    }
+  ],
+  "tags": [
+    "赵华为",
+    "唐门中人"
+  ],
+  "freq": 2
+}

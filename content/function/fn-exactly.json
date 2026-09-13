@@ -1,0 +1,17 @@
+{
+  "id": "fn-exactly",
+  "module": "function",
+  "lemma": "exactly",
+  "zh": "正是",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "Every relationship is an exchange of value — on that point, we see exactly eye to eye.",
+      "zh": "任何关系都是价值交换，在这一点上，我们认知是一致的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 112
+}

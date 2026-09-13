@@ -1,0 +1,17 @@
+{
+  "id": "fn-although",
+  "module": "function",
+  "lemma": "although",
+  "zh": "虽然",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "Although our marketing budget over the past three months was under three million, we mobilized every resource and force…",
+      "zh": "虽然我们万利近三个月的营销总预算不到三百万，但是我们调动了一切可以调动的力量和资源。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1
+}

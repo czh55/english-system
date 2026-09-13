@@ -1,0 +1,17 @@
+{
+  "id": "fn-prefer",
+  "module": "function",
+  "lemma": "prefer",
+  "zh": "更喜欢",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "Do you prefer cats or dogs?\" \"I love both, but never had the chance to keep one. Is this position about feeding cats or…",
+      "zh": "喜欢猫还是喜欢狗啊？」「都喜欢，但是没机会养。请问这个职位，是需要喂猫还是遛狗吗？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 5
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fn-hope",
+  "module": "function",
+  "lemma": "hope",
+  "zh": "希望",
+  "tags": [
+    "modal",
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "You said this is our company. I hope you're not joking either.",
+      "zh": "你说这是我们的公司，我希望你也不是开玩笑。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 87
+}

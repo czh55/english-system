@@ -1,0 +1,17 @@
+{
+  "id": "fn-see",
+  "module": "function",
+  "lemma": "see",
+  "zh": "看见/明白",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "Uncle Fan asking to see me is definitely not because of my looks.",
+      "zh": "范叔找我聊，肯定不是因为我的美貌。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 458
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-evidence",
+  "module": "function",
+  "lemma": "evidence",
+  "zh": "证据",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "If they keep milking the Soul Knight's name or slandering it, I've already asked Lao Ma—we can keep evidence and sue.\" …",
+      "zh": "他们如果继续拿闪灵骑士炒作，或者恶意诋毁什么，我已经问过老马了，可以留证据起诉。」「他不值得。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 23
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-though",
+  "module": "function",
+  "lemma": "though",
+  "zh": "虽然",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "Zhou Mei left, though—telling me only afterward. She said it was payback for my not telling her I'd stayed. But I think…",
+      "zh": "周媚倒是走了，事后才告诉我。她说，是报复我不告诉她我没走。其实我想，她是不愿平凡地面对离愁别绪吧。她终于放下过往，会去勇敢拥抱真正值得爱…",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 36
+}

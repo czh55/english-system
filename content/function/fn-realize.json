@@ -1,0 +1,17 @@
+{
+  "id": "fn-realize",
+  "module": "function",
+  "lemma": "realize",
+  "zh": "意识到",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "Only when I had to borrow money did I realize I don't really have any friends.",
+      "zh": "发借钱的时候才发现，自己其实没什么朋友。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 14
+}

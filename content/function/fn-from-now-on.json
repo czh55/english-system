@@ -1,0 +1,23 @@
+{
+  "id": "fn-from-now-on",
+  "module": "function",
+  "lemma": "from now on",
+  "zh": "从今以后",
+  "tags": [
+    "priority",
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "From now on, well water and river water never mix. Keep your No. 1 if you can—I'll take my authors past yours…",
+      "zh": "从此以后我们井水不犯河水。你要本事你保持你的第一，我要本事我的作者超过你的第一。我们以后用作品说话，不交流不互动。",
+      "source": "drama:english-vocab"
+    },
+    {
+      "en": "From now on, well water and river water never mix. Keep your No. 1 if you can—I'll take my authors past yours. From now…",
+      "zh": "从此以后我们井水不犯河水。你要本事你保持你的第一，我要本事我的作者超过你的第一。我们以后用作品说话，不交流不互动。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 129
+}

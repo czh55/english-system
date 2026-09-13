@@ -1,0 +1,17 @@
+{
+  "id": "fn-give",
+  "module": "function",
+  "lemma": "give",
+  "zh": "给",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "You need to give every person in this company—including me—a reason to keep gambling on you.",
+      "zh": "你需要给公司每一个人，包括我，一个陪你赌下去的理由。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 309
+}

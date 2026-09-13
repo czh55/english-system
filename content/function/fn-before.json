@@ -1,0 +1,17 @@
+{
+  "id": "fn-before",
+  "module": "function",
+  "lemma": "before",
+  "zh": "之前",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "I'm afraid my mom will look down on me. Every time before going home I'd clean the place, but it never reached a good e…",
+      "zh": "怕我妈嫌弃我。每次去我家之前我都要打扫一次，但是永远打不到好的标准。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 267
+}

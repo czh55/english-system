@@ -1,0 +1,844 @@
+{
+  "id": "sc-crab-london",
+  "module": "scenarios",
+  "slug": "crab-london",
+  "title": "蟹 逅 伦 敦！",
+  "title_en": "Crab Encounter London",
+  "date": "2026-08-01",
+  "platform": "bilibili",
+  "source_url": "https://www.bilibili.com/video/BV1uT3G6jE3m",
+  "external_html": "https://czh55.github.io/language_paraphrase/crab-london-场景英译.html",
+  "scenes": [
+    {
+      "id": "s1",
+      "title_cn": "开场：帕丁顿熊的比喻",
+      "title_en": "Opening: The Paddington Metaphor",
+      "time": "00:00–00:51",
+      "sentences": [
+        {
+          "zh": "伦敦有一只非常著名的小熊，就是帕丁顿熊。",
+          "en": "There's a famous little bear in London, Paddington Bear.",
+          "note": "开场介绍：There's a…（比 There is 更口语），famous little bear（little 增加亲切感，不是 small）",
+          "audio": "audio/crab-london/s1-01.mp3"
+        },
+        {
+          "zh": "他是从很远的秘鲁坐船过来的。",
+          "en": "He came all the way from Peru by boat.",
+          "note": "大老远过来 → all the way from…（强调距离之远，口语高频）；坐船 → by boat",
+          "audio": "audio/crab-london/s1-02.mp3"
+        },
+        {
+          "zh": "我觉得我跟他特别的像，也是从大老远的地方坐飞机过来的。",
+          "en": "I feel like I'm a lot like him, I also came from far away, but by plane.",
+          "note": "很像他 → a lot like him（比 very similar to 更自然）；大老远 → far away（不必直译 big old far）",
+          "audio": "audio/crab-london/s1-03.mp3"
+        },
+        {
+          "zh": "但我大概不是果酱，带的是一箱子的设备。",
+          "en": "Instead of marmalade, I brought a suitcase full of gear.",
+          "note": "果酱 → marmalade（英式橙皮果酱，帕丁顿熊最爱，不是 jam）；一箱 → a suitcase full of；设备 → gear（泛指拍摄设备）",
+          "audio": "audio/crab-london/s1-04.mp3"
+        },
+        {
+          "zh": "帕丁顿来到伦敦时，脖子上挂着一张写着「请照顾好这只熊」的纸条。",
+          "en": "When Paddington arrived in London, he had a tag around his neck that said \"please look after this bear.\"",
+          "note": "纸条 → tag（行李牌/标签，不是 note/paper）；照顾 → look after（英式表达，比 take care of 更常用）；脖子上挂着 → had a tag around his neck",
+          "audio": "audio/crab-london/s1-05.mp3"
+        },
+        {
+          "zh": "第一次来到伦敦的我也想借用一下这句话：请照顾好这只蟹。",
+          "en": "As a first-timer in London, I'd like to borrow that line: please look after this crab.",
+          "note": "第一次来的人 → first-timer（口语名词）；借用这句话 → borrow that line（比 use that sentence 更自然）",
+          "audio": "audio/crab-london/s1-06.mp3"
+        },
+        {
+          "zh": "在真正站在这里之前，我对伦敦的认识其实还蛮零碎的。",
+          "en": "Before standing here, my knowledge of London was pretty scattered.",
+          "note": "零碎的 → scattered（比 fragmented/piecemeal 更口语）；蛮…的 → pretty…（口语缓冲词）",
+          "audio": "audio/crab-london/s1-07.mp3"
+        },
+        {
+          "zh": "大本钟、阴晴不定的天气，还有电影里那些似曾相识的街道。",
+          "en": "Big Ben, unpredictable weather, and streets that felt familiar from movies.",
+          "note": "阴晴不定 → unpredictable（不是 cloudy-sunny）；似曾相识 → felt familiar from…（feel familiar 更地道，比 looked familiar 更主观）",
+          "audio": "audio/crab-london/s1-08.mp3"
+        },
+        {
+          "zh": "所以这一次我想认真当一回游客，也想看看那些电影里的地方现实中到底是什么样的。",
+          "en": "So this time I want to be a proper tourist and see what those movie locations actually look like in real life.",
+          "note": "认真当游客 → proper tourist（proper = 货真价实的、合格的）；电影取景地 → movie locations；现实中 → in real life",
+          "audio": "audio/crab-london/s1-09.mp3"
+        },
+        {
+          "zh": "欢迎收看本期的邂逅时间——伦敦。",
+          "en": "Welcome to this episode of Encounter Time, London.",
+          "note": "本期 → this episode（视频/vlog 专用）；邂逅 → encounter（通识词，比 chance meeting 简洁）",
+          "audio": "audio/crab-london/s1-10.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "大老远过来",
+          "en": "all the way from Peru. / all the way over from China. / from as far away as...",
+          "chunks": [
+            "all the way from",
+            "all the way over",
+            "far away"
+          ]
+        },
+        {
+          "label": "带着设备而非果酱",
+          "en": "Instead of marmalade, I brought a suitcase full of gear.",
+          "chunks": [
+            "instead of",
+            "a suitcase full of",
+            "gear"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-instead-of"
+            }
+          ]
+        },
+        {
+          "label": "借用这句话",
+          "en": "borrow that line / steal that line / let me quote that",
+          "chunks": [
+            "borrow that line",
+            "steal that line",
+            "quote that"
+          ]
+        },
+        {
+          "label": "认真当一回游客",
+          "en": "be a proper tourist / do the whole tourist thing / play tourist for real",
+          "chunks": [
+            "proper tourist",
+            "play tourist",
+            "for real"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title_cn": "初到伦敦：大本钟与天气",
+      "title_en": "First Impressions: Big Ben & Weather",
+      "time": "00:55–01:20",
+      "sentences": [
+        {
+          "zh": "家人们到伦敦了！",
+          "en": "Hey guys, we made it to London.",
+          "note": "到了 → made it（比 arrived 更口语，含「终于到了」的成就感）；家人们 → guys（Vlog 通用称呼，不是 family members）",
+          "audio": "audio/crab-london/s2-01.mp3"
+        },
+        {
+          "zh": "既然是第一次来，那有些游客作业总还是要交一下的。后面是大本钟。",
+          "en": "Since it's my first time, I gotta do the obligatory tourist stuff. Big Ben is right behind me.",
+          "note": "游客作业 → obligatory tourist stuff（obligatory = 必须打卡的，比 must-do 更具体）；就在后面 → right behind me（right 强调方位）",
+          "audio": "audio/crab-london/s2-02.mp3"
+        },
+        {
+          "zh": "但今天一到伦敦这个天气就非常典型，特别的伦敦——阴雨绵绵的。",
+          "en": "But the weather today is just so typical, so London, drizzly and grey.",
+          "note": "特别伦敦 → so London（名词当形容词用，地道口语）；阴雨绵绵 → drizzly and grey（drizzle = 毛毛雨）",
+          "audio": "audio/crab-london/s2-03.mp3"
+        },
+        {
+          "zh": "但是据说其实伦敦全年的降雨量没有上海多，这个你改心。",
+          "en": "Apparently London's annual rainfall is actually less than Shanghai's, let that sink in.",
+          "note": "全年降雨量 → annual rainfall；你想想 → let that sink in（「细品一下」的高频说法，比 think about it 更有冲击力）",
+          "audio": "audio/crab-london/s2-04.mp3"
+        },
+        {
+          "zh": "主要是它每次都是下一点点毛毛雨。可能这就是为什么经常看到伦敦人下雨天不打伞的原因吧。",
+          "en": "It's mainly because it's always just a light drizzle. Maybe that's why you often see Londoners not bothering with umbrellas.",
+          "note": "毛毛雨 → light drizzle；懒得打伞 → not bothering with umbrellas（bother = 费那个劲、麻烦，比 don't use umbrellas 更传神）",
+          "audio": "audio/crab-london/s2-05.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "到了某地",
+          "en": "We made it to London! / We're here! / Touchdown London!",
+          "chunks": [
+            "made it",
+            "we're here",
+            "touchdown"
+          ]
+        },
+        {
+          "label": "必须打卡的游客项目",
+          "en": "the obligatory tourist stuff / the must-do tourist checklist / the standard tourist routine",
+          "chunks": [
+            "obligatory",
+            "must-do",
+            "tourist stuff"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-must"
+            }
+          ]
+        },
+        {
+          "label": "典型伦敦天气",
+          "en": "so typical, so London / classic London / peak London / couldn't be more London",
+          "chunks": [
+            "so typical",
+            "so London",
+            "classic",
+            "peak London"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title_cn": "新冠纪念墙",
+      "title_en": "COVID Memorial Wall",
+      "time": "01:21–01:44",
+      "sentences": [
+        {
+          "zh": "我后面这个墙上全都是爱心。",
+          "en": "The wall behind me is covered in hearts.",
+          "note": "全是爱心 → covered in hearts（covered in = 被…覆盖，比 full of 更有画面感）",
+          "audio": "audio/crab-london/s3-01.mp3"
+        },
+        {
+          "zh": "但这里每颗爱心都代表一位新冠逝者。",
+          "en": "But each heart here represents someone who passed away from COVID.",
+          "note": "代表 → represents（不是 means）；逝者 → someone who passed away（passed away 比 died 更委婉）",
+          "audio": "audio/crab-london/s3-02.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "墙上全是…",
+          "en": "covered in hearts / plastered with hearts / full of hearts",
+          "chunks": [
+            "covered in",
+            "plastered with",
+            "full of"
+          ]
+        },
+        {
+          "label": "因新冠去世",
+          "en": "passed away from COVID / died of COVID / lost their life to COVID",
+          "chunks": [
+            "passed away from",
+            "died of",
+            "lost their life to"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-life"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title_cn": "落地第一顿：炸鱼薯条 & 中餐",
+      "title_en": "First Meal: Fish & Chips & Chinese",
+      "time": "01:44–02:36",
+      "sentences": [
+        {
+          "zh": "落地伦敦的第一顿当然要吃炸鱼薯条了。",
+          "en": "For my first meal in London, fish and chips was a no-brainer.",
+          "note": "落地第一顿 → first meal in London；理所当然的选择 → a no-brainer（比 an obvious choice 更口语）",
+          "audio": "audio/crab-london/s4-01.mp3"
+        },
+        {
+          "zh": "我们找到一家从1988年开到现在、号称英国顶尖的老店。",
+          "en": "We found a place that's been around since 1988, supposedly one of the best in the UK.",
+          "note": "开到现在 → been around since（比 been open since 更口语）；号称 → supposedly（暗示「据说是，但不确定」）",
+          "audio": "audio/crab-london/s4-02.mp3"
+        },
+        {
+          "zh": "还碰到一个当地人跟我们说这是伦敦最好吃的炸鱼薯条。",
+          "en": "Even ran into a local who told us it's the best fish and chips in London.",
+          "note": "碰到某人 → ran into（偶遇，比 met 更口语）；当地人 → a local（名词，非常常用）",
+          "audio": "audio/crab-london/s4-03.mp3"
+        },
+        {
+          "zh": "最好吃不敢说，但伦敦第一顿的仪式感算是有了。",
+          "en": "Can't say if it's the best, but at least we got that first-meal-in-London ritual out of the way.",
+          "note": "不敢说 → can't say if…（比 I'm not sure 更口语）；仪式感有了 → got that ritual out of the way（解除仪式负担，比 completed the ritual 更地道）",
+          "audio": "audio/crab-london/s4-04.mp3"
+        },
+        {
+          "zh": "仪式归仪式，但中国胃是不一样的。所以我们来了一家从某个年代开到现在的老店。",
+          "en": "Rituals aside, a Chinese stomach is a different story. So we came to this long-standing spot.",
+          "note": "仪式归仪式 → rituals aside（aside = 暂且不论）；中国胃 → a Chinese stomach（直译即可，英语完全理解这个文化概念）；是另一回事 → is a different story",
+          "audio": "audio/crab-london/s4-05.mp3"
+        },
+        {
+          "zh": "来看看这个西安的肉夹馍，折算下来一百多块钱一份。",
+          "en": "Check out this Xi'an-style roujiamo, works out to over a hundred yuan each.",
+          "note": "换来 → check out（Vlog 展示用语）；折算下来 → works out to（换算/结果，高频口语）",
+          "audio": "audio/crab-london/s4-06.mp3"
+        },
+        {
+          "zh": "中餐出了国，价格是涨了，魅力倒是一点没打折。",
+          "en": "Chinese food abroad, the price goes up, but the appeal doesn't drop one bit.",
+          "note": "魅力 → appeal（比 charm 更中性，适用于食物）；一点没打折扣 → doesn't drop one bit（口语强调，比 doesn't decrease at all 更有力）",
+          "audio": "audio/crab-london/s4-07.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "理所当然的选择",
+          "en": "a no-brainer / an obvious choice / goes without saying",
+          "chunks": [
+            "no-brainer",
+            "obvious choice",
+            "goes without saying"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-choice"
+            }
+          ]
+        },
+        {
+          "label": "仪式感完成了",
+          "en": "got that ritual out of the way / checked that box / ticked that off the list",
+          "chunks": [
+            "out of the way",
+            "checked that box",
+            "ticked off"
+          ]
+        },
+        {
+          "label": "中餐出国：价格涨了魅力不减",
+          "en": "the price goes up, but the appeal doesn't drop one bit / still just as good / every bit as tempting",
+          "chunks": [
+            "doesn't drop one bit",
+            "just as good",
+            "every bit as"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-just"
+            },
+            {
+              "module": "phrases",
+              "id": "ph-not-just-x-but-y"
+            },
+            {
+              "module": "phrases",
+              "id": "ph-at-the-very-least"
+            }
+          ]
+        },
+        {
+          "label": "折算下来",
+          "en": "works out to / comes to / adds up to / that's about",
+          "chunks": [
+            "works out to",
+            "comes to",
+            "adds up to"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title_cn": "酒吧景观位",
+      "title_en": "Bar with a View",
+      "time": "02:36–02:56",
+      "sentences": [
+        {
+          "zh": "伦敦还有一家挺有名的酒吧，但是我没有预约，最后只能坐在了吧台位。",
+          "en": "There's this pretty famous bar in London, but I didn't have a reservation, so I ended up at the counter.",
+          "note": "挺有名的 → pretty famous（pretty 作副词 = 相当）；最后只能 → ended up at（结果落在了，口语高频）",
+          "audio": "audio/crab-london/s5-01.mp3"
+        },
+        {
+          "zh": "但是没有想到这个临时的座位真的是全场景佳的景观位。",
+          "en": "But who would've thought, this last-minute seat turned out to be the best view in the whole place.",
+          "note": "没想到 → who would've thought（修辞反问，比 surprisingly 更口语）；临时座位 → last-minute seat；竟然是 → turned out to be",
+          "audio": "audio/crab-london/s5-02.mp3"
+        },
+        {
+          "zh": "怎么样，体验感拉满吧？不过账单也一样。",
+          "en": "Pretty amazing experience, right? Though the bill was just as impressive.",
+          "note": "体验感拉满 → amazing experience（比 off the charts 更简洁）；账单也一样 → the bill was just as impressive（just as = 和体验一样令人印象深刻）",
+          "audio": "audio/crab-london/s5-03.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "结果却坐了吧台",
+          "en": "I ended up at the counter / I wound up at the bar / I had to settle for the bar seat",
+          "chunks": [
+            "ended up",
+            "wound up",
+            "settle for"
+          ]
+        },
+        {
+          "label": "没想到却是最佳位置",
+          "en": "who would've thought it turned out to be the best view / turns out / surprisingly enough",
+          "chunks": [
+            "who would've thought",
+            "turned out to be",
+            "surprisingly"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-would"
+            },
+            {
+              "module": "phrases",
+              "id": "ph-i-would-rather-die-than"
+            }
+          ]
+        },
+        {
+          "label": "体验感拉满",
+          "en": "a top-tier experience / the experience was off the charts / couldn't have asked for more",
+          "chunks": [
+            "top-tier",
+            "off the charts",
+            "couldn't ask for more"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title_cn": "自然历史博物馆",
+      "title_en": "Natural History Museum",
+      "time": "02:58–04:23",
+      "sentences": [
+        {
+          "zh": "虽然伦敦是第一次来，但有些画面早就在电影里面见过了。",
+          "en": "Even though it's my first time in London, some of these scenes I've already seen in movies.",
+          "note": "画面 → scenes（不是 pictures/images）；在电影里见过 → seen in movies（最简单直接）",
+          "audio": "audio/crab-london/s6-01.mp3"
+        },
+        {
+          "zh": "比如眼前的这个帕丁顿车站，是不是还挺熟悉的？",
+          "en": "Like Paddington Station right here, does it look familiar?",
+          "note": "是不是挺眼熟 → does it look familiar?（口语反问，比 don't you recognize it 更自然）",
+          "audio": "audio/crab-london/s6-02.mp3"
+        },
+        {
+          "zh": "今天我们就拿电影当地图，看看银幕外的伦敦。",
+          "en": "Today we're using movies as our map to see London beyond the screen.",
+          "note": "拿电影当地图 → using movies as our map（as = 当作）；银幕外 → beyond the screen（比 outside the movie 更优雅）",
+          "audio": "audio/crab-london/s6-03.mp3"
+        },
+        {
+          "zh": "跟随着帕丁顿熊的足迹，我来到了英国的自然历史博物馆，这里就是帕丁顿熊差点被抓起做成标本的地方。",
+          "en": "Following Paddington's footsteps, I ended up at the Natural History Museum, the very place where Paddington was almost turned into a stuffed specimen.",
+          "note": "足迹 → footsteps；正是那个地方 → the very place where（very 表示强调=正是）；做成标本 → turned into a stuffed specimen",
+          "audio": "audio/crab-london/s6-04.mp3"
+        },
+        {
+          "zh": "哇这里真的好壮观！挑高非常的高，像一个城堡一样。",
+          "en": "Wow this place is absolutely stunning, the ceiling is so high, it's like a castle.",
+          "note": "壮观 → stunning（比 magnificent 更口语）；挑高 → the ceiling is so high（ceiling = 天花板高度即挑高）；像城堡 → like a castle",
+          "audio": "audio/crab-london/s6-05.mp3"
+        },
+        {
+          "zh": "这个大厅里面最值得看的就是这个被吊起来的蓝鲸化石。",
+          "en": "The main thing to see in this hall is the blue whale skeleton hanging from the ceiling.",
+          "note": "最值得看 → the main thing to see（比 the most worth seeing 更自然）；蓝鲸化石 → blue whale skeleton；吊起来 → hanging from the ceiling",
+          "audio": "audio/crab-london/s6-06.mp3"
+        },
+        {
+          "zh": "它整个动作就是一个向下俯冲捕食的动作，我感觉站在它下面特别的小。",
+          "en": "It's posed mid-dive, like it's swooping down to catch prey. I feel so tiny standing underneath it.",
+          "note": "定格在俯冲动作 → posed mid-dive（mid- = 在半空中/过程中）；俯冲捕食 → swooping down to catch prey；特别小 → so tiny（比 very small 更有冲击力）",
+          "audio": "audio/crab-london/s6-07.mp3"
+        },
+        {
+          "zh": "这些化石看着确实挺震撼的，但这里还有很多动物标本，真的每一只都栩栩如生。",
+          "en": "The fossils are genuinely impressive, but there are also loads of animal specimens here, every single one looks so lifelike.",
+          "note": "震撼 → genuinely impressive（genuinely = 真的，不是夸张）；很多 → loads of（英式口语，比 many 更自然）；栩栩如生 → lifelike（比 vivid 更贴标本语境）",
+          "audio": "audio/crab-london/s6-08.mp3"
+        },
+        {
+          "zh": "能近距离看到这么多难得一见的标本，确实挺厉害的。",
+          "en": "Getting to see so many rare specimens up close is pretty amazing.",
+          "note": "近距离 → up close（比 at a close distance 更简洁）；难得一见的 → rare（比 hard to see 更简洁）",
+          "audio": "audio/crab-london/s6-09.mp3"
+        },
+        {
+          "zh": "只是关于它们生前的故事咱就不了解了。希望它们都是在生命结束以后才以这种方式被留在这里的。",
+          "en": "Though I don't really know the stories of how they lived. I just hope they ended up here after their lives ran their natural course.",
+          "note": "生前故事 → the stories of how they lived；生命自然终结后 → after their lives ran their natural course（委婉表达「不是被杀死做标本」，比 after a natural death 更优美）",
+          "audio": "audio/crab-london/s6-10.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "银幕外",
+          "en": "beyond the screen / off-screen / the real thing / in real life",
+          "chunks": [
+            "beyond the screen",
+            "off-screen",
+            "in real life"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-life"
+            }
+          ]
+        },
+        {
+          "label": "跟随某人的足迹",
+          "en": "following someone's footsteps / retracing someone's steps / walking in someone's path",
+          "chunks": [
+            "following footsteps",
+            "retracing steps",
+            "walking in path"
+          ]
+        },
+        {
+          "label": "特别小",
+          "en": "so tiny / feel dwarfed / feel puny / feel so small",
+          "chunks": [
+            "so tiny",
+            "feel dwarfed",
+            "feel so small"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-feel"
+            }
+          ]
+        },
+        {
+          "label": "栩栩如生",
+          "en": "lifelike / so realistic / true to life / uncannily real",
+          "chunks": [
+            "lifelike",
+            "so realistic",
+            "true to life"
+          ],
+          "links": [
+            {
+              "module": "phrases",
+              "id": "ph-like-say-for-instance"
+            },
+            {
+              "module": "function",
+              "id": "fn-life"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title_cn": "诺丁山 & 电影书店",
+      "title_en": "Notting Hill & the Bookshop",
+      "time": "04:27–05:10",
+      "sentences": [
+        {
+          "zh": "不知道有多少人是先看了《诺丁山》，后来才知道伦敦真的有这个地方叫诺丁山。",
+          "en": "I wonder how many people watched Notting Hill first and only later found out it's an actual place in London.",
+          "note": "不知道有多少人 → I wonder how many people…（wonder = 好奇/想知道）；后来才知道 → only later found out（found out = 发现/得知）",
+          "audio": "audio/crab-london/s7-01.mp3"
+        },
+        {
+          "zh": "电影里那间小小的旅行书店，也成了很多人记住这里的原因。",
+          "en": "That tiny travel bookshop in the movie is what made this place stick in so many people's minds.",
+          "note": "旅行书店 → travel bookshop（不是 travel bookstore，英式用法）；记住这里 → stick in people's minds（stick = 留在记忆里，比 remember 更形象）",
+          "audio": "audio/crab-london/s7-02.mp3"
+        },
+        {
+          "zh": "这就是电影中男女主角相遇的142号店，但实际上它并不是一家书店，而是一个纪念品商店。",
+          "en": "This is number 142, where the leads meet in the film, but it's not actually a bookshop, it's a souvenir store.",
+          "note": "男女主角 → the leads（主演的简称，比 the main characters 更专业）；纪念品商店 → souvenir store",
+          "audio": "audio/crab-london/s7-03.mp3"
+        },
+        {
+          "zh": "实际上电影中书店的灵感是来自有生活的这家书店，但有意思的是这里其实也没有真的拍过电影。剧组只是照着当时的书店在摄影棚里重新搭了一间。",
+          "en": "The real-life inspiration for the bookshop was actually this other bookstore, but funnily enough, they never filmed there either. The crew just built a replica of it on a soundstage.",
+          "note": "灵感来源 → the real-life inspiration；有意思的是 → funnily enough（英式口语）；照原样搭了一间 → built a replica；摄影棚 → on a soundstage",
+          "audio": "audio/crab-london/s7-04.mp3"
+        },
+        {
+          "zh": "你看电影不一定是真的，但它确实能让一条街变成让全世界人都来打卡的地方——这个倒是真的。",
+          "en": "Movies may not be real, but they can definitely turn a street into a place people from all over the world come to check out, that part is very real.",
+          "note": "打卡 → come to check out（比 take photos 更贴旅行打卡含义）；这个倒是真的 → that part is very real（精妙转折，呼应前句的 not real）",
+          "audio": "audio/crab-london/s7-05.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "后来才发现",
+          "en": "only later found out / it wasn't until later that I realized / only discovered afterwards",
+          "chunks": [
+            "found out",
+            "later",
+            "discovered"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-later"
+            }
+          ]
+        },
+        {
+          "label": "留在记忆里",
+          "en": "stick in someone's mind / make an impression / leave a mark / be etched in memory",
+          "chunks": [
+            "stick in mind",
+            "make an impression",
+            "leave a mark"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-make"
+            },
+            {
+              "module": "function",
+              "id": "fn-leave"
+            }
+          ]
+        },
+        {
+          "label": "有意思的是",
+          "en": "funnily enough / ironically / the funny thing is / here's the twist",
+          "chunks": [
+            "funnily enough",
+            "ironically",
+            "the twist"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-enough"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title_cn": "裁缝街 & Kingsman",
+      "title_en": "Savile Row & Kingsman",
+      "time": "05:20–06:41",
+      "sentences": [
+        {
+          "zh": "这里就是伦敦的裁缝街，有的店铺已经开了几百年了。",
+          "en": "This is Savile Row, some of these shops have been around for centuries.",
+          "note": "裁缝街 → Savile Row（专有名词，不用翻译）；开了几百年 → been around for centuries（been around = 一直存在）",
+          "audio": "audio/crab-london/s8-01.mp3"
+        },
+        {
+          "zh": "听说这边一套定制西装要几千英镑，要等六个星期。",
+          "en": "I heard a bespoke suit here costs a few thousand pounds and takes six weeks.",
+          "note": "定制西装 → bespoke suit（bespoke = 量身定做，英式核心词汇，不是 custom-made）；几千英镑 → a few thousand pounds（pounds 不要省略）",
+          "audio": "audio/crab-london/s8-02.mp3"
+        },
+        {
+          "zh": "不过让这条街出圈的不只是西装，而是一部叫 Kingsman 的电影。",
+          "en": "But what really put this street on the map wasn't just the suits, it was a movie called Kingsman.",
+          "note": "出圈/出名 → put this street on the map（经典习语，比 make it famous 更地道）",
+          "audio": "audio/crab-london/s8-03.mp3"
+        },
+        {
+          "zh": "你看这写的 Kingsman。这家店是1849年的时候开的。",
+          "en": "See it says Kingsman right here. This shop first opened in 1849.",
+          "note": "你看 → See（Vlog 引导观众看画面）；这写着 → it says… right here（right here 强调当前画面）",
+          "audio": "audio/crab-london/s8-04.mp3"
+        },
+        {
+          "zh": "据说当时《王牌特工》的导演就是在这里量体裁衣的时候突然来了灵感，于是就拍了这部电影。",
+          "en": "Apparently the director of Kingsman was here getting fitted when inspiration struck, and that's how the movie was born.",
+          "note": "量体裁衣 → getting fitted（西装量体的固定说法）；突然来了灵感 → inspiration struck（strike = 突然降临，比 got inspiration 更生动）",
+          "audio": "audio/crab-london/s8-05.mp3"
+        },
+        {
+          "zh": "来看看这件西装的价格。好贵，两万多。",
+          "en": "Let's take a look at the price of this suit. So expensive, over twenty thousand.",
+          "note": "来看看 → let's take a look at（Vlog 引导句式）；好贵 → so expensive（夸张脱口而出，比 very expensive 更口语）",
+          "audio": "audio/crab-london/s8-06.mp3"
+        },
+        {
+          "zh": "走进去之后才发现它们写了不让我们拍摄，但我还是偷偷摸摸拍了一点。好像也没有制止我，整个偷感非常重。",
+          "en": "After walking in, I noticed a sign saying no filming, but I still snuck in a few shots. They didn't seem to stop me either, so the whole thing felt super sneaky.",
+          "note": "写着不让拍 → a sign saying no filming；偷偷摸摸拍了 → snuck in a few shots（snuck = sneak 过去式，偷偷做）；偷感重 → super sneaky（sneaky = 鬼鬼祟祟的）",
+          "audio": "audio/crab-london/s8-07.mp3"
+        },
+        {
+          "zh": "我悄悄看了一下，它里面的衣服价格还蛮高的，要两千多磅一件。就是普通黑色的西装，可能只是我看不出它的特别之处。",
+          "en": "I took a quiet look, the prices inside are pretty steep, over two thousand pounds a piece. It was just a plain black suit, maybe I just can't tell what makes it special.",
+          "note": "价格蛮高 → pretty steep（steep = 价格高得吓人）；一件 → a piece（服装量词）；看不出特别之处 → can't tell what makes it special（比 can't see why it's special 更自然）",
+          "audio": "audio/crab-london/s8-08.mp3"
+        },
+        {
+          "zh": "不过这地方特别有名，像很多英国的政要，比如丘吉尔、威廉王子，都在这边定制过西装。",
+          "en": "But this place is seriously famous, loads of British figures like Churchill and Prince William have had suits made here.",
+          "note": "政要 → British figures（figures = 重要人物，比 politicians 更宽泛）；定制过西装 → have had suits made here（have something done 句型，意为让别人给自己做）",
+          "audio": "audio/crab-london/s8-09.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "让这里出名",
+          "en": "put this street on the map / made this street famous / put this street in the spotlight",
+          "chunks": [
+            "put on the map",
+            "made famous",
+            "in the spotlight"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-put-on"
+            }
+          ]
+        },
+        {
+          "label": "突然来了灵感",
+          "en": "inspiration struck / he got the idea / a lightbulb went off / it hit him",
+          "chunks": [
+            "inspiration struck",
+            "got the idea",
+            "went off",
+            "hit him"
+          ]
+        },
+        {
+          "label": "偷偷拍了",
+          "en": "snuck in a few shots / secretly filmed a bit / got some sneaky footage / stole a few clips",
+          "chunks": [
+            "snuck in",
+            "secretly filmed",
+            "sneaky footage"
+          ]
+        },
+        {
+          "label": "价格很高",
+          "en": "pretty steep / pretty pricey / on the expensive side / not cheap at all",
+          "chunks": [
+            "pretty steep",
+            "pricey",
+            "on the expensive side"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title_cn": "最后一天：晴天伦敦",
+      "title_en": "Final Day: Sunny London",
+      "time": "06:44–07:19",
+      "sentences": [
+        {
+          "zh": "在伦敦的这几天，雨就没怎么停过，但到了最后一天——哎，天晴了。",
+          "en": "The rain barely let up during my days in London, but on the final day, hey, the sun came out.",
+          "note": "没怎么停过 → barely let up（let up = 减弱/停止，高频天气表达）；天晴了 → the sun came out（比 it stopped raining 更有画面感）",
+          "audio": "audio/crab-london/s9-01.mp3"
+        },
+        {
+          "zh": "大本钟还是那个大本钟，可太阳一出来，看起来就像换了一座城市。",
+          "en": "Big Ben is still Big Ben, but when the sun comes out, it feels like a whole different city.",
+          "note": "还是那个大本钟 → Big Ben is still Big Ben（修辞重复，不变的是标志建筑）；像换了个城市 → a whole different city（whole = 完全，强调反差之大）",
+          "audio": "audio/crab-london/s9-02.mp3"
+        },
+        {
+          "zh": "至于伦敦到底是什么样，我第一次来确实说不太清。",
+          "en": "As for what London is really like, honestly, I can't quite put my finger on it after just one visit.",
+          "note": "说不太清 → can't quite put my finger on it（经典习语 = 无法准确描述/指出，比 can't describe it 更地道）",
+          "audio": "audio/crab-london/s9-03.mp3"
+        },
+        {
+          "zh": "电影里的那些地方算是找到了，但电影之外的伦敦可能还得再来几次。",
+          "en": "I managed to find all those movie locations, but the London beyond the movies? Might take a few more trips.",
+          "note": "总算找到了 → managed to find（managed to = 经过努力做到了）；电影之外的伦敦 → the London beyond the movies（beyond 呼应开头的 beyond the screen）；还得再来 → might take a few more trips",
+          "audio": "audio/crab-london/s9-04.mp3"
+        },
+        {
+          "zh": "当然也欢迎屏幕前的你来分享一下，你眼中的伦敦是什么样子。",
+          "en": "And of course, I'd love for you guys to share, what does London look like through your eyes?",
+          "note": "欢迎你分享 → I'd love for you guys to share（Vlog 结尾互动句）；你眼中 → through your eyes（比 in your opinion 更形象诗意）",
+          "audio": "audio/crab-london/s9-05.mp3"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "雨没停过",
+          "en": "barely let up / hardly stopped / almost never let up / was pretty much nonstop",
+          "chunks": [
+            "barely let up",
+            "hardly stopped",
+            "nonstop"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-barely"
+            },
+            {
+              "module": "function",
+              "id": "fn-hardly"
+            }
+          ]
+        },
+        {
+          "label": "说不太清",
+          "en": "can't quite put my finger on it / can't really pin it down / hard to sum up",
+          "chunks": [
+            "put my finger on it",
+            "pin it down",
+            "sum up"
+          ]
+        },
+        {
+          "label": "总算做到了",
+          "en": "managed to find / was able to track down / did get to see / checked off",
+          "chunks": [
+            "managed to",
+            "track down",
+            "checked off"
+          ]
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "zh": "用「made it / all the way from」表达「终于到了、从很远的地方来」",
+      "en": "We made it to London! I came all the way from China for this.",
+      "audio": "audio/crab-london/practice-0.mp3"
+    },
+    {
+      "zh": "用「ended up at… / turned out to be…」表达意料之外的结果",
+      "en": "I ended up at the counter, but it turned out to be the best seat in the house.",
+      "audio": "audio/crab-london/practice-1.mp3"
+    },
+    {
+      "zh": "用「put… on the map」表达「让某地出名」",
+      "en": "That one movie put this tiny street on the map for tourists around the world.",
+      "audio": "audio/crab-london/practice-2.mp3"
+    },
+    {
+      "zh": "用「can't quite put my finger on it」表达「说不清楚、无法准确描述」",
+      "en": "I can't quite put my finger on what makes this city so special, but I love it.",
+      "audio": "audio/crab-london/practice-3.mp3"
+    }
+  ],
+  "tags": [
+    "bilibili"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-system.local/schemas/common.json",
+  "title": "Shared example / source shape",
+  "definitions": {
+    "example": {
+      "type": "object",
+      "required": ["en", "zh"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "zh": { "type": "string" },
+        "source": { "type": "string", "description": "e.g. drama:slug:e01:s3-q1 or paraphrase:slug:s1" },
+        "ctx": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

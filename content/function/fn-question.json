@@ -1,0 +1,17 @@
+{
+  "id": "fn-question",
+  "module": "function",
+  "lemma": "question",
+  "zh": "问题（提问）",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "The police caught him. He's blown the money, but getting compensation from him isn't out of the question.",
+      "zh": "警察把人已经抓到了，虽然钱已经被他挥霍了，但让他赔偿也不是不可能。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 17
+}

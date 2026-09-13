@@ -1,0 +1,17 @@
+{
+  "id": "fn-absolutely",
+  "module": "function",
+  "lemma": "absolutely",
+  "zh": "绝对",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "Don't you only wear suits when absolutely necessary?\" \"This suit happens to match your outfit.",
+      "zh": "你不是非必要不穿西装吗？」「我是西装，刚好搭配你的套装。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 36
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-feel",
+  "module": "function",
+  "lemma": "feel",
+  "zh": "感觉",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "I've already told Sanmei she won't come here anymore. I shouldn't make you feel uneasy.",
+      "zh": "我已经跟三妹说了，她以后不再来了。我不应该让你觉得有什么顾忌。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 139
+}

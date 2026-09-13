@@ -1,0 +1,17 @@
+{
+  "id": "fn-emotion",
+  "module": "function",
+  "lemma": "emotion",
+  "zh": "情绪",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "In a critical moment you have to rev up the pace. It was too slow before—now we pull it along with pure emotion. No exp…",
+      "zh": "特殊时期得加节奏火力了，它原来节奏太慢了，现在只能靠情绪把它拉起来。不留旁白，只留炮弹。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 5
+}

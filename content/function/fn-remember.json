@@ -1,0 +1,17 @@
+{
+  "id": "fn-remember",
+  "module": "function",
+  "lemma": "remember",
+  "zh": "记得",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "I'm afraid that a month from now, everyone will know only Gu Yan—and no one will remember who He Han is.",
+      "zh": "我就怕一个月之后，大家就只知道孤烟，不知道何韩是谁了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 108
+}

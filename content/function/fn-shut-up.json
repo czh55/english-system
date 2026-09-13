@@ -1,0 +1,17 @@
+{
+  "id": "fn-shut-up",
+  "module": "function",
+  "lemma": "shut up",
+  "zh": "闭嘴",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "If you get in, I'll shut up and never mention grad school again. If you don't, you stay home and study quietly.",
+      "zh": "你进得去，我从此闭嘴，不提考研的事；进不去，老老实实在家复习。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 3
+}

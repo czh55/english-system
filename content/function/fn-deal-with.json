@@ -1,0 +1,17 @@
+{
+  "id": "fn-deal-with",
+  "module": "function",
+  "lemma": "deal with",
+  "zh": "处理",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Finish today's update first, and we'll deal with the Guazhou matter later.",
+      "zh": "你先把今天内容给完成了，然后晚一点再解决瓜洲的事情。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 22
+}

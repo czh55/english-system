@@ -1,0 +1,17 @@
+{
+  "id": "fn-go-back",
+  "module": "function",
+  "lemma": "go back",
+  "zh": "回去",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "I've already walked away — would I really go back and fight Mimi over He Han? Even I wouldn't believe that.",
+      "zh": "我明明已经分手了，我还会跑回去跟咪咪这样的女人争抢何韩？我自己都不相信。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 41
+}

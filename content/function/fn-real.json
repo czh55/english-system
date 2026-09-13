@@ -1,0 +1,18 @@
+{
+  "id": "fn-real",
+  "module": "function",
+  "lemma": "real",
+  "zh": "真实的",
+  "tags": [
+    "priority",
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "The kid has real talent — a gift from heaven.",
+      "zh": "人家那是有天赋，老天爷赏饭吃。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 166
+}

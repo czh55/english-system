@@ -1,0 +1,17 @@
+{
+  "id": "fn-come-back",
+  "module": "function",
+  "lemma": "come back",
+  "zh": "回来",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Flash Knight stopped writing ages ago. Why would she come back?",
+      "zh": "闪灵骑士早就不写了，怎么就归来？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 85
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-honest",
+  "module": "function",
+  "lemma": "honest",
+  "zh": "诚实",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "To be honest, when it comes to cooperation, I'm easier to work with than Lin Zhanqiao.",
+      "zh": "合作上有一说一，我比林展翘更容易沟通。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 27
+}

@@ -1,0 +1,26 @@
+{
+  "id": "ph-i-swear",
+  "module": "phrases",
+  "frame_en": "I swear, ...",
+  "frame_zh": "我发誓",
+  "usage": "郑重承诺",
+  "group": "态度声明类",
+  "group_id": "group-10",
+  "examples": [
+    {
+      "en": "I'm telling you\"I'm telling you, there's a mole.\"",
+      "zh": "我跟你们说，肯定有内鬼。",
+      "source": "drama:english-phrases:group-10",
+      "ctx": "🎬 我是余欢水 第6集 · 三人内讧找内鬼时，魏广军斩钉截铁——\"I'm telling you\"是让听者必须当真的强烈表态。"
+    },
+    {
+      "en": "I swear\"I swear, I'll help you complete every last wish on your list.\"",
+      "zh": "我发誓，我一定能帮你完成你的临终意愿。",
+      "source": "drama:english-phrases:group-10",
+      "ctx": "🎬 我是余欢水 第9集 · 临终关怀志愿者栾冰然对\"绝症\"的余欢水郑重承诺——\"我发誓\"把普通承诺升级成不可违背。"
+    }
+  ],
+  "tags": [
+    "group-10"
+  ]
+}

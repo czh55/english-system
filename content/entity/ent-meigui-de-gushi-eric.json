@@ -1,0 +1,28 @@
+{
+  "id": "ent-meigui-de-gushi-eric",
+  "module": "entity",
+  "lemma": "Eric",
+  "zh": "庄国栋",
+  "type": "person",
+  "aliases": [
+    "Eric"
+  ],
+  "drama": "meigui-de-gushi",
+  "examples": [
+    {
+      "en": "I'm Eric Zhuang Guodong—account representative for Galant's creative department and team leader of the Future Masters project group.",
+      "zh": "我是艾瑞克·庄国栋，是戈蓝创意部的客户代表，也是『未来大师』项目组的 Team Leader。",
+      "source": "drama:meigui-de-gushi:4:s3-q1"
+    },
+    {
+      "en": "Bro, it's Eric...\" \"What's his full name?\" \"Zhuang Guodong.",
+      "zh": "大哥，Eric……」「他叫什么名？」「庄国栋。",
+      "source": "drama:meigui-de-gushi:7:s3-q4"
+    }
+  ],
+  "tags": [
+    "彭冠英",
+    "玫瑰初恋，法国戈蓝公司上海项目负责人，爱事业胜过感情"
+  ],
+  "freq": 2
+}

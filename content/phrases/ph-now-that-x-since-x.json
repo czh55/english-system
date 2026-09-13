@@ -1,0 +1,26 @@
+{
+  "id": "ph-now-that-x-since-x",
+  "module": "phrases",
+  "frame_en": "Now that X, ... / Since X, ...",
+  "frame_zh": "既然…（已知前提）",
+  "usage": "顺着已知事实推进",
+  "group": "条件假设类",
+  "group_id": "group-2",
+  "examples": [
+    {
+      "en": "as long as\"As long as I'm alive, that's enough.\"",
+      "zh": "只要能活着就行。",
+      "source": "drama:english-phrases:group-2",
+      "ctx": "🎬 问心2 第27集 · 重症病人杜严撤机后情况仍不稳定，母亲说出这句话——\"只要\"表达的就是底线，活着是唯一的条件。"
+    },
+    {
+      "en": "what if\"A PET-CT scan costs thousands—what if it still finds nothing?\"",
+      "zh": "做一次 PET-CT 要大几千，万一还是查不出来呢？",
+      "source": "drama:english-phrases:group-2",
+      "ctx": "🎬 问心2 第18集 · 病人担心花大钱做检查却查不出病因——\"What if...?\" 就是中文\"万一\"的准确对应，专门用来表达担忧。"
+    }
+  ],
+  "tags": [
+    "group-2"
+  ]
+}

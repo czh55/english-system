@@ -1,0 +1,17 @@
+{
+  "id": "fn-figure-out",
+  "module": "function",
+  "lemma": "figure out",
+  "zh": "弄明白",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "I had to eat first before I could figure out how to explain myself. Really—I've never worked harder on a script than on…",
+      "zh": "那我吃饱了，才能想办法给你解释呀。真的，我昨晚写剧本都没有这么上心过。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 7
+}

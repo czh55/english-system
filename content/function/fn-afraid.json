@@ -1,0 +1,18 @@
+{
+  "id": "fn-afraid",
+  "module": "function",
+  "lemma": "afraid",
+  "zh": "害怕",
+  "tags": [
+    "priority",
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "I wasn't afraid when He Han left. You leaving means even less to me.",
+      "zh": "何韩走我都不怕，你走，更无所谓。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 126
+}

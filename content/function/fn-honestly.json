@@ -1,0 +1,17 @@
+{
+  "id": "fn-honestly",
+  "module": "function",
+  "lemma": "honestly",
+  "zh": "说实话",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Honestly, I'd love to send it to you—because once you read it, you'll see how brilliant he is.",
+      "zh": "若说实话，我恨不得就想发给你看，因为只要你看了，你就知道他有多厉害。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 16
+}

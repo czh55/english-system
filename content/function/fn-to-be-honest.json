@@ -1,0 +1,17 @@
+{
+  "id": "fn-to-be-honest",
+  "module": "function",
+  "lemma": "to be honest",
+  "zh": "说实话",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "To be honest, when it comes to cooperation, I'm easier to work with than Lin Zhanqiao.",
+      "zh": "合作上有一说一，我比林展翘更容易沟通。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 8
+}

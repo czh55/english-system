@@ -1,0 +1,17 @@
+{
+  "id": "fn-pressure",
+  "module": "function",
+  "lemma": "pressure",
+  "zh": "压力",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "His trusting me this completely — it's encouragement, and also pressure.",
+      "zh": "他这么信任我，对我来说是鼓励，也是压力。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 37
+}

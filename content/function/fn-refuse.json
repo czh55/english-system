@@ -1,0 +1,17 @@
+{
+  "id": "fn-refuse",
+  "module": "function",
+  "lemma": "refuse",
+  "zh": "拒绝",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "Good grief, you used to refuse even interviews.\" \"Unlike you, I know how to adapt.",
+      "zh": "天哪，你以前可是连采访都不愿意做。」「我又不像你，我很懂得变通的好吗。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 29
+}

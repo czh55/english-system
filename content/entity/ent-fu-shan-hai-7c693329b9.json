@@ -1,0 +1,26 @@
+{
+  "id": "ent-fu-shan-hai-7c693329b9",
+  "module": "entity",
+  "lemma": "柳随风",
+  "zh": "柳随风",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "I heard that Liu Suifeng of the Power Gang was there that day. Surviving that great devil's hands—Young Master Feng, you truly are remarkable.",
+      "zh": "我听说当日权力帮的柳随风也在。能在那大魔头手下活命，风公子实属不易。",
+      "source": "drama:fu-shan-hai:4:s11-q2"
+    },
+    {
+      "en": "Of the three—Li Chenzhou, Zhao Shirong, and Liu Suifeng—very few have ever seen their true faces.",
+      "zh": "李沉舟、赵师容、柳随风这三人，知道他们真容的，也并没有几个。",
+      "source": "drama:fu-shan-hai:8:s4-q2"
+    }
+  ],
+  "tags": [
+    "徐振轩",
+    "萧秋水挚友"
+  ],
+  "freq": 2
+}

@@ -1,0 +1,15 @@
+{
+  "id": "fn-even-if",
+  "module": "function",
+  "lemma": "even if",
+  "zh": "即使",
+  "examples": [
+    {
+      "en": "Even if it rains, we'll still go.",
+      "zh": "即使下雨，我们还是会去。",
+      "source": "drama:example:e01:s1-q1"
+    }
+  ],
+  "tags": ["connect", "priority"],
+  "freq": 128
+}

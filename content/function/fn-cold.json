@@ -1,0 +1,17 @@
+{
+  "id": "fn-cold",
+  "module": "function",
+  "lemma": "cold",
+  "zh": "冷淡",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "How many cold nights, and it was his warmth that kept my heart warm.",
+      "zh": "多少个寒冷的夜晚，都是他用体温温暖了我的心窝。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 57
+}

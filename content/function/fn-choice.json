@@ -1,0 +1,17 @@
+{
+  "id": "fn-choice",
+  "module": "function",
+  "lemma": "choice",
+  "zh": "选择",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "But she insisted on protecting Guyin—I had no choice.",
+      "zh": "可她坚持要保孤烟，我也没有办法。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 41
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-often",
+  "module": "function",
+  "lemma": "often",
+  "zh": "经常",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "My good friend will often stay here — you can turn to him too.",
+      "zh": "我的好朋友经常会来这儿住，你也可以找他。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 29
+}

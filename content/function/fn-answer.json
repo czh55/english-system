@@ -1,0 +1,17 @@
+{
+  "id": "fn-answer",
+  "module": "function",
+  "lemma": "answer",
+  "zh": "答案",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Marry me. This is the second time I've asked.\" \"Then I'll answer you for the second time: you're not my type—not for da…",
+      "zh": "嫁给我，这是我第二次向你求婚。」「那我第二次回答你：恋爱结婚，你都不是我的菜。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 47
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-at-first",
+  "module": "function",
+  "lemma": "at first",
+  "zh": "一开始",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "I want the kind of red that makes people think I'm flushed with excitement at first sight.",
+      "zh": "我就要那种，别人一看到就觉得我脸红上头的红。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 18
+}

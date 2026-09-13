@@ -1,0 +1,17 @@
+{
+  "id": "fn-try",
+  "module": "function",
+  "lemma": "try",
+  "zh": "尝试",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "Keep a good mindset, and try your best to stay out of the way.",
+      "zh": "心态要好，尽量躲好。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 79
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ent-meigui-de-gushi-tina",
+  "module": "entity",
+  "lemma": "Tina",
+  "zh": "姜雪琼",
+  "type": "person",
+  "aliases": [
+    "Tina"
+  ],
+  "drama": "meigui-de-gushi",
+  "examples": [
+    {
+      "en": "From now on, the first thing you do when you get to the office is tidy Tina's office. All her packages come through your hands first—sort them, then pass them on.",
+      "zh": "以后来公司上班，第一件事，先把Tina的办公室收干净。她的快递都会先经你的手，分类好，以后再交给她。",
+      "source": "drama:meigui-de-gushi:3:s3-q1"
+    },
+    {
+      "en": "This wine is what keeps Tina alive. Overtime calls for whiskey, and if she drank too much the night before, she'll have a brandy the next morning—they call it the soul-reviving drink.",
+      "zh": "这酒是Tina续命的东西。加班必须得配上威士忌；要是头天应酬喝多了，第二天早上也肯定会来一杯白兰地，这个叫回魂酒。",
+      "source": "drama:meigui-de-gushi:3:s3-q3"
+    }
+  ],
+  "tags": [
+    "朱珠",
+    "青莛公司总经理"
+  ],
+  "freq": 2
+}

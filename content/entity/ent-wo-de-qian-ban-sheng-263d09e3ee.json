@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-de-qian-ban-sheng-263d09e3ee",
+  "module": "entity",
+  "lemma": "唐晶",
+  "zh": "唐晶",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-de-qian-ban-sheng",
+  "examples": [
+    {
+      "en": "The correct answer is: you should have borrowed a pair of slippers from Tang Jing.",
+      "zh": "正确的答案是：你应该跟唐晶借一双拖鞋穿走。",
+      "source": "drama:wo-de-qian-ban-sheng:1:s6-q2"
+    },
+    {
+      "en": "This is my wife's best friend—Tang Jing from B&T.",
+      "zh": "这是我太太闺蜜，B&T 的唐晶。",
+      "source": "drama:wo-de-qian-ban-sheng:2:s3-q3"
+    }
+  ],
+  "tags": [
+    "袁泉",
+    "子君闺蜜，B&T 职场女强人，与贺涵恋爱十年拒谈成婚"
+  ],
+  "freq": 2
+}

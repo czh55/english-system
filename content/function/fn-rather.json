@@ -1,0 +1,18 @@
+{
+  "id": "fn-rather",
+  "module": "function",
+  "lemma": "rather",
+  "zh": "宁可",
+  "tags": [
+    "modal",
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "No way. I'd rather just stay exactly who I am.",
+      "zh": "我才不要呢，我就还是我自己这个样子。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 60
+}

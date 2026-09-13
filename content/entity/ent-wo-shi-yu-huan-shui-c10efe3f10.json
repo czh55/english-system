@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-shi-yu-huan-shui-c10efe3f10",
+  "module": "entity",
+  "lemma": "栾冰然",
+  "zh": "栾冰然",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-shi-yu-huan-shui",
+  "examples": [
+    {
+      "en": "I'm a volunteer with the charity, Luan Bingran. I was beaten up because I was handing out flyers for you.",
+      "zh": "我是慈善会的志愿者，栾冰然。我是为了帮您发传单，所以才被打了。",
+      "source": "drama:wo-shi-yu-huan-shui:4:s5-q1"
+    },
+    {
+      "en": "Is this Mr. Yu Huanshui? I'm Luan Bingran. We've met before—don't you remember?",
+      "zh": "是余欢水先生吗？我是栾冰然，我们之前见过的，你忘了？",
+      "source": "drama:wo-shi-yu-huan-shui:8:s8-q1"
+    }
+  ],
+  "tags": [
+    "苗苗",
+    "酒吧遇到的女孩，公益组织「临终关怀」志愿者"
+  ],
+  "freq": 2
+}

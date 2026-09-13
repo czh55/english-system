@@ -1,0 +1,17 @@
+{
+  "id": "fn-completely",
+  "module": "function",
+  "lemma": "completely",
+  "zh": "完全",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "His trusting me this completely — it's encouragement, and also pressure.",
+      "zh": "他这么信任我，对我来说是鼓励，也是压力。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 40
+}

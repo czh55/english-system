@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>非实体词 · english-system</title>
+<style>
+:root {
+  --bg: #0c1222;
+  --surface: rgba(255,255,255,0.045);
+  --border: rgba(255,255,255,0.1);
+  --text: #e8eef7;
+  --muted: #93a4bd;
+  --accent: #5ec8c0;
+  --accent2: #7eb6ff;
+  --accent3: #e8b86d;
+  --ok: #6ed3a1;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", serif;
+  --font-body: "Avenir Next", "PingFang SC", "Helvetica Neue", sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(900px 500px at 12% -10%, rgba(94,200,192,0.16), transparent 55%),
+    radial-gradient(700px 420px at 90% 0%, rgba(126,182,255,0.12), transparent 50%),
+    var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.65;
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 28px 20px 80px; }
+nav.top {
+  display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+  padding: 14px 0 22px; border-bottom: 1px solid var(--border); margin-bottom: 28px;
+}
+nav.top .brand {
+  font-family: var(--font-display);
+  font-size: 1.15rem; font-weight: 700; color: var(--text); margin-right: auto;
+}
+nav.top a { color: var(--muted); font-size: 0.9rem; }
+nav.top a.active { color: var(--accent); }
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 2.9rem);
+  letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px;
+}
+.hero p { color: var(--muted); max-width: 42rem; }
+.grid4 {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 28px 0;
+}
+@media (max-width: 820px) { .grid4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .grid4 { grid-template-columns: 1fr; } }
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px 16px; display: block; color: inherit;
+}
+.card:hover { border-color: rgba(94,200,192,0.45); text-decoration: none; }
+.card .kicker { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.card h2 { font-size: 1.15rem; margin: 8px 0 6px; font-family: var(--font-display); }
+.card p { color: var(--muted); font-size: 0.88rem; }
+.path {
+  background: linear-gradient(135deg, rgba(94,200,192,0.12), rgba(126,182,255,0.08));
+  border: 1px solid var(--border); border-radius: 16px; padding: 22px 20px; margin-top: 8px;
+}
+.path h2 { font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 8px; }
+.path ol { margin: 12px 0 0 1.2rem; color: var(--muted); }
+.path li { margin: 8px 0; }
+.path strong { color: var(--text); }
+.search {
+  width: 100%; margin: 8px 0 18px; padding: 12px 14px; border-radius: 10px;
+  border: 1px solid var(--border); background: rgba(0,0,0,0.25); color: var(--text);
+  font-size: 1rem;
+}
+.meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 16px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.lemma { font-weight: 700; color: var(--accent); }
+.zh { color: var(--text); }
+.freq { color: var(--accent3); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag {
+  display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;
+  background: rgba(126,182,255,0.12); color: var(--accent2); margin: 0 4px 4px 0;
+}
+.ex { display: block; color: var(--muted); font-size: 0.82rem; margin-top: 4px; }
+.ex .en { color: #c9d7ea; }
+.group { margin: 28px 0; }
+.group h2 { font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 6px; }
+.group .desc { color: var(--muted); margin-bottom: 12px; }
+.frame { font-weight: 700; color: var(--accent); }
+.usage { color: var(--muted); font-size: 0.85rem; }
+.scene-list a.card { margin-bottom: 12px; }
+.scene-block {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px; margin: 16px 0;
+}
+.scene-block h3 { font-family: var(--font-display); margin-bottom: 4px; }
+.sent { margin: 12px 0; padding: 10px 0; border-top: 1px solid var(--border); }
+.sent .pair { display: grid; gap: 4px; }
+.sent .label { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.08em; }
+.note { color: var(--accent3); font-size: 0.82rem; margin-top: 4px; }
+.para { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.para li { margin: 8px 0 8px 1rem; }
+.chunk-link { margin-left: 6px; font-size: 0.8rem; }
+.external { margin: 10px 0 18px; font-size: 0.9rem; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="top">
+  <a class="brand" href="../index.html">english-system</a>
+  <a class="" href="../index.html">首页</a>
+  <a class="active" href="index.html">非实体词</a>
+  <a class="" href="../phrases/index.html">话术结构</a>
+  <a class="" href="../scenarios/index.html">场景实训</a>
+  <a class="" href="../entity/index.html">实体词</a>
+</nav>
+
+<header class="hero"><h1>非实体词</h1><p>连接 / 情态 / 程度 / 填充语等功能词与框架填空词。先背高频，再塞进话术框架。</p></header>
+<p class="meta">284 条 · 来源 drama-analysis 高频词手册</p>
+<input class="search" id="q" type="search" placeholder="搜索 lemma / 中文 / 标签…" autocomplete="off">
+<table>
+<thead><tr><th>词</th><th>中文</th><th>频次</th></tr></thead>
+<tbody><tr id="fn-and" data-search="and 并且 connect">
+  <td><span class="lemma">and</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">The company takes a third first, and Lin Zhanqiao and I split the rest fifty-fifty.</span> · 公司先划走三分之一，剩下的我跟林展翘对半分。</span></td>
+  <td class="zh">并且</td>
+  <td class="freq">4280</td>
+</tr>
+<tr id="fn-can" data-search="can 能/可以 modal">
+  <td><span class="lemma">can</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">If he doesn't want me to be innocent, then I'll show him just how guilty I can be.</span> · 他不想要我清白，我就不清白给他看。</span></td>
+  <td class="zh">能/可以</td>
+  <td class="freq">1733</td>
+</tr>
+<tr id="fn-if" data-search="if 如果 connect">
+  <td><span class="lemma">if</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">If it were there, it'd be left by some other woman.</span> · 要是有的话，就是别的女人留下来的。</span></td>
+  <td class="zh">如果</td>
+  <td class="freq">1538</td>
+</tr>
+<tr id="fn-so" data-search="so 所以 connect">
+  <td><span class="lemma">so</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">I can divorce her and leave with nothing.&quot; &quot;The money you worked so hard for — giving it all up isn't worth it.</span> · 我可以跟她离婚的，净身出户。」「你辛辛苦苦工作赚的钱，净身出户就太不值得了。</span></td>
+  <td class="zh">所以</td>
+  <td class="freq">1152</td>
+</tr>
+<tr id="fn-just" data-search="just 只是/刚刚 degree">
+  <td><span class="lemma">just</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">If he doesn't want me to be innocent, then I'll show him just how guilty I can be.</span> · 他不想要我清白，我就不清白给他看。</span></td>
+  <td class="zh">只是/刚刚</td>
+  <td class="freq">1132</td>
+</tr>
+<tr id="fn-but" data-search="but 但是 connect">
+  <td><span class="lemma">but</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Everything that happens between couples happened between us, but we never had a clearly defined romantic relationship.</span> · 情侣之间该发生的都发生过，但我们没有明确的恋爱关系。</span></td>
+  <td class="zh">但是</td>
+  <td class="freq">1090</td>
+</tr>
+<tr id="fn-now" data-search="now 现在 time">
+  <td><span class="lemma">now</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">At least part of this space now belongs to me.</span> · 这个空间里面，有一部分是跟我有关的了。</span></td>
+  <td class="zh">现在</td>
+  <td class="freq">934</td>
+</tr>
+<tr id="fn-like" data-search="like 比如/像 filler">
+  <td><span class="lemma">like</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">However good your conditions are, I don't like you. How many people end up marrying for love anyway? And did marrying f…</span> · 条件再好，但不喜欢你。有多少人最后是嫁给爱情的？嫁给爱情，就都幸福了吗？</span></td>
+  <td class="zh">比如/像</td>
+  <td class="freq">795</td>
+</tr>
+<tr id="fn-never" data-search="never 从不 priority time">
+  <td><span class="lemma">never</span><div><span class="tag">priority</span><span class="tag">time</span></div>
+  <span class="ex"><span class="en">Everything that happens between couples happened between us, but we never had a clearly defined romantic rela…</span> · 情侣之间该发生的都发生过，但我们没有明确的恋爱关系。</span></td>
+  <td class="zh">从不</td>
+  <td class="freq">775</td>
+</tr>
+<tr id="fn-only" data-search="only 仅仅 degree">
+  <td><span class="lemma">only</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">The same mistake can only be made once in a lifetime.</span> · 同样的错，一辈子只能错一次。</span></td>
+  <td class="zh">仅仅</td>
+  <td class="freq">772</td>
+</tr>
+<tr id="fn-will" data-search="will 会/将 modal">
+  <td><span class="lemma">will</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">Being busy depends on who it is. Some people don't have a second to spare you; others will fly around the world and sti…</span> · 忙也是要看对象的。对有的人，看你一眼都没有空；有的人呢，三天绕地球飞一圈，还要专程来跟你请安。</span></td>
+  <td class="zh">会/将</td>
+  <td class="freq">756</td>
+</tr>
+<tr id="fn-even" data-search="even 甚至/连 priority degree">
+  <td><span class="lemma">even</span><div><span class="tag">priority</span><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">I promise I won't help you.&quot; &quot;You didn't even go to the hospital — how do you know which medicine to buy?</span> · 我保证不帮你。」「你都没去医院，怎么知道买什么药？</span></td>
+  <td class="zh">甚至/连</td>
+  <td class="freq">735</td>
+</tr>
+<tr id="fn-let" data-search="let 让 verb">
+  <td><span class="lemma">let</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">The three words that waste the most feelings and experience are: I can't let go.</span> · 最浪费感情和经历的三个字，就是舍不得。</span></td>
+  <td class="zh">让</td>
+  <td class="freq">709</td>
+</tr>
+<tr id="fn-go" data-search="go 去 verb">
+  <td><span class="lemma">go</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">The three words that waste the most feelings and experience are: I can't let go.</span> · 最浪费感情和经历的三个字，就是舍不得。</span></td>
+  <td class="zh">去</td>
+  <td class="freq">705</td>
+</tr>
+<tr id="fn-want" data-search="want 想要 modal">
+  <td><span class="lemma">want</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">If he doesn't want me to be innocent, then I'll show him just how guilty I can be.</span> · 他不想要我清白，我就不清白给他看。</span></td>
+  <td class="zh">想要</td>
+  <td class="freq">634</td>
+</tr>
+<tr id="fn-time" data-search="time 时间 noun">
+  <td><span class="lemma">time</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">It was him who pursued me the whole time. Apart from work, I never replied.</span> · 从头到尾都是他主动表白我，我除了工作没有回复。</span></td>
+  <td class="zh">时间</td>
+  <td class="freq">626</td>
+</tr>
+<tr id="fn-come" data-search="come 来 verb">
+  <td><span class="lemma">come</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">Uncle Fan, when have you ever come here for anything other than driving a wedge between Lin and me?</span> · 范叔，您哪次不是来挑拨林展的？</span></td>
+  <td class="zh">来</td>
+  <td class="freq">609</td>
+</tr>
+<tr id="fn-take" data-search="take 拿/花费 verb">
+  <td><span class="lemma">take</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">Take his resources, but never hand over your sovereignty.</span> · 只拿他的资源，不给他你的主权。</span></td>
+  <td class="zh">拿/花费</td>
+  <td class="freq">569</td>
+</tr>
+<tr id="fn-then" data-search="then 然后/那时 time">
+  <td><span class="lemma">then</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">If he doesn't want me to be innocent, then I'll show him just how guilty I can be.</span> · 他不想要我清白，我就不清白给他看。</span></td>
+  <td class="zh">然后/那时</td>
+  <td class="freq">547</td>
+</tr>
+<tr id="fn-know" data-search="know 知道 verb">
+  <td><span class="lemma">know</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I promise I won't help you.&quot; &quot;You didn't even go to the hospital — how do you know which medicine to buy?</span> · 我保证不帮你。」「你都没去医院，怎么知道买什么药？</span></td>
+  <td class="zh">知道</td>
+  <td class="freq">538</td>
+</tr>
+<tr id="fn-still" data-search="still 仍然 priority degree">
+  <td><span class="lemma">still</span><div><span class="tag">priority</span><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">Leaving at night means you're still dating, living separate lives. Leaving in the morning means you've accept…</span> · 晚上走，代表着这两个人还是在谈恋爱，生活各过各的；但早上走，就代表你已经接受了要一起生活。</span></td>
+  <td class="zh">仍然</td>
+  <td class="freq">526</td>
+</tr>
+<tr id="fn-too" data-search="too 太 degree">
+  <td><span class="lemma">too</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">Being well-liked is an advantage, but sometimes it's a disadvantage too.</span> · 好人喜欢是优势，但有时候也是一种劣势。</span></td>
+  <td class="zh">太</td>
+  <td class="freq">499</td>
+</tr>
+<tr id="fn-or" data-search="or 或者 connect">
+  <td><span class="lemma">or</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">He never talked to me about One Hundred Years of Solitude or The Old Man and the Sea. All he cared about was where his …</span> · 他从来不跟我聊什么《百年孤独》《老人与海》，他只在乎他的牙刷、拖鞋、枕头，在我房间里面的地方放。</span></td>
+  <td class="zh">或者</td>
+  <td class="freq">498</td>
+</tr>
+<tr id="fn-right" data-search="right 对的 adj">
+  <td><span class="lemma">right</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Right now we've lost the wife and lost the army too.</span> · 现在我们是赔了夫人又折兵。</span></td>
+  <td class="zh">对的</td>
+  <td class="freq">490</td>
+</tr>
+<tr id="fn-life" data-search="life 生活/生命 noun">
+  <td><span class="lemma">life</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Love life, and get plenty of sleep.</span> · 热爱生活，多睡觉。</span></td>
+  <td class="zh">生活/生命</td>
+  <td class="freq">481</td>
+</tr>
+<tr id="fn-get" data-search="get 得到/变得 verb">
+  <td><span class="lemma">get</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">Love life, and get plenty of sleep.</span> · 热爱生活，多睡觉。</span></td>
+  <td class="zh">得到/变得</td>
+  <td class="freq">475</td>
+</tr>
+<tr id="fn-see" data-search="see 看见/明白 verb">
+  <td><span class="lemma">see</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">Uncle Fan asking to see me is definitely not because of my looks.</span> · 范叔找我聊，肯定不是因为我的美貌。</span></td>
+  <td class="zh">看见/明白</td>
+  <td class="freq">458</td>
+</tr>
+<tr id="fn-would" data-search="would 会（虚拟） modal">
+  <td><span class="lemma">would</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">Why would you break up with me at the best moment of my life?&quot; &quot;Wouldn't breaking up at your worst moment hurt even mor…</span> · 你为什么要在我最好的时候跟我分手啊？」「那在你不好的时候分不是更扎吗？</span></td>
+  <td class="zh">会（虚拟）</td>
+  <td class="freq">440</td>
+</tr>
+<tr id="fn-could" data-search="could 可以/可能 modal">
+  <td><span class="lemma">could</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">I haven't signed with Zhao Lanxin yet—we can still talk renewal, I could consider it.&quot; &quot;I'm not considering it, Teacher…</span> · 我跟赵兰心还没有签约呀，我们续约有的谈，我可以考虑的。」「我就不考虑了，洪老师。</span></td>
+  <td class="zh">可以/可能</td>
+  <td class="freq">420</td>
+</tr>
+<tr id="fn-must" data-search="must 必须 priority modal">
+  <td><span class="lemma">must</span><div><span class="tag">priority</span><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">The fact that you tried writing 'Si You Gu Ren Zui' — that must not leave this room.</span> · 你试写过《私有故人罪》这件事情，是不能往外说的。</span></td>
+  <td class="zh">必须</td>
+  <td class="freq">416</td>
+</tr>
+<tr id="fn-once" data-search="once 曾经/一旦 priority time">
+  <td><span class="lemma">once</span><div><span class="tag">priority</span><span class="tag">time</span></div>
+  <span class="ex"><span class="en">The same mistake can only be made once in a lifetime.</span> · 同样的错，一辈子只能错一次。</span></td>
+  <td class="zh">曾经/一旦</td>
+  <td class="freq">407</td>
+</tr>
+<tr id="fn-family" data-search="family 家庭 priority noun">
+  <td><span class="lemma">family</span><div><span class="tag">priority</span><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">We're family — let's avoid court if we can. It wouldn't look good to outsiders.</span> · 一家人，能不打官司就不打官司，让外人知道了也不好。</span></td>
+  <td class="zh">家庭</td>
+  <td class="freq">404</td>
+</tr>
+<tr id="fn-good" data-search="good 好 adj">
+  <td><span class="lemma">good</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Keep a good mindset, and try your best to stay out of the way.</span> · 心态要好，尽量躲好。</span></td>
+  <td class="zh">好</td>
+  <td class="freq">377</td>
+</tr>
+<tr id="fn-keep" data-search="keep 保持 priority verb">
+  <td><span class="lemma">keep</span><div><span class="tag">priority</span><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">Keep a good mindset, and try your best to stay out of the way.</span> · 心态要好，尽量躲好。</span></td>
+  <td class="zh">保持</td>
+  <td class="freq">377</td>
+</tr>
+<tr id="fn-make" data-search="make 使/做 verb">
+  <td><span class="lemma">make</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">However good your conditions are, I don't like you. How many people end up marrying for love anyway? And did marrying f…</span> · 条件再好，但不喜欢你。有多少人最后是嫁给爱情的？嫁给爱情，就都幸福了吗？</span></td>
+  <td class="zh">使/做</td>
+  <td class="freq">375</td>
+</tr>
+<tr id="fn-money" data-search="money 钱 priority noun">
+  <td><span class="lemma">money</span><div><span class="tag">priority</span><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">I can divorce her and leave with nothing.&quot; &quot;The money you worked so hard for — giving it all up isn't worth i…</span> · 我可以跟她离婚的，净身出户。」「你辛辛苦苦工作赚的钱，净身出户就太不值得了。</span></td>
+  <td class="zh">钱</td>
+  <td class="freq">363</td>
+</tr>
+<tr id="fn-need" data-search="need 需要 modal">
+  <td><span class="lemma">need</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">In my world, I no longer need a man named He Han.</span> · 我在世界里，不再需要一个叫何韩的人了。</span></td>
+  <td class="zh">需要</td>
+  <td class="freq">360</td>
+</tr>
+<tr id="fn-after" data-search="after 之后 time">
+  <td><span class="lemma">after</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">After I met his wife, I made it clear to him: I have a boyfriend, we should keep our distance. But he got all worked up…</span> · 我见过他老婆以后，就跟他说清楚了：我有男朋友的，以后大家保持距离。谁知道他就情绪很激动，然后就开始拉扯我。</span></td>
+  <td class="zh">之后</td>
+  <td class="freq">354</td>
+</tr>
+<tr id="fn-work" data-search="work 工作 priority noun">
+  <td><span class="lemma">work</span><div><span class="tag">priority</span><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">It was him who pursued me the whole time. Apart from work, I never replied.</span> · 从头到尾都是他主动表白我，我除了工作没有回复。</span></td>
+  <td class="zh">工作</td>
+  <td class="freq">345</td>
+</tr>
+<tr id="fn-really" data-search="really 真的/很 priority degree">
+  <td><span class="lemma">really</span><div><span class="tag">priority</span><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">Anyone but He Han is fine. Outside of He Han, nobody else really matters.</span> · 除了何韩，其他人都可以；除了何韩以外，其他人意义都不大。</span></td>
+  <td class="zh">真的/很</td>
+  <td class="freq">340</td>
+</tr>
+<tr id="fn-think" data-search="think 想/认为 verb">
+  <td><span class="lemma">think</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">Are you trying to get yourself killed? This is how people end up dead! How many lives do you think you have to throw ar…</span> · 你是不是要死啊？这种事情是要闹出人命的，你有几条命可以这样乱来啊！</span></td>
+  <td class="zh">想/认为</td>
+  <td class="freq">338</td>
+</tr>
+<tr id="fn-already" data-search="already 已经 priority degree">
+  <td><span class="lemma">already</span><div><span class="tag">priority</span><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">The hardest thing is finding a good editor — and fortunately, I've already found one.</span> · 最难的是找到一个好编辑，所幸我已经找到了。</span></td>
+  <td class="zh">已经</td>
+  <td class="freq">325</td>
+</tr>
+<tr id="fn-should" data-search="should 应该 priority modal">
+  <td><span class="lemma">should</span><div><span class="tag">priority</span><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">I did nothing wrong. Why should I apologize?</span> · 我没有做错，我为什么要道歉？</span></td>
+  <td class="zh">应该</td>
+  <td class="freq">318</td>
+</tr>
+<tr id="fn-give" data-search="give 给 verb">
+  <td><span class="lemma">give</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">You need to give every person in this company—including me—a reason to keep gambling on you.</span> · 你需要给公司每一个人，包括我，一个陪你赌下去的理由。</span></td>
+  <td class="zh">给</td>
+  <td class="freq">309</td>
+</tr>
+<tr id="fn-find" data-search="find 发现/找到 priority verb">
+  <td><span class="lemma">find</span><div><span class="tag">priority</span><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">Tame the white horse first; find the prince later.</span> · 先驯白马，再找王子。</span></td>
+  <td class="zh">发现/找到</td>
+  <td class="freq">297</td>
+</tr>
+<tr id="fn-say" data-search="say 说 verb">
+  <td><span class="lemma">say</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">He didn't say he minded.&quot; &quot;But did he say he didn't?</span> · 他没说不乐意啊。」「那还说乐意了吗？</span></td>
+  <td class="zh">说</td>
+  <td class="freq">297</td>
+</tr>
+<tr id="fn-tell" data-search="tell 告诉 priority verb">
+  <td><span class="lemma">tell</span><div><span class="tag">priority</span><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">Let's drop the birthday talk. Go home and tell your mother I'm doing fine here—everything's well. I just don'…</span> · 我生日的事情也不要说了。你回去把我这儿的情况告诉你妈，一切都很好，我不希望她来打扰我。</span></td>
+  <td class="zh">告诉</td>
+  <td class="freq">286</td>
+</tr>
+<tr id="fn-have-to" data-search="have to 不得不 modal">
+  <td><span class="lemma">have to</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">If she can't come up with a He Han No. 2, then those gold-medal producer and editor titles are going to have to be give…</span> · 她要是拿不出一个何韩二号，那金牌推手、金牌编辑的名头，是要还回去的。</span></td>
+  <td class="zh">不得不</td>
+  <td class="freq">285</td>
+</tr>
+<tr id="fn-look" data-search="look 看/看起来 verb">
+  <td><span class="lemma">look</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">Two highways look overlapping and joined from the freeway above—but they're not only apart, they're heading to two diff…</span> · 两条高速路在大航线上看是重叠的、是在一起的，但其实这两条路不但有距离，而且是通往两个目的地的。</span></td>
+  <td class="zh">看/看起来</td>
+  <td class="freq">269</td>
+</tr>
+<tr id="fn-always" data-search="always 总是 priority time">
+  <td><span class="lemma">always</span><div><span class="tag">priority</span><span class="tag">time</span></div>
+  <span class="ex"><span class="en">It's always wait for you, wait for you. Wait until when?</span> · 你每次都是要等等你，等到什么时候？</span></td>
+  <td class="zh">总是</td>
+  <td class="freq">268</td>
+</tr>
+<tr id="fn-again" data-search="again 再次 priority time">
+  <td><span class="lemma">again</span><div><span class="tag">priority</span><span class="tag">time</span></div>
+  <span class="ex"><span class="en">If he can seize this chance, he can rise again from the ashes.</span> · 他要是能抓住这个机会，他就能东山再起。</span></td>
+  <td class="zh">再次</td>
+  <td class="freq">267</td>
+</tr>
+<tr id="fn-before" data-search="before 之前 time">
+  <td><span class="lemma">before</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">I'm afraid my mom will look down on me. Every time before going home I'd clean the place, but it never reached a good e…</span> · 怕我妈嫌弃我。每次去我家之前我都要打扫一次，但是永远打不到好的标准。</span></td>
+  <td class="zh">之前</td>
+  <td class="freq">267</td>
+</tr>
+<tr id="fn-well" data-search="well 嗯/这个 filler">
+  <td><span class="lemma">well</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Being well-liked is an advantage, but sometimes it's a disadvantage too.</span> · 好人喜欢是优势，但有时候也是一种劣势。</span></td>
+  <td class="zh">嗯/这个</td>
+  <td class="freq">260</td>
+</tr>
+<tr id="fn-love" data-search="love 爱 priority verb noun">
+  <td><span class="lemma">love</span><div><span class="tag">priority</span><span class="tag">verb</span><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Love life, and get plenty of sleep.</span> · 热爱生活，多睡觉。</span></td>
+  <td class="zh">爱</td>
+  <td class="freq">255</td>
+</tr>
+<tr id="fn-because" data-search="because 因为 priority connect">
+  <td><span class="lemma">because</span><div><span class="tag">priority</span><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Uncle Fan asking to see me is definitely not because of my looks.</span> · 范叔找我聊，肯定不是因为我的美貌。</span></td>
+  <td class="zh">因为</td>
+  <td class="freq">252</td>
+</tr>
+<tr id="fn-leave" data-search="leave 离开/留下 priority verb">
+  <td><span class="lemma">leave</span><div><span class="tag">priority</span><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I can divorce her and leave with nothing.&quot; &quot;The money you worked so hard for — giving it all up isn't worth i…</span> · 我可以跟她离婚的，净身出户。」「你辛辛苦苦工作赚的钱，净身出户就太不值得了。</span></td>
+  <td class="zh">离开/留下</td>
+  <td class="freq">251</td>
+</tr>
+<tr id="fn-may" data-search="may 可能/可以 modal">
+  <td><span class="lemma">may</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">Under the contract, you may decline to renew with us after it expires. And under the same contract, I may withhold the …</span> · 按照合约，您在期满之后可以不跟我们续约；按照合约，我也可以不给您首页的资源。</span></td>
+  <td class="zh">可能/可以</td>
+  <td class="freq">246</td>
+</tr>
+<tr id="fn-yet" data-search="yet 然而 priority connect">
+  <td><span class="lemma">yet</span><div><span class="tag">priority</span><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Six Weeks isn't even half written yet — who knows if it'll turn into an unfinished mess?&quot; &quot;Impossible. Becaus…</span> · 你的《六周》到现在都还没写过一半，会不会烂尾谁知道？」「不可能，因为《六周》是何韩自己写的。</span></td>
+  <td class="zh">然而</td>
+  <td class="freq">201</td>
+</tr>
+<tr id="fn-young" data-search="young 年轻 priority adj">
+  <td><span class="lemma">young</span><div><span class="tag">priority</span><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">I write for the young, but I'm an old-school man. Trust — that's the foundation of any long-term partnership.</span> · 我的小说是写给年轻人看的，但是我是一个老派人呀。信任，那是长期合作的基石。</span></td>
+  <td class="zh">年轻</td>
+  <td class="freq">196</td>
+</tr>
+<tr id="fn-since" data-search="since 既然/自从 priority connect">
+  <td><span class="lemma">since</span><div><span class="tag">priority</span><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Impossible — it's barely been forty-eight hours since we broke up.</span> · 不可能，我跟他分手差不多四十八个小时呢。</span></td>
+  <td class="zh">既然/自从</td>
+  <td class="freq">191</td>
+</tr>
+<tr id="fn-power" data-search="power 权力 priority noun">
+  <td><span class="lemma">power</span><div><span class="tag">priority</span><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Please stop hurting her—physically or with words. If it happens in front of me, I will do everything in my po…</span> · 请您不要再伤害她了，不管是肢体上还是言语上。如果当着我的面，我一定会竭力阻止您。</span></td>
+  <td class="zh">权力</td>
+  <td class="freq">190</td>
+</tr>
+<tr id="fn-help" data-search="help 帮助 priority verb">
+  <td><span class="lemma">help</span><div><span class="tag">priority</span><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I promise I won't help you.&quot; &quot;You didn't even go to the hospital — how do you know which medicine to buy?</span> · 我保证不帮你。」「你都没去医院，怎么知道买什么药？</span></td>
+  <td class="zh">帮助</td>
+  <td class="freq">181</td>
+</tr>
+<tr id="fn-very" data-search="very 非常 priority degree">
+  <td><span class="lemma">very</span><div><span class="tag">priority</span><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">I already told you on the phone that I'd be back very, very late tonight. I said don't wait for me.</span> · 我不是电话里都已经说了，今天我会忙到很晚很晚才回来，我说了让你不要等我。</span></td>
+  <td class="zh">非常</td>
+  <td class="freq">173</td>
+</tr>
+<tr id="fn-wrong" data-search="wrong 错的 priority adj">
+  <td><span class="lemma">wrong</span><div><span class="tag">priority</span><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">I did nothing wrong. Why should I apologize?</span> · 我没有做错，我为什么要道歉？</span></td>
+  <td class="zh">错的</td>
+  <td class="freq">167</td>
+</tr>
+<tr id="fn-real" data-search="real 真实的 priority adj">
+  <td><span class="lemma">real</span><div><span class="tag">priority</span><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">The kid has real talent — a gift from heaven.</span> · 人家那是有天赋，老天爷赏饭吃。</span></td>
+  <td class="zh">真实的</td>
+  <td class="freq">166</td>
+</tr>
+<tr id="fn-hard" data-search="hard 难/硬 priority adj">
+  <td><span class="lemma">hard</span><div><span class="tag">priority</span><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">I can divorce her and leave with nothing.&quot; &quot;The money you worked so hard for — giving it all up isn't worth i…</span> · 我可以跟她离婚的，净身出户。」「你辛辛苦苦工作赚的钱，净身出户就太不值得了。</span></td>
+  <td class="zh">难/硬</td>
+  <td class="freq">164</td>
+</tr>
+<tr id="fn-enough" data-search="enough 足够 priority degree adj">
+  <td><span class="lemma">enough</span><div><span class="tag">priority</span><span class="tag">degree</span><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Iron pens, authors that flow by. I am the pen—I can afford to wait. But you can't. You'll be replaced soon en…</span> · 铁打的笔，流水的作者。我是笔，我不怕等，但你等不了。你很快就会被取代，好自为之。</span></td>
+  <td class="zh">足够</td>
+  <td class="freq">160</td>
+</tr>
+<tr id="fn-ask" data-search="ask 问 priority verb">
+  <td><span class="lemma">ask</span><div><span class="tag">priority</span><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I think you should go talk to Lin Zhanqiao.&quot; &quot;About what?&quot; &quot;Too proud to ask, huh?&quot; &quot;Fine, I'll go.</span> · 我觉得你应该去跟林展翘聊聊。」「聊什么？」「拉不下脸。」「行，我去。</span></td>
+  <td class="zh">问</td>
+  <td class="freq">153</td>
+</tr>
+<tr id="fn-same" data-search="same 一样 priority adj">
+  <td><span class="lemma">same</span><div><span class="tag">priority</span><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">The same mistake can only be made once in a lifetime.</span> · 同样的错，一辈子只能错一次。</span></td>
+  <td class="zh">一样</td>
+  <td class="freq">150</td>
+</tr>
+<tr id="fn-a-little" data-search="a little 一点 priority degree">
+  <td><span class="lemma">a little</span><div><span class="tag">priority</span><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">That woman just now — she looks a little like a friend I used to know.</span> · 刚刚那个人，有点像我以前一个朋友。</span></td>
+  <td class="zh">一点</td>
+  <td class="freq">144</td>
+</tr>
+<tr id="fn-death" data-search="death 死亡 priority noun">
+  <td><span class="lemma">death</span><div><span class="tag">priority</span><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">The more life-or-death it gets, the better you must hide your emotions. Whoever laughs last, laughs best.</span> · 越是真的你死我活的时候，越是要收好自己的情绪。谁笑到最后，谁笑得最好。</span></td>
+  <td class="zh">死亡</td>
+  <td class="freq">143</td>
+</tr>
+<tr id="fn-feel" data-search="feel 感觉 verb">
+  <td><span class="lemma">feel</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I've already told Sanmei she won't come here anymore. I shouldn't make you feel uneasy.</span> · 我已经跟三妹说了，她以后不再来了。我不应该让你觉得有什么顾忌。</span></td>
+  <td class="zh">感觉</td>
+  <td class="freq">139</td>
+</tr>
+<tr id="fn-from-now-on" data-search="from now on 从今以后 priority time">
+  <td><span class="lemma">from now on</span><div><span class="tag">priority</span><span class="tag">time</span></div>
+  <span class="ex"><span class="en">From now on, well water and river water never mix. Keep your No. 1 if you can—I'll take my authors past yours…</span> · 从此以后我们井水不犯河水。你要本事你保持你的第一，我要本事我的作者超过你的第一。我们以后用作品说话，不交流不互动。</span></td>
+  <td class="zh">从今以后</td>
+  <td class="freq">129</td>
+</tr>
+<tr id="fn-while" data-search="while 虽然/当…时 priority connect">
+  <td><span class="lemma">while</span><div><span class="tag">priority</span><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">If Ling Yikai hadn't suddenly jumped ship, he might have kept him hidden a while longer.</span> · 要不是因为凌奕凯突然跳槽，他可能还得把他藏一段时间。</span></td>
+  <td class="zh">虽然/当…时</td>
+  <td class="freq">129</td>
+</tr>
+<tr id="fn-afraid" data-search="afraid 害怕 priority adj">
+  <td><span class="lemma">afraid</span><div><span class="tag">priority</span><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">I wasn't afraid when He Han left. You leaving means even less to me.</span> · 何韩走我都不怕，你走，更无所谓。</span></td>
+  <td class="zh">害怕</td>
+  <td class="freq">126</td>
+</tr>
+<tr id="fn-even-if" data-search="even if 即使 priority connect">
+  <td><span class="lemma">even if</span><div><span class="tag">priority</span><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Who told you I wasn't renewing my contract? Even if someone told you that, shouldn't you have asked me first?</span> · 是谁告诉你我不跟你续约的？就算有人告诉你，你是不是可以先来问问我？</span></td>
+  <td class="zh">即使</td>
+  <td class="freq">122</td>
+</tr>
+<tr id="fn-save" data-search="save 救/省 priority verb">
+  <td><span class="lemma">save</span><div><span class="tag">priority</span><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I'm going to save his marriage. He should be thanking me.&quot; &quot;With a face like yours, you couldn't save anyone'…</span> · 我是去拯救他的婚姻的，他应该感谢我才是。」「你这张脸啊，谁的婚姻都救不了。</span></td>
+  <td class="zh">救/省</td>
+  <td class="freq">121</td>
+</tr>
+<tr id="fn-chance" data-search="chance 机会 noun">
+  <td><span class="lemma">chance</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Out of over twenty million web novelists, you only have a chance to be seen and remembered if you break into the top tw…</span> · 在两千多万网文作者中，你们只有冲到前二十，才有可能被看见、被记住。</span></td>
+  <td class="zh">机会</td>
+  <td class="freq">120</td>
+</tr>
+<tr id="fn-whether" data-search="whether 是否/不管 connect">
+  <td><span class="lemma">whether</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Then how come Da Shan gets to go in?&quot; &quot;Because he never bothers to wonder whether there's another woman hidden in there.</span> · 大山为什么就能进去呢？」「因为他从来不会关心，里面有没有藏别的女人。</span></td>
+  <td class="zh">是否/不管</td>
+  <td class="freq">120</td>
+</tr>
+<tr id="fn-right-now" data-search="right now 此刻 time">
+  <td><span class="lemma">right now</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">Right now we've lost the wife and lost the army too.</span> · 现在我们是赔了夫人又折兵。</span></td>
+  <td class="zh">此刻</td>
+  <td class="freq">117</td>
+</tr>
+<tr id="fn-exactly" data-search="exactly 正是 degree">
+  <td><span class="lemma">exactly</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">Every relationship is an exchange of value — on that point, we see exactly eye to eye.</span> · 任何关系都是价值交换，在这一点上，我们认知是一致的。</span></td>
+  <td class="zh">正是</td>
+  <td class="freq">112</td>
+</tr>
+<tr id="fn-believe" data-search="believe 相信 modal">
+  <td><span class="lemma">believe</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">I believe in him. When it comes to writing novels, I do trust him.</span> · 我相信他。写小说这件事情，我还是蛮相信他的。</span></td>
+  <td class="zh">相信</td>
+  <td class="freq">111</td>
+</tr>
+<tr id="fn-job" data-search="job 工作岗位 noun">
+  <td><span class="lemma">job</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">If you lose this job over us, then we break up.&quot; &quot;Don't carry that weight. What I give is my own business.</span> · 如果你要是把这份工作丢掉的话，那我就分手。」「你别有负担，我付出多少是我的事情。</span></td>
+  <td class="zh">工作岗位</td>
+  <td class="freq">111</td>
+</tr>
+<tr id="fn-remember" data-search="remember 记得 verb">
+  <td><span class="lemma">remember</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I'm afraid that a month from now, everyone will know only Gu Yan—and no one will remember who He Han is.</span> · 我就怕一个月之后，大家就只知道孤烟，不知道何韩是谁了。</span></td>
+  <td class="zh">记得</td>
+  <td class="freq">108</td>
+</tr>
+<tr id="fn-true" data-search="true 真的 adj">
+  <td><span class="lemma">true</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">My knowledge of my idol has to run from hair tip to toe before I can call myself a true fan.</span> · 我对我偶像的了解，必须得从头发丝到脚趾头，才配叫铁粉呢。</span></td>
+  <td class="zh">真的</td>
+  <td class="freq">104</td>
+</tr>
+<tr id="fn-might" data-search="might 或许 modal">
+  <td><span class="lemma">might</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">We can't afford to gamble right now—we might end up with nothing. Gu Yan is different; his value is already proven.</span> · 我们现在赌不起，很有可能颗粒无收；孤烟不一样，他的价值已经确定了。</span></td>
+  <td class="zh">或许</td>
+  <td class="freq">101</td>
+</tr>
+<tr id="fn-worry" data-search="worry 担心 verb">
+  <td><span class="lemma">worry</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I'm afraid one day I'll be pushed down a staircase right along with you.&quot; &quot;No, you won't. Don't worry.</span> · 我怕有一天啊，我会跟你一起被推下楼。」「不会的，你放心吧。</span></td>
+  <td class="zh">担心</td>
+  <td class="freq">100</td>
+</tr>
+<tr id="fn-as-long-as" data-search="as long as 只要 connect">
+  <td><span class="lemma">as long as</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">As long as she knows that when she needs me, I'll take care of it—that's enough.</span> · 她只要知道她有事我会管她的，就好了呀。</span></td>
+  <td class="zh">只要</td>
+  <td class="freq">99</td>
+</tr>
+<tr id="fn-at-least" data-search="at least 至少 degree">
+  <td><span class="lemma">at least</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">At least part of this space now belongs to me.</span> · 这个空间里面，有一部分是跟我有关的了。</span></td>
+  <td class="zh">至少</td>
+  <td class="freq">99</td>
+</tr>
+<tr id="fn-kind" data-search="kind 善良 adj">
+  <td><span class="lemma">kind</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Growing up she never let me wear dresses or heels, so now everything I earn goes on clothes and makeup — I guess it's a…</span> · 从小她就不让我穿裙子和皮鞋，所以长大以后我赚的钱，都用来买衣服和化妆品，算是一种叛逆吧。</span></td>
+  <td class="zh">善良</td>
+  <td class="freq">97</td>
+</tr>
+<tr id="fn-past" data-search="past 过去 noun">
+  <td><span class="lemma">past</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">From now on, well water and river water never mix. Keep your No. 1 if you can—I'll take my authors past yours. From now…</span> · 从此以后我们井水不犯河水。你要本事你保持你的第一，我要本事我的作者超过你的第一。我们以后用作品说话，不交流不互动。</span></td>
+  <td class="zh">过去</td>
+  <td class="freq">97</td>
+</tr>
+<tr id="fn-actually" data-search="actually 其实 filler">
+  <td><span class="lemma">actually</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Don't mind me flirting with young ladies — it's all empty. What I actually look at is the brain.</span> · 你别看我平时喜欢跟那些年轻姑娘聊天，没意思。其实我是看脑子的。</span></td>
+  <td class="zh">其实</td>
+  <td class="freq">92</td>
+</tr>
+<tr id="fn-different" data-search="different 不同 adj">
+  <td><span class="lemma">different</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Two highways look overlapping and joined from the freeway above—but they're not only apart, they're heading to two diff…</span> · 两条高速路在大航线上看是重叠的、是在一起的，但其实这两条路不但有距离，而且是通往两个目的地的。</span></td>
+  <td class="zh">不同</td>
+  <td class="freq">89</td>
+</tr>
+<tr id="fn-finally" data-search="finally 最终 time">
+  <td><span class="lemma">finally</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">It looks like the Zhiyuan investment money is finally coming through — that eases the worst of our cash crunch.</span> · 志远投资的钱我应该是可以拿到了，这下也算是解了燃眉之急了。</span></td>
+  <td class="zh">最终</td>
+  <td class="freq">88</td>
+</tr>
+<tr id="fn-hope" data-search="hope 希望 modal noun">
+  <td><span class="lemma">hope</span><div><span class="tag">modal</span><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">You said this is our company. I hope you're not joking either.</span> · 你说这是我们的公司，我希望你也不是开玩笑。</span></td>
+  <td class="zh">希望</td>
+  <td class="freq">87</td>
+</tr>
+<tr id="fn-hurt" data-search="hurt 伤害 verb">
+  <td><span class="lemma">hurt</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I'm protecting the bigger picture. I care about you. I don't want to hurt you.</span> · 我在顾全大局，我在乎你，我不想伤害你。</span></td>
+  <td class="zh">伤害</td>
+  <td class="freq">87</td>
+</tr>
+<tr id="fn-now-that" data-search="now that 既然 connect">
+  <td><span class="lemma">now that</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">We gave her an equal stake because she held He Han in her hands. Now that he's sold, she's not that important anymore.</span> · 当初让她跟我们占一样多的股，是因为她手里有何韩。现在卖了，她没那么重要了。</span></td>
+  <td class="zh">既然</td>
+  <td class="freq">87</td>
+</tr>
+<tr id="fn-come-back" data-search="come back 回来 phrasal">
+  <td><span class="lemma">come back</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Flash Knight stopped writing ages ago. Why would she come back?</span> · 闪灵骑士早就不写了，怎么就归来？</span></td>
+  <td class="zh">回来</td>
+  <td class="freq">85</td>
+</tr>
+<tr id="fn-understand" data-search="understand 理解 verb">
+  <td><span class="lemma">understand</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I understand — you have spine. Take out the parts about He Han. We'll talk again later.</span> · 我明白，你是有骨气的。合同里有关何韩的部分，去掉。我们找时间再聊。</span></td>
+  <td class="zh">理解</td>
+  <td class="freq">85</td>
+</tr>
+<tr id="fn-a-bit" data-search="a bit 有点 degree">
+  <td><span class="lemma">a bit</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">I'm going to see an author today, so I'll leave a bit early.</span> · 今天我去见一个作者，我早一点走。</span></td>
+  <td class="zh">有点</td>
+  <td class="freq">83</td>
+</tr>
+<tr id="fn-easy" data-search="easy 容易 adj">
+  <td><span class="lemma">easy</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">To you it may seem senseless, but to me it was anything but easy.</span> · 对你来说或许是莫名其妙，但对我来说就是好不容易。</span></td>
+  <td class="zh">容易</td>
+  <td class="freq">81</td>
+</tr>
+<tr id="fn-friend" data-search="friend 朋友 noun">
+  <td><span class="lemma">friend</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">That woman just now — she looks a little like a friend I used to know.</span> · 刚刚那个人，有点像我以前一个朋友。</span></td>
+  <td class="zh">朋友</td>
+  <td class="freq">80</td>
+</tr>
+<tr id="fn-try" data-search="try 尝试 verb">
+  <td><span class="lemma">try</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">Keep a good mindset, and try your best to stay out of the way.</span> · 心态要好，尽量躲好。</span></td>
+  <td class="zh">尝试</td>
+  <td class="freq">79</td>
+</tr>
+<tr id="fn-change" data-search="change 改变 verb">
+  <td><span class="lemma">change</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">However much I change, I could never leave this internet cafe. — I don't mean the cafe. I mean Sanmei.</span> · 我再怎么变，我也不能离开这网吧。——我说的不是网吧，我说的是三妹。</span></td>
+  <td class="zh">改变</td>
+  <td class="freq">78</td>
+</tr>
+<tr id="fn-trust" data-search="trust 信任 verb noun">
+  <td><span class="lemma">trust</span><div><span class="tag">verb</span><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">I write for the young, but I'm an old-school man. Trust — that's the foundation of any long-term partnership.</span> · 我的小说是写给年轻人看的，但是我是一个老派人呀。信任，那是长期合作的基石。</span></td>
+  <td class="zh">信任</td>
+  <td class="freq">78</td>
+</tr>
+<tr id="fn-happy" data-search="happy 开心 adj">
+  <td><span class="lemma">happy</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">However good your conditions are, I don't like you. How many people end up marrying for love anyway? And did marrying f…</span> · 条件再好，但不喜欢你。有多少人最后是嫁给爱情的？嫁给爱情，就都幸福了吗？</span></td>
+  <td class="zh">开心</td>
+  <td class="freq">77</td>
+</tr>
+<tr id="fn-mean" data-search="mean 意思是 verb">
+  <td><span class="lemma">mean</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">However much I change, I could never leave this internet cafe. — I don't mean the cafe. I mean Sanmei.</span> · 我再怎么变，我也不能离开这网吧。——我说的不是网吧，我说的是三妹。</span></td>
+  <td class="zh">意思是</td>
+  <td class="freq">76</td>
+</tr>
+<tr id="fn-problem" data-search="problem 问题 noun">
+  <td><span class="lemma">problem</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Every time a problem comes up, you just run away from it!</span> · 你每次遇到任何问题，都是在逃避问题！</span></td>
+  <td class="zh">问题</td>
+  <td class="freq">74</td>
+</tr>
+<tr id="fn-future" data-search="future 未来 noun">
+  <td><span class="lemma">future</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Past, present, and future — all the praise and glory I receive should belong first and foremost to Lin Zhanqiao.</span> · 我过去、现在、直到未来，所有得到的赞美与荣誉，首先都应该属于林展翘。</span></td>
+  <td class="zh">未来</td>
+  <td class="freq">73</td>
+</tr>
+<tr id="fn-sure" data-search="sure 确定 adj">
+  <td><span class="lemma">sure</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">I just wanted to be sure that the person I work with, the person I trust, will always stand by my side no matter what.</span> · 我只是想确定，我合作的人、我信任的人，无论发生任何事情，都会站在我身边。</span></td>
+  <td class="zh">确定</td>
+  <td class="freq">72</td>
+</tr>
+<tr id="fn-bad" data-search="bad 坏 adj">
+  <td><span class="lemma">bad</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">If He Han were to come back, it wouldn't be a bad story at all.</span> · 如果何韩能回来的话，倒也不失为一桩美谈。</span></td>
+  <td class="zh">坏</td>
+  <td class="freq">71</td>
+</tr>
+<tr id="fn-kind-of" data-search="kind of 有点 degree">
+  <td><span class="lemma">kind of</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">Growing up she never let me wear dresses or heels, so now everything I earn goes on clothes and makeup — I guess it's a…</span> · 从小她就不让我穿裙子和皮鞋，所以长大以后我赚的钱，都用来买衣服和化妆品，算是一种叛逆吧。</span></td>
+  <td class="zh">有点</td>
+  <td class="freq">70</td>
+</tr>
+<tr id="fn-reason" data-search="reason 理由 noun">
+  <td><span class="lemma">reason</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">This isn't a school, and I don't take tuition from any of you. I want you here for one reason: to create value for me.</span> · 我这里不是学校，不收你们任何人的学费。我希望你们来，就是为了给我创造价值的。</span></td>
+  <td class="zh">理由</td>
+  <td class="freq">70</td>
+</tr>
+<tr id="fn-clear" data-search="clear 清楚 adj">
+  <td><span class="lemma">clear</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">After I met his wife, I made it clear to him: I have a boyfriend, we should keep our distance. But he got all worked up…</span> · 我见过他老婆以后，就跟他说清楚了：我有男朋友的，以后大家保持距离。谁知道他就情绪很激动，然后就开始拉扯我。</span></td>
+  <td class="zh">清楚</td>
+  <td class="freq">69</td>
+</tr>
+<tr id="fn-later" data-search="later 后来 time">
+  <td><span class="lemma">later</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">Tame the white horse first; find the prince later.</span> · 先驯白马，再找王子。</span></td>
+  <td class="zh">后来</td>
+  <td class="freq">69</td>
+</tr>
+<tr id="fn-wish" data-search="wish 希望 modal">
+  <td><span class="lemma">wish</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">I wish I'd known you back then... I'd pretend to come along and tell her: Auntie, don't worry, I'll protect her forever.</span> · 我真希望当时就认识你……我就假装跟着过来吃，跟她说：阿姨你放心，我会永远保护她。</span></td>
+  <td class="zh">希望</td>
+  <td class="freq">68</td>
+</tr>
+<tr id="fn-maybe" data-search="maybe 也许 filler">
+  <td><span class="lemma">maybe</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Right now, better to leave him alone to think—maybe that'll help.</span> · 现在这会儿，应该让他一个人静一静，或许会好一点吧。</span></td>
+  <td class="zh">也许</td>
+  <td class="freq">66</td>
+</tr>
+<tr id="fn-of-course" data-search="of course 当然 filler">
+  <td><span class="lemma">of course</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Of course—I spent a fortune. Rest assured, I'm far more careful than you.</span> · 当然了，我花了那么多钱，你放心，我比你要小心多了。</span></td>
+  <td class="zh">当然</td>
+  <td class="freq">66</td>
+</tr>
+<tr id="fn-safe" data-search="safe 安全 adj">
+  <td><span class="lemma">safe</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">If that ex comes looking for trouble and wants to smash your place, keep everyone safe. If things get wrecked, I'll get…</span> · 如果那前对象要上来找麻烦、要砸你的房子，你一定要把人保护好。东西砸坏了，我给你弄新的。</span></td>
+  <td class="zh">安全</td>
+  <td class="freq">65</td>
+</tr>
+<tr id="fn-take-care" data-search="take care 保重/照料 phrasal">
+  <td><span class="lemma">take care</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">My assistant is mine to take care of. Thanks, but no thanks.</span> · 我的助理我来照顾，谢谢你的好意。</span></td>
+  <td class="zh">保重/照料</td>
+  <td class="freq">63</td>
+</tr>
+<tr id="fn-look-at" data-search="look at 看着 phrasal">
+  <td><span class="lemma">look at</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Don't mind me flirting with young ladies — it's all empty. What I actually look at is the brain.</span> · 你别看我平时喜欢跟那些年轻姑娘聊天，没意思。其实我是看脑子的。</span></td>
+  <td class="zh">看着</td>
+  <td class="freq">60</td>
+</tr>
+<tr id="fn-rather" data-search="rather 宁可 modal degree">
+  <td><span class="lemma">rather</span><div><span class="tag">modal</span><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">No way. I'd rather just stay exactly who I am.</span> · 我才不要呢，我就还是我自己这个样子。</span></td>
+  <td class="zh">宁可</td>
+  <td class="freq">60</td>
+</tr>
+<tr id="fn-simply" data-search="simply 简直/仅仅 degree">
+  <td><span class="lemma">simply</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">It's not that I'm being generous—that's simply what she deserves.</span> · 不是我仗义，那是她应得的。</span></td>
+  <td class="zh">简直/仅仅</td>
+  <td class="freq">60</td>
+</tr>
+<tr id="fn-cold" data-search="cold 冷淡 adj">
+  <td><span class="lemma">cold</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">How many cold nights, and it was his warmth that kept my heart warm.</span> · 多少个寒冷的夜晚，都是他用体温温暖了我的心窝。</span></td>
+  <td class="zh">冷淡</td>
+  <td class="freq">57</td>
+</tr>
+<tr id="fn-forget" data-search="forget 忘记 verb">
+  <td><span class="lemma">forget</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">This year's Author Night, I should be the Most Satisfying Author. Don't forget to watch the livestream.</span> · 今年作者之夜，我应该是年度欣慰作者，到时候你们可记得看直播啊。</span></td>
+  <td class="zh">忘记</td>
+  <td class="freq">53</td>
+</tr>
+<tr id="fn-truth" data-search="truth 真相 noun">
+  <td><span class="lemma">truth</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">The truth is, over these months Chenxing's finances have been far worse than they look on the surface.</span> · 实际上这几个月以来，茞星的财务远远要比表面上看到的糟糕得多。</span></td>
+  <td class="zh">真相</td>
+  <td class="freq">53</td>
+</tr>
+<tr id="fn-protect" data-search="protect 保护 verb">
+  <td><span class="lemma">protect</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I wish I'd known you back then... I'd pretend to come along and tell her: Auntie, don't worry, I'll protect her forever.</span> · 我真希望当时就认识你……我就假装跟着过来吃，跟她说：阿姨你放心，我会永远保护她。</span></td>
+  <td class="zh">保护</td>
+  <td class="freq">51</td>
+</tr>
+<tr id="fn-as-for" data-search="as for 至于 filler">
+  <td><span class="lemma">as for</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">As for how much he's really worth—we'll see once He Han comes back and we settle who's on top.</span> · 具体他有多大能力、多大价值，等一个月之后何韩出手，再定输赢。</span></td>
+  <td class="zh">至于</td>
+  <td class="freq">49</td>
+</tr>
+<tr id="fn-because-of" data-search="because of 因为（+名词） connect">
+  <td><span class="lemma">because of</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Uncle Fan asking to see me is definitely not because of my looks.</span> · 范叔找我聊，肯定不是因为我的美貌。</span></td>
+  <td class="zh">因为（+名词）</td>
+  <td class="freq">48</td>
+</tr>
+<tr id="fn-answer" data-search="answer 答案 noun">
+  <td><span class="lemma">answer</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Marry me. This is the second time I've asked.&quot; &quot;Then I'll answer you for the second time: you're not my type—not for da…</span> · 嫁给我，这是我第二次向你求婚。」「那我第二次回答你：恋爱结婚，你都不是我的菜。</span></td>
+  <td class="zh">答案</td>
+  <td class="freq">47</td>
+</tr>
+<tr id="fn-quite" data-search="quite 相当 degree">
+  <td><span class="lemma">quite</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">I gave him the sack verbally, but that's not really what I wanted. He's still quite suited to the job.</span> · 我口头上辞退了他，但其实这也并非真正我所想，他还是挺适合这份工作的。</span></td>
+  <td class="zh">相当</td>
+  <td class="freq">47</td>
+</tr>
+<tr id="fn-fear" data-search="fear 恐惧 noun">
+  <td><span class="lemma">fear</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Being strong is sometimes just a race with no prize. He Han can't save me, just like I couldn't save her when she passe…</span> · 坚强有时只是一场没有奖励的比赛。何韩拯救不了我，就像何为去世的时候，我也拯救不了她。但至少这一场无法言说的恐惧和失落，我们知道对方感同身…</span></td>
+  <td class="zh">恐惧</td>
+  <td class="freq">46</td>
+</tr>
+<tr id="fn-important" data-search="important 重要 adj">
+  <td><span class="lemma">important</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">We gave her an equal stake because she held He Han in her hands. Now that he's sold, she's not that important anymore.</span> · 当初让她跟我们占一样多的股，是因为她手里有何韩。现在卖了，她没那么重要了。</span></td>
+  <td class="zh">重要</td>
+  <td class="freq">46</td>
+</tr>
+<tr id="fn-promise" data-search="promise 承诺 modal noun">
+  <td><span class="lemma">promise</span><div><span class="tag">modal</span><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">I promise I won't help you.&quot; &quot;You didn't even go to the hospital — how do you know which medicine to buy?</span> · 我保证不帮你。」「你都没去医院，怎么知道买什么药？</span></td>
+  <td class="zh">承诺</td>
+  <td class="freq">46</td>
+</tr>
+<tr id="fn-suddenly" data-search="suddenly 突然 time">
+  <td><span class="lemma">suddenly</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">If Ling Yikai hadn't suddenly jumped ship, he might have kept him hidden a while longer.</span> · 要不是因为凌奕凯突然跳槽，他可能还得把他藏一段时间。</span></td>
+  <td class="zh">突然</td>
+  <td class="freq">46</td>
+</tr>
+<tr id="fn-in-the-end" data-search="in the end 最终 time">
+  <td><span class="lemma">in the end</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">He probably had a rough night too. He knows he can't afford to lose, so in the end he handed in the manuscript.</span> · 他这一晚上应该也不好过。他知道自己输不起，所以到最后还是把稿交了。</span></td>
+  <td class="zh">最终</td>
+  <td class="freq">45</td>
+</tr>
+<tr id="fn-otherwise" data-search="otherwise 否则 connect">
+  <td><span class="lemma">otherwise</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Between editor and author there should be no romantic relationship — otherwise how can you stay objective about the wor…</span> · 编辑和作者之间，不需要情感关系，否则对待作品还怎么客观呢？</span></td>
+  <td class="zh">否则</td>
+  <td class="freq">44</td>
+</tr>
+<tr id="fn-relationship" data-search="relationship 关系 noun">
+  <td><span class="lemma">relationship</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Everything that happens between couples happened between us, but we never had a clearly defined romantic relationship.</span> · 情侣之间该发生的都发生过，但我们没有明确的恋爱关系。</span></td>
+  <td class="zh">关系</td>
+  <td class="freq">43</td>
+</tr>
+<tr id="fn-anyway" data-search="anyway 反正 connect">
+  <td><span class="lemma">anyway</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">However good your conditions are, I don't like you. How many people end up marrying for love anyway? And did marrying f…</span> · 条件再好，但不喜欢你。有多少人最后是嫁给爱情的？嫁给爱情，就都幸福了吗？</span></td>
+  <td class="zh">反正</td>
+  <td class="freq">42</td>
+</tr>
+<tr id="fn-not-just" data-search="not just 不仅 degree">
+  <td><span class="lemma">not just</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">This year's top author will probably be Guyan. You're not just going — you're going to manage your face.</span> · 今年的年度作者大概率就孤烟了。你不仅要去，你还要做好你的表情管理。</span></td>
+  <td class="zh">不仅</td>
+  <td class="freq">42</td>
+</tr>
+<tr id="fn-choice" data-search="choice 选择 noun">
+  <td><span class="lemma">choice</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">But she insisted on protecting Guyin—I had no choice.</span> · 可她坚持要保孤烟，我也没有办法。</span></td>
+  <td class="zh">选择</td>
+  <td class="freq">41</td>
+</tr>
+<tr id="fn-go-back" data-search="go back 回去 phrasal">
+  <td><span class="lemma">go back</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">I've already walked away — would I really go back and fight Mimi over He Han? Even I wouldn't believe that.</span> · 我明明已经分手了，我还会跑回去跟咪咪这样的女人争抢何韩？我自己都不相信。</span></td>
+  <td class="zh">回去</td>
+  <td class="freq">41</td>
+</tr>
+<tr id="fn-completely" data-search="completely 完全 degree">
+  <td><span class="lemma">completely</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">His trusting me this completely — it's encouragement, and also pressure.</span> · 他这么信任我，对我来说是鼓励，也是压力。</span></td>
+  <td class="zh">完全</td>
+  <td class="freq">40</td>
+</tr>
+<tr id="fn-lie" data-search="lie 谎言 noun">
+  <td><span class="lemma">lie</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Two years ago you didn't know me, and two years from now I don't know who I'll meet — so I can't lie to you.</span> · 两年之前你不认识我，两年以后我也不知道会认识谁——所以我不能骗你。</span></td>
+  <td class="zh">谎言</td>
+  <td class="freq">40</td>
+</tr>
+<tr id="fn-ready" data-search="ready 准备好 adj">
+  <td><span class="lemma">ready</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">First, you didn't need such a big diamond. Second, I won't say yes just because you brought Lawyer Pei and his wife to …</span> · 第一，你没有必要买这么大的钻戒。第二，我也不会因为你把贝律师和贝太太请过来，就抹不开情面答应——相反，我会觉得你这是在算计。第三，我还不…</span></td>
+  <td class="zh">准备好</td>
+  <td class="freq">40</td>
+</tr>
+<tr id="fn-decide" data-search="decide 决定 modal">
+  <td><span class="lemma">decide</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">Now I have to decide: do I bet it all—every last cent of the company—so I can have a real defeat? Or do I just disband …</span> · 现在我就是需要考虑，我到底要不要赌一把，把公司的最后一份钱全都投进去，然后才有个认输。还是说，现在就要原地解散。</span></td>
+  <td class="zh">决定</td>
+  <td class="freq">39</td>
+</tr>
+<tr id="fn-end-up" data-search="end up 最终变成 phrasal">
+  <td><span class="lemma">end up</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">However good your conditions are, I don't like you. How many people end up marrying for love anyway? And did marrying f…</span> · 条件再好，但不喜欢你。有多少人最后是嫁给爱情的？嫁给爱情，就都幸福了吗？</span></td>
+  <td class="zh">最终变成</td>
+  <td class="freq">39</td>
+</tr>
+<tr id="fn-impossible" data-search="impossible 不可能 adj">
+  <td><span class="lemma">impossible</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Six Weeks isn't even half written yet — who knows if it'll turn into an unfinished mess?&quot; &quot;Impossible. Because Six Week…</span> · 你的《六周》到现在都还没写过一半，会不会烂尾谁知道？」「不可能，因为《六周》是何韩自己写的。</span></td>
+  <td class="zh">不可能</td>
+  <td class="freq">39</td>
+</tr>
+<tr id="fn-go-on" data-search="go on 继续 phrasal">
+  <td><span class="lemma">go on</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Enough—the sky won't fall. Go on back and rest.</span> · 行了，天塌不下来，你先回去歇着。</span></td>
+  <td class="zh">继续</td>
+  <td class="freq">37</td>
+</tr>
+<tr id="fn-pressure" data-search="pressure 压力 noun">
+  <td><span class="lemma">pressure</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">His trusting me this completely — it's encouragement, and also pressure.</span> · 他这么信任我，对我来说是鼓励，也是压力。</span></td>
+  <td class="zh">压力</td>
+  <td class="freq">37</td>
+</tr>
+<tr id="fn-absolutely" data-search="absolutely 绝对 degree">
+  <td><span class="lemma">absolutely</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">Don't you only wear suits when absolutely necessary?&quot; &quot;This suit happens to match your outfit.</span> · 你不是非必要不穿西装吗？」「我是西装，刚好搭配你的套装。</span></td>
+  <td class="zh">绝对</td>
+  <td class="freq">36</td>
+</tr>
+<tr id="fn-though" data-search="though 虽然 connect">
+  <td><span class="lemma">though</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Zhou Mei left, though—telling me only afterward. She said it was payback for my not telling her I'd stayed. But I think…</span> · 周媚倒是走了，事后才告诉我。她说，是报复我不告诉她我没走。其实我想，她是不愿平凡地面对离愁别绪吧。她终于放下过往，会去勇敢拥抱真正值得爱…</span></td>
+  <td class="zh">虽然</td>
+  <td class="freq">36</td>
+</tr>
+<tr id="fn-agree" data-search="agree 同意 modal">
+  <td><span class="lemma">agree</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">Uncle Fan, if you still want Six Weeks, add five million more to your offer. Agree to that, and the deal is done.</span> · 喂，范叔，《六周》如果你想要的话，你给出的价钱再多五百万，你如果同意，我们就成交。</span></td>
+  <td class="zh">同意</td>
+  <td class="freq">35</td>
+</tr>
+<tr id="fn-probably" data-search="probably 大概 filler">
+  <td><span class="lemma">probably</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">This year's top author will probably be Guyan. You're not just going — you're going to manage your face.</span> · 今年的年度作者大概率就孤烟了。你不仅要去，你还要做好你的表情管理。</span></td>
+  <td class="zh">大概</td>
+  <td class="freq">35</td>
+</tr>
+<tr id="fn-responsibility" data-search="responsibility 责任 noun">
+  <td><span class="lemma">responsibility</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">In this matter, you have no right to suspect or accuse anyone—not He Han, not me, not Zhang Yousen. You know where the …</span> · 在这件事情上面，你是没有资格去怀疑和指责任何人的。无论是何韩、我还是张佑森，你知道责任在谁那儿。</span></td>
+  <td class="zh">责任</td>
+  <td class="freq">35</td>
+</tr>
+<tr id="fn-decision" data-search="decision 决定 noun">
+  <td><span class="lemma">decision</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">I've made my decision about the Southwest office — I'm going.</span> · 去西南分部的事情，我想好了——我去。</span></td>
+  <td class="zh">决定</td>
+  <td class="freq">34</td>
+</tr>
+<tr id="fn-for-now" data-search="for now 暂时 time">
+  <td><span class="lemma">for now</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">Uncle, I can pass along your message — but as for meeting him in person, Gu Yan isn't available for now.</span> · 大叔，话我可以帮你们带到，但是想要见面，孤烟暂时还不方便。</span></td>
+  <td class="zh">暂时</td>
+  <td class="freq">34</td>
+</tr>
+<tr id="fn-control" data-search="control 控制 noun">
+  <td><span class="lemma">control</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">He can't just pretend nothing ever happened. Right now he's trying to control and manipulate you. If you go, you're pla…</span> · 他不能当做什么事情都没有发生过，他现在就是在控制你、想要摆布你。你要是去了，就是中了他的算计了。</span></td>
+  <td class="zh">控制</td>
+  <td class="freq">33</td>
+</tr>
+<tr id="fn-dream" data-search="dream 梦想 noun">
+  <td><span class="lemma">dream</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">That day, I already knew he'd drawn the Soul Knight. Of course I knew He Han always wanted to keep writing... Maybe tha…</span> · 其实那天我知道，他抽中了闪灵骑士。我当然知道，何韩是想要一直写小说的……可能那就是爱情吧，可以以此，为对方舍弃自己的一部分理想。</span></td>
+  <td class="zh">梦想</td>
+  <td class="freq">33</td>
+</tr>
+<tr id="fn-all-along" data-search="all along 一直/原来 time">
+  <td><span class="lemma">all along</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">I even suspect this whole He Han versus Spirit Knight circus was choreographed by him all along.</span> · 我甚至都认为，这场所谓的何韩跟闪灵骑士的闹剧，也是他一手策划的。</span></td>
+  <td class="zh">一直/原来</td>
+  <td class="freq">32</td>
+</tr>
+<tr id="fn-respect" data-search="respect 尊重 noun">
+  <td><span class="lemma">respect</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">I respect her — does she respect me?</span> · 我尊重她，她尊重我吗？</span></td>
+  <td class="zh">尊重</td>
+  <td class="freq">32</td>
+</tr>
+<tr id="fn-besides" data-search="besides 况且 connect">
+  <td><span class="lemma">besides</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Zhanqiao, aren't you tired? All these years as He Han's dressmaker—he sold millions, and besides your share, what did h…</span> · 展翘你不辛苦吗？这么多年为何韩做嫁衣，他卖了千万，除了该分给你的，还给了你什么？连一个放牙刷的地方都舍不得腾出来给你。</span></td>
+  <td class="zh">况且</td>
+  <td class="freq">31</td>
+</tr>
+<tr id="fn-choose" data-search="choose 选择 verb">
+  <td><span class="lemma">choose</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">If you choose not to work with us, I can't promise your friend's gaming hall will stay open.</span> · 如果你选择不跟我们合作的话，我就不能保证，这个电竞馆你的朋友还能开下去。</span></td>
+  <td class="zh">选择</td>
+  <td class="freq">31</td>
+</tr>
+<tr id="fn-feeling" data-search="feeling 感觉 noun">
+  <td><span class="lemma">feeling</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">If what He Han burdens me with is an unplaceable feeling, then what Gu Yan imposes on me now is a weight I can barely b…</span> · 如果何韩困扰我的是无处安放之情，那么孤烟此时强加于我的，也是不可承受之重。</span></td>
+  <td class="zh">感觉</td>
+  <td class="freq">31</td>
+</tr>
+<tr id="fn-give-up" data-search="give up 放弃 phrasal">
+  <td><span class="lemma">give up</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">So what's required to be your boyfriend?&quot; &quot;Love me.&quot; &quot;What counts as loving you?&quot; &quot;Give up everything for me.</span> · 那做一个男朋友的要求是什么？」「爱我。」「怎样才算爱你？」「为我放弃一切。</span></td>
+  <td class="zh">放弃</td>
+  <td class="freq">31</td>
+</tr>
+<tr id="fn-happen" data-search="happen 发生 verb">
+  <td><span class="lemma">happen</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">I've read your self-criticism. The same mistake will absolutely not be allowed to happen a second time.</span> · 你的检讨书我已经看过了，同样的问题绝对不允许再发生第二次。</span></td>
+  <td class="zh">发生</td>
+  <td class="freq">31</td>
+</tr>
+<tr id="fn-almost" data-search="almost 几乎 degree">
+  <td><span class="lemma">almost</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">Teacher He Han is coming back — almost certainly. ...Let her announce it herself.</span> · 何韩老师要回来了，八九不离十吧？……这事，让她自己公布。</span></td>
+  <td class="zh">几乎</td>
+  <td class="freq">30</td>
+</tr>
+<tr id="fn-i-mean" data-search="i mean 我是说 filler">
+  <td><span class="lemma">i mean</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">However much I change, I could never leave this internet cafe. — I don't mean the cafe. I mean Sanmei.</span> · 我再怎么变，我也不能离开这网吧。——我说的不是网吧，我说的是三妹。</span></td>
+  <td class="zh">我是说</td>
+  <td class="freq">30</td>
+</tr>
+<tr id="fn-strong" data-search="strong 坚强 adj">
+  <td><span class="lemma">strong</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Being strong is sometimes just a race with no prize. He Han can't save me, just like I couldn't save her when she passe…</span> · 坚强有时只是一场没有奖励的比赛。何韩拯救不了我，就像何为去世的时候，我也拯救不了她。但至少这一场无法言说的恐惧和失落，我们知道对方感同身…</span></td>
+  <td class="zh">坚强</td>
+  <td class="freq">30</td>
+</tr>
+<tr id="fn-get-out" data-search="get out 出去/滚开 phrasal">
+  <td><span class="lemma">get out</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Don't want to eat? Then get out.&quot; &quot;Fine, I'm eating.</span> · 不想吃你滚出去。」「对嘛，我吃吃吃。</span></td>
+  <td class="zh">出去/滚开</td>
+  <td class="freq">29</td>
+</tr>
+<tr id="fn-often" data-search="often 经常 time">
+  <td><span class="lemma">often</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">My good friend will often stay here — you can turn to him too.</span> · 我的好朋友经常会来这儿住，你也可以找他。</span></td>
+  <td class="zh">经常</td>
+  <td class="freq">29</td>
+</tr>
+<tr id="fn-refuse" data-search="refuse 拒绝 modal">
+  <td><span class="lemma">refuse</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">Good grief, you used to refuse even interviews.&quot; &quot;Unlike you, I know how to adapt.</span> · 天哪，你以前可是连采访都不愿意做。」「我又不像你，我很懂得变通的好吗。</span></td>
+  <td class="zh">拒绝</td>
+  <td class="freq">29</td>
+</tr>
+<tr id="fn-secret" data-search="secret 秘密 noun">
+  <td><span class="lemma">secret</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Have you ever cared this much about a new author? — I was confirming your guess. — What guess? — That Gu Yan is Lin Zha…</span> · 你觉得你这么关心过一个新人作者？——我是在认证你的猜测。——我的什么猜测？——孤烟是林展翘的秘密武器。</span></td>
+  <td class="zh">秘密</td>
+  <td class="freq">29</td>
+</tr>
+<tr id="fn-serious" data-search="serious 严重/认真 adj">
+  <td><span class="lemma">serious</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">You've gone all serious — Zhang Yousen and I aren't used to it.</span> · 你突然这么严肃，我和张佑森都有一点不太习惯。</span></td>
+  <td class="zh">严重/认真</td>
+  <td class="freq">29</td>
+</tr>
+<tr id="fn-sometimes" data-search="sometimes 有时 time">
+  <td><span class="lemma">sometimes</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">Being well-liked is an advantage, but sometimes it's a disadvantage too.</span> · 好人喜欢是优势，但有时候也是一种劣势。</span></td>
+  <td class="zh">有时</td>
+  <td class="freq">29</td>
+</tr>
+<tr id="fn-care-about" data-search="care about 在乎 phrasal">
+  <td><span class="lemma">care about</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">I'm protecting the bigger picture. I care about you. I don't want to hurt you.</span> · 我在顾全大局，我在乎你，我不想伤害你。</span></td>
+  <td class="zh">在乎</td>
+  <td class="freq">28</td>
+</tr>
+<tr id="fn-hardly" data-search="hardly 几乎不 degree">
+  <td><span class="lemma">hardly</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">I'm hardly ever home, so take good care of yourself.</span> · 我不怎么在家待着，所以你要照顾好自己啊。</span></td>
+  <td class="zh">几乎不</td>
+  <td class="freq">28</td>
+</tr>
+<tr id="fn-instead" data-search="instead 反而 connect">
+  <td><span class="lemma">instead</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Don't write buildup—buildup gives away the hand. Write dialogue instead. The more and denser, the better.</span> · 不要写蓄势，蓄势容易暴露笔迹。你就写对白，对白越多、越密越好。</span></td>
+  <td class="zh">反而</td>
+  <td class="freq">28</td>
+</tr>
+<tr id="fn-mistake" data-search="mistake 错误 noun">
+  <td><span class="lemma">mistake</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">The same mistake can only be made once in a lifetime.</span> · 同样的错，一辈子只能错一次。</span></td>
+  <td class="zh">错误</td>
+  <td class="freq">28</td>
+</tr>
+<tr id="fn-swear" data-search="swear 发誓 modal">
+  <td><span class="lemma">swear</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">I'm just trying to make enough to pay off the debt. Once it's paid, I'm done with this—I swear.</span> · 我不就是为了挣点钱，把那个债还上吗？还完债，我肯定不干这个了。</span></td>
+  <td class="zh">发誓</td>
+  <td class="freq">28</td>
+</tr>
+<tr id="fn-these-days" data-search="these days 近来 time">
+  <td><span class="lemma">these days</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">I'm just caring about your mom for you. These days a lot of older folks skip dinner at home just to save money.</span> · 那我不是替你关心阿姨吗？现在很多长辈自己在家连晚饭都不吃，就为了省钱。</span></td>
+  <td class="zh">近来</td>
+  <td class="freq">28</td>
+</tr>
+<tr id="fn-barely" data-search="barely 几乎不 degree">
+  <td><span class="lemma">barely</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">If what He Han burdens me with is an unplaceable feeling, then what Gu Yan imposes on me now is a weight I can barely b…</span> · 如果何韩困扰我的是无处安放之情，那么孤烟此时强加于我的，也是不可承受之重。</span></td>
+  <td class="zh">几乎不</td>
+  <td class="freq">27</td>
+</tr>
+<tr id="fn-honest" data-search="honest 诚实 adj">
+  <td><span class="lemma">honest</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">To be honest, when it comes to cooperation, I'm easier to work with than Lin Zhanqiao.</span> · 合作上有一说一，我比林展翘更容易沟通。</span></td>
+  <td class="zh">诚实</td>
+  <td class="freq">27</td>
+</tr>
+<tr id="fn-justice" data-search="justice 公正 noun">
+  <td><span class="lemma">justice</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Understood, understood, fully understood. It's you we can rely on to see justice done for us.</span> · 明白了，明白，全明白了。还得是你为我们做主啊。</span></td>
+  <td class="zh">公正</td>
+  <td class="freq">27</td>
+</tr>
+<tr id="fn-normal" data-search="normal 正常 adj">
+  <td><span class="lemma">normal</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">It doesn't look great for the boss to see us like this. — Isn't this just normal for us?</span> · 让老板看到我们这样不太好。——我们这样不是很正常吗。</span></td>
+  <td class="zh">正常</td>
+  <td class="freq">27</td>
+</tr>
+<tr id="fn-special" data-search="special 特别 adj">
+  <td><span class="lemma">special</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Whoever's hidden like that is either someone special or a famous author under a new pen name.</span> · 藏着掖着的，不是身份特殊，就是有名的作者换了新的马甲。</span></td>
+  <td class="zh">特别</td>
+  <td class="freq">27</td>
+</tr>
+<tr id="fn-warm" data-search="warm 温暖 adj">
+  <td><span class="lemma">warm</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Guyin signs with Zhao Lanxin tomorrow, and the news that Sansan is Guyin's other pen name is already starting to warm u…</span> · 孤烟明天跟赵兰心签约，三三就是孤烟的另一个马甲的事情，已经开始预热了。</span></td>
+  <td class="zh">温暖</td>
+  <td class="freq">26</td>
+</tr>
+<tr id="fn-come-on" data-search="come on 拜托/加油 phrasal">
+  <td><span class="lemma">come on</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">We'll announce soon that Sansan will become one of your pen names. The top two books on the charts—both written by you.</span> · 我们很快就会宣布，三三会成为你的另外一个笔名。目前点击榜前两位的作品，都是你写的。</span></td>
+  <td class="zh">拜托/加油</td>
+  <td class="freq">25</td>
+</tr>
+<tr id="fn-look-after" data-search="look after 照顾 phrasal">
+  <td><span class="lemma">look after</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">I care for you and look after you because I'm your boss and you're my employee. We can talk money, we can talk cooperat…</span> · 我关心你、照顾你，因为我是你的老板，你是我的员工。我们谈钱、谈合作都可以，就是不谈感情。</span></td>
+  <td class="zh">照顾</td>
+  <td class="freq">25</td>
+</tr>
+<tr id="fn-unless" data-search="unless 除非 connect">
+  <td><span class="lemma">unless</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">As a newcomer, finishing this much high-quality work this fast — you couldn't stay this organized unless someone was he…</span> · 你作为一个新人，能在这么短的时间里完成这么大量、这么高质量的工作，如果不是背后有人帮忙，你不会这么有条不紊。</span></td>
+  <td class="zh">除非</td>
+  <td class="freq">25</td>
+</tr>
+<tr id="fn-evidence" data-search="evidence 证据 noun">
+  <td><span class="lemma">evidence</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">If they keep milking the Soul Knight's name or slandering it, I've already asked Lao Ma—we can keep evidence and sue.&quot; …</span> · 他们如果继续拿闪灵骑士炒作，或者恶意诋毁什么，我已经问过老马了，可以留证据起诉。」「他不值得。</span></td>
+  <td class="zh">证据</td>
+  <td class="freq">23</td>
+</tr>
+<tr id="fn-expect" data-search="expect 期待 modal">
+  <td><span class="lemma">expect</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">I really didn't expect him to deceive me like this, all for a Guyan.</span> · 我是真没想到，他为了个孤烟能这么骗我。</span></td>
+  <td class="zh">期待</td>
+  <td class="freq">23</td>
+</tr>
+<tr id="fn-hold-on" data-search="hold on 等一下 phrasal">
+  <td><span class="lemma">hold on</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Let's hope we can hold on to second place.</span> · 希望可以保住第二名吧。</span></td>
+  <td class="zh">等一下</td>
+  <td class="freq">23</td>
+</tr>
+<tr id="fn-however" data-search="however 然而 connect">
+  <td><span class="lemma">however</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">However good your conditions are, I don't like you. How many people end up marrying for love anyway? And did marrying f…</span> · 条件再好，但不喜欢你。有多少人最后是嫁给爱情的？嫁给爱情，就都幸福了吗？</span></td>
+  <td class="zh">然而</td>
+  <td class="freq">23</td>
+</tr>
+<tr id="fn-possible" data-search="possible 可能 adj">
+  <td><span class="lemma">possible</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Copy Plush Bear exactly—identical, at the lowest possible cost.</span> · 照着毛绒熊做，一模一样的，成本压到最低。</span></td>
+  <td class="zh">可能</td>
+  <td class="freq">23</td>
+</tr>
+<tr id="fn-certainly" data-search="certainly 当然 filler">
+  <td><span class="lemma">certainly</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Teacher He Han is coming back — almost certainly. ...Let her announce it herself.</span> · 何韩老师要回来了，八九不离十吧？……这事，让她自己公布。</span></td>
+  <td class="zh">当然</td>
+  <td class="freq">22</td>
+</tr>
+<tr id="fn-deal-with" data-search="deal with 处理 phrasal">
+  <td><span class="lemma">deal with</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Finish today's update first, and we'll deal with the Guazhou matter later.</span> · 你先把今天内容给完成了，然后晚一点再解决瓜洲的事情。</span></td>
+  <td class="zh">处理</td>
+  <td class="freq">22</td>
+</tr>
+<tr id="fn-tired" data-search="tired 累 adj">
+  <td><span class="lemma">tired</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Zhanqiao, aren't you tired? All these years as He Han's dressmaker—he sold millions, and besides your share, what did h…</span> · 展翘你不辛苦吗？这么多年为何韩做嫁衣，他卖了千万，除了该分给你的，还给了你什么？连一个放牙刷的地方都舍不得腾出来给你。</span></td>
+  <td class="zh">累</td>
+  <td class="freq">22</td>
+</tr>
+<tr id="fn-worry-about" data-search="worry about 担心 phrasal">
+  <td><span class="lemma">worry about</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">You're my friend and he's your friend — and because you're mine, that's exactly why I worry about him.</span> · 你是你朋友，他是你朋友——就因为你是我朋友，所以我才担心人家呢。</span></td>
+  <td class="zh">担心</td>
+  <td class="freq">22</td>
+</tr>
+<tr id="fn-especially" data-search="especially 尤其 degree">
+  <td><span class="lemma">especially</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">Also, learn to appreciate beautiful things — especially beautiful women.</span> · 要学会欣赏美的东西，尤其是美女。</span></td>
+  <td class="zh">尤其</td>
+  <td class="freq">21</td>
+</tr>
+<tr id="fn-indeed" data-search="indeed 确实 filler">
+  <td><span class="lemma">indeed</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">This is indeed a marching pill... More than a decade ago, White Grass Valley brewed this thing, intending to send it to…</span> · 这的确是行军丹……十几年前，白草谷造出了此物，企图送给北荒人。</span></td>
+  <td class="zh">确实</td>
+  <td class="freq">21</td>
+</tr>
+<tr id="fn-think-about" data-search="think about 考虑 phrasal">
+  <td><span class="lemma">think about</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Think about it—once this passes... why not sign Guyin yourself? Then we'd be unstoppable.</span> · 你想想看，等过段时间……你不如拿下孤烟，那我们就是最好的。</span></td>
+  <td class="zh">考虑</td>
+  <td class="freq">21</td>
+</tr>
+<tr id="fn-angry" data-search="angry 生气 adj">
+  <td><span class="lemma">angry</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">At my age, I really can't afford to be angry anymore. If a man won't behave, what's the point of keeping him?</span> · 再说，到了我这个年纪，真的是生不了气。男人要是这么不听话，要了干什么呢？</span></td>
+  <td class="zh">生气</td>
+  <td class="freq">20</td>
+</tr>
+<tr id="fn-get-back" data-search="get back 回来 phrasal">
+  <td><span class="lemma">get back</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">You're investing all this money in Lin Zhanqiao's company — are you betting she and He Han will get back together and h…</span> · 你给林展翘公司投这么多钱，你是赌她和何韩还能和好，何韩还能回茞星？</span></td>
+  <td class="zh">回来</td>
+  <td class="freq">20</td>
+</tr>
+<tr id="fn-risk" data-search="risk 风险 noun">
+  <td><span class="lemma">risk</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">The only company under audit is yours, and the risk you face is a hefty back-tax bill plus penalties.</span> · 被审计的只有你们名下这家公司，而你们面临的风险，是高额的补税和滞纳金。</span></td>
+  <td class="zh">风险</td>
+  <td class="freq">20</td>
+</tr>
+<tr id="fn-soft" data-search="soft 柔软 adj">
+  <td><span class="lemma">soft</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">The reason I make more money than them isn't soft competition—it's hard-core competitiveness.</span> · 这些年我赚钱比他们多，靠的不是辞竞，而是雄竞。</span></td>
+  <td class="zh">柔软</td>
+  <td class="freq">20</td>
+</tr>
+<tr id="fn-make-sure" data-search="make sure 确保 phrasal">
+  <td><span class="lemma">make sure</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">She's too drunk, something's not right—let's make sure nothing happens to her.</span> · 喝多了，意思不太对，别出什么事。</span></td>
+  <td class="zh">确保</td>
+  <td class="freq">19</td>
+</tr>
+<tr id="fn-wake-up" data-search="wake up 醒来 phrasal">
+  <td><span class="lemma">wake up</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Wake up. Go home and get some sleep.</span> · 醒醒，快回去睡觉吧。</span></td>
+  <td class="zh">醒来</td>
+  <td class="freq">19</td>
+</tr>
+<tr id="fn-at-first" data-search="at first 一开始 time">
+  <td><span class="lemma">at first</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">I want the kind of red that makes people think I'm flushed with excitement at first sight.</span> · 我就要那种，别人一看到就觉得我脸红上头的红。</span></td>
+  <td class="zh">一开始</td>
+  <td class="freq">18</td>
+</tr>
+<tr id="fn-perhaps" data-search="perhaps 或许 filler">
+  <td><span class="lemma">perhaps</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Father was gravely wounded by Yan Kuangtu at the Wuxing Mountain battle... Perhaps only the Book of Forgetfulness can h…</span> · 爹爹当年被燕狂徒在无形山一战中重伤……或许只有忘情天书可以一试。</span></td>
+  <td class="zh">或许</td>
+  <td class="freq">18</td>
+</tr>
+<tr id="fn-seem" data-search="seem 似乎 verb">
+  <td><span class="lemma">seem</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">We used to be struggling together. Now we can't seem to succeed together.</span> · 以前我们是一起差，现在我们不能一起好。</span></td>
+  <td class="zh">似乎</td>
+  <td class="freq">18</td>
+</tr>
+<tr id="fn-usually" data-search="usually 通常 time">
+  <td><span class="lemma">usually</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">Usually in a case like this, somebody filed a complaint.</span> · 一般这种情况，都是有人举报。</span></td>
+  <td class="zh">通常</td>
+  <td class="freq">18</td>
+</tr>
+<tr id="fn-question" data-search="question 问题（提问） noun">
+  <td><span class="lemma">question</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">The police caught him. He's blown the money, but getting compensation from him isn't out of the question.</span> · 警察把人已经抓到了，虽然钱已经被他挥霍了，但让他赔偿也不是不可能。</span></td>
+  <td class="zh">问题（提问）</td>
+  <td class="freq">17</td>
+</tr>
+<tr id="fn-dangerous" data-search="dangerous 危险 adj">
+  <td><span class="lemma">dangerous</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">You simply can't rely on anyone—depending on others is dangerous. The moment they slip up, we fall hard.</span> · 根本就不能靠别人——依赖别人是危险的，对方一旦出一点差错，我们就会摔得很惨。</span></td>
+  <td class="zh">危险</td>
+  <td class="freq">16</td>
+</tr>
+<tr id="fn-honestly" data-search="honestly 说实话 filler">
+  <td><span class="lemma">honestly</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Honestly, I'd love to send it to you—because once you read it, you'll see how brilliant he is.</span> · 若说实话，我恨不得就想发给你看，因为只要你看了，你就知道他有多厉害。</span></td>
+  <td class="zh">说实话</td>
+  <td class="freq">16</td>
+</tr>
+<tr id="fn-insist" data-search="insist 坚持 modal">
+  <td><span class="lemma">insist</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">A mess, but not chaos. The mess I mean is: you've never learned to handle a relationship, yet you insist on acting like…</span> · 糟糕，但是不混乱。我说的糟糕是：你根本没办法正确处理男女关系，却非要假装自己是个高手。</span></td>
+  <td class="zh">坚持</td>
+  <td class="freq">16</td>
+</tr>
+<tr id="fn-put-on" data-search="put on 穿上 phrasal">
+  <td><span class="lemma">put on</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">These companies are just sedan-bearers for you. Put on a lively show — that's enough to catch Uncle Fan's attention.</span> · 这些公司就是来给你抬轿子的。把戏演得热闹朝天，吸引范叔的注意力就够了。</span></td>
+  <td class="zh">穿上</td>
+  <td class="freq">16</td>
+</tr>
+<tr id="fn-show-up" data-search="show up 出现 phrasal">
+  <td><span class="lemma">show up</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">First, attitude and seriousness matter most. Second, your characters have to show up within the first few chapters. Thi…</span> · 第一，最重要的是做这件事的态度跟认真；第二，头几章就得出现你的人物；第三，人物得有缺点，不能太完美。</span></td>
+  <td class="zh">出现</td>
+  <td class="freq">16</td>
+</tr>
+<tr id="fn-so-that" data-search="so that 以便 connect">
+  <td><span class="lemma">so that</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">The reason he gave me that Cadillac in the first place was so that I, Wang Mingzhu, would never be looked down on.</span> · 他一开始送给我凯迪拉克，是不希望我汪明珠被人看不起。</span></td>
+  <td class="zh">以便</td>
+  <td class="freq">16</td>
+</tr>
+<tr id="fn-as-soon-as" data-search="as soon as 一…就 time">
+  <td><span class="lemma">as soon as</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">When are you going back to the hospital today?&quot; &quot;As soon as I finish up at the office, I'll be there.</span> · 你今天什么时候再去医院？」「我尽量早点把公司的事情处理好，我就过去。</span></td>
+  <td class="zh">一…就</td>
+  <td class="freq">15</td>
+</tr>
+<tr id="fn-freedom" data-search="freedom 自由 noun">
+  <td><span class="lemma">freedom</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">A few decades of life—how do we honor both family and freedom, and never betray either?</span> · 人生几十年，亲情和自由，怎么才可以做到各不相负。</span></td>
+  <td class="zh">自由</td>
+  <td class="freq">15</td>
+</tr>
+<tr id="fn-seriously" data-search="seriously 说真的 filler">
+  <td><span class="lemma">seriously</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Surpassing He Han isn't hard—I already have. I never once took him seriously. The true peak is the Soul Knight.</span> · 超越何韩不是什么困难的事情，我现在就已经超越了。我从来就没有把何韩放在眼里——已有的巅峰，是闪灵骑士。</span></td>
+  <td class="zh">说真的</td>
+  <td class="freq">15</td>
+</tr>
+<tr id="fn-set-up" data-search="set up 安排/设立 phrasal">
+  <td><span class="lemma">set up</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Go set up a time with her. Thank you, Lawyer Pei.</span> · 你去约一下她的时间。谢谢贝律师。</span></td>
+  <td class="zh">安排/设立</td>
+  <td class="freq">15</td>
+</tr>
+<tr id="fn-talk-about" data-search="talk about 谈论 phrasal">
+  <td><span class="lemma">talk about</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">If he didn't sit by my side reading, what would the two of us even talk about? Nothing. So reading is better than silen…</span> · 他要不坐在我身边读书，那我们两个能聊什么呀？没啥聊的。所以还不如就读读书。</span></td>
+  <td class="zh">谈论</td>
+  <td class="freq">15</td>
+</tr>
+<tr id="fn-when-it-comes-to" data-search="when it comes to 说到 filler">
+  <td><span class="lemma">when it comes to</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">I believe in him. When it comes to writing novels, I do trust him.</span> · 我相信他。写小说这件事情，我还是蛮相信他的。</span></td>
+  <td class="zh">说到</td>
+  <td class="freq">15</td>
+</tr>
+<tr id="fn-realize" data-search="realize 意识到 verb">
+  <td><span class="lemma">realize</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">Only when I had to borrow money did I realize I don't really have any friends.</span> · 发借钱的时候才发现，自己其实没什么朋友。</span></td>
+  <td class="zh">意识到</td>
+  <td class="freq">14</td>
+</tr>
+<tr id="fn-sooner-or-later" data-search="sooner or later 迟早 time">
+  <td><span class="lemma">sooner or later</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">What would Lin Zhanqiao do if she found out you're Sansan?&quot; &quot;No idea. But sooner or later, she will.</span> · 林展翘要是知道你就是三三，会怎么样？」「不知道，但是他早晚会知道。</span></td>
+  <td class="zh">迟早</td>
+  <td class="freq">14</td>
+</tr>
+<tr id="fn-you-know-what" data-search="you know what 你知道吗 filler">
+  <td><span class="lemma">you know what</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Don't just look at these four crabs—you know what they really are.</span> · 你不要光看这四只蟹，实际上是什么，你知道吧。</span></td>
+  <td class="zh">你知道吗</td>
+  <td class="freq">14</td>
+</tr>
+<tr id="fn-basically" data-search="basically 基本上 filler">
+  <td><span class="lemma">basically</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">An editor and an author basically can't stay together forever. Too good, and they can't be together; not good enough, a…</span> · 基本上编辑和作者是很难一直在一起的。写得太好很难在一起，写得不好那就更不容易在一起了。</span></td>
+  <td class="zh">基本上</td>
+  <td class="freq">13</td>
+</tr>
+<tr id="fn-even-though" data-search="even though 即使/虽然 connect">
+  <td><span class="lemma">even though</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Even though it came from a good heart, didn't it still get exposed?</span> · 虽然是好心，但不也被拆穿了吗？</span></td>
+  <td class="zh">即使/虽然</td>
+  <td class="freq">13</td>
+</tr>
+<tr id="fn-pick-up" data-search="pick up 捡起/接人 phrasal">
+  <td><span class="lemma">pick up</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Tomorrow morning we'll pick up Guyin two hours early.&quot; &quot;Forty minutes ahead is fine.</span> · 明天早上我们会提前两个小时接孤烟。」「提前四十分钟到就行了。</span></td>
+  <td class="zh">捡起/接人</td>
+  <td class="freq">13</td>
+</tr>
+<tr id="fn-situation" data-search="situation 情况 noun">
+  <td><span class="lemma">situation</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Your situation has changed, and you have to change with it. You're Guyan now — not Wang Hai anymore.</span> · 我们现在处境发生了改变，但是你要为这个改变做出点变化吧。你现在是孤烟，不是王海了。</span></td>
+  <td class="zh">情况</td>
+  <td class="freq">13</td>
+</tr>
+<tr id="fn-lonely" data-search="lonely 孤独 adj">
+  <td><span class="lemma">lonely</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">He told the nursing home he's a lonely old man — no children, no family.</span> · 他跟养老院说他是孤老，无儿无女。</span></td>
+  <td class="zh">孤独</td>
+  <td class="freq">12</td>
+</tr>
+<tr id="fn-look-for" data-search="look for 寻找 phrasal">
+  <td><span class="lemma">look for</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">When you're in trouble, look for Lingzi.&quot; &quot;What I said was: solve your own problems.</span> · 有困难找玲子。」「我说的是，有困难自己解决。</span></td>
+  <td class="zh">寻找</td>
+  <td class="freq">12</td>
+</tr>
+<tr id="fn-message" data-search="message 消息 noun">
+  <td><span class="lemma">message</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Uncle, I can pass along your message — but as for meeting him in person, Gu Yan isn't available for now.</span> · 大叔，话我可以帮你们带到，但是想要见面，孤烟暂时还不方便。</span></td>
+  <td class="zh">消息</td>
+  <td class="freq">12</td>
+</tr>
+<tr id="fn-nervous" data-search="nervous 紧张 adj">
+  <td><span class="lemma">nervous</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">I'm not nervous — I'm just a little excited. That we get to take photos like this.</span> · 我不是紧张，我就是有点激动。我们能这样拍照。</span></td>
+  <td class="zh">紧张</td>
+  <td class="freq">12</td>
+</tr>
+<tr id="fn-notice" data-search="notice 注意到 verb">
+  <td><span class="lemma">notice</span><div><span class="tag">verb</span></div>
+  <span class="ex"><span class="en">First, dress with style—stand out so people notice you at first glance. Second, carry yourself with the spirit of someo…</span> · 首先在穿衣服上，要有派头，在人群里最好让人第一眼就能注意到你。第二，要拿出主人翁精神。</span></td>
+  <td class="zh">注意到</td>
+  <td class="freq">12</td>
+</tr>
+<tr id="fn-strange" data-search="strange 奇怪 adj">
+  <td><span class="lemma">strange</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Who are you calling a strange bird? Whoever tries to steal Boss Bao's business—I'm talking about them.</span> · 你说谁是怪东西？谁抢宝总的生意，我就讲谁。</span></td>
+  <td class="zh">奇怪</td>
+  <td class="freq">12</td>
+</tr>
+<tr id="fn-work-out" data-search="work out 解决/锻炼 phrasal">
+  <td><span class="lemma">work out</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">If it really doesn't work out, just treat Beijing as a place to clear your head.</span> · 要是实在不行，你就当到北京去散散心。</span></td>
+  <td class="zh">解决/锻炼</td>
+  <td class="freq">12</td>
+</tr>
+<tr id="fn-guilty" data-search="guilty 内疚 adj">
+  <td><span class="lemma">guilty</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">If he doesn't want me to be innocent, then I'll show him just how guilty I can be.</span> · 他不想要我清白，我就不清白给他看。</span></td>
+  <td class="zh">内疚</td>
+  <td class="freq">11</td>
+</tr>
+<tr id="fn-weak" data-search="weak 软弱 adj">
+  <td><span class="lemma">weak</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Never leave yourself a way out, never give yourself a chance to be weak. Hesitation is the most useless thing.</span> · 越不可以给自己留退路，不给自己软弱的机会。犹豫是最无效的。</span></td>
+  <td class="zh">软弱</td>
+  <td class="freq">11</td>
+</tr>
+<tr id="fn-doubt" data-search="doubt 怀疑 modal">
+  <td><span class="lemma">doubt</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">I barely cried since I was five or six. I doubt I'll ever cry again after this, so it feels like I'm crying a lifetime'…</span> · 好像从五六岁起就不怎么哭了。我觉得我以后应该也不会再哭了，所以我感觉要把这辈子的眼泪都哭干。</span></td>
+  <td class="zh">怀疑</td>
+  <td class="freq">10</td>
+</tr>
+<tr id="fn-find-out" data-search="find out 查明 phrasal">
+  <td><span class="lemma">find out</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Stop asking. The more you find out, the more you'll hesitate—and the harder the decision gets.&quot; &quot;What if? What if there…</span> · 别问了，问多了你会犹豫，更不好决定了。」「万一呢？万一有机会呢？</span></td>
+  <td class="zh">查明</td>
+  <td class="freq">10</td>
+</tr>
+<tr id="fn-go-through" data-search="go through 经历 phrasal">
+  <td><span class="lemma">go through</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Tomorrow I'm seeing my mom, and I'm going with Lawyer Bei to look at the house he lives in now. As for how to talk to m…</span> · 明天去看我妈，我跟贝律师去看他现在住的房子。跟我爸怎么聊，实在不行就用法律途径解决。</span></td>
+  <td class="zh">经历</td>
+  <td class="freq">10</td>
+</tr>
+<tr id="fn-immediately" data-search="immediately 立刻 time">
+  <td><span class="lemma">immediately</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">Stop the Sansan serialization of The Parting List immediately and cut all ties with Zhao Lanxin. Do you agree? ... Fine…</span> · 以三三名字续写的《一水别验单》立刻停更，解除与赵兰心的所有合作，你同意吗？……好，记住你今天说过的话。</span></td>
+  <td class="zh">立刻</td>
+  <td class="freq">10</td>
+</tr>
+<tr id="fn-selfish" data-search="selfish 自私 adj">
+  <td><span class="lemma">selfish</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">You don't want to leave this internet cafe, so you expect everyone to stay here as managers forever. Isn't that selfish…</span> · 你不想离开这个网吧，你就希望别人一辈子都陪着你在这里当网管——你不也是只想着自己吗？</span></td>
+  <td class="zh">自私</td>
+  <td class="freq">10</td>
+</tr>
+<tr id="fn-come-up" data-search="come up 出现/提出 phrasal">
+  <td><span class="lemma">come up</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">If she can't come up with a He Han No. 2, then those gold-medal producer and editor titles are going to have to be give…</span> · 她要是拿不出一个何韩二号，那金牌推手、金牌编辑的名头，是要还回去的。</span></td>
+  <td class="zh">出现/提出</td>
+  <td class="freq">8</td>
+</tr>
+<tr id="fn-eventually" data-search="eventually 最终 time">
+  <td><span class="lemma">eventually</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">I have to face it eventually. However it goes, I just have to get through it.</span> · 总是得去面对的，怎么着都是需要撑过去的。</span></td>
+  <td class="zh">最终</td>
+  <td class="freq">8</td>
+</tr>
+<tr id="fn-instead-of" data-search="instead of 而不是 connect">
+  <td><span class="lemma">instead of</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">I'm no fool, Lingzi. I could go out and work and support myself, instead of living off your moods every single day!</span> · 我玲子也不是傻瓜。我出去打工一样能赚钱养活自己，好过天天在这里看你的脸色！</span></td>
+  <td class="zh">而不是</td>
+  <td class="freq">8</td>
+</tr>
+<tr id="fn-to-be-honest" data-search="to be honest 说实话 filler">
+  <td><span class="lemma">to be honest</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">To be honest, when it comes to cooperation, I'm easier to work with than Lin Zhanqiao.</span> · 合作上有一说一，我比林展翘更容易沟通。</span></td>
+  <td class="zh">说实话</td>
+  <td class="freq">8</td>
+</tr>
+<tr id="fn-figure-out" data-search="figure out 弄明白 phrasal">
+  <td><span class="lemma">figure out</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">I had to eat first before I could figure out how to explain myself. Really—I've never worked harder on a script than on…</span> · 那我吃饱了，才能想办法给你解释呀。真的，我昨晚写剧本都没有这么上心过。</span></td>
+  <td class="zh">弄明白</td>
+  <td class="freq">7</td>
+</tr>
+<tr id="fn-proud" data-search="proud 骄傲 adj">
+  <td><span class="lemma">proud</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">Do you think standing next to me makes you less proud than standing next to He Han?</span> · 你是觉得跟我站在一起，不如跟何韩站在一起更令你骄傲，是吗？</span></td>
+  <td class="zh">骄傲</td>
+  <td class="freq">7</td>
+</tr>
+<tr id="fn-rather-than" data-search="rather than 与其…不如 connect">
+  <td><span class="lemma">rather than</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Rather than sit here all night writing nothing, I'd rather go out and do something real.</span> · 与其我一个晚上在这儿什么也写不出来，我还不如出去干点什么。</span></td>
+  <td class="zh">与其…不如</td>
+  <td class="freq">7</td>
+</tr>
+<tr id="fn-recently" data-search="recently 最近 time">
+  <td><span class="lemma">recently</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">Recently the trace of the Marching Command has reappeared in Guangling. Wasn't the White-Grass Valley wiped out a decad…</span> · 有人近日在廣陵，又發現了行軍令的蹤跡。白草谷不是在十幾年前就被剿滅了嗎？何來的行軍令？</span></td>
+  <td class="zh">最近</td>
+  <td class="freq">7</td>
+</tr>
+<tr id="fn-let-alone" data-search="let alone 更别说 degree">
+  <td><span class="lemma">let alone</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">Your terms are humiliating. Even a third-rate author wouldn't take them, let alone He Han.</span> · 就你那条件，丧权辱国。三流作者都不一定愿意，更别说他是何韩。</span></td>
+  <td class="zh">更别说</td>
+  <td class="freq">6</td>
+</tr>
+<tr id="fn-more-and-more" data-search="more and more 越来越 degree">
+  <td><span class="lemma">more and more</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">You'll come to appreciate our daughter more and more. Let's not even mention the rest — birth, aging, sickness, death..…</span> · 我们这个女儿，今后你会越来越知道她的好处。别的都不说，生老病死……确实完全不用你操心。</span></td>
+  <td class="zh">越来越</td>
+  <td class="freq">6</td>
+</tr>
+<tr id="fn-suppose" data-search="suppose 假设/觉得 modal">
+  <td><span class="lemma">suppose</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">Suppose things don't work out between me and Xiaohe—would you ask for the gift back?</span> · 假如我跟这个小荷没成，那您还是让人把礼退回来不成？</span></td>
+  <td class="zh">假设/觉得</td>
+  <td class="freq">6</td>
+</tr>
+<tr id="fn-turn-out" data-search="turn out 结果是 phrasal">
+  <td><span class="lemma">turn out</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">I never imagined it would turn out to be her.</span> · 我始终没想到，竟然是她。</span></td>
+  <td class="zh">结果是</td>
+  <td class="freq">6</td>
+</tr>
+<tr id="fn-by-the-way" data-search="by the way 顺便说 filler">
+  <td><span class="lemma">by the way</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">By the way, that day—that big-bearded fellow. Are you close with him, sis?&quot; &quot;No.</span> · 我想问就那天，不是有个大胡子吗？姐跟那个男的熟吗？」「不熟。</span></td>
+  <td class="zh">顺便说</td>
+  <td class="freq">5</td>
+</tr>
+<tr id="fn-emotion" data-search="emotion 情绪 noun">
+  <td><span class="lemma">emotion</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">In a critical moment you have to rev up the pace. It was too slow before—now we pull it along with pure emotion. No exp…</span> · 特殊时期得加节奏火力了，它原来节奏太慢了，现在只能靠情绪把它拉起来。不留旁白，只留炮弹。</span></td>
+  <td class="zh">情绪</td>
+  <td class="freq">5</td>
+</tr>
+<tr id="fn-prefer" data-search="prefer 更喜欢 modal">
+  <td><span class="lemma">prefer</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">Do you prefer cats or dogs?&quot; &quot;I love both, but never had the chance to keep one. Is this position about feeding cats or…</span> · 喜欢猫还是喜欢狗啊？」「都喜欢，但是没机会养。请问这个职位，是需要喂猫还是遛狗吗？</span></td>
+  <td class="zh">更喜欢</td>
+  <td class="freq">5</td>
+</tr>
+<tr id="fn-result" data-search="result 结果 noun">
+  <td><span class="lemma">result</span><div><span class="tag">noun</span></div>
+  <span class="ex"><span class="en">Prepared or not, once the banquet is over, it's done. What we want is the result, not the process.</span> · 准备充分也好，不充分也好，婚宴结束了就要行了。我们要的是结果，不是过程。</span></td>
+  <td class="zh">结果</td>
+  <td class="freq">5</td>
+</tr>
+<tr id="fn-sad" data-search="sad 难过 adj">
+  <td><span class="lemma">sad</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">If one of them really is the mole, I'd be genuinely sad.</span> · 要是他们里面真有一个是内鬼的话，我真的觉得还蛮难过的。</span></td>
+  <td class="zh">难过</td>
+  <td class="freq">4</td>
+</tr>
+<tr id="fn-slightly" data-search="slightly 稍微 degree">
+  <td><span class="lemma">slightly</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">Zhang the Great Swordsman's heart sits slightly to the left—by luck he has half a life left. But I fear he may never li…</span> · 张大侠心脉偏左，总算留了半条性命。只是怕日后，张大侠再也拿不起剑了。</span></td>
+  <td class="zh">稍微</td>
+  <td class="freq">4</td>
+</tr>
+<tr id="fn-shut-up" data-search="shut up 闭嘴 phrasal">
+  <td><span class="lemma">shut up</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">If you get in, I'll shut up and never mention grad school again. If you don't, you stay home and study quietly.</span> · 你进得去，我从此闭嘴，不提考研的事；进不去，老老实实在家复习。</span></td>
+  <td class="zh">闭嘴</td>
+  <td class="freq">3</td>
+</tr>
+<tr id="fn-would-rather" data-search="would rather 宁可 modal">
+  <td><span class="lemma">would rather</span><div><span class="tag">modal</span></div>
+  <span class="ex"><span class="en">Whatever you do, don't go to the Tang Sect. I would rather die than accept their help.</span> · 千万不要去唐门，我宁可死，也不要他帮我。</span></td>
+  <td class="zh">宁可</td>
+  <td class="freq">3</td>
+</tr>
+<tr id="fn-depend-on" data-search="depend on 取决于 phrasal">
+  <td><span class="lemma">depend on</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Earn it with your own two hands. Don't depend on anyone else.</span> · 要靠自己的双手去挣，不要靠别人。</span></td>
+  <td class="zh">取决于</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="fn-difficult" data-search="difficult 困难 adj">
+  <td><span class="lemma">difficult</span><div><span class="tag">adj</span></div>
+  <span class="ex"><span class="en">The Power Gang's present predicament should end with me. I must not leave the Chief in a difficult position.</span> · 权力帮如今的困境，也当由我结束，不能让帮主为难。</span></td>
+  <td class="zh">困难</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="fn-frankly" data-search="frankly 坦白说 filler">
+  <td><span class="lemma">frankly</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">The cost: all the upfront money for the script, wardrobe, camera, sound, directing—every department. Frankly, you'd be …</span> · 代价就是前期剧本的创作，服化道、摄录美、导演，所有部门的前期款，你都得赔了。可以这么跟你说吧，你在这个圈里也算废了。</span></td>
+  <td class="zh">坦白说</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="fn-in-other-words" data-search="in other words 换句话说 filler">
+  <td><span class="lemma">in other words</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">The hand behind Sansan is none other than Guyin. In other words, both the first- and second-ranked books on the charts …</span> · 为三三捉刀的不是别人，正是孤烟。也就是说，现在榜单上排名第一和第二的作品，都来自于孤烟之手。</span></td>
+  <td class="zh">换句话说</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="fn-meanwhile" data-search="meanwhile 与此同时 connect time">
+  <td><span class="lemma">meanwhile</span><div><span class="tag">connect</span><span class="tag">time</span></div>
+  <span class="ex"><span class="en">You don't really think I care about first or second place, do you? Meanwhile you keep telling me to dump Daishan — so i…</span> · 你不会真觉得我在乎那什么榜一榜二吧？反倒是你一而再再而三地让我跟戴珊分手——那到底是范叔吃醋，还是你吃醋了？</span></td>
+  <td class="zh">与此同时</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="fn-take-off" data-search="take off 脱下/起飞 phrasal">
+  <td><span class="lemma">take off</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Play your part well, then take off the makeup and leave the stage. The roles differ, but the exit is the same. As they …</span> · 演好了，下台卸妆；角色不一样，流程都一样。真所谓，唱戏不如听戏，上台容易下台难。</span></td>
+  <td class="zh">脱下/起飞</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="fn-the-thing-is" data-search="the thing is 问题是 filler">
+  <td><span class="lemma">the thing is</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">You have to let me confirm the thing is in your hands and hasn't leaked, before we can talk price.</span> · 你总得让我确认，东西在你手里、并且没有外传，咱们才能谈价钱。</span></td>
+  <td class="zh">问题是</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="fn-although" data-search="although 虽然 connect">
+  <td><span class="lemma">although</span><div><span class="tag">connect</span></div>
+  <span class="ex"><span class="en">Although our marketing budget over the past three months was under three million, we mobilized every resource and force…</span> · 虽然我们万利近三个月的营销总预算不到三百万，但是我们调动了一切可以调动的力量和资源。</span></td>
+  <td class="zh">虽然</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="fn-calm-down" data-search="calm down 冷静 phrasal">
+  <td><span class="lemma">calm down</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">Qiushui, calm down—look at who they are!</span> · 秋水，你冷静一点，你看看他们是谁！</span></td>
+  <td class="zh">冷静</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="fn-for-instance" data-search="for instance 比如 filler">
+  <td><span class="lemma">for instance</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">It's perfectly normal for men to have their eyes on a beautiful woman—you, for instance.</span> · 漂亮女人有男人惦记非常正常，比如说你。</span></td>
+  <td class="zh">比如</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="fn-hang-on" data-search="hang on 等一下 phrasal">
+  <td><span class="lemma">hang on</span><div><span class="tag">phrasal</span></div>
+  <span class="ex"><span class="en">The Jiufu Jewellery robbery—I did it. The Huachang one too. Sentence me however you like—I'll accept it.</span> · 玖芙珠宝的抢劫案，是我干的。华畅珠宝的，也是我。你们该怎么定罪，我都认了。</span></td>
+  <td class="zh">等一下</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="fn-in-a-way" data-search="in a way 某种程度上 filler">
+  <td><span class="lemma">in a way</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Just date her and your novel tops the charts. ... In a way, that makes her a quality boyfriend.</span> · 只要跟她谈个恋爱，自己写的小说就能冲上榜首。……从某种意义上来讲，这算是个优质男朋友啊。</span></td>
+  <td class="zh">某种程度上</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="fn-in-fact" data-search="in fact 事实上 filler">
+  <td><span class="lemma">in fact</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Up until this moment, I never realized we were heading in two opposite directions. What I took for drawing closer was, …</span> · 在这一刻之前，我从没有意识到，我们走向的是两个相反的方向。曾经以为的彼此靠近，其实只是擦身而过。</span></td>
+  <td class="zh">事实上</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="fn-literally" data-search="literally 简直 filler">
+  <td><span class="lemma">literally</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Why can't anyone forge the Soul Knight's signature? Because it's literally two people's signatures—two kinds of handwri…</span> · 为什么别人就模仿不了闪灵骑士的签名啊？因为这压根就是两个人的签名，两种笔迹。为什么就没人想得到呢？</span></td>
+  <td class="zh">简直</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="fn-obviously" data-search="obviously 显然 filler">
+  <td><span class="lemma">obviously</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">Someone like He Han would obviously never make it into my matching system.</span> · 那是何韩那样的，就显然不会进入到我的系统里。</span></td>
+  <td class="zh">显然</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="fn-sort-of" data-search="sort of 有点像 filler">
+  <td><span class="lemma">sort of</span><div><span class="tag">filler</span></div>
+  <span class="ex"><span class="en">He calls me 'Fudai'... do you know what sort of identity in this jianghu is called 'Fudai'?</span> · 他叫我'福袋'……你知不知道，这江湖上有什么身份叫做福袋？</span></td>
+  <td class="zh">有点像</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="fn-totally" data-search="totally 完全 degree">
+  <td><span class="lemma">totally</span><div><span class="tag">degree</span></div>
+  <span class="ex"><span class="en">Director Sheng was personally promoted by Dean Wang—doesn't that mean it's totally over?</span> · 盛主任是王院长一手提拔起来的，这不彻底完犊子了吗？</span></td>
+  <td class="zh">完全</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="fn-ultimately" data-search="ultimately 归根结底 time">
+  <td><span class="lemma">ultimately</span><div><span class="tag">time</span></div>
+  <span class="ex"><span class="en">The family ultimately refused mediation and insisted on legal proceedings.</span> · 家属最终还是拒绝调解，一定要走司法程序。</span></td>
+  <td class="zh">归根结底</td>
+  <td class="freq">1</td>
+</tr></tbody>
+</table>
+<script>
+(function(){
+  var box = document.getElementById('q');
+  if (!box) return;
+  box.addEventListener('input', function(){
+    var q = box.value.trim().toLowerCase();
+    document.querySelectorAll('tr[data-search]').forEach(function(row){
+      var hay = row.getAttribute('data-search') || '';
+      row.style.display = (!q || hay.indexOf(q) !== -1) ? '' : 'none';
+    });
+  });
+})();
+</script>
+<footer>语料来自 drama-analysis / language_paraphrase · 本站只做结构化学习壳</footer>
+</div>
+</body>
+</html>

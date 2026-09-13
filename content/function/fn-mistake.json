@@ -1,0 +1,17 @@
+{
+  "id": "fn-mistake",
+  "module": "function",
+  "lemma": "mistake",
+  "zh": "错误",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "The same mistake can only be made once in a lifetime.",
+      "zh": "同样的错，一辈子只能错一次。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 28
+}

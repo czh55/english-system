@@ -1,0 +1,26 @@
+{
+  "id": "ent-shan-yao-de-ta-b494386de4",
+  "module": "entity",
+  "lemma": "丁宁",
+  "zh": "丁宁",
+  "type": "person",
+  "aliases": [],
+  "drama": "shan-yao-de-ta",
+  "examples": [
+    {
+      "en": "Ding Ning, you really are something—holding hands and then pretending it never happened?",
+      "zh": "丁宁，你这个人，牵手就不承认了？",
+      "source": "drama:shan-yao-de-ta:5:s10-q1"
+    },
+    {
+      "en": "I heard Ding Ning has never had a girlfriend... could he be a confirmed bachelor?",
+      "zh": "我听说丁宁从来没有交过女朋友……他该不会是独身主义吧？",
+      "source": "drama:shan-yao-de-ta:10:s4-q1"
+    }
+  ],
+  "tags": [
+    "王阳",
+    "男主，管文大学恋人，后成商界精英，两人因误会分开多年后重逢"
+  ],
+  "freq": 2
+}

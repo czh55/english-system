@@ -1,0 +1,17 @@
+{
+  "id": "fn-hold-on",
+  "module": "function",
+  "lemma": "hold on",
+  "zh": "等一下",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Let's hope we can hold on to second place.",
+      "zh": "希望可以保住第二名吧。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 23
+}

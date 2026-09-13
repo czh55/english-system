@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-de-qian-ban-sheng-1ba8407450",
+  "module": "entity",
+  "lemma": "贺涵",
+  "zh": "贺涵",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-de-qian-ban-sheng",
+  "examples": [
+    {
+      "en": "You've only got eyes for that arrogant peacock of a man named He Han.",
+      "zh": "你眼里只有一个叫贺涵的目中无人的傲娇孔雀男。",
+      "source": "drama:wo-de-qian-ban-sheng:1:s5-q3"
+    },
+    {
+      "en": "You say He Han acts recklessly—not just anyone can get away with that.",
+      "zh": "你说贺涵乱来——不是谁都能乱来的。",
+      "source": "drama:wo-de-qian-ban-sheng:3:s1-q2"
+    }
+  ],
+  "tags": [
+    "靳东",
+    "咨询业精英，唐晶十年男友；后助力子君职场成长"
+  ],
+  "freq": 2
+}

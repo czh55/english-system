@@ -1,0 +1,17 @@
+{
+  "id": "fn-responsibility",
+  "module": "function",
+  "lemma": "responsibility",
+  "zh": "责任",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "In this matter, you have no right to suspect or accuse anyone—not He Han, not me, not Zhang Yousen. You know where the …",
+      "zh": "在这件事情上面，你是没有资格去怀疑和指责任何人的。无论是何韩、我还是张佑森，你知道责任在谁那儿。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 35
+}

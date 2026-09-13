@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>来自胖卡的冲击：索尼RX10V上手测试！ · english-system</title>
+<style>
+:root {
+  --bg: #0c1222;
+  --surface: rgba(255,255,255,0.045);
+  --border: rgba(255,255,255,0.1);
+  --text: #e8eef7;
+  --muted: #93a4bd;
+  --accent: #5ec8c0;
+  --accent2: #7eb6ff;
+  --accent3: #e8b86d;
+  --ok: #6ed3a1;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", serif;
+  --font-body: "Avenir Next", "PingFang SC", "Helvetica Neue", sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(900px 500px at 12% -10%, rgba(94,200,192,0.16), transparent 55%),
+    radial-gradient(700px 420px at 90% 0%, rgba(126,182,255,0.12), transparent 50%),
+    var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.65;
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 28px 20px 80px; }
+nav.top {
+  display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+  padding: 14px 0 22px; border-bottom: 1px solid var(--border); margin-bottom: 28px;
+}
+nav.top .brand {
+  font-family: var(--font-display);
+  font-size: 1.15rem; font-weight: 700; color: var(--text); margin-right: auto;
+}
+nav.top a { color: var(--muted); font-size: 0.9rem; }
+nav.top a.active { color: var(--accent); }
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 2.9rem);
+  letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px;
+}
+.hero p { color: var(--muted); max-width: 42rem; }
+.grid4 {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 28px 0;
+}
+@media (max-width: 820px) { .grid4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .grid4 { grid-template-columns: 1fr; } }
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px 16px; display: block; color: inherit;
+}
+.card:hover { border-color: rgba(94,200,192,0.45); text-decoration: none; }
+.card .kicker { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.card h2 { font-size: 1.15rem; margin: 8px 0 6px; font-family: var(--font-display); }
+.card p { color: var(--muted); font-size: 0.88rem; }
+.path {
+  background: linear-gradient(135deg, rgba(94,200,192,0.12), rgba(126,182,255,0.08));
+  border: 1px solid var(--border); border-radius: 16px; padding: 22px 20px; margin-top: 8px;
+}
+.path h2 { font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 8px; }
+.path ol { margin: 12px 0 0 1.2rem; color: var(--muted); }
+.path li { margin: 8px 0; }
+.path strong { color: var(--text); }
+.search {
+  width: 100%; margin: 8px 0 18px; padding: 12px 14px; border-radius: 10px;
+  border: 1px solid var(--border); background: rgba(0,0,0,0.25); color: var(--text);
+  font-size: 1rem;
+}
+.meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 16px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.lemma { font-weight: 700; color: var(--accent); }
+.zh { color: var(--text); }
+.freq { color: var(--accent3); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag {
+  display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;
+  background: rgba(126,182,255,0.12); color: var(--accent2); margin: 0 4px 4px 0;
+}
+.ex { display: block; color: var(--muted); font-size: 0.82rem; margin-top: 4px; }
+.ex .en { color: #c9d7ea; }
+.group { margin: 28px 0; }
+.group h2 { font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 6px; }
+.group .desc { color: var(--muted); margin-bottom: 12px; }
+.frame { font-weight: 700; color: var(--accent); }
+.usage { color: var(--muted); font-size: 0.85rem; }
+.scene-list a.card { margin-bottom: 12px; }
+.scene-block {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px; margin: 16px 0;
+}
+.scene-block h3 { font-family: var(--font-display); margin-bottom: 4px; }
+.sent { margin: 12px 0; padding: 10px 0; border-top: 1px solid var(--border); }
+.sent .pair { display: grid; gap: 4px; }
+.sent .label { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.08em; }
+.note { color: var(--accent3); font-size: 0.82rem; margin-top: 4px; }
+.para { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.para li { margin: 8px 0 8px 1rem; }
+.chunk-link { margin-left: 6px; font-size: 0.8rem; }
+.external { margin: 10px 0 18px; font-size: 0.9rem; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="top">
+  <a class="brand" href="../index.html">english-system</a>
+  <a class="" href="../index.html">首页</a>
+  <a class="" href="../function/index.html">非实体词</a>
+  <a class="" href="../phrases/index.html">话术结构</a>
+  <a class="active" href="../scenarios/index.html">场景实训</a>
+  <a class="" href="../entity/index.html">实体词</a>
+</nav>
+
+<header class="hero"><h1>来自胖卡的冲击：索尼RX10V上手测试！</h1><p>Sony RX10V Hands-On Test: The Fat Card Strikes Back</p></header>
+<p class="external"><a href="https://czh55.github.io/language_paraphrase/rx10v-professional-场景英译.html" target="_blank" rel="noopener">打开原场景学习卡（音频 / 截图）↗</a></p>
+<section class="scene-block" id="s1">
+  <h3>S1 · 开箱：胖卡复活</h3>
+  <p class="meta">Unboxing: The Fat Card is Back · 00:00–00:13</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>这台刚拆开的胖卡，我们已经迫不及待地想要上手测试一下了。</div></div>
+  <div><span class="label">EN</span><div>This Fat Card just came out of the box, and I can't wait to get my hands on it and run a few tests.</div></div>
+</div><div class="note">Fat Card → 索尼长焦机的昵称，直译比音译更形象</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>对于超大变焦镜头的机身来说，到底表现怎么样？</div></div>
+  <div><span class="label">EN</span><div>For a body built around a super-zoom lens, how does it actually perform?</div></div>
+</div><div class="note">Fat Card → 索尼长焦机的昵称，直译比音译更形象</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>今天我们就来一场关于索尼胖卡的真实拍摄测试。</div></div>
+  <div><span class="label">EN</span><div>Today we're doing a real-world shooting test of the Sony Fat Card.</div></div>
+</div><div class="note">Fat Card → 索尼长焦机的昵称，直译比音译更形象</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>迫不及待想试试</strong> → can't wait to get my hands on it<div><code>can't wait to get my hands on</code> </div></li><li><strong>真实性能测试</strong> → a real-world shooting test<div><code>real-world shooting test</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s2">
+  <h3>S2 · 胖卡的意义：长焦用户的最佳选择</h3>
+  <p class="meta">Why the Fat Card Matters: The Long-Zoom Champion · 00:14–00:38</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>索尼这台胖卡最大的意义，就是让对长焦端有硬性需求的用户可以有更加专业对口的选择。</div></div>
+  <div><span class="label">EN</span><div>The biggest value of this Fat Card is that it gives users who absolutely need long telephoto range a much more professional, purpose-built option.</div></div>
+</div><div class="note">can't wait to get my hands on it → 相机评测开场标配，比 test 更有上手把玩的兴奋感</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>最近两年摄影行业在迅速变化，垂直兴趣领域的拍摄需求反而在增加。</div></div>
+  <div><span class="label">EN</span><div>The photography industry has been changing fast over the last two years, and demand for niche-interest shooting is actually growing.</div></div>
+</div><div class="note">can't wait to get my hands on it → 相机评测开场标配，比 test 更有上手把玩的兴奋感</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>演唱会记录、轻量化观鸟、航空航天和火车等小众兴趣类拍摄。</div></div>
+  <div><span class="label">EN</span><div>Concert recording, lightweight birding, aerospace and plane spotting, train photography — all these niche genres.</div></div>
+</div><div class="note">can't wait to get my hands on it → 相机评测开场标配，比 test 更有上手把玩的兴奋感</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>用户对可以方便携带、价格合适、拥有更长焦端的拍摄工具都有了更强烈的需求。</div></div>
+  <div><span class="label">EN</span><div>Users now have a much stronger demand for a portable, reasonably priced shooting tool with longer reach.</div></div>
+</div><div class="note">can't wait to get my hands on it → 相机评测开场标配，比 test 更有上手把玩的兴奋感</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>这也是索尼的胖卡五代能够重新复活的原因。</div></div>
+  <div><span class="label">EN</span><div>That's exactly why Sony brought the Fat Card Mark V back to life.</div></div>
+</div><div class="note">can't wait to get my hands on it → 相机评测开场标配，比 test 更有上手把玩的兴奋感</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>硬性需求更专业的选择</strong> → a purpose-built option for users who absolutely need long reach<div><code>purpose-built</code> </div></li><li><strong>长焦工具需求更强烈</strong> → a much stronger demand for longer telephoto tools<div><code>absolutely need</code> <a class="chunk-link" href="../function/index.html#fn-absolutely">→ function</a></div></li></ul></div>
+</section>
+<section class="scene-block" id="s3">
+  <h3>S3 · 镜头：24-600mm 蔡司加持</h3>
+  <p class="meta">The Lens: 24-600mm with Zeiss Heritage · 00:38–00:55</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>这台相机最大的亮点就是用了一颗24-600毫米等效焦段规格的镜头。</div></div>
+  <div><span class="label">EN</span><div>The biggest highlight of this camera is its lens: a 24-to-600-millimeter equivalent zoom.</div></div>
+</div><div class="note">super-zoom lens → 超大变焦镜头，比 big zoom 专业</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>当然还是和上代一样，蔡司也参与了设计。</div></div>
+  <div><span class="label">EN</span><div>And just like the previous generation, Zeiss was involved in the lens design as well.</div></div>
+</div><div class="note">super-zoom lens → 超大变焦镜头，比 big zoom 专业</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>为了解决过往介于专业全画幅相机和普通消费机之间的需求空档。</div></div>
+  <div><span class="label">EN</span><div>To fill the gap that existed between professional full-frame cameras and regular consumer compacts.</div></div>
+</div><div class="note">super-zoom lens → 超大变焦镜头，比 big zoom 专业</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>最大卖点是24-600mm镜头</strong> → the biggest highlight is a 24-600mm equivalent lens<div><code>24-to-600-millimeter</code> </div></li><li><strong>填补专业和消费级的空档</strong> → to fill the gap between professional and consumer<div><code>equivalent zoom</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s4">
+  <h3>S4 · 传感器与处理器：全面升级</h3>
+  <p class="meta">Sensor &amp; Processor: A Complete Overhaul · 00:55–01:09</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>索尼给RX10V搭配了全新设计的堆栈式CMOS。</div></div>
+  <div><span class="label">EN</span><div>Sony equipped the RX10V with a newly designed stacked CMOS sensor.</div></div>
+</div><div class="note">purpose-built → 为特定目的打造的（比 specialized 更精准）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>以及和全画幅机型A1M2配置相同的BIONZ XR二代影像处理器。</div></div>
+  <div><span class="label">EN</span><div>Plus a BIONZ XR Mark II image processor — the same one used in full-frame models like the A1 II.</div></div>
+</div><div class="note">purpose-built → 为特定目的打造的（比 specialized 更精准）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>让整体画质的提升相比于上一代非常明显。</div></div>
+  <div><span class="label">EN</span><div>The overall image quality improvement over the previous generation is really significant.</div></div>
+</div><div class="note">purpose-built → 为特定目的打造的（比 specialized 更精准）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>配备了全新堆栈式CMOS</strong> → equipped with a newly designed stacked CMOS sensor<div><code>stacked CMOS</code> </div></li><li><strong>处理器和全幅机器一样</strong> → the same image processor used in full-frame bodies<div><code>image processor</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s5">
+  <h3>S5 · 机身设计：重1111克，粗在镜头</h3>
+  <p class="meta">Body Design: 1111g, Bulk is in the Glass · 01:09–01:27</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>胖卡五代全机的重量为1111克。</div></div>
+  <div><span class="label">EN</span><div>The RX10V weighs eleven-eleven grams in total.</div></div>
+</div><div class="note">niche-interest → 小众兴趣（比 small interest 更地道）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>整体大小在收纳状态下，和索尼全幅机型加上镜头体积类似。</div></div>
+  <div><span class="label">EN</span><div>When fully collapsed, its overall size is similar to a Sony full-frame body with a lens attached.</div></div>
+</div><div class="note">niche-interest → 小众兴趣（比 small interest 更地道）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>说它胖，主要还是胖在配套的镜头上。</div></div>
+  <div><span class="label">EN</span><div>The &quot;fat&quot; part is really all in the lens.</div></div>
+</div><div class="note">niche-interest → 小众兴趣（比 small interest 更地道）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>为了保证足够的进光量，以及600毫米端的防抖功能，RX10V的镜头明显粗了不少。</div></div>
+  <div><span class="label">EN</span><div>To guarantee enough light intake and proper stabilization at 600 millimeters, the RX10V's lens is noticeably beefier.</div></div>
+</div><div class="note">niche-interest → 小众兴趣（比 small interest 更地道）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>1111克全机重量</strong> → eleven-eleven grams in total<div><code>weighs in total</code> </div></li><li><strong>镜头明显粗了</strong> → noticeably beefier<div><code>fully collapsed</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s6">
+  <h3>S6 · 三大优势 vs 手机超长焦</h3>
+  <p class="meta">Three Advantages vs Phone Super-Telephoto · 01:27–01:53</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>很多用户关心一个问题：和目前主打超长焦拍摄功能的手机来对比。</div></div>
+  <div><span class="label">EN</span><div>A question many people ask: how does it compare to smartphone super-telephoto cameras?</div></div>
+</div><div class="note">equivalent zoom → 等效变焦（摄影专业术语）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>胖卡的优势有三个。</div></div>
+  <div><span class="label">EN</span><div>The Fat Card has three advantages.</div></div>
+</div><div class="note">equivalent zoom → 等效变焦（摄影专业术语）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>第一，更大的光学镜头和专业影像处理器，带来更直观的画质提升表现。</div></div>
+  <div><span class="label">EN</span><div>First, a larger optical lens and professional image processor give you visibly better image quality.</div></div>
+</div><div class="note">equivalent zoom → 等效变焦（摄影专业术语）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>第二，防抖和对焦的升级，加上更符合人体工程学的机身外形，让拍摄体验更加出色。</div></div>
+  <div><span class="label">EN</span><div>Second, improved stabilization and autofocus, plus a more ergonomic body design, make the shooting experience significantly better.</div></div>
+</div><div class="note">equivalent zoom → 等效变焦（摄影专业术语）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>第三，最关键的——胖卡五代可以在超长焦上为用户提供一个画质、重量、价格的合理平衡。</div></div>
+  <div><span class="label">EN</span><div>Third, and most importantly — the Fat Card gives you a sensible balance of image quality, weight, and price at super-telephoto range.</div></div>
+</div><div class="note">equivalent zoom → 等效变焦（摄影专业术语）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>三大优势概括</strong> → three key advantages<div><code>how does it compare</code> </div></li><li><strong>在画质、重量、价格间取得平衡</strong> → a sensible balance of image quality, weight, and price<div><code>visibly better</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s7">
+  <h3>S7 · 无竞争对手的孤独</h3>
+  <p class="meta">No Competition in Sight · 01:53–02:10</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>索尼胖卡五代其实在目前并没有明确的竞争对手。</div></div>
+  <div><span class="label">EN</span><div>The RX10V actually has no clear competitor in the current market.</div></div>
+</div><div class="note">fill the gap → 填补空白（比 fill the empty space 更自然）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>尼康的P1100那块CMOS太小。</div></div>
+  <div><span class="label">EN</span><div>The Nikon P1100 — its sensor is just too small.</div></div>
+</div><div class="note">fill the gap → 填补空白（比 fill the empty space 更自然）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>半幅机身加上类似腾龙50-400或者28-300的镜头，在焦段便携性和使用体验上，并不见得比索尼RX10V明显胜出。</div></div>
+  <div><span class="label">EN</span><div>An APS-C body with something like a Tamron 50-400 or 28-300 — in terms of zoom range, portability, and overall user experience, it doesn't really beat the RX10V by any meaningful margin.</div></div>
+</div><div class="note">fill the gap → 填补空白（比 fill the empty space 更自然）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>没有真正对手</strong> → no clear competitor<div><code>no clear competitor</code> <a class="chunk-link" href="../function/index.html#fn-clear">→ function</a></div></li><li><strong>半幅+长焦没有明显优势</strong> → doesn't really beat the RX10V by any meaningful margin<div><code>sensor is too small</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s8">
+  <h3>S8 · 四代传奇：二手市场的神话</h3>
+  <p class="meta">The Mark IV Legend: A Second-Hand Myth · 02:10–02:23</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>给大家一点小小的信息震撼。</div></div>
+  <div><span class="label">EN</span><div>Let me hit you with a little fun fact.</div></div>
+</div><div class="note">stacked CMOS → 堆栈式CMOS（比 layered sensor 更常用）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>索尼9年前的胖卡四代，在前几年因为停产和演唱会用户的疯狂追捧，在二手市场曾一度涨价到14000元左右的高位。</div></div>
+  <div><span class="label">EN</span><div>Sony's nine-year-old RX10 IV — after it was discontinued, concert-goers went absolutely crazy for it, and second-hand prices once soared to around fourteen thousand yuan.</div></div>
+</div><div class="note">stacked CMOS → 堆栈式CMOS（比 layered sensor 更常用）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>到现在，四代依然也是热门租赁机型。</div></div>
+  <div><span class="label">EN</span><div>To this day, the Mark IV is still a hot rental item.</div></div>
+</div><div class="note">stacked CMOS → 堆栈式CMOS（比 layered sensor 更常用）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>涨价到14000元</strong> → second-hand prices soared to around fourteen thousand yuan<div><code>hit you with a fun fact</code> </div></li><li><strong>至今仍是热门租赁机器</strong> → still a hot rental item<div><code>discontinued</code> </div></li></ul></div>
+</section>
+<section class="scene-block" id="s9">
+  <h3>S9 · 总结：长焦轻量化的最佳选择</h3>
+  <p class="meta">Verdict: The Best Lightweight Telephoto Choice · 02:23–02:38</p>
+  <div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>索尼对市场的敏感，也正是对胖卡五代需求人群的明确回应。</div></div>
+  <div><span class="label">EN</span><div>Sony's sensitivity to the market is a clear response to the people who actually need the Fat Card Mark V.</div></div>
+</div><div class="note">visibly better → 肉眼可见的提升（比 clearly better 更生动）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>如果你希望有一台可以替代你专业长枪短炮的体积重量，同时也有不错的画质表现。</div></div>
+  <div><span class="label">EN</span><div>If you want a camera that replaces the bulk and weight of your pro telephoto setup, while still delivering solid image quality.</div></div>
+</div><div class="note">visibly better → 肉眼可见的提升（比 clearly better 更生动）</div></div><div class="sent"><div class="pair">
+  <div><span class="label">ZH</span><div>轻量化享受长焦拍摄的乐趣，那索尼这台胖卡五代还真就是你匹配度很高的选择。</div></div>
+  <div><span class="label">EN</span><div>Enjoy the fun of lightweight telephoto shooting — the Sony RX10V really is a near-perfect match for you.</div></div>
+</div><div class="note">visibly better → 肉眼可见的提升（比 clearly better 更生动）</div></div>
+  <div class="para"><strong>Paraphrase &amp; Chunks</strong><ul><li><strong>替代专业装备体积</strong> → replaces the bulk and weight of a pro telephoto setup<div><code>clear response</code> <a class="chunk-link" href="../function/index.html#fn-clear">→ function</a></div></li><li><strong>轻量化长焦之选</strong> → a near-perfect match<div><code>replaces the bulk and weight</code> </div></li></ul></div>
+</section>
+<section class="scene-block"><h3>今日可练</h3><ol><li><span class="zh">迫不及待想试试一个新设备</span><div class="ex"><span class="en">I can't wait to get my hands on this new gear and test it out.</span></div></li><li><span class="zh">给超级变焦镜头的用户一个专业选择</span><div class="ex"><span class="en">It gives users who need super-telephoto range a proper, purpose-built choice.</span></div></li><li><span class="zh">这是这款相机最大的卖点</span><div class="ex"><span class="en">That's the single biggest selling point of this camera.</span></div></li><li><span class="zh">它替代了你那套沉重的专业长焦装备</span><div class="ex"><span class="en">It replaces the bulky, heavy pro telephoto rig you've been lugging around.</span></div></li></ol></section>
+<footer>语料来自 drama-analysis / language_paraphrase · 本站只做结构化学习壳</footer>
+</div>
+</body>
+</html>

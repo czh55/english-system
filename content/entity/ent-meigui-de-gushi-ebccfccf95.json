@@ -1,0 +1,28 @@
+{
+  "id": "ent-meigui-de-gushi-ebccfccf95",
+  "module": "entity",
+  "lemma": "黄亦玫",
+  "zh": "黄亦玫",
+  "type": "person",
+  "aliases": [
+    "玫瑰"
+  ],
+  "drama": "meigui-de-gushi",
+  "examples": [
+    {
+      "en": "This is my sister Huang Yimei. From today she's interning with us. Keep it strictly professional.",
+      "zh": "这是我妹妹黄亦玫，从今天开始来我们这儿实习。公事公办啊。",
+      "source": "drama:meigui-de-gushi:1:s3-q1"
+    },
+    {
+      "en": "Rose... today... I like you.",
+      "zh": "玫瑰，今天，我喜欢你。",
+      "source": "drama:meigui-de-gushi:1:s4-q1"
+    }
+  ],
+  "tags": [
+    "刘亦菲",
+    "女主角，美术史专业，艺术审美出众"
+  ],
+  "freq": 2
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-perhaps",
+  "module": "function",
+  "lemma": "perhaps",
+  "zh": "或许",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Father was gravely wounded by Yan Kuangtu at the Wuxing Mountain battle... Perhaps only the Book of Forgetfulness can h…",
+      "zh": "爹爹当年被燕狂徒在无形山一战中重伤……或许只有忘情天书可以一试。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 18
+}

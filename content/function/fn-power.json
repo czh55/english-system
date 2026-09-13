@@ -1,0 +1,23 @@
+{
+  "id": "fn-power",
+  "module": "function",
+  "lemma": "power",
+  "zh": "权力",
+  "tags": [
+    "priority",
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Please stop hurting her—physically or with words. If it happens in front of me, I will do everything in my po…",
+      "zh": "请您不要再伤害她了，不管是肢体上还是言语上。如果当着我的面，我一定会竭力阻止您。",
+      "source": "drama:english-vocab"
+    },
+    {
+      "en": "Please stop hurting her—physically or with words. If it happens in front of me, I will do everything in my power to sto…",
+      "zh": "请您不要再伤害她了，不管是肢体上还是言语上。如果当着我的面，我一定会竭力阻止您。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 190
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-nervous",
+  "module": "function",
+  "lemma": "nervous",
+  "zh": "紧张",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "I'm not nervous — I'm just a little excited. That we get to take photos like this.",
+      "zh": "我不是紧张，我就是有点激动。我们能这样拍照。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 12
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-these-days",
+  "module": "function",
+  "lemma": "these days",
+  "zh": "近来",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "I'm just caring about your mom for you. These days a lot of older folks skip dinner at home just to save money.",
+      "zh": "那我不是替你关心阿姨吗？现在很多长辈自己在家连晚饭都不吃，就为了省钱。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 28
+}

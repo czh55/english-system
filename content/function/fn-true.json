@@ -1,0 +1,17 @@
+{
+  "id": "fn-true",
+  "module": "function",
+  "lemma": "true",
+  "zh": "真的",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "My knowledge of my idol has to run from hair tip to toe before I can call myself a true fan.",
+      "zh": "我对我偶像的了解，必须得从头发丝到脚趾头，才配叫铁粉呢。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 104
+}

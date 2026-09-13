@@ -1,0 +1,17 @@
+{
+  "id": "fn-lie",
+  "module": "function",
+  "lemma": "lie",
+  "zh": "谎言",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Two years ago you didn't know me, and two years from now I don't know who I'll meet — so I can't lie to you.",
+      "zh": "两年之前你不认识我，两年以后我也不知道会认识谁——所以我不能骗你。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 40
+}

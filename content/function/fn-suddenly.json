@@ -1,0 +1,17 @@
+{
+  "id": "fn-suddenly",
+  "module": "function",
+  "lemma": "suddenly",
+  "zh": "突然",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "If Ling Yikai hadn't suddenly jumped ship, he might have kept him hidden a while longer.",
+      "zh": "要不是因为凌奕凯突然跳槽，他可能还得把他藏一段时间。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 46
+}

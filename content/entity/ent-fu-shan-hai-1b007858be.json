@@ -1,0 +1,21 @@
+{
+  "id": "ent-fu-shan-hai-1b007858be",
+  "module": "entity",
+  "lemma": "左丘超然",
+  "zh": "左丘超然",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "Zuoqiu Chaoran, get some silver and buy the boatman's silence. Tang Rou, go buy a small boat and some fire oil.",
+      "zh": "左丘超然，你们去弄点银子，堵住那个船夫的口。唐柔，你去买一艘小船，再弄一些火油来。",
+      "source": "drama:fu-shan-hai:2:s10-q2"
+    }
+  ],
+  "tags": [
+    "程相",
+    "神州结义成员"
+  ],
+  "freq": 1
+}

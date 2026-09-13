@@ -1,0 +1,21 @@
+{
+  "id": "ent-shan-yao-de-ta-f25e774b4d",
+  "module": "entity",
+  "lemma": "何逸飞",
+  "zh": "何逸飞",
+  "type": "person",
+  "aliases": [],
+  "drama": "shan-yao-de-ta",
+  "examples": [
+    {
+      "en": "That He Yifei is incredible—he's like a walking magnet.",
+      "zh": "那个何逸飞真的太厉害了，他简直就是一个行走的吸铁石。",
+      "source": "drama:shan-yao-de-ta:11:s10-q1"
+    }
+  ],
+  "tags": [
+    "王冠逸",
+    "商界人士"
+  ],
+  "freq": 1
+}

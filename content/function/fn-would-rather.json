@@ -1,0 +1,17 @@
+{
+  "id": "fn-would-rather",
+  "module": "function",
+  "lemma": "would rather",
+  "zh": "宁可",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "Whatever you do, don't go to the Tang Sect. I would rather die than accept their help.",
+      "zh": "千万不要去唐门，我宁可死，也不要他帮我。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 3
+}

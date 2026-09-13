@@ -1,0 +1,17 @@
+{
+  "id": "fn-take",
+  "module": "function",
+  "lemma": "take",
+  "zh": "拿/花费",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "Take his resources, but never hand over your sovereignty.",
+      "zh": "只拿他的资源，不给他你的主权。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 569
+}

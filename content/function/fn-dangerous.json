@@ -1,0 +1,17 @@
+{
+  "id": "fn-dangerous",
+  "module": "function",
+  "lemma": "dangerous",
+  "zh": "危险",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "You simply can't rely on anyone—depending on others is dangerous. The moment they slip up, we fall hard.",
+      "zh": "根本就不能靠别人——依赖别人是危险的，对方一旦出一点差错，我们就会摔得很惨。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 16
+}

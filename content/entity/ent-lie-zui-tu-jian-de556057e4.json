@@ -1,0 +1,26 @@
+{
+  "id": "ent-lie-zui-tu-jian-de556057e4",
+  "module": "entity",
+  "lemma": "杜城",
+  "zh": "杜城",
+  "type": "person",
+  "aliases": [],
+  "drama": "lie-zui-tu-jian",
+  "examples": [
+    {
+      "en": "Du Cheng—you'll work with Shen Yi on this.",
+      "zh": "杜城，你跟沈翊一起吧。",
+      "source": "drama:lie-zui-tu-jian:2:s4-q3"
+    },
+    {
+      "en": "Case handled well. I heard the two of you made a bet. Du Cheng—a bet's a bet. Do you accept defeat?",
+      "zh": "案子办得不错。听说你们两个打了个赌啊？杜城，愿赌服输啊，认不认啊？",
+      "source": "drama:lie-zui-tu-jian:3:s4-q1"
+    }
+  ],
+  "tags": [
+    "金世佳",
+    "北江分局刑警队长，果决冲动，七年前因沈翊的画导致恩师雷一斐被杀"
+  ],
+  "freq": 2
+}

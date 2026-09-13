@@ -1,0 +1,17 @@
+{
+  "id": "fn-as-soon-as",
+  "module": "function",
+  "lemma": "as soon as",
+  "zh": "一…就",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "When are you going back to the hospital today?\" \"As soon as I finish up at the office, I'll be there.",
+      "zh": "你今天什么时候再去医院？」「我尽量早点把公司的事情处理好，我就过去。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 15
+}

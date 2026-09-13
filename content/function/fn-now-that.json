@@ -1,0 +1,17 @@
+{
+  "id": "fn-now-that",
+  "module": "function",
+  "lemma": "now that",
+  "zh": "既然",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "We gave her an equal stake because she held He Han in her hands. Now that he's sold, she's not that important anymore.",
+      "zh": "当初让她跟我们占一样多的股，是因为她手里有何韩。现在卖了，她没那么重要了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 87
+}

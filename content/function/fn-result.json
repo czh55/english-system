@@ -1,0 +1,17 @@
+{
+  "id": "fn-result",
+  "module": "function",
+  "lemma": "result",
+  "zh": "结果",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Prepared or not, once the banquet is over, it's done. What we want is the result, not the process.",
+      "zh": "准备充分也好，不充分也好，婚宴结束了就要行了。我们要的是结果，不是过程。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 5
+}

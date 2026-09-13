@@ -1,0 +1,23 @@
+{
+  "id": "fn-tell",
+  "module": "function",
+  "lemma": "tell",
+  "zh": "告诉",
+  "tags": [
+    "priority",
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "Let's drop the birthday talk. Go home and tell your mother I'm doing fine here—everything's well. I just don'…",
+      "zh": "我生日的事情也不要说了。你回去把我这儿的情况告诉你妈，一切都很好，我不希望她来打扰我。",
+      "source": "drama:english-vocab"
+    },
+    {
+      "en": "Let's drop the birthday talk. Go home and tell your mother I'm doing fine here—everything's well. I just don't want her…",
+      "zh": "我生日的事情也不要说了。你回去把我这儿的情况告诉你妈，一切都很好，我不希望她来打扰我。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 286
+}

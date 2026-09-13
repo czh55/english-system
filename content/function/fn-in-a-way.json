@@ -1,0 +1,17 @@
+{
+  "id": "fn-in-a-way",
+  "module": "function",
+  "lemma": "in a way",
+  "zh": "某种程度上",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Just date her and your novel tops the charts. ... In a way, that makes her a quality boyfriend.",
+      "zh": "只要跟她谈个恋爱，自己写的小说就能冲上榜首。……从某种意义上来讲，这算是个优质男朋友啊。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1
+}

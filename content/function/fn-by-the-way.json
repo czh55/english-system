@@ -1,0 +1,17 @@
+{
+  "id": "fn-by-the-way",
+  "module": "function",
+  "lemma": "by the way",
+  "zh": "顺便说",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "By the way, that day—that big-bearded fellow. Are you close with him, sis?\" \"No.",
+      "zh": "我想问就那天，不是有个大胡子吗？姐跟那个男的熟吗？」「不熟。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 5
+}

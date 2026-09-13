@@ -1,0 +1,17 @@
+{
+  "id": "fn-unless",
+  "module": "function",
+  "lemma": "unless",
+  "zh": "除非",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "As a newcomer, finishing this much high-quality work this fast — you couldn't stay this organized unless someone was he…",
+      "zh": "你作为一个新人，能在这么短的时间里完成这么大量、这么高质量的工作，如果不是背后有人帮忙，你不会这么有条不紊。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 25
+}

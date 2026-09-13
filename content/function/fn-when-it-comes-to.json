@@ -1,0 +1,17 @@
+{
+  "id": "fn-when-it-comes-to",
+  "module": "function",
+  "lemma": "when it comes to",
+  "zh": "说到",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "I believe in him. When it comes to writing novels, I do trust him.",
+      "zh": "我相信他。写小说这件事情，我还是蛮相信他的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 15
+}

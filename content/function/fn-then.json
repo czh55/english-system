@@ -1,0 +1,17 @@
+{
+  "id": "fn-then",
+  "module": "function",
+  "lemma": "then",
+  "zh": "然后/那时",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "If he doesn't want me to be innocent, then I'll show him just how guilty I can be.",
+      "zh": "他不想要我清白，我就不清白给他看。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 547
+}

@@ -1,0 +1,26 @@
+{
+  "id": "ent-shan-yao-de-ta-4cbb9f91f0",
+  "module": "entity",
+  "lemma": "王立仁",
+  "zh": "王立仁",
+  "type": "person",
+  "aliases": [],
+  "drama": "shan-yao-de-ta",
+  "examples": [
+    {
+      "en": "You starred in just two dramas and became famous beyond measure. It was Wang Liren who blocked a rising star.",
+      "zh": "当年你就拍了两部戏，都红成什么样了。那明明是王立仁，阻碍了一颗冉冉升起的星。",
+      "source": "drama:shan-yao-de-ta:5:s7-q3"
+    },
+    {
+      "en": "It's that secretary of Wang Liren's. It's plain as day she's desperate to climb her way up. But men just can't see it—he thinks she's wonderful.",
+      "zh": "就是王立仁那个秘书呀。明摆着是司马昭之心，拼了命想上位的主。可男人就是看不出来，还觉得她人特别好。",
+      "source": "drama:shan-yao-de-ta:10:s12-q1"
+    }
+  ],
+  "tags": [
+    "张铎",
+    "特邀主演"
+  ],
+  "freq": 2
+}

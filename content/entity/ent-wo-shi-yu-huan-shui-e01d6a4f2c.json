@@ -1,0 +1,21 @@
+{
+  "id": "ent-wo-shi-yu-huan-shui-e01d6a4f2c",
+  "module": "entity",
+  "lemma": "吕夫蒙",
+  "zh": "吕夫蒙",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-shi-yu-huan-shui",
+  "examples": [
+    {
+      "en": "Where's the money?\" \"I lent it to Lü Fumeng.",
+      "zh": "钱呢？」「我借给吕夫蒙了。",
+      "source": "drama:wo-shi-yu-huan-shui:1:s11-q1"
+    }
+  ],
+  "tags": [
+    "赵达",
+    "余欢水多年好友，借 13 万不还"
+  ],
+  "freq": 1
+}

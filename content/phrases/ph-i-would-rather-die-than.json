@@ -1,0 +1,26 @@
+{
+  "id": "ph-i-would-rather-die-than",
+  "module": "phrases",
+  "frame_en": "I would rather die than...",
+  "frame_zh": "我宁死也不…",
+  "usage": "强烈拒绝",
+  "group": "取舍类",
+  "group_id": "group-5",
+  "examples": [
+    {
+      "en": "would rather... than\"I would rather have died outside the city walls than be knocked out by someone.\"",
+      "zh": "我宁可当时就死在城外，也不愿有人把我一把打晕。",
+      "source": "drama:english-phrases:group-5",
+      "ctx": "🎬 逐玉 第30集 · 长玉自责：与其被敲晕错过报仇的机会，宁可战死——\"宁可死也不愿怎样\"是取舍句里最强烈的表达。"
+    },
+    {
+      "en": "rather than\"Rather than be controlled by him forever, I'd rather make him vanish completely from my world.\"",
+      "zh": "与其被他永远操控，不如让他彻底消失在我的世界里。",
+      "source": "drama:english-phrases:group-5",
+      "ctx": "🎬 猎罪图鉴 第3集 · 蒋歌说出杀梁毅的动机：与其一直被操控，不如让他彻底消失——\"与其A，不如B\"讲清楚择与弃。"
+    }
+  ],
+  "tags": [
+    "group-5"
+  ]
+}

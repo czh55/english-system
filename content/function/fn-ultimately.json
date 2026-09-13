@@ -1,0 +1,17 @@
+{
+  "id": "fn-ultimately",
+  "module": "function",
+  "lemma": "ultimately",
+  "zh": "归根结底",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "The family ultimately refused mediation and insisted on legal proceedings.",
+      "zh": "家属最终还是拒绝调解，一定要走司法程序。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1
+}

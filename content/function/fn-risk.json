@@ -1,0 +1,17 @@
+{
+  "id": "fn-risk",
+  "module": "function",
+  "lemma": "risk",
+  "zh": "风险",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "The only company under audit is yours, and the risk you face is a hefty back-tax bill plus penalties.",
+      "zh": "被审计的只有你们名下这家公司，而你们面临的风险，是高额的补税和滞纳金。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 20
+}

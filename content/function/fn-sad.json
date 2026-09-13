@@ -1,0 +1,17 @@
+{
+  "id": "fn-sad",
+  "module": "function",
+  "lemma": "sad",
+  "zh": "难过",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "If one of them really is the mole, I'd be genuinely sad.",
+      "zh": "要是他们里面真有一个是内鬼的话，我真的觉得还蛮难过的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 4
+}

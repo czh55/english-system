@@ -1,0 +1,17 @@
+{
+  "id": "fn-obviously",
+  "module": "function",
+  "lemma": "obviously",
+  "zh": "显然",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Someone like He Han would obviously never make it into my matching system.",
+      "zh": "那是何韩那样的，就显然不会进入到我的系统里。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-worry",
+  "module": "function",
+  "lemma": "worry",
+  "zh": "担心",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "I'm afraid one day I'll be pushed down a staircase right along with you.\" \"No, you won't. Don't worry.",
+      "zh": "我怕有一天啊，我会跟你一起被推下楼。」「不会的，你放心吧。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 100
+}

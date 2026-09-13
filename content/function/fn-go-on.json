@@ -1,0 +1,17 @@
+{
+  "id": "fn-go-on",
+  "module": "function",
+  "lemma": "go on",
+  "zh": "继续",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Enough—the sky won't fall. Go on back and rest.",
+      "zh": "行了，天塌不下来，你先回去歇着。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 37
+}

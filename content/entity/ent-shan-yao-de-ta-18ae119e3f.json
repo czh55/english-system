@@ -1,0 +1,26 @@
+{
+  "id": "ent-shan-yao-de-ta-18ae119e3f",
+  "module": "entity",
+  "lemma": "陈萱萱",
+  "zh": "陈萱萱",
+  "type": "person",
+  "aliases": [],
+  "drama": "shan-yao-de-ta",
+  "examples": [
+    {
+      "en": "Chen Xuanxuan, come to the firm tomorrow and get your resignation paperwork done.",
+      "zh": "陈萱萱，你明天给我到律所来，把离职手续办了。",
+      "source": "drama:shan-yao-de-ta:2:s9-q3"
+    },
+    {
+      "en": "Chen Xuanxuan is out of her mind — her head is full of nothing but her Lin Hao.",
+      "zh": "陈萱萱就是神志不清，她满脑子只有他们家林浩。",
+      "source": "drama:shan-yao-de-ta:3:s6-q1"
+    }
+  ],
+  "tags": [
+    "刘芸",
+    "三姐妹之一，痴恋林浩多年，林浩可能只图她家庭背景"
+  ],
+  "freq": 2
+}

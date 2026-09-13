@@ -1,0 +1,17 @@
+{
+  "id": "fn-and",
+  "module": "function",
+  "lemma": "and",
+  "zh": "并且",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "The company takes a third first, and Lin Zhanqiao and I split the rest fifty-fifty.",
+      "zh": "公司先划走三分之一，剩下的我跟林展翘对半分。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 4280
+}

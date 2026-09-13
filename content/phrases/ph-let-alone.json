@@ -1,0 +1,26 @@
+{
+  "id": "ph-let-alone",
+  "module": "phrases",
+  "frame_en": "let alone...",
+  "frame_zh": "更别说 / 何况…",
+  "usage": "反衬极强",
+  "group": "递进加强类",
+  "group_id": "group-6",
+  "examples": [
+    {
+      "en": "not just\"We must see not just the illness, but every individual person.\"",
+      "zh": "我们不仅要看到病人的病，更要看到每一个具体的人。",
+      "source": "drama:english-phrases:group-6",
+      "ctx": "🎬 问心2 第15集 · 宣传稿里写移植团队的理念——\"not just A, but B\"把重点压在后半句，是递进里的经典句式。"
+    },
+    {
+      "en": "let alone\"Even a third-rate author wouldn't take them, let alone He Han.\"",
+      "zh": "三流作者都不一定愿意，更别说他是何韩了。",
+      "source": "drama:english-phrases:group-6",
+      "ctx": "🎬 爱情没有神话 第23集 · 对方嫌展翘替何韩谈的条件太苛刻——\"连低标准都达不到，更别说高标准\"，let alone 用来递进到极端。"
+    }
+  ],
+  "tags": [
+    "group-6"
+  ]
+}

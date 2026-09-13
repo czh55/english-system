@@ -1,0 +1,17 @@
+{
+  "id": "ent-lie-zui-tu-jian-d10b4eba60",
+  "module": "entity",
+  "lemma": "张局长",
+  "zh": "张局长",
+  "type": "person",
+  "aliases": [
+    "张晓萍"
+  ],
+  "drama": "lie-zui-tu-jian",
+  "examples": [],
+  "tags": [
+    "秦海璐",
+    "北江分局局长，特邀出演"
+  ],
+  "freq": 0
+}

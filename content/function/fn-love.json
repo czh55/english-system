@@ -1,0 +1,19 @@
+{
+  "id": "fn-love",
+  "module": "function",
+  "lemma": "love",
+  "zh": "爱",
+  "tags": [
+    "priority",
+    "verb",
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Love life, and get plenty of sleep.",
+      "zh": "热爱生活，多睡觉。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 255
+}

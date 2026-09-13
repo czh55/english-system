@@ -1,0 +1,17 @@
+{
+  "id": "fn-possible",
+  "module": "function",
+  "lemma": "possible",
+  "zh": "可能",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "Copy Plush Bear exactly—identical, at the lowest possible cost.",
+      "zh": "照着毛绒熊做，一模一样的，成本压到最低。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 23
+}

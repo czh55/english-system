@@ -1,0 +1,17 @@
+{
+  "id": "fn-decide",
+  "module": "function",
+  "lemma": "decide",
+  "zh": "决定",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "Now I have to decide: do I bet it all—every last cent of the company—so I can have a real defeat? Or do I just disband …",
+      "zh": "现在我就是需要考虑，我到底要不要赌一把，把公司的最后一份钱全都投进去，然后才有个认输。还是说，现在就要原地解散。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 39
+}

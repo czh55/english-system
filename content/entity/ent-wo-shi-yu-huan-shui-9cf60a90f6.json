@@ -1,0 +1,21 @@
+{
+  "id": "ent-wo-shi-yu-huan-shui-9cf60a90f6",
+  "module": "entity",
+  "lemma": "张子铭",
+  "zh": "张子铭",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-shi-yu-huan-shui",
+  "examples": [
+    {
+      "en": "They were bullying Zhang Ziming. I stood up for him, and then we fought.",
+      "zh": "他们欺负张子铭，我帮助他，我们就打起来了。",
+      "source": "drama:wo-shi-yu-huan-shui:4:s10-q1"
+    }
+  ],
+  "tags": [
+    "傅铂涵",
+    "临终关怀服务对象"
+  ],
+  "freq": 1
+}

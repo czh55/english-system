@@ -1,0 +1,17 @@
+{
+  "id": "fn-work-out",
+  "module": "function",
+  "lemma": "work out",
+  "zh": "解决/锻炼",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "If it really doesn't work out, just treat Beijing as a place to clear your head.",
+      "zh": "要是实在不行，你就当到北京去散散心。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 12
+}

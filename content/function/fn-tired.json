@@ -1,0 +1,17 @@
+{
+  "id": "fn-tired",
+  "module": "function",
+  "lemma": "tired",
+  "zh": "累",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "Zhanqiao, aren't you tired? All these years as He Han's dressmaker—he sold millions, and besides your share, what did h…",
+      "zh": "展翘你不辛苦吗？这么多年为何韩做嫁衣，他卖了千万，除了该分给你的，还给了你什么？连一个放牙刷的地方都舍不得腾出来给你。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 22
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-expect",
+  "module": "function",
+  "lemma": "expect",
+  "zh": "期待",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "I really didn't expect him to deceive me like this, all for a Guyan.",
+      "zh": "我是真没想到，他为了个孤烟能这么骗我。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 23
+}

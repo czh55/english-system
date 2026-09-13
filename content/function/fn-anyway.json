@@ -1,0 +1,17 @@
+{
+  "id": "fn-anyway",
+  "module": "function",
+  "lemma": "anyway",
+  "zh": "反正",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "However good your conditions are, I don't like you. How many people end up marrying for love anyway? And did marrying f…",
+      "zh": "条件再好，但不喜欢你。有多少人最后是嫁给爱情的？嫁给爱情，就都幸福了吗？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 42
+}

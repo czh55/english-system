@@ -1,0 +1,17 @@
+{
+  "id": "fn-right-now",
+  "module": "function",
+  "lemma": "right now",
+  "zh": "此刻",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "Right now we've lost the wife and lost the army too.",
+      "zh": "现在我们是赔了夫人又折兵。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 117
+}

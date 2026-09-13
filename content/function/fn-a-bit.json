@@ -1,0 +1,17 @@
+{
+  "id": "fn-a-bit",
+  "module": "function",
+  "lemma": "a bit",
+  "zh": "有点",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "I'm going to see an author today, so I'll leave a bit early.",
+      "zh": "今天我去见一个作者，我早一点走。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 83
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-might",
+  "module": "function",
+  "lemma": "might",
+  "zh": "或许",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "We can't afford to gamble right now—we might end up with nothing. Gu Yan is different; his value is already proven.",
+      "zh": "我们现在赌不起，很有可能颗粒无收；孤烟不一样，他的价值已经确定了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 101
+}

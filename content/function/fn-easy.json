@@ -1,0 +1,17 @@
+{
+  "id": "fn-easy",
+  "module": "function",
+  "lemma": "easy",
+  "zh": "容易",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "To you it may seem senseless, but to me it was anything but easy.",
+      "zh": "对你来说或许是莫名其妙，但对我来说就是好不容易。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 81
+}

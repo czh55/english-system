@@ -1,0 +1,26 @@
+{
+  "id": "ent-shan-yao-de-ta-49d9bbd14c",
+  "module": "entity",
+  "lemma": "管文",
+  "zh": "管文",
+  "type": "person",
+  "aliases": [],
+  "drama": "shan-yao-de-ta",
+  "examples": [
+    {
+      "en": "Matt set up Guan Wen and Lydia in a contest over Hengtian. Whoever wins takes the promotion.",
+      "zh": "麦特让管文和Lydia打擂台抢恒天，谁赢了谁就上位。",
+      "source": "drama:shan-yao-de-ta:1:s4-q2"
+    },
+    {
+      "en": "I hope, Director Lin, that you'll give me the position you promised Guan Wen.",
+      "zh": "我希望林总，能把许给管文的位置，给我。",
+      "source": "drama:shan-yao-de-ta:1:s7-q1"
+    }
+  ],
+  "tags": [
+    "秦岚",
+    "女主，职场精英，外企销售总监级别，丁宁大学时期恋人"
+  ],
+  "freq": 2
+}

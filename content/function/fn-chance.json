@@ -1,0 +1,17 @@
+{
+  "id": "fn-chance",
+  "module": "function",
+  "lemma": "chance",
+  "zh": "机会",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Out of over twenty million web novelists, you only have a chance to be seen and remembered if you break into the top tw…",
+      "zh": "在两千多万网文作者中，你们只有冲到前二十，才有可能被看见、被记住。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 120
+}

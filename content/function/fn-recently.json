@@ -1,0 +1,17 @@
+{
+  "id": "fn-recently",
+  "module": "function",
+  "lemma": "recently",
+  "zh": "最近",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "Recently the trace of the Marching Command has reappeared in Guangling. Wasn't the White-Grass Valley wiped out a decad…",
+      "zh": "有人近日在廣陵，又發現了行軍令的蹤跡。白草谷不是在十幾年前就被剿滅了嗎？何來的行軍令？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 7
+}

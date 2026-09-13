@@ -1,0 +1,17 @@
+{
+  "id": "fn-notice",
+  "module": "function",
+  "lemma": "notice",
+  "zh": "注意到",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "First, dress with style—stand out so people notice you at first glance. Second, carry yourself with the spirit of someo…",
+      "zh": "首先在穿衣服上，要有派头，在人群里最好让人第一眼就能注意到你。第二，要拿出主人翁精神。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 12
+}

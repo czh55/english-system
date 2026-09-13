@@ -1,0 +1,17 @@
+{
+  "id": "fn-swear",
+  "module": "function",
+  "lemma": "swear",
+  "zh": "发誓",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "I'm just trying to make enough to pay off the debt. Once it's paid, I'm done with this—I swear.",
+      "zh": "我不就是为了挣点钱，把那个债还上吗？还完债，我肯定不干这个了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 28
+}

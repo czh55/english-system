@@ -1,0 +1,17 @@
+{
+  "id": "fn-pick-up",
+  "module": "function",
+  "lemma": "pick up",
+  "zh": "捡起/接人",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Tomorrow morning we'll pick up Guyin two hours early.\" \"Forty minutes ahead is fine.",
+      "zh": "明天早上我们会提前两个小时接孤烟。」「提前四十分钟到就行了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 13
+}

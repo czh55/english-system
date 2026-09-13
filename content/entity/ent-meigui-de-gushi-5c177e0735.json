@@ -1,0 +1,26 @@
+{
+  "id": "ent-meigui-de-gushi-5c177e0735",
+  "module": "entity",
+  "lemma": "黄振华",
+  "zh": "黄振华",
+  "type": "person",
+  "aliases": [],
+  "drama": "meigui-de-gushi",
+  "examples": [
+    {
+      "en": "Hi, I'm Huang Zhenhua. Professor Liang gave me your contact info. If it's not too much trouble, let's just chat by text first.",
+      "zh": "你好，我是黄振华。我是从梁教授那里得到你的联系方式的。不打搅的话，咱们先短信聊聊。",
+      "source": "drama:meigui-de-gushi:3:s4-q1"
+    },
+    {
+      "en": "You're Huang Yimei's boss?\" \"Yes.\" \"I'm her brother, Huang Zhenhua.",
+      "zh": "你就是黄亦玫的老板？」「是。」「我是她哥，黄振华。",
+      "source": "drama:meigui-de-gushi:6:s6-q1"
+    }
+  ],
+  "tags": [
+    "佟大为",
+    "玫瑰哥哥，建筑设计院→建筑公司，宠妹狂魔"
+  ],
+  "freq": 2
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ent-fu-shan-hai-07e3a20b3c",
+  "module": "entity",
+  "lemma": "肖明明",
+  "zh": "肖明明",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "Did I get stuck inside the wuxia novel I rewrote, 'The Divine Land Heroes'? Now I'm Xiao Qiushui, not Xiao Mingming.",
+      "zh": "难道我卡进了我改写的武侠小说《神州奇侠》里？现在我成了萧秋水，不是肖明明了？",
+      "source": "drama:fu-shan-hai:1:s4-q1"
+    }
+  ],
+  "tags": [
+    "成毅",
+    "现代穿书者，酷爱武侠小说的咸鱼青年，因系统漏洞意外卷入小说世界"
+  ],
+  "freq": 1
+}

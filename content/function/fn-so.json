@@ -1,0 +1,17 @@
+{
+  "id": "fn-so",
+  "module": "function",
+  "lemma": "so",
+  "zh": "所以",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "I can divorce her and leave with nothing.\" \"The money you worked so hard for — giving it all up isn't worth it.",
+      "zh": "我可以跟她离婚的，净身出户。」「你辛辛苦苦工作赚的钱，净身出户就太不值得了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1152
+}

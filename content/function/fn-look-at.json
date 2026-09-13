@@ -1,0 +1,17 @@
+{
+  "id": "fn-look-at",
+  "module": "function",
+  "lemma": "look at",
+  "zh": "看着",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Don't mind me flirting with young ladies — it's all empty. What I actually look at is the brain.",
+      "zh": "你别看我平时喜欢跟那些年轻姑娘聊天，没意思。其实我是看脑子的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 60
+}

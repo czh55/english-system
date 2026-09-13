@@ -1,0 +1,17 @@
+{
+  "id": "fn-come",
+  "module": "function",
+  "lemma": "come",
+  "zh": "来",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "Uncle Fan, when have you ever come here for anything other than driving a wedge between Lin and me?",
+      "zh": "范叔，您哪次不是来挑拨林展的？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 609
+}

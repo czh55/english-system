@@ -1,0 +1,17 @@
+{
+  "id": "fn-warm",
+  "module": "function",
+  "lemma": "warm",
+  "zh": "温暖",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "Guyin signs with Zhao Lanxin tomorrow, and the news that Sansan is Guyin's other pen name is already starting to warm u…",
+      "zh": "孤烟明天跟赵兰心签约，三三就是孤烟的另一个马甲的事情，已经开始预热了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 26
+}

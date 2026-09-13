@@ -1,0 +1,17 @@
+{
+  "id": "fn-you-know-what",
+  "module": "function",
+  "lemma": "you know what",
+  "zh": "你知道吗",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Don't just look at these four crabs—you know what they really are.",
+      "zh": "你不要光看这四只蟹，实际上是什么，你知道吧。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 14
+}

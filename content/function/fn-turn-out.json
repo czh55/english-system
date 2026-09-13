@@ -1,0 +1,17 @@
+{
+  "id": "fn-turn-out",
+  "module": "function",
+  "lemma": "turn out",
+  "zh": "结果是",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "I never imagined it would turn out to be her.",
+      "zh": "我始终没想到，竟然是她。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 6
+}

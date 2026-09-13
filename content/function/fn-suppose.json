@@ -1,0 +1,17 @@
+{
+  "id": "fn-suppose",
+  "module": "function",
+  "lemma": "suppose",
+  "zh": "假设/觉得",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "Suppose things don't work out between me and Xiaohe—would you ask for the gift back?",
+      "zh": "假如我跟这个小荷没成，那您还是让人把礼退回来不成？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 6
+}

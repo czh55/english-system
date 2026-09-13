@@ -1,0 +1,17 @@
+{
+  "id": "fn-probably",
+  "module": "function",
+  "lemma": "probably",
+  "zh": "大概",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "This year's top author will probably be Guyan. You're not just going — you're going to manage your face.",
+      "zh": "今年的年度作者大概率就孤烟了。你不仅要去，你还要做好你的表情管理。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 35
+}

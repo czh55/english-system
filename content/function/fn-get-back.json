@@ -1,0 +1,17 @@
+{
+  "id": "fn-get-back",
+  "module": "function",
+  "lemma": "get back",
+  "zh": "回来",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "You're investing all this money in Lin Zhanqiao's company — are you betting she and He Han will get back together and h…",
+      "zh": "你给林展翘公司投这么多钱，你是赌她和何韩还能和好，何韩还能回茞星？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 20
+}

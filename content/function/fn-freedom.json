@@ -1,0 +1,17 @@
+{
+  "id": "fn-freedom",
+  "module": "function",
+  "lemma": "freedom",
+  "zh": "自由",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "A few decades of life—how do we honor both family and freedom, and never betray either?",
+      "zh": "人生几十年，亲情和自由，怎么才可以做到各不相负。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 15
+}

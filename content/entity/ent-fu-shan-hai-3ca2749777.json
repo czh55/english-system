@@ -1,0 +1,26 @@
+{
+  "id": "ent-fu-shan-hai-3ca2749777",
+  "module": "entity",
+  "lemma": "萧秋水",
+  "zh": "萧秋水",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "I am Xiao Qiushui. I pay my respects to the Old Madam Wu.",
+      "zh": "在下萧秋水，见过武老夫人。",
+      "source": "drama:fu-shan-hai:1:s1-q2"
+    },
+    {
+      "en": "Aren't you Xiao Qiushui, the third young master of the Huanhua Sword Sect?",
+      "zh": "您不就是浣花剑派的三少爷萧秋水吗？",
+      "source": "drama:fu-shan-hai:1:s3-q3"
+    }
+  ],
+  "tags": [
+    "成毅",
+    "浣花剑派掌门萧西楼三子，「神州结义」首领，服下无极仙丹内力大增，终成一代宗师"
+  ],
+  "freq": 2
+}

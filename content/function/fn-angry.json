@@ -1,0 +1,17 @@
+{
+  "id": "fn-angry",
+  "module": "function",
+  "lemma": "angry",
+  "zh": "生气",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "At my age, I really can't afford to be angry anymore. If a man won't behave, what's the point of keeping him?",
+      "zh": "再说，到了我这个年纪，真的是生不了气。男人要是这么不听话，要了干什么呢？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 20
+}

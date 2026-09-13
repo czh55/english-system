@@ -1,0 +1,17 @@
+{
+  "id": "fn-lonely",
+  "module": "function",
+  "lemma": "lonely",
+  "zh": "孤独",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "He told the nursing home he's a lonely old man — no children, no family.",
+      "zh": "他跟养老院说他是孤老，无儿无女。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 12
+}

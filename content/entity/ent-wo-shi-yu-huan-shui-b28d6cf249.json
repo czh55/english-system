@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-shi-yu-huan-shui-b28d6cf249",
+  "module": "entity",
+  "lemma": "余晨",
+  "zh": "余晨",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-shi-yu-huan-shui",
+  "examples": [
+    {
+      "en": "Yu Huanshui, I don't care whether what you say is true or false. If Yuchen gets sick and can't go to school tomorrow, I'll never let you hear the end of it.",
+      "zh": "余欢水，我不管你说的话是真话还是假话，如果余晨生病了，明天上不了学，我跟你没完。",
+      "source": "drama:wo-shi-yu-huan-shui:1:s8-q2"
+    },
+    {
+      "en": "Yuchen was already picked up by his dad.",
+      "zh": "余晨爸爸接走了。",
+      "source": "drama:wo-shi-yu-huan-shui:8:s7-q2"
+    }
+  ],
+  "tags": [
+    "李庆誉",
+    "余欢水儿子"
+  ],
+  "freq": 2
+}

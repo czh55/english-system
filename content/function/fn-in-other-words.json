@@ -1,0 +1,17 @@
+{
+  "id": "fn-in-other-words",
+  "module": "function",
+  "lemma": "in other words",
+  "zh": "换句话说",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "The hand behind Sansan is none other than Guyin. In other words, both the first- and second-ranked books on the charts …",
+      "zh": "为三三捉刀的不是别人，正是孤烟。也就是说，现在榜单上排名第一和第二的作品，都来自于孤烟之手。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 2
+}

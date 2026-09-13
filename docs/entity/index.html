@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>实体词 · english-system</title>
+<style>
+:root {
+  --bg: #0c1222;
+  --surface: rgba(255,255,255,0.045);
+  --border: rgba(255,255,255,0.1);
+  --text: #e8eef7;
+  --muted: #93a4bd;
+  --accent: #5ec8c0;
+  --accent2: #7eb6ff;
+  --accent3: #e8b86d;
+  --ok: #6ed3a1;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", serif;
+  --font-body: "Avenir Next", "PingFang SC", "Helvetica Neue", sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(900px 500px at 12% -10%, rgba(94,200,192,0.16), transparent 55%),
+    radial-gradient(700px 420px at 90% 0%, rgba(126,182,255,0.12), transparent 50%),
+    var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.65;
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 28px 20px 80px; }
+nav.top {
+  display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+  padding: 14px 0 22px; border-bottom: 1px solid var(--border); margin-bottom: 28px;
+}
+nav.top .brand {
+  font-family: var(--font-display);
+  font-size: 1.15rem; font-weight: 700; color: var(--text); margin-right: auto;
+}
+nav.top a { color: var(--muted); font-size: 0.9rem; }
+nav.top a.active { color: var(--accent); }
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 2.9rem);
+  letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px;
+}
+.hero p { color: var(--muted); max-width: 42rem; }
+.grid4 {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 28px 0;
+}
+@media (max-width: 820px) { .grid4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .grid4 { grid-template-columns: 1fr; } }
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px 16px; display: block; color: inherit;
+}
+.card:hover { border-color: rgba(94,200,192,0.45); text-decoration: none; }
+.card .kicker { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.card h2 { font-size: 1.15rem; margin: 8px 0 6px; font-family: var(--font-display); }
+.card p { color: var(--muted); font-size: 0.88rem; }
+.path {
+  background: linear-gradient(135deg, rgba(94,200,192,0.12), rgba(126,182,255,0.08));
+  border: 1px solid var(--border); border-radius: 16px; padding: 22px 20px; margin-top: 8px;
+}
+.path h2 { font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 8px; }
+.path ol { margin: 12px 0 0 1.2rem; color: var(--muted); }
+.path li { margin: 8px 0; }
+.path strong { color: var(--text); }
+.search {
+  width: 100%; margin: 8px 0 18px; padding: 12px 14px; border-radius: 10px;
+  border: 1px solid var(--border); background: rgba(0,0,0,0.25); color: var(--text);
+  font-size: 1rem;
+}
+.meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 16px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.lemma { font-weight: 700; color: var(--accent); }
+.zh { color: var(--text); }
+.freq { color: var(--accent3); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag {
+  display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;
+  background: rgba(126,182,255,0.12); color: var(--accent2); margin: 0 4px 4px 0;
+}
+.ex { display: block; color: var(--muted); font-size: 0.82rem; margin-top: 4px; }
+.ex .en { color: #c9d7ea; }
+.group { margin: 28px 0; }
+.group h2 { font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 6px; }
+.group .desc { color: var(--muted); margin-bottom: 12px; }
+.frame { font-weight: 700; color: var(--accent); }
+.usage { color: var(--muted); font-size: 0.85rem; }
+.scene-list a.card { margin-bottom: 12px; }
+.scene-block {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px; margin: 16px 0;
+}
+.scene-block h3 { font-family: var(--font-display); margin-bottom: 4px; }
+.sent { margin: 12px 0; padding: 10px 0; border-top: 1px solid var(--border); }
+.sent .pair { display: grid; gap: 4px; }
+.sent .label { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.08em; }
+.note { color: var(--accent3); font-size: 0.82rem; margin-top: 4px; }
+.para { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.para li { margin: 8px 0 8px 1rem; }
+.chunk-link { margin-left: 6px; font-size: 0.8rem; }
+.external { margin: 10px 0 18px; font-size: 0.9rem; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="top">
+  <a class="brand" href="../index.html">english-system</a>
+  <a class="" href="../index.html">首页</a>
+  <a class="" href="../function/index.html">非实体词</a>
+  <a class="" href="../phrases/index.html">话术结构</a>
+  <a class="" href="../scenarios/index.html">场景实训</a>
+  <a class="active" href="index.html">实体词</a>
+</nav>
+
+<header class="hero"><h1>实体词</h1><p>人物 / 地点 / 物品等具体指称。从剧集 cast 冷启动，台词共现补例句。</p></header>
+<p class="meta">101 条 · 来源 drama-analysis cast.md + quotes</p>
+<input class="search" id="q" type="search" placeholder="搜索角色名 / 剧名…" autocomplete="off">
+<table>
+<thead><tr><th>实体</th><th>中文</th><th>命中</th></tr></thead>
+<tbody><tr id="ent-meigui-de-gushi-1ec6a8caec" data-search="白晓荷 白晓荷  meigui-de-gushi">
+  <td><span class="lemma">白晓荷</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  <span class="ex"><span class="en">You're about to run off with her entire family, and we haven't even laid eyes on this Bai Xiaohe!</span> · 都要跟人家全家跑了，我们还没见过白晓荷这个人呢！</span></td>
+  <td class="zh">白晓荷</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-977c1b257e" data-search="陈俊生 陈俊生  wo-de-qian-ban-sheng">
+  <td><span class="lemma">陈俊生</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  <span class="ex"><span class="en">I'm sticking with Chen Junsheng for life. When he married me he said, don't work—he'll provide for me forever.</span> · 反正我这辈子赖定陈俊生了。他娶我的时候说，叫我不要工作，他养我一辈子。</span></td>
+  <td class="zh">陈俊生</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-18ae119e3f" data-search="陈萱萱 陈萱萱  shan-yao-de-ta">
+  <td><span class="lemma">陈萱萱</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  <span class="ex"><span class="en">Chen Xuanxuan, come to the firm tomorrow and get your resignation paperwork done.</span> · 陈萱萱，你明天给我到律所来，把离职手续办了。</span></td>
+  <td class="zh">陈萱萱</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-b494386de4" data-search="丁宁 丁宁  shan-yao-de-ta">
+  <td><span class="lemma">丁宁</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  <span class="ex"><span class="en">Ding Ning, you really are something—holding hands and then pretending it never happened?</span> · 丁宁，你这个人，牵手就不承认了？</span></td>
+  <td class="zh">丁宁</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-lie-zui-tu-jian-de556057e4" data-search="杜城 杜城  lie-zui-tu-jian">
+  <td><span class="lemma">杜城</span> <span class="tag">person</span>
+  <div class="ex">lie-zui-tu-jian</div>
+  <span class="ex"><span class="en">Du Cheng—you'll work with Shen Yi on this.</span> · 杜城，你跟沈翊一起吧。</span></td>
+  <td class="zh">杜城</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-49d9bbd14c" data-search="管文 管文  shan-yao-de-ta">
+  <td><span class="lemma">管文</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  <span class="ex"><span class="en">Matt set up Guan Wen and Lydia in a contest over Hengtian. Whoever wins takes the promotion.</span> · 麦特让管文和Lydia打擂台抢恒天，谁赢了谁就上位。</span></td>
+  <td class="zh">管文</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-1ba8407450" data-search="贺涵 贺涵  wo-de-qian-ban-sheng">
+  <td><span class="lemma">贺涵</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  <span class="ex"><span class="en">You've only got eyes for that arrogant peacock of a man named He Han.</span> · 你眼里只有一个叫贺涵的目中无人的傲娇孔雀男。</span></td>
+  <td class="zh">贺涵</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-meigui-de-gushi-ebccfccf95" data-search="黄亦玫 黄亦玫 玫瑰 meigui-de-gushi">
+  <td><span class="lemma">黄亦玫</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi · 玫瑰</div>
+  <span class="ex"><span class="en">This is my sister Huang Yimei. From today she's interning with us. Keep it strictly professional.</span> · 这是我妹妹黄亦玫，从今天开始来我们这儿实习。公事公办啊。</span></td>
+  <td class="zh">黄亦玫</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-meigui-de-gushi-5c177e0735" data-search="黄振华 黄振华  meigui-de-gushi">
+  <td><span class="lemma">黄振华</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  <span class="ex"><span class="en">Hi, I'm Huang Zhenhua. Professor Liang gave me your contact info. If it's not too much trouble, let's just chat by text first.</span> · 你好，我是黄振华。我是从梁教授那里得到你的联系方式的。不打搅的话，咱们先短信聊聊。</span></td>
+  <td class="zh">黄振华</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-meigui-de-gushi-tina" data-search="tina 姜雪琼 tina meigui-de-gushi">
+  <td><span class="lemma">Tina</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi · Tina</div>
+  <span class="ex"><span class="en">From now on, the first thing you do when you get to the office is tidy Tina's office. All her packages come through your hands first—sort them, then pass them on.</span> · 以后来公司上班，第一件事，先把Tina的办公室收干净。她的快递都会先经你的手，分类好，以后再交给她。</span></td>
+  <td class="zh">姜雪琼</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-280beb2bf3" data-search="林浩 林浩  shan-yao-de-ta">
+  <td><span class="lemma">林浩</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  <span class="ex"><span class="en">Lin Hao even took online classes with me so I could pass the bar exam. If he finds out I lost my job, I'll feel so guilty toward him.</span> · 林浩为了我能考上律师证，还陪我上网课。他要知道我丢了工作，我觉得特别对不起他。</span></td>
+  <td class="zh">林浩</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-2e0f91e772" data-search="凌玲 凌玲  wo-de-qian-ban-sheng">
+  <td><span class="lemma">凌玲</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  <span class="ex"><span class="en">I'm Junsheng's colleague. My name is Ling Ling.</span> · 我是俊生的同事，我叫凌玲。</span></td>
+  <td class="zh">凌玲</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-fu-shan-hai-7c693329b9" data-search="柳随风 柳随风  fu-shan-hai">
+  <td><span class="lemma">柳随风</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">I heard that Liu Suifeng of the Power Gang was there that day. Surviving that great devil's hands—Young Master Feng, you truly are remarkable.</span> · 我听说当日权力帮的柳随风也在。能在那大魔头手下活命，风公子实属不易。</span></td>
+  <td class="zh">柳随风</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-c10efe3f10" data-search="栾冰然 栾冰然  wo-shi-yu-huan-shui">
+  <td><span class="lemma">栾冰然</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  <span class="ex"><span class="en">I'm a volunteer with the charity, Luan Bingran. I was beaten up because I was handing out flyers for you.</span> · 我是慈善会的志愿者，栾冰然。我是为了帮您发传单，所以才被打了。</span></td>
+  <td class="zh">栾冰然</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-64dccb9746" data-search="罗子君 罗子君  wo-de-qian-ban-sheng">
+  <td><span class="lemma">罗子君</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  <span class="ex"><span class="en">So you should believe I'm your true mentor and friend—not that Luo Zijun.</span> · 所以你应该相信，我才是你的良师益友，而不是那个罗子君。</span></td>
+  <td class="zh">罗子君</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-4348bb6bb9" data-search="罗子群 罗子群  wo-de-qian-ban-sheng">
+  <td><span class="lemma">罗子群</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  <span class="ex"><span class="en">Listen—even if I end up begging on the street, Luo Ziqun will never borrow money for you again.</span> · 我告诉你，我罗子群就算到马路上要饭，也再也不为你借钱了。</span></td>
+  <td class="zh">罗子群</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-aa0548ed2e" data-search="平儿 平儿  wo-de-qian-ban-sheng">
+  <td><span class="lemma">平儿</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  <span class="ex"><span class="en">I want you. I want Ping'er. I want our family together. I want you to leave Ling Ling—whatever she asks, I'll give it. I want her to give my husband back.</span> · 我要你，我要平儿，我要我们一家人在一起过日子。我要你离开凌玲——她有什么要求我都给，我要她把我的男人还给我。</span></td>
+  <td class="zh">平儿</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-lie-zui-tu-jian-7c27cf12f6" data-search="沈翊 沈翊  lie-zui-tu-jian">
+  <td><span class="lemma">沈翊</span> <span class="tag">person</span>
+  <div class="ex">lie-zui-tu-jian</div>
+  <span class="ex"><span class="en">Du Cheng—you'll work with Shen Yi on this.</span> · 杜城，你跟沈翊一起吧。</span></td>
+  <td class="zh">沈翊</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-fu-shan-hai-ccb9921f3c" data-search="宋明珠 宋明珠  fu-shan-hai">
+  <td><span class="lemma">宋明珠</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">It's Song Mingzhu! She grabbed the Old Madam's bundle. I'm going after her!</span> · 是宋明珠！她抢走了老夫人的包裹。我去追她！</span></td>
+  <td class="zh">宋明珠</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-fu-shan-hai-9528be8b07" data-search="唐方 唐方  fu-shan-hai">
+  <td><span class="lemma">唐方</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">Tang Fang of the Tang clan requests an audience with Master Yu. I carry a keepsake of an old friend of yours—I beg you to open your mouth but one word.</span> · 唐门唐方，求见玉门主。我这儿有玉先生故友之物，请求先生开一字尊口。</span></td>
+  <td class="zh">唐方</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-263d09e3ee" data-search="唐晶 唐晶  wo-de-qian-ban-sheng">
+  <td><span class="lemma">唐晶</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  <span class="ex"><span class="en">The correct answer is: you should have borrowed a pair of slippers from Tang Jing.</span> · 正确的答案是：你应该跟唐晶借一双拖鞋穿走。</span></td>
+  <td class="zh">唐晶</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-fu-shan-hai-bccb924081" data-search="唐柔 唐柔  fu-shan-hai">
+  <td><span class="lemma">唐柔</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">Which of our righteous deeds was ever safe? Even if I, Tang Rou, am afraid, the Pear-Blossom Needles at my waist certainly aren't.</span> · 我们哪次行侠仗义没有危险？就算我唐柔害怕，我腰间的暴雨梨花针可不会怕。</span></td>
+  <td class="zh">唐柔</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-fu-shan-hai-0857c1069f" data-search="唐宋 唐宋  fu-shan-hai">
+  <td><span class="lemma">唐宋</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">Tang Song of the Tang Sect has courted the Power Gang's favor time and again... Offer Tang Song some sweeteners and let him prepare well.</span> · 唐门唐宋屡次三番向权力帮示好……去给唐宋些甜头，让他好好准备。</span></td>
+  <td class="zh">唐宋</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-4cbb9f91f0" data-search="王立仁 王立仁  shan-yao-de-ta">
+  <td><span class="lemma">王立仁</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  <span class="ex"><span class="en">You starred in just two dramas and became famous beyond measure. It was Wang Liren who blocked a rising star.</span> · 当年你就拍了两部戏，都红成什么样了。那明明是王立仁，阻碍了一颗冉冉升起的星。</span></td>
+  <td class="zh">王立仁</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-vivian" data-search="vivian 薇薇安 vivian wo-de-qian-ban-sheng">
+  <td><span class="lemma">Vivian</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng · Vivian</div>
+  <span class="ex"><span class="en">Who gave you the right to say I had a one-night stand with Vivian?</span> · 你凭什么说我跟薇薇安一夜情？</span></td>
+  <td class="zh">薇薇安</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-fu-shan-hai-3ca2749777" data-search="萧秋水 萧秋水  fu-shan-hai">
+  <td><span class="lemma">萧秋水</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">I am Xiao Qiushui. I pay my respects to the Old Madam Wu.</span> · 在下萧秋水，见过武老夫人。</span></td>
+  <td class="zh">萧秋水</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-fu-shan-hai-ca0b570028" data-search="萧西楼 萧西楼  fu-shan-hai">
+  <td><span class="lemma">萧西楼</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">People of Xiao Xilou, daring to defy the Power Gang? I hear you killed my men?</span> · 萧西楼的人，也敢和我们权力帮作对？听说是你杀了我的人？</span></td>
+  <td class="zh">萧西楼</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-6c4156a3d6" data-search="徐二炮 徐二炮  wo-shi-yu-huan-shui">
+  <td><span class="lemma">徐二炮</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  <span class="ex"><span class="en">Xu Erpao was brought to justice thanks to Comrade Yu Huanshui's act of bravery.</span> · 徐二炮能顺利归案，得益于余欢水同志见义勇为的行为。</span></td>
+  <td class="zh">徐二炮</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-fu-shan-hai-503f9a864e" data-search="燕狂徒 燕狂徒  fu-shan-hai">
+  <td><span class="lemma">燕狂徒</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">It's said that Yan Kuangtu even hid the martial world's supreme manual, the Book of Forgetfulness, inside it.</span> · 传闻燕狂徒，还把武林绝学忘情天书，也藏在了里面。</span></td>
+  <td class="zh">燕狂徒</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-b28d6cf249" data-search="余晨 余晨  wo-shi-yu-huan-shui">
+  <td><span class="lemma">余晨</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  <span class="ex"><span class="en">Yu Huanshui, I don't care whether what you say is true or false. If Yuchen gets sick and can't go to school tomorrow, I'll never let you hear the end of it.</span> · 余欢水，我不管你说的话是真话还是假话，如果余晨生病了，明天上不了学，我跟你没完。</span></td>
+  <td class="zh">余晨</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-3fc6e2a5dd" data-search="余欢水 余欢水  wo-shi-yu-huan-shui">
+  <td><span class="lemma">余欢水</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  <span class="ex"><span class="en">Yu Huanshui, five straight months of failing your targets. One month left. What do you plan to do about it?</span> · 余欢水，连续五个月业绩不合格，还有一个月，你说怎么办？</span></td>
+  <td class="zh">余欢水</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-84b4713cc2" data-search="赵觉民 赵觉民  wo-shi-yu-huan-shui">
+  <td><span class="lemma">赵觉民</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  <span class="ex"><span class="en">What do you take me for, Zhao Juemin? I just go to bed with whoever you say?</span> · 你把我当什么呢，赵觉民！想让我跟谁睡，我就跟谁睡？</span></td>
+  <td class="zh">赵觉民</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-meigui-de-gushi-e73007547d" data-search="周士辉 周士辉  meigui-de-gushi">
+  <td><span class="lemma">周士辉</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  <span class="ex"><span class="en">Zhou Shihui is dead—hit by a car, right out of the morgue. Don't worry, I'll pull myself together.</span> · 周士辉死了，被车撞死了，我刚从太平间出来。放心吧，我会结哀的。</span></td>
+  <td class="zh">周士辉</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-meigui-de-gushi-eric" data-search="eric 庄国栋 eric meigui-de-gushi">
+  <td><span class="lemma">Eric</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi · Eric</div>
+  <span class="ex"><span class="en">I'm Eric Zhuang Guodong—account representative for Galant's creative department and team leader of the Future Masters project group.</span> · 我是艾瑞克·庄国栋，是戈蓝创意部的客户代表，也是『未来大师』项目组的 Team Leader。</span></td>
+  <td class="zh">庄国栋</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-a248473350" data-search="lydia lydia 迪莉娅 shan-yao-de-ta">
+  <td><span class="lemma">Lydia</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta · 迪莉娅</div>
+  <span class="ex"><span class="en">If Lydia takes the director's seat, do you think your team will have an easy time?</span> · 如果Lydia坐上总监的位置，你觉得，你的Team还会有好日子过吗？</span></td>
+  <td class="zh">Lydia</td>
+  <td class="freq">2</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-f25e774b4d" data-search="何逸飞 何逸飞  shan-yao-de-ta">
+  <td><span class="lemma">何逸飞</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  <span class="ex"><span class="en">That He Yifei is incredible—he's like a walking magnet.</span> · 那个何逸飞真的太厉害了，他简直就是一个行走的吸铁石。</span></td>
+  <td class="zh">何逸飞</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="ent-fu-shan-hai-e45587d9d7" data-search="李沉舟 李沉舟  fu-shan-hai">
+  <td><span class="lemma">李沉舟</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">Of the three—Li Chenzhou, Zhao Shirong, and Liu Suifeng—very few have ever seen their true faces.</span> · 李沉舟、赵师容、柳随风这三人，知道他们真容的，也并没有几个。</span></td>
+  <td class="zh">李沉舟</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-e01d6a4f2c" data-search="吕夫蒙 吕夫蒙  wo-shi-yu-huan-shui">
+  <td><span class="lemma">吕夫蒙</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  <span class="ex"><span class="en">Where's the money?&quot; &quot;I lent it to Lü Fumeng.</span> · 钱呢？」「我借给吕夫蒙了。</span></td>
+  <td class="zh">吕夫蒙</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-841a7a51d9" data-search="吴安同 吴安同  wo-shi-yu-huan-shui">
+  <td><span class="lemma">吴安同</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  <span class="ex"><span class="en">Wu Antong is your apprentice. By seniority, he still owes you the title 'master.' Look at how well he's doing, and look at you—the older you get, the less of a man you are.</span> · 吴安同是你徒弟，按辈分来说，他得叫你一声师父。你看看人家混的，你再看看你混的，越活越没个人样。</span></td>
+  <td class="zh">吴安同</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="ent-fu-shan-hai-a45d60c857" data-search="萧易人 萧易人  fu-shan-hai">
+  <td><span class="lemma">萧易人</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">From this day on, the Sect Leader's token of the Huanhua Sword Sect shall be held on behalf by Xiao Yiren. As for the Young Leader's seat, we will hold off on deciding.</span> · 浣花剑派掌门之令牌，即日起就由萧易人代为掌管。但少掌门之位，姑且暂缓决定。</span></td>
+  <td class="zh">萧易人</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="ent-fu-shan-hai-07e3a20b3c" data-search="肖明明 肖明明  fu-shan-hai">
+  <td><span class="lemma">肖明明</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">Did I get stuck inside the wuxia novel I rewrote, 'The Divine Land Heroes'? Now I'm Xiao Qiushui, not Xiao Mingming.</span> · 难道我卡进了我改写的武侠小说《神州奇侠》里？现在我成了萧秋水，不是肖明明了？</span></td>
+  <td class="zh">肖明明</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-9cf60a90f6" data-search="张子铭 张子铭  wo-shi-yu-huan-shui">
+  <td><span class="lemma">张子铭</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  <span class="ex"><span class="en">They were bullying Zhang Ziming. I stood up for him, and then we fought.</span> · 他们欺负张子铭，我帮助他，我们就打起来了。</span></td>
+  <td class="zh">张子铭</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="ent-fu-shan-hai-7e0c21d128" data-search="赵师容 赵师容  fu-shan-hai">
+  <td><span class="lemma">赵师容</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">Of the three—Li Chenzhou, Zhao Shirong, and Liu Suifeng—very few have ever seen their true faces.</span> · 李沉舟、赵师容、柳随风这三人，知道他们真容的，也并没有几个。</span></td>
+  <td class="zh">赵师容</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="ent-fu-shan-hai-1b007858be" data-search="左丘超然 左丘超然  fu-shan-hai">
+  <td><span class="lemma">左丘超然</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  <span class="ex"><span class="en">Zuoqiu Chaoran, get some silver and buy the boatman's silence. Tang Rou, go buy a small boat and some fire oil.</span> · 左丘超然，你们去弄点银子，堵住那个船夫的口。唐柔，你去买一艘小船，再弄一些火油来。</span></td>
+  <td class="zh">左丘超然</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-0f9fe690f3" data-search="matt matt  shan-yao-de-ta">
+  <td><span class="lemma">Matt</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  <span class="ex"><span class="en">So you're really retaliating over the Matt matter. He deserved it — he wasn't clean.</span> · 原来你是因为Matt的事情在报复我。他活该，谁叫他不干净的。</span></td>
+  <td class="zh">Matt</td>
+  <td class="freq">1</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-9ce1f63f15" data-search="白副主任 白副主任  wo-shi-yu-huan-shui">
+  <td><span class="lemma">白副主任</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  </td>
+  <td class="zh">白副主任</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-f4935f480b" data-search="白光 白光  wo-de-qian-ban-sheng">
+  <td><span class="lemma">白光</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">白光</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-2ed0737b10" data-search="陈父 / 陈母 陈父 / 陈母  wo-de-qian-ban-sheng">
+  <td><span class="lemma">陈父 / 陈母</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">陈父 / 陈母</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-e887aab855" data-search="崔宝剑 崔宝剑  wo-de-qian-ban-sheng">
+  <td><span class="lemma">崔宝剑</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">崔宝剑</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-2d6788afa9" data-search="大罗 大罗  shan-yao-de-ta">
+  <td><span class="lemma">大罗</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  </td>
+  <td class="zh">大罗</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-297fd08e4d" data-search="刀王 刀王  fu-shan-hai">
+  <td><span class="lemma">刀王</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">刀王</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-3435056842" data-search="邓玉函 邓玉函  fu-shan-hai">
+  <td><span class="lemma">邓玉函</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">邓玉函</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-22f2c3e673" data-search="段晓天 段晓天  wo-de-qian-ban-sheng">
+  <td><span class="lemma">段晓天</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">段晓天</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-meigui-de-gushi-1536b938f1" data-search="方协文 方协文  meigui-de-gushi">
+  <td><span class="lemma">方协文</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  </td>
+  <td class="zh">方协文</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-meigui-de-gushi-90deda6f0b" data-search="傅家明 傅家明  meigui-de-gushi">
+  <td><span class="lemma">傅家明</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  </td>
+  <td class="zh">傅家明</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-0e74ff0fc4" data-search="甘虹 甘虹  wo-shi-yu-huan-shui">
+  <td><span class="lemma">甘虹</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  </td>
+  <td class="zh">甘虹</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-meigui-de-gushi-69bf944ea6" data-search="关芝芝 关芝芝  meigui-de-gushi">
+  <td><span class="lemma">关芝芝</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  </td>
+  <td class="zh">关芝芝</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-meigui-de-gushi-7b03d87d6b" data-search="韩鹦 韩鹦  meigui-de-gushi">
+  <td><span class="lemma">韩鹦</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  </td>
+  <td class="zh">韩鹦</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-lie-zui-tu-jian-67d5bbd2e4" data-search="何溶月 何溶月  lie-zui-tu-jian">
+  <td><span class="lemma">何溶月</span> <span class="tag">person</span>
+  <div class="ex">lie-zui-tu-jian</div>
+  </td>
+  <td class="zh">何溶月</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-meigui-de-gushi-fa15ad8320" data-search="何西 何西  meigui-de-gushi">
+  <td><span class="lemma">何西</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  </td>
+  <td class="zh">何西</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-meigui-de-gushi-7932b25385" data-search="黄剑知 黄剑知  meigui-de-gushi">
+  <td><span class="lemma">黄剑知</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  </td>
+  <td class="zh">黄剑知</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-lie-zui-tu-jian-ea8b736618" data-search="蒋峰 蒋峰  lie-zui-tu-jian">
+  <td><span class="lemma">蒋峰</span> <span class="tag">person</span>
+  <div class="ex">lie-zui-tu-jian</div>
+  </td>
+  <td class="zh">蒋峰</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-16db372ebe" data-search="景知秋 景知秋  shan-yao-de-ta">
+  <td><span class="lemma">景知秋</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  </td>
+  <td class="zh">景知秋</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-88cd87ae18" data-search="老金 老金  wo-de-qian-ban-sheng">
+  <td><span class="lemma">老金</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">老金</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-lie-zui-tu-jian-e56800a1e3" data-search="雷一斐 雷一斐  lie-zui-tu-jian">
+  <td><span class="lemma">雷一斐</span> <span class="tag">person</span>
+  <div class="ex">lie-zui-tu-jian</div>
+  </td>
+  <td class="zh">雷一斐</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-e460dcc0f1" data-search="冷佳清 冷佳清  wo-de-qian-ban-sheng">
+  <td><span class="lemma">冷佳清</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">冷佳清</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-lie-zui-tu-jian-bfe8e6a42a" data-search="李晗 李晗  lie-zui-tu-jian">
+  <td><span class="lemma">李晗</span> <span class="tag">person</span>
+  <div class="ex">lie-zui-tu-jian</div>
+  </td>
+  <td class="zh">李晗</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-8016115f29" data-search="梁安妮 梁安妮  wo-shi-yu-huan-shui">
+  <td><span class="lemma">梁安妮</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  </td>
+  <td class="zh">梁安妮</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-c66a528a3e" data-search="梁斗 梁斗  fu-shan-hai">
+  <td><span class="lemma">梁斗</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">梁斗</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-48d73c0d7d" data-search="洛洛 洛洛  wo-de-qian-ban-sheng">
+  <td><span class="lemma">洛洛</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">洛洛</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-d6e382f219" data-search="马特 马特  shan-yao-de-ta">
+  <td><span class="lemma">马特</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  </td>
+  <td class="zh">马特</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-meigui-de-gushi-698cf8fbe3" data-search="咪咪 / 小艾 / 美美 咪咪 / 小艾 / 美美  meigui-de-gushi">
+  <td><span class="lemma">咪咪 / 小艾 / 美美</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  </td>
+  <td class="zh">咪咪 / 小艾 / 美美</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-a075c35a36" data-search="邱南顾 邱南顾  fu-shan-hai">
+  <td><span class="lemma">邱南顾</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">邱南顾</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-f8c9b0e30f" data-search="曲抿描 曲抿描  fu-shan-hai">
+  <td><span class="lemma">曲抿描</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">曲抿描</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-fd6962f1cf" data-search="曲暮霜 曲暮霜  fu-shan-hai">
+  <td><span class="lemma">曲暮霜</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">曲暮霜</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-5abe75e6ad" data-search="水王 水王  fu-shan-hai">
+  <td><span class="lemma">水王</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">水王</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-meigui-de-gushi-2aa165edea" data-search="宋佳琪 宋佳琪  meigui-de-gushi">
+  <td><span class="lemma">宋佳琪</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  </td>
+  <td class="zh">宋佳琪</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-meigui-de-gushi-daabe37880" data-search="苏更生 苏更生 苏苏 meigui-de-gushi">
+  <td><span class="lemma">苏更生</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi · 苏苏</div>
+  </td>
+  <td class="zh">苏更生</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-f4e9ccaa9f" data-search="苏曼殊 苏曼殊  wo-de-qian-ban-sheng">
+  <td><span class="lemma">苏曼殊</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">苏曼殊</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-f0729dd5a0" data-search="孙慧珊 孙慧珊  fu-shan-hai">
+  <td><span class="lemma">孙慧珊</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">孙慧珊</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-f05e4e7a01" data-search="唐晴 唐晴  fu-shan-hai">
+  <td><span class="lemma">唐晴</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">唐晴</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-bb68b25e70" data-search="唐韵 唐韵  wo-shi-yu-huan-shui">
+  <td><span class="lemma">唐韵</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  </td>
+  <td class="zh">唐韵</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-5b18f050a4" data-search="铁星月 铁星月  fu-shan-hai">
+  <td><span class="lemma">铁星月</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">铁星月</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-680de73bc7" data-search="魏广军 魏广军  wo-shi-yu-huan-shui">
+  <td><span class="lemma">魏广军</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  </td>
+  <td class="zh">魏广军</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-miss" data-search="miss吴 吴大娘 miss吴 wo-de-qian-ban-sheng">
+  <td><span class="lemma">Miss吴</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng · Miss吴</div>
+  </td>
+  <td class="zh">吴大娘</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-meigui-de-gushi-2433317be5" data-search="吴月江 吴月江  meigui-de-gushi">
+  <td><span class="lemma">吴月江</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  </td>
+  <td class="zh">吴月江</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-6aa354dd73" data-search="萧开雁 萧开雁  fu-shan-hai">
+  <td><span class="lemma">萧开雁</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">萧开雁</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-308a046aca" data-search="萧雪鱼 萧雪鱼  fu-shan-hai">
+  <td><span class="lemma">萧雪鱼</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">萧雪鱼</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-0b4437e619" data-search="小董 小董  wo-de-qian-ban-sheng">
+  <td><span class="lemma">小董</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">小董</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-6b76db12cc" data-search="薛甄珠 薛甄珠  wo-de-qian-ban-sheng">
+  <td><span class="lemma">薛甄珠</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">薛甄珠</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-caa7fa167c" data-search="雅克 雅克  shan-yao-de-ta">
+  <td><span class="lemma">雅克</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  </td>
+  <td class="zh">雅克</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-99fc43cad2" data-search="亚琴 亚琴  wo-de-qian-ban-sheng">
+  <td><span class="lemma">亚琴</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">亚琴</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-lie-zui-tu-jian-a55e49c523" data-search="闫谈声 闫谈声  lie-zui-tu-jian">
+  <td><span class="lemma">闫谈声</span> <span class="tag">person</span>
+  <div class="ex">lie-zui-tu-jian</div>
+  </td>
+  <td class="zh">闫谈声</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-shi-yu-huan-shui-a13546c74d" data-search="余父 余父  wo-shi-yu-huan-shui">
+  <td><span class="lemma">余父</span> <span class="tag">person</span>
+  <div class="ex">wo-shi-yu-huan-shui</div>
+  </td>
+  <td class="zh">余父</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-lie-zui-tu-jian-d10b4eba60" data-search="张局长 张局长 张晓萍 lie-zui-tu-jian">
+  <td><span class="lemma">张局长</span> <span class="tag">person</span>
+  <div class="ex">lie-zui-tu-jian · 张晓萍</div>
+  </td>
+  <td class="zh">张局长</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-fu-shan-hai-5e6a4845ea" data-search="朱侠武 朱侠武  fu-shan-hai">
+  <td><span class="lemma">朱侠武</span> <span class="tag">person</span>
+  <div class="ex">fu-shan-hai</div>
+  </td>
+  <td class="zh">朱侠武</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-meigui-de-gushi-3e74bbe440" data-search="庄泰文 庄泰文  meigui-de-gushi">
+  <td><span class="lemma">庄泰文</span> <span class="tag">person</span>
+  <div class="ex">meigui-de-gushi</div>
+  </td>
+  <td class="zh">庄泰文</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-e1b6886eac" data-search="卓渐清 卓渐清  wo-de-qian-ban-sheng">
+  <td><span class="lemma">卓渐清</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">卓渐清</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-b5ee73dd1e" data-search="卓渐清前女友 卓渐清前女友  wo-de-qian-ban-sheng">
+  <td><span class="lemma">卓渐清前女友</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">卓渐清前女友</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-wo-de-qian-ban-sheng-f941e1206a" data-search="adam adam  wo-de-qian-ban-sheng">
+  <td><span class="lemma">Adam</span> <span class="tag">person</span>
+  <div class="ex">wo-de-qian-ban-sheng</div>
+  </td>
+  <td class="zh">Adam</td>
+  <td class="freq">0</td>
+</tr>
+<tr id="ent-shan-yao-de-ta-64ca93f83b" data-search="peter peter  shan-yao-de-ta">
+  <td><span class="lemma">Peter</span> <span class="tag">person</span>
+  <div class="ex">shan-yao-de-ta</div>
+  </td>
+  <td class="zh">Peter</td>
+  <td class="freq">0</td>
+</tr></tbody>
+</table>
+<script>
+(function(){
+  var box = document.getElementById('q');
+  if (!box) return;
+  box.addEventListener('input', function(){
+    var q = box.value.trim().toLowerCase();
+    document.querySelectorAll('tr[data-search]').forEach(function(row){
+      var hay = row.getAttribute('data-search') || '';
+      row.style.display = (!q || hay.indexOf(q) !== -1) ? '' : 'none';
+    });
+  });
+})();
+</script>
+<footer>语料来自 drama-analysis / language_paraphrase · 本站只做结构化学习壳</footer>
+</div>
+</body>
+</html>

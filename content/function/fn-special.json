@@ -1,0 +1,17 @@
+{
+  "id": "fn-special",
+  "module": "function",
+  "lemma": "special",
+  "zh": "特别",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "Whoever's hidden like that is either someone special or a famous author under a new pen name.",
+      "zh": "藏着掖着的，不是身份特殊，就是有名的作者换了新的马甲。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 27
+}

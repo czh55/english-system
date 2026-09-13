@@ -1,0 +1,17 @@
+{
+  "id": "fn-look-for",
+  "module": "function",
+  "lemma": "look for",
+  "zh": "寻找",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "When you're in trouble, look for Lingzi.\" \"What I said was: solve your own problems.",
+      "zh": "有困难找玲子。」「我说的是，有困难自己解决。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 12
+}

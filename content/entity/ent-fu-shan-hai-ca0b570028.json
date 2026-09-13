@@ -1,0 +1,26 @@
+{
+  "id": "ent-fu-shan-hai-ca0b570028",
+  "module": "entity",
+  "lemma": "萧西楼",
+  "zh": "萧西楼",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "People of Xiao Xilou, daring to defy the Power Gang? I hear you killed my men?",
+      "zh": "萧西楼的人，也敢和我们权力帮作对？听说是你杀了我的人？",
+      "source": "drama:fu-shan-hai:2:s8-q1"
+    },
+    {
+      "en": "You Xiao family, the Huanhua Sword Sect—your father Xiao Xilou is the truly ruthless one!",
+      "zh": "你们萧家的人、浣花剑派，你爹爹萧西楼，才是真正的暴虐之人！",
+      "source": "drama:fu-shan-hai:9:s8-q3"
+    }
+  ],
+  "tags": [
+    "丁勇岱",
+    "萧秋水之父，浣花剑派掌门"
+  ],
+  "freq": 2
+}

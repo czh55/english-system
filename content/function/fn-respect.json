@@ -1,0 +1,17 @@
+{
+  "id": "fn-respect",
+  "module": "function",
+  "lemma": "respect",
+  "zh": "尊重",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "I respect her — does she respect me?",
+      "zh": "我尊重她，她尊重我吗？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 32
+}

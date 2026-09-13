@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>话术结构 · english-system</title>
+<style>
+:root {
+  --bg: #0c1222;
+  --surface: rgba(255,255,255,0.045);
+  --border: rgba(255,255,255,0.1);
+  --text: #e8eef7;
+  --muted: #93a4bd;
+  --accent: #5ec8c0;
+  --accent2: #7eb6ff;
+  --accent3: #e8b86d;
+  --ok: #6ed3a1;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", serif;
+  --font-body: "Avenir Next", "PingFang SC", "Helvetica Neue", sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(900px 500px at 12% -10%, rgba(94,200,192,0.16), transparent 55%),
+    radial-gradient(700px 420px at 90% 0%, rgba(126,182,255,0.12), transparent 50%),
+    var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.65;
+}
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 28px 20px 80px; }
+nav.top {
+  display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+  padding: 14px 0 22px; border-bottom: 1px solid var(--border); margin-bottom: 28px;
+}
+nav.top .brand {
+  font-family: var(--font-display);
+  font-size: 1.15rem; font-weight: 700; color: var(--text); margin-right: auto;
+}
+nav.top a { color: var(--muted); font-size: 0.9rem; }
+nav.top a.active { color: var(--accent); }
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 2.9rem);
+  letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px;
+}
+.hero p { color: var(--muted); max-width: 42rem; }
+.grid4 {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 28px 0;
+}
+@media (max-width: 820px) { .grid4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .grid4 { grid-template-columns: 1fr; } }
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px 16px; display: block; color: inherit;
+}
+.card:hover { border-color: rgba(94,200,192,0.45); text-decoration: none; }
+.card .kicker { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.card h2 { font-size: 1.15rem; margin: 8px 0 6px; font-family: var(--font-display); }
+.card p { color: var(--muted); font-size: 0.88rem; }
+.path {
+  background: linear-gradient(135deg, rgba(94,200,192,0.12), rgba(126,182,255,0.08));
+  border: 1px solid var(--border); border-radius: 16px; padding: 22px 20px; margin-top: 8px;
+}
+.path h2 { font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 8px; }
+.path ol { margin: 12px 0 0 1.2rem; color: var(--muted); }
+.path li { margin: 8px 0; }
+.path strong { color: var(--text); }
+.search {
+  width: 100%; margin: 8px 0 18px; padding: 12px 14px; border-radius: 10px;
+  border: 1px solid var(--border); background: rgba(0,0,0,0.25); color: var(--text);
+  font-size: 1rem;
+}
+.meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 16px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.lemma { font-weight: 700; color: var(--accent); }
+.zh { color: var(--text); }
+.freq { color: var(--accent3); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag {
+  display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px;
+  background: rgba(126,182,255,0.12); color: var(--accent2); margin: 0 4px 4px 0;
+}
+.ex { display: block; color: var(--muted); font-size: 0.82rem; margin-top: 4px; }
+.ex .en { color: #c9d7ea; }
+.group { margin: 28px 0; }
+.group h2 { font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 6px; }
+.group .desc { color: var(--muted); margin-bottom: 12px; }
+.frame { font-weight: 700; color: var(--accent); }
+.usage { color: var(--muted); font-size: 0.85rem; }
+.scene-list a.card { margin-bottom: 12px; }
+.scene-block {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px; margin: 16px 0;
+}
+.scene-block h3 { font-family: var(--font-display); margin-bottom: 4px; }
+.sent { margin: 12px 0; padding: 10px 0; border-top: 1px solid var(--border); }
+.sent .pair { display: grid; gap: 4px; }
+.sent .label { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.08em; }
+.note { color: var(--accent3); font-size: 0.82rem; margin-top: 4px; }
+.para { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.para li { margin: 8px 0 8px 1rem; }
+.chunk-link { margin-left: 6px; font-size: 0.8rem; }
+.external { margin: 10px 0 18px; font-size: 0.9rem; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="top">
+  <a class="brand" href="../index.html">english-system</a>
+  <a class="" href="../index.html">首页</a>
+  <a class="" href="../function/index.html">非实体词</a>
+  <a class="active" href="index.html">话术结构</a>
+  <a class="" href="../scenarios/index.html">场景实训</a>
+  <a class="" href="../entity/index.html">实体词</a>
+</nav>
+
+<header class="hero"><h1>话术结构</h1><p>中文意图 → 英文句子框架。难的不是单词，是不知道用哪个框架起头。</p></header>
+<p class="meta">40 个框架 · 来源 drama-analysis 话术手册</p>
+<input class="search" id="q" type="search" placeholder="搜索 although / 万一 / rather…" autocomplete="off">
+<section class="group"><h2>因果推理类</h2>
+<table><thead><tr><th>中文话术</th><th>英文框架</th><th>用法</th></tr></thead><tbody><tr id="ph-after-all" data-search="...after all. 毕竟…（补充理由） 口语利器，放句尾">
+  <td class="zh">毕竟…（补充理由）</td>
+  <td><span class="frame">...after all.</span><span class="ex"><span class="en">after all&quot;We're short-staffed—Zhang Chen's gone, after all.&quot;</span></span></td>
+  <td class="usage">口语利器，放句尾</td>
+</tr>
+<tr id="ph-because" data-search="...because... 因为… 补充理由">
+  <td class="zh">因为…</td>
+  <td><span class="frame">...because...</span><span class="ex"><span class="en">after all&quot;We're short-staffed—Zhang Chen's gone, after all.&quot;</span></span></td>
+  <td class="usage">补充理由</td>
+</tr>
+<tr id="ph-precisely-because-x" data-search="precisely because x, ... 正因为…，才… 强调原因">
+  <td class="zh">正因为…，才…</td>
+  <td><span class="frame">Precisely because X, ...</span><span class="ex"><span class="en">after all&quot;We're short-staffed—Zhang Chen's gone, after all.&quot;</span></span></td>
+  <td class="usage">强调原因</td>
+</tr>
+<tr id="ph-that-s-why" data-search="that's why... 这就是为什么… 收束结论">
+  <td class="zh">这就是为什么…</td>
+  <td><span class="frame">That's why...</span><span class="ex"><span class="en">after all&quot;We're short-staffed—Zhang Chen's gone, after all.&quot;</span></span></td>
+  <td class="usage">收束结论</td>
+</tr>
+<tr id="ph-x-so-y" data-search="x, so y. …，所以… 结论前置">
+  <td class="zh">…，所以…</td>
+  <td><span class="frame">X, so Y.</span><span class="ex"><span class="en">after all&quot;We're short-staffed—Zhang Chen's gone, after all.&quot;</span></span></td>
+  <td class="usage">结论前置</td>
+</tr></tbody></table></section>
+<section class="group"><h2>时间顺序类</h2>
+<table><thead><tr><th>中文话术</th><th>英文框架</th><th>用法</th></tr></thead><tbody><tr id="ph-all-along" data-search="...all along 一直…原来… 真相揭晓">
+  <td class="zh">一直…原来…</td>
+  <td><span class="frame">...all along</span><span class="ex"><span class="en">at first&quot;At first I thought he liked me. I first noticed him on the basketball court—it was raining that day.&quot;</span></span></td>
+  <td class="usage">真相揭晓</td>
+</tr>
+<tr id="ph-at-first-but-later" data-search="at first... but later... 一开始…后来… 转折叙事">
+  <td class="zh">一开始…后来…</td>
+  <td><span class="frame">At first... but later...</span><span class="ex"><span class="en">at first&quot;At first I thought he liked me. I first noticed him on the basketball court—it was raining that day.&quot;</span></span></td>
+  <td class="usage">转折叙事</td>
+</tr>
+<tr id="ph-first-then" data-search="first... then... 先…再… 顺序">
+  <td class="zh">先…再…</td>
+  <td><span class="frame">First... then...</span><span class="ex"><span class="en">at first&quot;At first I thought he liked me. I first noticed him on the basketball court—it was raining that day.&quot;</span></span></td>
+  <td class="usage">顺序</td>
+</tr>
+<tr id="ph-in-the-end-ultimately" data-search="in the end... / ultimately 最终 结局">
+  <td class="zh">最终</td>
+  <td><span class="frame">In the end... / ultimately</span><span class="ex"><span class="en">at first&quot;At first I thought he liked me. I first noticed him on the basketball court—it was raining that day.&quot;</span></span></td>
+  <td class="usage">结局</td>
+</tr></tbody></table></section>
+<section class="group"><h2>条件假设类</h2>
+<table><thead><tr><th>中文话术</th><th>英文框架</th><th>用法</th></tr></thead><tbody><tr id="ph-as-long-as-x" data-search="as long as x, ... 只要…就…（足够条件） 我的底线是…">
+  <td class="zh">只要…就…（足够条件）</td>
+  <td><span class="frame">As long as X, ...</span><span class="ex"><span class="en">as long as&quot;As long as I'm alive, that's enough.&quot;</span></span></td>
+  <td class="usage">我的底线是…</td>
+</tr>
+<tr id="ph-if-x-then-y" data-search="if x, then y. 如果…就… 基础条件">
+  <td class="zh">如果…就…</td>
+  <td><span class="frame">If X, then Y.</span><span class="ex"><span class="en">as long as&quot;As long as I'm alive, that's enough.&quot;</span></span></td>
+  <td class="usage">基础条件</td>
+</tr>
+<tr id="ph-now-that-x-since-x" data-search="now that x, ... / since x, ... 既然…（已知前提） 顺着已知事实推进">
+  <td class="zh">既然…（已知前提）</td>
+  <td><span class="frame">Now that X, ... / Since X, ...</span><span class="ex"><span class="en">as long as&quot;As long as I'm alive, that's enough.&quot;</span></span></td>
+  <td class="usage">顺着已知事实推进</td>
+</tr>
+<tr id="ph-unless-x" data-search="unless x, ... 除非…否则… 唯一例外">
+  <td class="zh">除非…否则…</td>
+  <td><span class="frame">Unless X, ...</span><span class="ex"><span class="en">as long as&quot;As long as I'm alive, that's enough.&quot;</span></span></td>
+  <td class="usage">唯一例外</td>
+</tr>
+<tr id="ph-what-if" data-search="what if...? 万一…呢？（担忧） 提出未来风险">
+  <td class="zh">万一…呢？（担忧）</td>
+  <td><span class="frame">What if...?</span><span class="ex"><span class="en">as long as&quot;As long as I'm alive, that's enough.&quot;</span></span></td>
+  <td class="usage">提出未来风险</td>
+</tr></tbody></table></section>
+<section class="group"><h2>举例与澄清类</h2>
+<table><thead><tr><th>中文话术</th><th>英文框架</th><th>用法</th></tr></thead><tbody><tr id="ph-at-the-very-least" data-search="at the very least, ... 至少 最低要求">
+  <td class="zh">至少</td>
+  <td><span class="frame">At the very least, ...</span><span class="ex"><span class="en">frankly&quot;The Heart Center director position—frankly, it's already in the bag for you.&quot;</span></span></td>
+  <td class="usage">最低要求</td>
+</tr>
+<tr id="ph-frankly-to-be-honest" data-search="frankly, ... / to be honest, ... 说白了 / 坦白说 亮明真实态度">
+  <td class="zh">说白了 / 坦白说</td>
+  <td><span class="frame">Frankly, ... / To be honest, ...</span><span class="ex"><span class="en">frankly&quot;The Heart Center director position—frankly, it's already in the bag for you.&quot;</span></span></td>
+  <td class="usage">亮明真实态度</td>
+</tr>
+<tr id="ph-i-mean" data-search="i mean... 我的意思是 卡壳自救、修正">
+  <td class="zh">我的意思是</td>
+  <td><span class="frame">I mean...</span><span class="ex"><span class="en">frankly&quot;The Heart Center director position—frankly, it's already in the bag for you.&quot;</span></span></td>
+  <td class="usage">卡壳自救、修正</td>
+</tr>
+<tr id="ph-in-other-words" data-search="in other words, ... 换句话说 / 也就是说 换种说法重讲">
+  <td class="zh">换句话说 / 也就是说</td>
+  <td><span class="frame">In other words, ...</span><span class="ex"><span class="en">frankly&quot;The Heart Center director position—frankly, it's already in the bag for you.&quot;</span></span></td>
+  <td class="usage">换种说法重讲</td>
+</tr>
+<tr id="ph-like-say-for-instance" data-search="like... / say... / for instance... 比如说 举例">
+  <td class="zh">比如说</td>
+  <td><span class="frame">Like... / Say... / For instance...</span><span class="ex"><span class="en">frankly&quot;The Heart Center director position—frankly, it's already in the bag for you.&quot;</span></span></td>
+  <td class="usage">举例</td>
+</tr></tbody></table></section>
+<section class="group"><h2>递进加强类</h2>
+<table><thead><tr><th>中文话术</th><th>英文框架</th><th>用法</th></tr></thead><tbody><tr id="ph-even-if-even" data-search="even if / even 哪怕… 最小让步">
+  <td class="zh">哪怕…</td>
+  <td><span class="frame">even if / even</span><span class="ex"><span class="en">not just&quot;We must see not just the illness, but every individual person.&quot;</span></span></td>
+  <td class="usage">最小让步</td>
+</tr>
+<tr id="ph-even" data-search="even... 甚至… 加一层">
+  <td class="zh">甚至…</td>
+  <td><span class="frame">even...</span><span class="ex"><span class="en">not just&quot;We must see not just the illness, but every individual person.&quot;</span></span></td>
+  <td class="usage">加一层</td>
+</tr>
+<tr id="ph-let-alone" data-search="let alone... 更别说 / 何况… 反衬极强">
+  <td class="zh">更别说 / 何况…</td>
+  <td><span class="frame">let alone...</span><span class="ex"><span class="en">not just&quot;We must see not just the illness, but every individual person.&quot;</span></span></td>
+  <td class="usage">反衬极强</td>
+</tr>
+<tr id="ph-not-just-x-but-y" data-search="not just x, but y. 不仅…还… 递进强调">
+  <td class="zh">不仅…还…</td>
+  <td><span class="frame">not just X, but Y.</span><span class="ex"><span class="en">not just&quot;We must see not just the illness, but every individual person.&quot;</span></span></td>
+  <td class="usage">递进强调</td>
+</tr>
+<tr id="ph-not-only-x-but-also-y" data-search="not only x, but also y. 不仅…还…（正式） 书面 / 演讲">
+  <td class="zh">不仅…还…（正式）</td>
+  <td><span class="frame">not only X, but also Y.</span><span class="ex"><span class="en">not just&quot;We must see not just the illness, but every individual person.&quot;</span></span></td>
+  <td class="usage">书面 / 演讲</td>
+</tr></tbody></table></section>
+<section class="group"><h2>转折让步类</h2>
+<table><thead><tr><th>中文话术</th><th>英文框架</th><th>用法</th></tr></thead><tbody><tr id="ph-even-though-it-s-x" data-search="even though it's x, ... 虽然…但…（重） 强烈对比">
+  <td class="zh">虽然…但…（重）</td>
+  <td><span class="frame">Even though it's X, ...</span><span class="ex"><span class="en">but&quot;He can be impulsive, but he's really warm-hearted.&quot;</span></span></td>
+  <td class="usage">强烈对比</td>
+</tr>
+<tr id="ph-even-though-x-may-never-and-may-even" data-search="even though x may never... and may even... 虽然可能…甚至可能… 双重让步">
+  <td class="zh">虽然可能…甚至可能…</td>
+  <td><span class="frame">Even though X may never... and may even...</span><span class="ex"><span class="en">but&quot;He can be impulsive, but he's really warm-hearted.&quot;</span></span></td>
+  <td class="usage">双重让步</td>
+</tr>
+<tr id="ph-he-can-be-x-but-he-s-really-y" data-search="he can be x, but he's really y. 虽然…但是…（轻） 先承认缺点，再夸 / 纠正">
+  <td class="zh">虽然…但是…（轻）</td>
+  <td><span class="frame">He can be X, but he's really Y.</span><span class="ex"><span class="en">but&quot;He can be impulsive, but he's really warm-hearted.&quot;</span></span></td>
+  <td class="usage">先承认缺点，再夸 / 纠正</td>
+</tr>
+<tr id="ph-he-looks-x-on-the-surface-but-deep-down-he-s-y" data-search="he looks x on the surface, but deep down he's y. 他表面上…其实… 评价一个人">
+  <td class="zh">他表面上…其实…</td>
+  <td><span class="frame">He looks X on the surface, but deep down he's Y.</span><span class="ex"><span class="en">but&quot;He can be impulsive, but he's really warm-hearted.&quot;</span></span></td>
+  <td class="usage">评价一个人</td>
+</tr></tbody></table></section>
+<section class="group"><h2>取舍类</h2>
+<table><thead><tr><th>中文话术</th><th>英文框架</th><th>用法</th></tr></thead><tbody><tr id="ph-i-d-rather-x-than-y" data-search="i'd rather x than y. 宁可…也不… 两害相权">
+  <td class="zh">宁可…也不…</td>
+  <td><span class="frame">I'd rather X than Y.</span><span class="ex"><span class="en">would rather... than&quot;I would rather have died outside the city walls than be knocked out by someone.&quot;</span></span></td>
+  <td class="usage">两害相权</td>
+</tr>
+<tr id="ph-i-would-rather-die-than" data-search="i would rather die than... 我宁死也不… 强烈拒绝">
+  <td class="zh">我宁死也不…</td>
+  <td><span class="frame">I would rather die than...</span><span class="ex"><span class="en">would rather... than&quot;I would rather have died outside the city walls than be knocked out by someone.&quot;</span></span></td>
+  <td class="usage">强烈拒绝</td>
+</tr>
+<tr id="ph-rather-than-x-i-d-rather-y" data-search="rather than x, i'd rather y. 与其…，不如… 换种做法更好">
+  <td class="zh">与其…，不如…</td>
+  <td><span class="frame">Rather than X, I'd rather Y.</span><span class="ex"><span class="en">would rather... than&quot;I would rather have died outside the city walls than be knocked out by someone.&quot;</span></span></td>
+  <td class="usage">换种做法更好</td>
+</tr>
+<tr id="ph-wouldn-t-it-be-better-to" data-search="wouldn't it be better to...? 还不如… 反问建议">
+  <td class="zh">还不如…</td>
+  <td><span class="frame">Wouldn't it be better to...?</span><span class="ex"><span class="en">would rather... than&quot;I would rather have died outside the city walls than be knocked out by someone.&quot;</span></span></td>
+  <td class="usage">反问建议</td>
+</tr></tbody></table></section>
+<section class="group"><h2>态度声明类</h2>
+<table><thead><tr><th>中文话术</th><th>英文框架</th><th>用法</th></tr></thead><tbody><tr id="ph-i-m-telling-you" data-search="i'm telling you, ... 我跟你说 / 我告诉你 强调判断">
+  <td class="zh">我跟你说 / 我告诉你</td>
+  <td><span class="frame">I'm telling you, ...</span><span class="ex"><span class="en">I'm telling you&quot;I'm telling you, there's a mole.&quot;</span></span></td>
+  <td class="usage">强调判断</td>
+</tr>
+<tr id="ph-i-swear" data-search="i swear, ... 我发誓 郑重承诺">
+  <td class="zh">我发誓</td>
+  <td><span class="frame">I swear, ...</span><span class="ex"><span class="en">I'm telling you&quot;I'm telling you, there's a mole.&quot;</span></span></td>
+  <td class="usage">郑重承诺</td>
+</tr>
+<tr id="ph-i-wouldn-t-believe-it-even-if-you-killed-me" data-search="i wouldn't believe it even if you killed me. 打死我也不相信 强烈否认">
+  <td class="zh">打死我也不相信</td>
+  <td><span class="frame">I wouldn't believe it even if you killed me.</span><span class="ex"><span class="en">I'm telling you&quot;I'm telling you, there's a mole.&quot;</span></span></td>
+  <td class="usage">强烈否认</td>
+</tr>
+<tr id="ph-what-if-there-s-a-chance" data-search="what if there's a chance? 万一呢？ 不甘心 / 再争取">
+  <td class="zh">万一呢？</td>
+  <td><span class="frame">What if there's a chance?</span><span class="ex"><span class="en">I'm telling you&quot;I'm telling you, there's a mole.&quot;</span></span></td>
+  <td class="usage">不甘心 / 再争取</td>
+</tr></tbody></table></section>
+<section class="group"><h2>无条件类</h2>
+<table><thead><tr><th>中文话术</th><th>英文框架</th><th>用法</th></tr></thead><tbody><tr id="ph-no-matter-how-x" data-search="no matter how x, ... 不管多… 程度让步">
+  <td class="zh">不管多…</td>
+  <td><span class="frame">No matter how X, ...</span><span class="ex"><span class="en">no matter what&quot;No matter what, people matter more than money.&quot;</span></span></td>
+  <td class="usage">程度让步</td>
+</tr>
+<tr id="ph-no-matter-what-17" data-search="...no matter what. 无论如何 放句尾收束">
+  <td class="zh">无论如何</td>
+  <td><span class="frame">...no matter what.</span><span class="ex"><span class="en">no matter what&quot;No matter what, people matter more than money.&quot;</span></span></td>
+  <td class="usage">放句尾收束</td>
+</tr>
+<tr id="ph-no-matter-what" data-search="no matter what, ... 不管怎样 句首强调">
+  <td class="zh">不管怎样</td>
+  <td><span class="frame">No matter what, ...</span><span class="ex"><span class="en">no matter what&quot;No matter what, people matter more than money.&quot;</span></span></td>
+  <td class="usage">句首强调</td>
+</tr>
+<tr id="ph-whether-it-s-x-or-y" data-search="whether it's x or y, ... 不管是…还是… 并列列举">
+  <td class="zh">不管是…还是…</td>
+  <td><span class="frame">Whether it's X or Y, ...</span><span class="ex"><span class="en">no matter what&quot;No matter what, people matter more than money.&quot;</span></span></td>
+  <td class="usage">并列列举</td>
+</tr></tbody></table></section>
+<script>
+(function(){
+  var box = document.getElementById('q');
+  if (!box) return;
+  box.addEventListener('input', function(){
+    var q = box.value.trim().toLowerCase();
+    document.querySelectorAll('tr[data-search]').forEach(function(row){
+      var hay = row.getAttribute('data-search') || '';
+      row.style.display = (!q || hay.indexOf(q) !== -1) ? '' : 'none';
+    });
+  });
+})();
+</script>
+<footer>语料来自 drama-analysis / language_paraphrase · 本站只做结构化学习壳</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "id": "fn-hang-on",
+  "module": "function",
+  "lemma": "hang on",
+  "zh": "等一下",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "The Jiufu Jewellery robbery—I did it. The Huachang one too. Sentence me however you like—I'll accept it.",
+      "zh": "玖芙珠宝的抢劫案，是我干的。华畅珠宝的，也是我。你们该怎么定罪，我都认了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1
+}

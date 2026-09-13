@@ -1,0 +1,17 @@
+{
+  "id": "fn-the-thing-is",
+  "module": "function",
+  "lemma": "the thing is",
+  "zh": "问题是",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "You have to let me confirm the thing is in your hands and hasn't leaked, before we can talk price.",
+      "zh": "你总得让我确认，东西在你手里、并且没有外传，咱们才能谈价钱。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 2
+}

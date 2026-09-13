@@ -1,0 +1,17 @@
+{
+  "id": "fn-could",
+  "module": "function",
+  "lemma": "could",
+  "zh": "可以/可能",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "I haven't signed with Zhao Lanxin yet—we can still talk renewal, I could consider it.\" \"I'm not considering it, Teacher…",
+      "zh": "我跟赵兰心还没有签约呀，我们续约有的谈，我可以考虑的。」「我就不考虑了，洪老师。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 420
+}

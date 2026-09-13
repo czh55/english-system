@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-09-13T06:18:30.310Z",
+  "counts": {
+    "function": 284,
+    "phrases": 40,
+    "scenarios": 3,
+    "entity": 101
+  },
+  "scenarios": [
+    {
+      "id": "sc-2026-07-28-a7r6-85gm2",
+      "slug": "2026-07-28-a7r6-85gm2",
+      "title": "索尼A7R6 × 85mm F1.4 GM II人像写真",
+      "html": "scenarios/2026-07-28-a7r6-85gm2.html"
+    },
+    {
+      "id": "sc-crab-london",
+      "slug": "crab-london",
+      "title": "蟹 逅 伦 敦！",
+      "html": "scenarios/crab-london.html"
+    },
+    {
+      "id": "sc-rx10v-professional",
+      "slug": "rx10v-professional",
+      "title": "来自胖卡的冲击：索尼RX10V上手测试！",
+      "html": "scenarios/rx10v-professional.html"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-system.local/schemas/phrases.schema.json",
+  "title": "Speech frame / phrase structure entry",
+  "type": "object",
+  "required": ["id", "module", "frame_en", "frame_zh", "group"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^ph-" },
+    "module": { "const": "phrases" },
+    "frame_en": { "type": "string", "minLength": 1 },
+    "frame_zh": { "type": "string", "minLength": 1 },
+    "usage": { "type": "string" },
+    "group": { "type": "string", "minLength": 1 },
+    "group_id": { "type": "string" },
+    "examples": {
+      "type": "array",
+      "items": { "$ref": "common.json#/definitions/example" }
+    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "freq": { "type": "integer", "minimum": 0 }
+  },
+  "additionalProperties": false
+}

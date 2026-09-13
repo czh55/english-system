@@ -1,0 +1,17 @@
+{
+  "id": "fn-normal",
+  "module": "function",
+  "lemma": "normal",
+  "zh": "正常",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "It doesn't look great for the boss to see us like this. — Isn't this just normal for us?",
+      "zh": "让老板看到我们这样不太好。——我们这样不是很正常吗。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 27
+}

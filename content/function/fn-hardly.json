@@ -1,0 +1,17 @@
+{
+  "id": "fn-hardly",
+  "module": "function",
+  "lemma": "hardly",
+  "zh": "几乎不",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "I'm hardly ever home, so take good care of yourself.",
+      "zh": "我不怎么在家待着，所以你要照顾好自己啊。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 28
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-go-through",
+  "module": "function",
+  "lemma": "go through",
+  "zh": "经历",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Tomorrow I'm seeing my mom, and I'm going with Lawyer Bei to look at the house he lives in now. As for how to talk to m…",
+      "zh": "明天去看我妈，我跟贝律师去看他现在住的房子。跟我爸怎么聊，实在不行就用法律途径解决。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 10
+}

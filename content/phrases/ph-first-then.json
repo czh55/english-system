@@ -1,0 +1,26 @@
+{
+  "id": "ph-first-then",
+  "module": "phrases",
+  "frame_en": "First... then...",
+  "frame_zh": "先…再…",
+  "usage": "顺序",
+  "group": "时间顺序类",
+  "group_id": "group-9",
+  "examples": [
+    {
+      "en": "at first\"At first I thought he liked me. I first noticed him on the basketball court—it was raining that day.\"",
+      "zh": "一开始，我也以为他喜欢的人是我。我第一次注意到他是在篮球场上。",
+      "source": "drama:english-phrases:group-9",
+      "ctx": "🎬 猎罪图鉴 第4集 · 瞿蓝心回忆校园往事——\"一开始我以为…\"是讲回忆、讲故事最自然的开头，画面感立现。"
+    },
+    {
+      "en": "in the end\"The family ultimately refused mediation and insisted on legal proceedings.\"",
+      "zh": "家属最终还是拒绝调解，一定要走司法程序。",
+      "source": "drama:english-phrases:group-9",
+      "ctx": "🎬 问心2 第27集 · 医务处通知医生们彭老师家属的决定——\"最终\"收束一段过程，用于给事情下结论。"
+    }
+  ],
+  "tags": [
+    "group-9"
+  ]
+}

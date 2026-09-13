@@ -1,0 +1,26 @@
+{
+  "id": "ent-meigui-de-gushi-1ec6a8caec",
+  "module": "entity",
+  "lemma": "白晓荷",
+  "zh": "白晓荷",
+  "type": "person",
+  "aliases": [],
+  "drama": "meigui-de-gushi",
+  "examples": [
+    {
+      "en": "You're about to run off with her entire family, and we haven't even laid eyes on this Bai Xiaohe!",
+      "zh": "都要跟人家全家跑了，我们还没见过白晓荷这个人呢！",
+      "source": "drama:meigui-de-gushi:7:s8-q1"
+    },
+    {
+      "en": "You always took the others lightly—only this time it's different. What if everyone before was just a good match, and only with Bai Xiaohe is it your heart speaking?",
+      "zh": "你之前都轻描淡写的，就只有这一次。有没有可能，你之前遇到的那些，就是合适、匹配；只有跟白晓荷，是心意。",
+      "source": "drama:meigui-de-gushi:7:s12-q3"
+    }
+  ],
+  "tags": [
+    "陈瑶",
+    "化学女博士，黄振华相亲对象（前期）"
+  ],
+  "freq": 2
+}

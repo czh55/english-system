@@ -1,0 +1,17 @@
+{
+  "id": "fn-job",
+  "module": "function",
+  "lemma": "job",
+  "zh": "工作岗位",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "If you lose this job over us, then we break up.\" \"Don't carry that weight. What I give is my own business.",
+      "zh": "如果你要是把这份工作丢掉的话，那我就分手。」「你别有负担，我付出多少是我的事情。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 111
+}

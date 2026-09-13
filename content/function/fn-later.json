@@ -1,0 +1,17 @@
+{
+  "id": "fn-later",
+  "module": "function",
+  "lemma": "later",
+  "zh": "后来",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "Tame the white horse first; find the prince later.",
+      "zh": "先驯白马，再找王子。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 69
+}

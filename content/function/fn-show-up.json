@@ -1,0 +1,17 @@
+{
+  "id": "fn-show-up",
+  "module": "function",
+  "lemma": "show up",
+  "zh": "出现",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "First, attitude and seriousness matter most. Second, your characters have to show up within the first few chapters. Thi…",
+      "zh": "第一，最重要的是做这件事的态度跟认真；第二，头几章就得出现你的人物；第三，人物得有缺点，不能太完美。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 16
+}

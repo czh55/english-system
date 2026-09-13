@@ -1,0 +1,17 @@
+{
+  "id": "fn-slightly",
+  "module": "function",
+  "lemma": "slightly",
+  "zh": "稍微",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "Zhang the Great Swordsman's heart sits slightly to the left—by luck he has half a life left. But I fear he may never li…",
+      "zh": "张大侠心脉偏左，总算留了半条性命。只是怕日后，张大侠再也拿不起剑了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 4
+}

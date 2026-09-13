@@ -1,0 +1,18 @@
+{
+  "id": "fn-meanwhile",
+  "module": "function",
+  "lemma": "meanwhile",
+  "zh": "与此同时",
+  "tags": [
+    "connect",
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "You don't really think I care about first or second place, do you? Meanwhile you keep telling me to dump Daishan — so i…",
+      "zh": "你不会真觉得我在乎那什么榜一榜二吧？反倒是你一而再再而三地让我跟戴珊分手——那到底是范叔吃醋，还是你吃醋了？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 2
+}

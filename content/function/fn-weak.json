@@ -1,0 +1,17 @@
+{
+  "id": "fn-weak",
+  "module": "function",
+  "lemma": "weak",
+  "zh": "软弱",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "Never leave yourself a way out, never give yourself a chance to be weak. Hesitation is the most useless thing.",
+      "zh": "越不可以给自己留退路，不给自己软弱的机会。犹豫是最无效的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 11
+}

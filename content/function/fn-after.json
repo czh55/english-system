@@ -1,0 +1,17 @@
+{
+  "id": "fn-after",
+  "module": "function",
+  "lemma": "after",
+  "zh": "之后",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "After I met his wife, I made it clear to him: I have a boyfriend, we should keep our distance. But he got all worked up…",
+      "zh": "我见过他老婆以后，就跟他说清楚了：我有男朋友的，以后大家保持距离。谁知道他就情绪很激动，然后就开始拉扯我。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 354
+}

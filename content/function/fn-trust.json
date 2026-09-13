@@ -1,0 +1,18 @@
+{
+  "id": "fn-trust",
+  "module": "function",
+  "lemma": "trust",
+  "zh": "信任",
+  "tags": [
+    "verb",
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "I write for the young, but I'm an old-school man. Trust — that's the foundation of any long-term partnership.",
+      "zh": "我的小说是写给年轻人看的，但是我是一个老派人呀。信任，那是长期合作的基石。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 78
+}

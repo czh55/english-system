@@ -1,0 +1,17 @@
+{
+  "id": "fn-for-instance",
+  "module": "function",
+  "lemma": "for instance",
+  "zh": "比如",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "It's perfectly normal for men to have their eyes on a beautiful woman—you, for instance.",
+      "zh": "漂亮女人有男人惦记非常正常，比如说你。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1
+}

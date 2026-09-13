@@ -1,0 +1,17 @@
+{
+  "id": "fn-reason",
+  "module": "function",
+  "lemma": "reason",
+  "zh": "理由",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "This isn't a school, and I don't take tuition from any of you. I want you here for one reason: to create value for me.",
+      "zh": "我这里不是学校，不收你们任何人的学费。我希望你们来，就是为了给我创造价值的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 70
+}

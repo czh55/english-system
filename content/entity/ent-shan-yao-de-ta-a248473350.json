@@ -1,0 +1,28 @@
+{
+  "id": "ent-shan-yao-de-ta-a248473350",
+  "module": "entity",
+  "lemma": "Lydia",
+  "zh": "Lydia",
+  "type": "person",
+  "aliases": [
+    "迪莉娅"
+  ],
+  "drama": "shan-yao-de-ta",
+  "examples": [
+    {
+      "en": "If Lydia takes the director's seat, do you think your team will have an easy time?",
+      "zh": "如果Lydia坐上总监的位置，你觉得，你的Team还会有好日子过吗？",
+      "source": "drama:shan-yao-de-ta:1:s1-q2"
+    },
+    {
+      "en": "Matt set up Guan Wen and Lydia in a contest over Hengtian. Whoever wins takes the promotion.",
+      "zh": "麦特让管文和Lydia打擂台抢恒天，谁赢了谁就上位。",
+      "source": "drama:shan-yao-de-ta:1:s4-q2"
+    }
+  ],
+  "tags": [
+    "刘萌萌",
+    "TL 品牌副总监，管文的职场竞争对手，野心大、善投机取巧，处处与管文作对"
+  ],
+  "freq": 2
+}

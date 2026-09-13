@@ -1,0 +1,26 @@
+{
+  "id": "ph-precisely-because-x",
+  "module": "phrases",
+  "frame_en": "Precisely because X, ...",
+  "frame_zh": "正因为…，才…",
+  "usage": "强调原因",
+  "group": "因果推理类",
+  "group_id": "group-3",
+  "examples": [
+    {
+      "en": "after all\"We're short-staffed—Zhang Chen's gone, after all.\"",
+      "zh": "人手紧张，毕竟张晨不在。",
+      "source": "drama:english-phrases:group-3",
+      "ctx": "🎬 问心2 第24集 · 牌局上盛年对林逸解释科室人手紧的原因——\"毕竟\"放在句尾，先给结论再补理由，是口语里最自然的补充说明。"
+    },
+    {
+      "en": "so\"At midnight there'll be fireworks, so I wanted to bring you to see them.\"",
+      "zh": "在零点的时候会有烟花可以看，所以我就想带你来看看。",
+      "source": "drama:english-phrases:group-3",
+      "ctx": "🎬 问心2 第30集 · 张佑森约展翘到餐厅看烟花，先讲原因再讲行动——\"so\"连接因果，约会理由一句话说清。"
+    }
+  ],
+  "tags": [
+    "group-3"
+  ]
+}

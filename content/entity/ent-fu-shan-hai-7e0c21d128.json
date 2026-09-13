@@ -1,0 +1,21 @@
+{
+  "id": "ent-fu-shan-hai-7e0c21d128",
+  "module": "entity",
+  "lemma": "赵师容",
+  "zh": "赵师容",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "Of the three—Li Chenzhou, Zhao Shirong, and Liu Suifeng—very few have ever seen their true faces.",
+      "zh": "李沉舟、赵师容、柳随风这三人，知道他们真容的，也并没有几个。",
+      "source": "drama:fu-shan-hai:8:s4-q2"
+    }
+  ],
+  "tags": [
+    "丁笑滢",
+    "权力帮中人"
+  ],
+  "freq": 1
+}

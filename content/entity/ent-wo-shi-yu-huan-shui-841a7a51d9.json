@@ -1,0 +1,21 @@
+{
+  "id": "ent-wo-shi-yu-huan-shui-841a7a51d9",
+  "module": "entity",
+  "lemma": "吴安同",
+  "zh": "吴安同",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-shi-yu-huan-shui",
+  "examples": [
+    {
+      "en": "Wu Antong is your apprentice. By seniority, he still owes you the title 'master.' Look at how well he's doing, and look at you—the older you get, the less of a man you are.",
+      "zh": "吴安同是你徒弟，按辈分来说，他得叫你一声师父。你看看人家混的，你再看看你混的，越活越没个人样。",
+      "source": "drama:wo-shi-yu-huan-shui:1:s7-q2"
+    }
+  ],
+  "tags": [
+    "刘冠麟",
+    "—"
+  ],
+  "freq": 1
+}

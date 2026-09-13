@@ -1,0 +1,17 @@
+{
+  "id": "fn-proud",
+  "module": "function",
+  "lemma": "proud",
+  "zh": "骄傲",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "Do you think standing next to me makes you less proud than standing next to He Han?",
+      "zh": "你是觉得跟我站在一起，不如跟何韩站在一起更令你骄傲，是吗？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 7
+}

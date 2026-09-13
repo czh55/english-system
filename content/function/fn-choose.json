@@ -1,0 +1,17 @@
+{
+  "id": "fn-choose",
+  "module": "function",
+  "lemma": "choose",
+  "zh": "选择",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "If you choose not to work with us, I can't promise your friend's gaming hall will stay open.",
+      "zh": "如果你选择不跟我们合作的话，我就不能保证，这个电竞馆你的朋友还能开下去。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 31
+}

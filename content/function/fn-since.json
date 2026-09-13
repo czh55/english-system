@@ -1,0 +1,18 @@
+{
+  "id": "fn-since",
+  "module": "function",
+  "lemma": "since",
+  "zh": "既然/自从",
+  "tags": [
+    "priority",
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "Impossible — it's barely been forty-eight hours since we broke up.",
+      "zh": "不可能，我跟他分手差不多四十八个小时呢。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 191
+}

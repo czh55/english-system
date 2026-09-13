@@ -1,0 +1,18 @@
+{
+  "id": "fn-death",
+  "module": "function",
+  "lemma": "death",
+  "zh": "死亡",
+  "tags": [
+    "priority",
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "The more life-or-death it gets, the better you must hide your emotions. Whoever laughs last, laughs best.",
+      "zh": "越是真的你死我活的时候，越是要收好自己的情绪。谁笑到最后，谁笑得最好。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 143
+}

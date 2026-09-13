@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-de-qian-ban-sheng-64dccb9746",
+  "module": "entity",
+  "lemma": "罗子君",
+  "zh": "罗子君",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-de-qian-ban-sheng",
+  "examples": [
+    {
+      "en": "So you should believe I'm your true mentor and friend—not that Luo Zijun.",
+      "zh": "所以你应该相信，我才是你的良师益友，而不是那个罗子君。",
+      "source": "drama:wo-de-qian-ban-sheng:1:s7-q2"
+    },
+    {
+      "en": "Because Luo Zijun is genuinely kind—unlike people in our circle, all honey-mouthed and dagger-hearted.",
+      "zh": "是因为罗子君心地纯良，不像我们圈子里的人各个口蜜腹剑。",
+      "source": "drama:wo-de-qian-ban-sheng:3:s9-q1"
+    }
+  ],
+  "tags": [
+    "马伊琍",
+    "女主角，全职太太 → 离婚后进入职场"
+  ],
+  "freq": 2
+}

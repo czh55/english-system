@@ -1,0 +1,18 @@
+{
+  "id": "fn-really",
+  "module": "function",
+  "lemma": "really",
+  "zh": "真的/很",
+  "tags": [
+    "priority",
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "Anyone but He Han is fine. Outside of He Han, nobody else really matters.",
+      "zh": "除了何韩，其他人都可以；除了何韩以外，其他人意义都不大。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 340
+}

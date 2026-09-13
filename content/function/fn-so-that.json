@@ -1,0 +1,17 @@
+{
+  "id": "fn-so-that",
+  "module": "function",
+  "lemma": "so that",
+  "zh": "以便",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "The reason he gave me that Cadillac in the first place was so that I, Wang Mingzhu, would never be looked down on.",
+      "zh": "他一开始送给我凯迪拉克，是不希望我汪明珠被人看不起。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 16
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-or",
+  "module": "function",
+  "lemma": "or",
+  "zh": "或者",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "He never talked to me about One Hundred Years of Solitude or The Old Man and the Sea. All he cared about was where his …",
+      "zh": "他从来不跟我聊什么《百年孤独》《老人与海》，他只在乎他的牙刷、拖鞋、枕头，在我房间里面的地方放。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 498
+}

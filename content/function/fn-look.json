@@ -1,0 +1,17 @@
+{
+  "id": "fn-look",
+  "module": "function",
+  "lemma": "look",
+  "zh": "看/看起来",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "Two highways look overlapping and joined from the freeway above—but they're not only apart, they're heading to two diff…",
+      "zh": "两条高速路在大航线上看是重叠的、是在一起的，但其实这两条路不但有距离，而且是通往两个目的地的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 269
+}

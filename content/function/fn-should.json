@@ -1,0 +1,18 @@
+{
+  "id": "fn-should",
+  "module": "function",
+  "lemma": "should",
+  "zh": "应该",
+  "tags": [
+    "priority",
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "I did nothing wrong. Why should I apologize?",
+      "zh": "我没有做错，我为什么要道歉？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 318
+}

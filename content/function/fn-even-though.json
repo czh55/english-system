@@ -1,0 +1,17 @@
+{
+  "id": "fn-even-though",
+  "module": "function",
+  "lemma": "even though",
+  "zh": "即使/虽然",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "Even though it came from a good heart, didn't it still get exposed?",
+      "zh": "虽然是好心，但不也被拆穿了吗？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 13
+}

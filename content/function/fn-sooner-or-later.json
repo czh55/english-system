@@ -1,0 +1,17 @@
+{
+  "id": "fn-sooner-or-later",
+  "module": "function",
+  "lemma": "sooner or later",
+  "zh": "迟早",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "What would Lin Zhanqiao do if she found out you're Sansan?\" \"No idea. But sooner or later, she will.",
+      "zh": "林展翘要是知道你就是三三，会怎么样？」「不知道，但是他早晚会知道。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 14
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fn-family",
+  "module": "function",
+  "lemma": "family",
+  "zh": "家庭",
+  "tags": [
+    "priority",
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "We're family — let's avoid court if we can. It wouldn't look good to outsiders.",
+      "zh": "一家人，能不打官司就不打官司，让外人知道了也不好。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 404
+}

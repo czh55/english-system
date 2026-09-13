@@ -1,0 +1,18 @@
+{
+  "id": "fn-very",
+  "module": "function",
+  "lemma": "very",
+  "zh": "非常",
+  "tags": [
+    "priority",
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "I already told you on the phone that I'd be back very, very late tonight. I said don't wait for me.",
+      "zh": "我不是电话里都已经说了，今天我会忙到很晚很晚才回来，我说了让你不要等我。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 173
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-justice",
+  "module": "function",
+  "lemma": "justice",
+  "zh": "公正",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Understood, understood, fully understood. It's you we can rely on to see justice done for us.",
+      "zh": "明白了，明白，全明白了。还得是你为我们做主啊。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 27
+}

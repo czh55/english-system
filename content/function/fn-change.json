@@ -1,0 +1,17 @@
+{
+  "id": "fn-change",
+  "module": "function",
+  "lemma": "change",
+  "zh": "改变",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "However much I change, I could never leave this internet cafe. — I don't mean the cafe. I mean Sanmei.",
+      "zh": "我再怎么变，我也不能离开这网吧。——我说的不是网吧，我说的是三妹。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 78
+}

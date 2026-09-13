@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-de-qian-ban-sheng-977c1b257e",
+  "module": "entity",
+  "lemma": "陈俊生",
+  "zh": "陈俊生",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-de-qian-ban-sheng",
+  "examples": [
+    {
+      "en": "I'm sticking with Chen Junsheng for life. When he married me he said, don't work—he'll provide for me forever.",
+      "zh": "反正我这辈子赖定陈俊生了。他娶我的时候说，叫我不要工作，他养我一辈子。",
+      "source": "drama:wo-de-qian-ban-sheng:1:s5-q2"
+    },
+    {
+      "en": "It later proved true: in those very days, Chen Junsheng was completely rewriting my fate and this family's.",
+      "zh": "后来证实，就是在那几天里，我和这个家的命运正在被陈俊生彻底改变。",
+      "source": "drama:wo-de-qian-ban-sheng:2:s7-q3"
+    }
+  ],
+  "tags": [
+    "雷佳音",
+    "子君前夫，辰星咨询公司精英，出轨凌玲后离婚"
+  ],
+  "freq": 2
+}

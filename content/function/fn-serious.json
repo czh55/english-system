@@ -1,0 +1,17 @@
+{
+  "id": "fn-serious",
+  "module": "function",
+  "lemma": "serious",
+  "zh": "严重/认真",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "You've gone all serious — Zhang Yousen and I aren't used to it.",
+      "zh": "你突然这么严肃，我和张佑森都有一点不太习惯。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 29
+}

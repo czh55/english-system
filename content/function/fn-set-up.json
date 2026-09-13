@@ -1,0 +1,17 @@
+{
+  "id": "fn-set-up",
+  "module": "function",
+  "lemma": "set up",
+  "zh": "安排/设立",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Go set up a time with her. Thank you, Lawyer Pei.",
+      "zh": "你去约一下她的时间。谢谢贝律师。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 15
+}

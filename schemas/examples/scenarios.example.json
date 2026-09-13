@@ -1,0 +1,40 @@
+{
+  "id": "sc-example",
+  "module": "scenarios",
+  "slug": "example",
+  "title": "示例场景",
+  "title_en": "Example Scenario",
+  "date": "2026-08-01",
+  "platform": "bilibili",
+  "source_url": "https://example.com",
+  "external_html": "https://czh55.github.io/language_paraphrase/example-场景英译.html",
+  "scenes": [
+    {
+      "id": "s1",
+      "title_cn": "开场",
+      "title_en": "Opening",
+      "time": "00:00–00:10",
+      "sentences": [
+        {
+          "zh": "我迫不及待想试试。",
+          "en": "I can't wait to get my hands on it."
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "迫不及待想试试",
+          "en": "can't wait to get my hands on it",
+          "chunks": ["can't wait to get my hands on"],
+          "links": [{ "module": "function", "id": "fn-absolutely" }]
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "zh": "迫不及待想试试一个新设备",
+      "en": "I can't wait to get my hands on this new gear."
+    }
+  ],
+  "tags": ["bilibili"]
+}

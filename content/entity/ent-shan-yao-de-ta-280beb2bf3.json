@@ -1,0 +1,26 @@
+{
+  "id": "ent-shan-yao-de-ta-280beb2bf3",
+  "module": "entity",
+  "lemma": "林浩",
+  "zh": "林浩",
+  "type": "person",
+  "aliases": [],
+  "drama": "shan-yao-de-ta",
+  "examples": [
+    {
+      "en": "Lin Hao even took online classes with me so I could pass the bar exam. If he finds out I lost my job, I'll feel so guilty toward him.",
+      "zh": "林浩为了我能考上律师证，还陪我上网课。他要知道我丢了工作，我觉得特别对不起他。",
+      "source": "drama:shan-yao-de-ta:2:s10-q1"
+    },
+    {
+      "en": "The person you should feel guilty toward is yourself. What does your future have to do with Lin Hao?",
+      "zh": "你对不起的人，是你自己。你的将来跟林浩有什么关系？",
+      "source": "drama:shan-yao-de-ta:2:s10-q2"
+    }
+  ],
+  "tags": [
+    "魏千翔",
+    "陈萱萱男友"
+  ],
+  "freq": 2
+}

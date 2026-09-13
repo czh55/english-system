@@ -1,0 +1,17 @@
+{
+  "id": "fn-whether",
+  "module": "function",
+  "lemma": "whether",
+  "zh": "是否/不管",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "Then how come Da Shan gets to go in?\" \"Because he never bothers to wonder whether there's another woman hidden in there.",
+      "zh": "大山为什么就能进去呢？」「因为他从来不会关心，里面有没有藏别的女人。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 120
+}

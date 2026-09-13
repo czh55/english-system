@@ -1,0 +1,17 @@
+{
+  "id": "fn-insist",
+  "module": "function",
+  "lemma": "insist",
+  "zh": "坚持",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "A mess, but not chaos. The mess I mean is: you've never learned to handle a relationship, yet you insist on acting like…",
+      "zh": "糟糕，但是不混乱。我说的糟糕是：你根本没办法正确处理男女关系，却非要假装自己是个高手。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 16
+}

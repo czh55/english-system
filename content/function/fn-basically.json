@@ -1,0 +1,17 @@
+{
+  "id": "fn-basically",
+  "module": "function",
+  "lemma": "basically",
+  "zh": "基本上",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "An editor and an author basically can't stay together forever. Too good, and they can't be together; not good enough, a…",
+      "zh": "基本上编辑和作者是很难一直在一起的。写得太好很难在一起，写得不好那就更不容易在一起了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 13
+}

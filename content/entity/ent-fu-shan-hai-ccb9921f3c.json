@@ -1,0 +1,26 @@
+{
+  "id": "ent-fu-shan-hai-ccb9921f3c",
+  "module": "entity",
+  "lemma": "宋明珠",
+  "zh": "宋明珠",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "It's Song Mingzhu! She grabbed the Old Madam's bundle. I'm going after her!",
+      "zh": "是宋明珠！她抢走了老夫人的包裹。我去追她！",
+      "source": "drama:fu-shan-hai:8:s10-q1"
+    },
+    {
+      "en": "Song Mingzhu, just do what I've told you. Mind your own business.",
+      "zh": "宋明珠，你只需要做好我交给你的就行，不该管的事，别管。",
+      "source": "drama:fu-shan-hai:9:s9-q3"
+    }
+  ],
+  "tags": [
+    "刘梦芮",
+    "权力帮中人"
+  ],
+  "freq": 2
+}

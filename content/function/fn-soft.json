@@ -1,0 +1,17 @@
+{
+  "id": "fn-soft",
+  "module": "function",
+  "lemma": "soft",
+  "zh": "柔软",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "The reason I make more money than them isn't soft competition—it's hard-core competitiveness.",
+      "zh": "这些年我赚钱比他们多，靠的不是辞竞，而是雄竞。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 20
+}

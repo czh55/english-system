@@ -1,0 +1,26 @@
+{
+  "id": "ph-like-say-for-instance",
+  "module": "phrases",
+  "frame_en": "Like... / Say... / For instance...",
+  "frame_zh": "比如说",
+  "usage": "举例",
+  "group": "举例与澄清类",
+  "group_id": "group-8",
+  "examples": [
+    {
+      "en": "frankly\"The Heart Center director position—frankly, it's already in the bag for you.\"",
+      "zh": "心脏中心主任这个位置，说白了那就是您的囊中之物了。",
+      "source": "drama:english-phrases:group-8",
+      "ctx": "🎬 问心2 第31集 · 秦总恭维盛年——\"说白了/frankly\"后面跟着的是捅破窗户纸的真话，也是聊天的\"真心话按钮\"。"
+    },
+    {
+      "en": "in other words\"In other words, the old man staying behind is waiting for death.\"",
+      "zh": "就是说，老人家留下来，是等死呢。",
+      "source": "drama:english-phrases:group-8",
+      "ctx": "🎬 逐玉 第22集 · 长玉意识到师父留下不走就是等死——\"换句话说\"把前面的话换个更直白的说法，戳穿表面。"
+    }
+  ],
+  "tags": [
+    "group-8"
+  ]
+}

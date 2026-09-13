@@ -1,0 +1,17 @@
+{
+  "id": "fn-relationship",
+  "module": "function",
+  "lemma": "relationship",
+  "zh": "关系",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Everything that happens between couples happened between us, but we never had a clearly defined romantic relationship.",
+      "zh": "情侣之间该发生的都发生过，但我们没有明确的恋爱关系。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 43
+}

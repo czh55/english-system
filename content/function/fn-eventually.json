@@ -1,0 +1,17 @@
+{
+  "id": "fn-eventually",
+  "module": "function",
+  "lemma": "eventually",
+  "zh": "最终",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "I have to face it eventually. However it goes, I just have to get through it.",
+      "zh": "总是得去面对的，怎么着都是需要撑过去的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 8
+}

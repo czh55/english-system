@@ -1,0 +1,26 @@
+{
+  "id": "ent-fu-shan-hai-0857c1069f",
+  "module": "entity",
+  "lemma": "唐宋",
+  "zh": "唐宋",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "Tang Song of the Tang Sect has courted the Power Gang's favor time and again... Offer Tang Song some sweeteners and let him prepare well.",
+      "zh": "唐门唐宋屡次三番向权力帮示好……去给唐宋些甜头，让他好好准备。",
+      "source": "drama:fu-shan-hai:10:s10-q2"
+    },
+    {
+      "en": "I need someone to help me break through the Tang Sect's Thousand-Arc Myriad-Symbol Formation, so I can be free of Tang Song's pestering.",
+      "zh": "我需要一个人帮我闯进唐门的前逻万象阵，这样我才能摆脱唐宋的纠缠。",
+      "source": "drama:fu-shan-hai:11:s5-q3"
+    }
+  ],
+  "tags": [
+    "林泽辉",
+    "唐门中人"
+  ],
+  "freq": 2
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-depend-on",
+  "module": "function",
+  "lemma": "depend on",
+  "zh": "取决于",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Earn it with your own two hands. Don't depend on anyone else.",
+      "zh": "要靠自己的双手去挣，不要靠别人。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 2
+}

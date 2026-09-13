@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-de-qian-ban-sheng-2e0f91e772",
+  "module": "entity",
+  "lemma": "凌玲",
+  "zh": "凌玲",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-de-qian-ban-sheng",
+  "examples": [
+    {
+      "en": "I'm Junsheng's colleague. My name is Ling Ling.",
+      "zh": "我是俊生的同事，我叫凌玲。",
+      "source": "drama:wo-de-qian-ban-sheng:1:s10-q1"
+    },
+    {
+      "en": "Your thing with Ling Ling—it's not just Chenxing anymore. Even our B&T upstairs knows.",
+      "zh": "你和凌玲的事，现在不止你们辰星，连我们楼上的 B&T 都知道了。",
+      "source": "drama:wo-de-qian-ban-sheng:2:s8-q1"
+    }
+  ],
+  "tags": [
+    "吴越",
+    "俊生红颜知己 / 第三者，职场女性兼单亲妈妈"
+  ],
+  "freq": 2
+}

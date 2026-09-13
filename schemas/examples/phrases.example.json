@@ -1,0 +1,17 @@
+{
+  "id": "ph-as-long-as-x",
+  "module": "phrases",
+  "frame_en": "As long as X, ...",
+  "frame_zh": "只要…就…",
+  "usage": "表达底线或足够条件",
+  "group": "条件假设类",
+  "group_id": "group-2",
+  "examples": [
+    {
+      "en": "As long as I'm alive, that's enough.",
+      "zh": "只要能活着就行。",
+      "source": "drama:english-phrases:group-2"
+    }
+  ],
+  "tags": ["group-2"]
+}

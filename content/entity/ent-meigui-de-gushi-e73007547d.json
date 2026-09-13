@@ -1,0 +1,26 @@
+{
+  "id": "ent-meigui-de-gushi-e73007547d",
+  "module": "entity",
+  "lemma": "周士辉",
+  "zh": "周士辉",
+  "type": "person",
+  "aliases": [],
+  "drama": "meigui-de-gushi",
+  "examples": [
+    {
+      "en": "Zhou Shihui is dead—hit by a car, right out of the morgue. Don't worry, I'll pull myself together.",
+      "zh": "周士辉死了，被车撞死了，我刚从太平间出来。放心吧，我会结哀的。",
+      "source": "drama:meigui-de-gushi:1:s6-q1"
+    },
+    {
+      "en": "He calls her name in his sleep... You're the one who stole my man!",
+      "zh": "周士辉梦里喊的都是她的名字……是你勾引我的老公！",
+      "source": "drama:meigui-de-gushi:1:s7-q2"
+    }
+  ],
+  "tags": [
+    "吴彼",
+    "黄振华同事，E01-E02 悔婚风波主角"
+  ],
+  "freq": 2
+}

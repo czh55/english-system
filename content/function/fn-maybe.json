@@ -1,0 +1,17 @@
+{
+  "id": "fn-maybe",
+  "module": "function",
+  "lemma": "maybe",
+  "zh": "也许",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Right now, better to leave him alone to think—maybe that'll help.",
+      "zh": "现在这会儿，应该让他一个人静一静，或许会好一点吧。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 66
+}

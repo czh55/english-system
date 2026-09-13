@@ -1,0 +1,28 @@
+{
+  "id": "ent-wo-de-qian-ban-sheng-vivian",
+  "module": "entity",
+  "lemma": "Vivian",
+  "zh": "薇薇安",
+  "type": "person",
+  "aliases": [
+    "Vivian"
+  ],
+  "drama": "wo-de-qian-ban-sheng",
+  "examples": [
+    {
+      "en": "Who gave you the right to say I had a one-night stand with Vivian?",
+      "zh": "你凭什么说我跟薇薇安一夜情？",
+      "source": "drama:wo-de-qian-ban-sheng:7:s10-q2"
+    },
+    {
+      "en": "Did you already know Luo Ping brought Vivian back? Is that why you showed up at my place so suddenly yesterday?",
+      "zh": "你是不是早就知道罗平把薇薇安找回来了？所以昨天你才会突然出现在我家。",
+      "source": "drama:wo-de-qian-ban-sheng:11:s11-q3"
+    }
+  ],
+  "tags": [
+    "郑罗茜",
+    "职场时尚女强人，钟情贺涵"
+  ],
+  "freq": 2
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-ready",
+  "module": "function",
+  "lemma": "ready",
+  "zh": "准备好",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "First, you didn't need such a big diamond. Second, I won't say yes just because you brought Lawyer Pei and his wife to …",
+      "zh": "第一，你没有必要买这么大的钻戒。第二，我也不会因为你把贝律师和贝太太请过来，就抹不开情面答应——相反，我会觉得你这是在算计。第三，我还不…",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 40
+}

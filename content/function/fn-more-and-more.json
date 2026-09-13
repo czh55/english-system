@@ -1,0 +1,17 @@
+{
+  "id": "fn-more-and-more",
+  "module": "function",
+  "lemma": "more and more",
+  "zh": "越来越",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "You'll come to appreciate our daughter more and more. Let's not even mention the rest — birth, aging, sickness, death..…",
+      "zh": "我们这个女儿，今后你会越来越知道她的好处。别的都不说，生老病死……确实完全不用你操心。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 6
+}

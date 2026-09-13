@@ -1,0 +1,17 @@
+{
+  "id": "fn-have-to",
+  "module": "function",
+  "lemma": "have to",
+  "zh": "不得不",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "If she can't come up with a He Han No. 2, then those gold-medal producer and editor titles are going to have to be give…",
+      "zh": "她要是拿不出一个何韩二号，那金牌推手、金牌编辑的名头，是要还回去的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 285
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-give-up",
+  "module": "function",
+  "lemma": "give up",
+  "zh": "放弃",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "So what's required to be your boyfriend?\" \"Love me.\" \"What counts as loving you?\" \"Give up everything for me.",
+      "zh": "那做一个男朋友的要求是什么？」「爱我。」「怎样才算爱你？」「为我放弃一切。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 31
+}

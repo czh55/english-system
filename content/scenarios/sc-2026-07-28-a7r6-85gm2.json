@@ -1,0 +1,726 @@
+{
+  "id": "sc-2026-07-28-a7r6-85gm2",
+  "module": "scenarios",
+  "slug": "2026-07-28-a7r6-85gm2",
+  "title": "索尼A7R6 × 85mm F1.4 GM II人像写真",
+  "title_en": "Sony A7R6 × 85mm F1.4 GM II Portrait Shoot",
+  "date": "2026-07-28",
+  "platform": "xiaohongshu",
+  "source_url": "https://www.xiaohongshu.com/discovery/item/6a5da429000000001c013ee1",
+  "external_html": "https://czh55.github.io/language_paraphrase/2026-07-28-a7r6-85gm2-场景英译.html",
+  "scenes": [
+    {
+      "id": "s1",
+      "title_cn": "开场：画质旗舰 × 人像镜皇",
+      "title_en": "Opening: Resolution Flagship Meets Portrait King",
+      "time": "00:00–00:31",
+      "sentences": [
+        {
+          "zh": "索尼 A7R6 凭借着全新的 CMOS 和处理器的组合，成为了目前索尼全画幅微单系统中的画质旗舰。",
+          "en": "With its brand-new CMOS and processor combo, the Sony A7R6 has become the resolution flagship of Sony's full-frame mirrorless lineup.",
+          "note": "画质旗舰 → resolution flagship（比 image-quality king 更贴科技评测）"
+        },
+        {
+          "zh": "那今天呢我们就把它和 85 F1.4 GM 二代镜头组合在一起，看看它们能迸发出怎样的精彩瞬间。",
+          "en": "Today we're pairing it with the 85mm F1.4 GM II to see what kind of magical moments this combo can deliver.",
+          "note": "迸发 → deliver / spark；口语可用 magical moments"
+        },
+        {
+          "zh": "索尼画质旗舰 A7R6 和人像镜皇 85 F1.4 GM 二代这套组合，可以算是全画幅人像写真类拍摄的顶配了。",
+          "en": "The A7R6 plus the 85mm F1.4 GM II — Sony's portrait king — is basically the top-tier setup for full-frame portrait work.",
+          "note": "镜皇 → portrait king；顶配 → top-tier / maxed-out setup"
+        },
+        {
+          "zh": "顶级画质表现配上索尼 GM 大师系列的顶级定焦镜头，会迸发出怎样的火花，我们同样期待。",
+          "en": "Pair elite resolution with a G Master prime, and we're just as curious about the sparks that'll fly.",
+          "note": "迸发火花 → sparks that'll fly（比喻保留）"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "介绍顶配组合：可以算是……的顶配了",
+          "en": "This is basically the top-tier / maxed-out setup for…",
+          "chunks": [
+            "basically",
+            "top-tier setup",
+            "maxed-out",
+            "for portrait work"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-basically"
+            },
+            {
+              "module": "function",
+              "id": "fn-work"
+            }
+          ]
+        },
+        {
+          "label": "抛出期待：看看它们能迸发出怎样的精彩瞬间",
+          "en": "Let's see what kind of magical moments this combo can deliver.",
+          "chunks": [
+            "magical moments",
+            "this combo",
+            "can deliver"
+          ]
+        },
+        {
+          "label": "人像镜皇：人像镜皇",
+          "en": "the portrait king / the go-to portrait lens",
+          "chunks": [
+            "portrait king",
+            "go-to",
+            "portrait lens"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title_cn": "机身规格与手持重心",
+      "title_en": "Body Specs & Handheld Balance",
+      "time": "00:31–00:59",
+      "sentences": [
+        {
+          "zh": "这台索尼 A7R6 搭载了全新开发的 6680 万像素全画幅堆栈式 CMOS，配合新一代 BIONZ XR2 影像处理器。",
+          "en": "The A7R6 packs a newly developed 61-megapixel full-frame stacked CMOS, paired with the next-gen BIONZ XR2 image processor.",
+          "note": "搭载 → packs / is equipped with；堆栈式 → stacked"
+        },
+        {
+          "zh": "读出速度比上一代的 A7R5 提升了约 5.6 倍。",
+          "en": "Readout speed is about 5.6× faster than the previous A7R5.",
+          "note": "读出速度 → readout speed"
+        },
+        {
+          "zh": "而 85 F1.4 GM 二代作为索尼人像镜头的钢顶之作，比上一代轻了 178g，体积也缩小了 13%。",
+          "en": "And the 85mm F1.4 GM II — Sony's crowning portrait lens — is 178g lighter and 13% smaller than its predecessor.",
+          "note": "钢顶之作 → crowning / crowning achievement"
+        },
+        {
+          "zh": "它们两个组合在一起重心配比合理，长时间手持拍摄并不会觉得头重脚轻。",
+          "en": "Together, the balance feels right — even long handheld shoots don't feel front-heavy.",
+          "note": "头重脚轻 → front-heavy（摄影常用）"
+        },
+        {
+          "zh": "画质也是目前整个 135 全画幅系统里的顶峰之一。",
+          "en": "Image quality also sits near the peak of today's 35mm full-frame systems.",
+          "note": "135 → 35mm full-frame"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "描述装备配置：搭载了全新开发的……",
+          "en": "It packs a newly developed…",
+          "chunks": [
+            "packs",
+            "newly developed",
+            "paired with"
+          ]
+        },
+        {
+          "label": "手持重心：不会觉得头重脚轻",
+          "en": "doesn't feel front-heavy / top-heavy",
+          "chunks": [
+            "front-heavy",
+            "handheld",
+            "balance feels right"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-right"
+            }
+          ]
+        },
+        {
+          "label": "对比上一代：比上一代轻了 178g",
+          "en": "is 178g lighter than its predecessor",
+          "chunks": [
+            "lighter than",
+            "its predecessor",
+            "13% smaller"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title_cn": "毛孔级细节：碾碎放大焦虑",
+      "title_en": "Pore-Level Detail: Crushing Pixel-Peeping Anxiety",
+      "time": "00:59–01:34",
+      "sentences": [
+        {
+          "zh": "先说画质——放大到毛孔级别的恐怖细节。人像拍摄最怕什么？放大一看，发丝糊成一团，睫毛边缘发虚。",
+          "en": "First, resolution — terrifying detail down to the pore level. What's a portrait shooter's worst fear? You zoom in and the hair melts into mush, lash edges go soft.",
+          "note": "恐怖细节 → terrifying detail（保留夸张语气）"
+        },
+        {
+          "zh": "索尼 A7R6 的 6600 万像素，加上 85 GM 二代在 F1.4 全开时的中心解析力，直接把这个焦虑给碾碎了。",
+          "en": "The A7R6's 61MP, plus the GM II's center sharpness wide open at F1.4, just crushes that anxiety.",
+          "note": "碾碎焦虑 → crushes that anxiety"
+        },
+        {
+          "zh": "实测中我们在各种复杂光源环境下拍摄了人像测试，F1.4 光圈全开，对焦点锁定在模特的眼睛上。",
+          "en": "In real tests we shot portraits under all kinds of tricky lighting — F1.4 wide open, focus locked on the model's eye.",
+          "note": "复杂光源 → tricky lighting"
+        },
+        {
+          "zh": "回家导入电脑放大到 200%，焦点处的每一个细节都清晰可辨；瞳孔中的眼神光都可以呈现出一个完整的光斑。",
+          "en": "Back home, we punched in to 200% on the computer — every detail at the focus point stayed crystal clear, and the catchlight in the pupil even showed as a complete specular highlight.",
+          "note": "眼神光 → catchlight；光斑 → specular highlight / specular disc"
+        },
+        {
+          "zh": "再次放大，眼睛虹膜的纹理层次分明，细节表现堪称恐怖。",
+          "en": "Zoom in again: iris texture is layered and crisp — the detail is honestly scary-good.",
+          "note": "虹膜 → iris；堪称恐怖 → scary-good"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "表达痛点：人像拍摄最怕什么",
+          "en": "What's a portrait shooter's worst fear?",
+          "chunks": [
+            "worst fear",
+            "portrait shooter",
+            "zoom in"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-fear"
+            }
+          ]
+        },
+        {
+          "label": "碾碎焦虑：直接把这个焦虑给碾碎了",
+          "en": "just crushes that anxiety / puts that worry to rest",
+          "chunks": [
+            "crushes",
+            "that anxiety",
+            "puts … to rest"
+          ]
+        },
+        {
+          "label": "眼神光：瞳孔中的眼神光",
+          "en": "the catchlight in the pupil",
+          "chunks": [
+            "catchlight",
+            "in the pupil",
+            "specular highlight"
+          ]
+        },
+        {
+          "label": "放大检视：放大到 200%",
+          "en": "punch in to 200% / zoom in to 200%",
+          "chunks": [
+            "punch in",
+            "zoom in",
+            "crystal clear"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-clear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title_cn": "边缘画质：半身构图实测",
+      "title_en": "Edge Sharpness: Half-Body Framing Test",
+      "time": "01:34–01:54",
+      "sentences": [
+        {
+          "zh": "更让我们感到惊喜的是边缘画质：85 GM 二代在 F1.4 全开时，边缘分辨率显著优于一代。",
+          "en": "What surprised us even more was the edge performance — wide open at F1.4, the GM II's edge resolution clearly beats the Mark I.",
+          "note": "一代 → the Mark I / Gen 1"
+        },
+        {
+          "zh": "我们拍了一组半身构图，模特位于画面右侧三分之一处；放大看焦点细节，纹理锐利，没有糊成一片。",
+          "en": "We shot a half-body set with the model on the right third of the frame. Zoom in on the focus point — textures stay razor-sharp, not smeared.",
+          "note": "糊成一片 → smeared / mushy"
+        },
+        {
+          "zh": "在索尼 85 F1.4 GM 二代的优秀光学表现下，画面边缘依然保持着极高的解析力水准。",
+          "en": "Thanks to the GM II's optics, even the frame edges still hold a very high resolving standard.",
+          "note": "解析力水准 → resolving standard / resolving power"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "边缘画质惊喜：更让我们感到惊喜的是边缘画质",
+          "en": "What surprised us even more was the edge performance",
+          "chunks": [
+            "what surprised us",
+            "even more",
+            "edge performance"
+          ],
+          "links": [
+            {
+              "module": "phrases",
+              "id": "ph-what-if-there-s-a-chance"
+            },
+            {
+              "module": "function",
+              "id": "fn-even"
+            },
+            {
+              "module": "phrases",
+              "id": "ph-even-though-x-may-never-and-may-even"
+            }
+          ]
+        },
+        {
+          "label": "构图位置：模特位于画面右侧三分之一处",
+          "en": "with the model on the right third of the frame",
+          "chunks": [
+            "on the right third",
+            "of the frame",
+            "half-body"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-right"
+            }
+          ]
+        },
+        {
+          "label": "锐利不糊：纹理锐利没有糊成一片",
+          "en": "textures stay razor-sharp, not smeared",
+          "chunks": [
+            "razor-sharp",
+            "not smeared",
+            "stay"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title_cn": "8.5 档防抖：高像素不怕抖",
+      "title_en": "8.5-Stop IBIS: High-Res Without Handshake Fear",
+      "time": "01:54–02:36",
+      "sentences": [
+        {
+          "zh": "再来聊一下索尼 A7R6 机身——这个顶配的 8.5 档防抖。高像素机型最大的敌人从来不是对焦，而是抖动。",
+          "en": "Next up, the A7R6 body — that maxed-out 8.5-stop IBIS. On high-res bodies, the real enemy was never AF — it's camera shake.",
+          "note": "8.5 档防抖 → 8.5-stop IBIS"
+        },
+        {
+          "zh": "6600 万像素的传感器对任何微小的震动都极其敏感；以往高像素机型拍人像，快门速度永远都是摄影师警惕的关键。",
+          "en": "A 61MP sensor is extremely sensitive to the tiniest vibration. With older high-res bodies, shutter speed was always the number photographers watched like a hawk.",
+          "note": "警惕的关键 → watched like a hawk"
+        },
+        {
+          "zh": "A7R6 上的 8.5 档机身防抖是索尼目前最强的防抖系统。实测中我们在光线较暗的室内拍摄，快门即使降到 1/30 秒，成片率依然非常高。",
+          "en": "The A7R6's 8.5-stop in-body stabilization is Sony's strongest yet. In dim indoor tests, even at 1/30s, keeper rates stayed impressively high.",
+          "note": "成片率 → keeper rate"
+        },
+        {
+          "zh": "放大看模特的眼睛，清晰锐利没有重影。这对人像摄影师来说是一个实实在在的生产力提升。",
+          "en": "Zoom in on the model's eyes — sharp, clean, no double imaging. For portrait shooters, that's a real productivity boost.",
+          "note": "重影 → double imaging / ghosting"
+        },
+        {
+          "zh": "你不再需要时刻担心这张糊没糊，可以把更多注意力放在构图和与模特的沟通上。",
+          "en": "You stop constantly worrying whether the shot is soft, and can put more attention on framing and directing the model.",
+          "note": "糊没糊 → whether the shot is soft；沟通 → directing / communicating with"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "真正的敌人：最大的敌人从来不是对焦，而是抖动",
+          "en": "the real enemy was never AF — it's camera shake",
+          "chunks": [
+            "the real enemy",
+            "was never",
+            "camera shake"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-never"
+            }
+          ]
+        },
+        {
+          "label": "成片率：成片率依然非常高",
+          "en": "keeper rates stayed impressively high",
+          "chunks": [
+            "keeper rates",
+            "stayed",
+            "impressively high"
+          ]
+        },
+        {
+          "label": "生产力提升：实实在在的生产力提升",
+          "en": "a real / tangible productivity boost",
+          "chunks": [
+            "productivity boost",
+            "tangible",
+            "real"
+          ]
+        },
+        {
+          "label": "把注意力放回创作：可以把更多注意力放在构图和沟通上",
+          "en": "put more attention on framing and directing the model",
+          "chunks": [
+            "put more attention on",
+            "framing",
+            "directing the model"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title_cn": "AI 姿态识别与跟焦碾压",
+      "title_en": "AI Pose Recognition & Relentless Tracking",
+      "time": "02:36–03:19",
+      "sentences": [
+        {
+          "zh": "在自动对焦表现上，A7R6 这次搭载的 AI 人体姿态识别，模特背身也能牢牢锁住。",
+          "en": "On AF, the A7R6's AI human-pose recognition keeps a lock even when the model turns her back.",
+          "note": "牢牢锁住 → keeps a lock / locks on hard"
+        },
+        {
+          "zh": "在人像摄影中，模特不可能永远正脸对着镜头——转身、低头、侧脸、被前景挡住，这些都是常态。",
+          "en": "In portrait work, the model won't face the camera forever — turning away, looking down, profile shots, getting blocked by foreground — that's all normal.",
+          "note": "常态 → that's all normal / par for the course"
+        },
+        {
+          "zh": "无论模特如何摆姿，绿色对焦框始终牢牢锁在她的眼睛上，一次都没丢；即使背对镜头，也能锁定头部和身体。",
+          "en": "No matter how she poses, the green AF box stays glued to her eye — never lost it once. Even back-to-camera, it can lock onto head and body.",
+          "note": "牢牢锁 → stays glued to"
+        },
+        {
+          "zh": "另外 85 GM 二代的双 XD 线性马达组，对焦速度较上一代提升了三倍；这套组合的跟焦能力堪称碾压。",
+          "en": "Plus the GM II's dual XD linear motors are about 3× faster than the previous generation — this combo's subject tracking is basically unfair.",
+          "note": "堪称碾压 → basically unfair / in a league of its own"
+        },
+        {
+          "zh": "模特在镜头前随意走动、转身甩头发，相机就像长了眼睛一样死死咬住瞳孔；每秒多次 AF/AE 计算，确保每张曝光准确、焦点扎实。",
+          "en": "She walks freely, spins, flips her hair — the camera feels like it has eyes of its own, glued to the pupil. Continuous AF/AE calculations keep every frame properly exposed with solid focus.",
+          "note": "死死咬住 → glued to / locked onto"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "背身锁定：模特背身也能牢牢锁住",
+          "en": "keeps a lock even when the model turns her back",
+          "chunks": [
+            "keeps a lock",
+            "turns her back",
+            "even when"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-even"
+            },
+            {
+              "module": "phrases",
+              "id": "ph-even-though-x-may-never-and-may-even"
+            }
+          ]
+        },
+        {
+          "label": "对焦框不丢：绿色对焦框始终牢牢锁在眼睛上",
+          "en": "the green AF box stays glued to her eye",
+          "chunks": [
+            "AF box",
+            "stays glued to",
+            "never lost it"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-never"
+            }
+          ]
+        },
+        {
+          "label": "跟焦碾压：跟焦能力堪称碾压",
+          "en": "subject tracking is basically unfair / in a league of its own",
+          "chunks": [
+            "subject tracking",
+            "basically unfair",
+            "in a league of its own"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-basically"
+            }
+          ]
+        },
+        {
+          "label": "甩发抓拍：转身甩头发……死死咬住瞳孔",
+          "en": "spins and flips her hair — glued to the pupil",
+          "chunks": [
+            "flips her hair",
+            "glued to",
+            "the pupil"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title_cn": "奶油虚化与室外散景",
+      "title_en": "Creamy Bokeh & Outdoor Specular Highlights",
+      "time": "03:19–03:48",
+      "sentences": [
+        {
+          "zh": "顺便我们还体验了一下 85 F1.4 二代 11 片光圈叶片的奶油虚化感。",
+          "en": "We also got a taste of the GM II's creamy bokeh from its 11-blade aperture.",
+          "note": "奶油虚化 → creamy bokeh"
+        },
+        {
+          "zh": "F1.4 全开时背景虚化如奶油般化开，背景光斑边缘柔和，二线性控制非常优秀，带有纹理和纵深的柔和虚化过渡。",
+          "en": "Wide open at F1.4, the background melts like butter — soft-edged highlights, excellent onion-ring control, and a gentle transition with texture and depth.",
+          "note": "二线性 → onion rings；虚化过渡 → bokeh transition"
+        },
+        {
+          "zh": "我们在室外拍了一组人像：背景是层层叠叠的树叶和斑驳的光影。F1.4 全开，散景光斑圆润柔和，像一幅印象派油画。",
+          "en": "Outdoors we shot a set against layered leaves and dappled light. Wide open, the bokeh balls are round and soft — like an Impressionist painting.",
+          "note": "斑驳光影 → dappled light；散景光斑 → bokeh balls"
+        },
+        {
+          "zh": "而模特面部锐度丝毫不减，皮肤的质感和光影过渡自然细腻。",
+          "en": "Yet facial sharpness doesn't drop off at all — skin texture and light falloff stay natural and refined.",
+          "note": "丝毫不减 → doesn't drop off at all"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "奶油虚化：背景虚化如奶油般化开",
+          "en": "the background melts like butter / creamy bokeh",
+          "chunks": [
+            "melts like butter",
+            "creamy bokeh",
+            "wide open"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-like"
+            },
+            {
+              "module": "phrases",
+              "id": "ph-like-say-for-instance"
+            }
+          ]
+        },
+        {
+          "label": "斑驳光影：斑驳的光影",
+          "en": "dappled light / mottled light and shadow",
+          "chunks": [
+            "dappled light",
+            "layered leaves",
+            "outdoors"
+          ]
+        },
+        {
+          "label": "印象派比喻：像一幅印象派的油画",
+          "en": "like an Impressionist painting",
+          "chunks": [
+            "like an",
+            "Impressionist",
+            "painting"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-like"
+            },
+            {
+              "module": "phrases",
+              "id": "ph-like-say-for-instance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title_cn": "AI 自动白平衡：混合光源肤色",
+      "title_en": "AI Auto WB: Skin Tones in Mixed Light",
+      "time": "03:48–04:09",
+      "sentences": [
+        {
+          "zh": "索尼 A7R6 这次也新增了基于 AI 深度学习的自动白平衡，结合可见光与红外线传感器判断光源。",
+          "en": "The A7R6 also adds AI deep-learning auto white balance, combining visible-light and IR sensors to read the light source.",
+          "note": "自动白平衡 → auto white balance (AWB)"
+        },
+        {
+          "zh": "实际拍摄中，在混合光源——比如窗外日光加室内暖黄灯光——的环境下，模特的肤色依然呈现出健康自然的质感。",
+          "en": "In mixed lighting — say daylight from the window plus warm indoor lamps — skin tones still look healthy and natural.",
+          "note": "混合光源 → mixed lighting"
+        },
+        {
+          "zh": "没有出现偏黄或者偏青的情况；后期调色时就不用费心费力地校正白平衡了。",
+          "en": "No weird yellow or cyan cast — so in post you don't have to sweat correcting white balance.",
+          "note": "偏青 → cyan cast；费心费力 → sweat / fuss over"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "混合光源举例：窗外日光加室内暖黄灯光",
+          "en": "daylight from the window plus warm indoor lamps",
+          "chunks": [
+            "daylight from the window",
+            "warm indoor lamps",
+            "mixed lighting"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-warm"
+            }
+          ]
+        },
+        {
+          "label": "肤色自然：肤色依然呈现出健康自然的质感",
+          "en": "skin tones still look healthy and natural",
+          "chunks": [
+            "skin tones",
+            "healthy and natural",
+            "still look"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-still"
+            }
+          ]
+        },
+        {
+          "label": "省后期：不用费心费力地校正白平衡",
+          "en": "you don't have to sweat correcting white balance",
+          "chunks": [
+            "don't have to sweat",
+            "correcting",
+            "white balance"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-have-to"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title_cn": "值不值得：生产力工具结语",
+      "title_en": "Worth It? A Productivity-Tool Verdict",
+      "time": "04:09–04:37",
+      "sentences": [
+        {
+          "zh": "总结一下这套组合值不值得：索尼 A7R6 和 85 GM 二代加起来超过三万，并不算便宜。",
+          "en": "So — is the combo worth it? The A7R6 plus the 85 GM II runs well over 30,000 yuan; it's not cheap.",
+          "note": "值不值得 → is it worth it?"
+        },
+        {
+          "zh": "但如果你是一个以人像写真为核心的职业摄影师或者深度爱好者，这套组合带来的体验是无可替代的。",
+          "en": "But if you're a working portrait photographer or a serious enthusiast with portraits at the center, the experience this combo delivers is hard to replace.",
+          "note": "深度爱好者 → serious enthusiast；无可替代 → hard to replace"
+        },
+        {
+          "zh": "6680 万像素带来的恐怖解析力、8.5 档防抖带来的手持信心、AI 对焦带来的抓拍效率、85 GM 二代全开时巅峰的画质——",
+          "en": "Terrifying resolving power from ~61MP, handheld confidence from 8.5-stop IBIS, grab-shot efficiency from AI AF, peak wide-open optics from the GM II —",
+          "note": "手持信心 → handheld confidence；抓拍效率 → grab-shot efficiency"
+        },
+        {
+          "zh": "如果把它们当做高效出片的生产力工具的话，可以说每一分钱都花在了刀刃上。",
+          "en": "Treat them as productivity tools for shipping strong images efficiently, and every yuan is spent where it counts.",
+          "note": "花在刀刃上 → spent where it counts / money well spent"
+        }
+      ],
+      "paraphrase": [
+        {
+          "label": "值不值得：这套组合值不值得",
+          "en": "Is the combo worth it?",
+          "chunks": [
+            "worth it",
+            "the combo",
+            "not cheap"
+          ]
+        },
+        {
+          "label": "目标用户：以人像写真为核心的职业摄影师",
+          "en": "a working portrait photographer with portraits at the center",
+          "chunks": [
+            "working photographer",
+            "at the center",
+            "serious enthusiast"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-serious"
+            }
+          ]
+        },
+        {
+          "label": "花在刀刃上：每一分钱都花在了刀刃上",
+          "en": "every yuan is spent where it counts / money well spent",
+          "chunks": [
+            "spent where it counts",
+            "money well spent",
+            "productivity tools"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-money"
+            }
+          ]
+        },
+        {
+          "label": "高效出片：高效出片的生产力工具",
+          "en": "productivity tools for shipping strong images efficiently",
+          "chunks": [
+            "shipping",
+            "strong images",
+            "efficiently"
+          ],
+          "links": [
+            {
+              "module": "function",
+              "id": "fn-strong"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "zh": "用「top-tier setup / maxed-out combo」介绍一套器材顶配",
+      "en": "This is basically the top-tier setup for full-frame portraits."
+    },
+    {
+      "zh": "用「crushes that anxiety」表达彻底解决某类担心",
+      "en": "The center sharpness wide open just crushes that pixel-peeping anxiety."
+    },
+    {
+      "zh": "用「keeper rate」讨论成片率",
+      "en": "Even at 1/30s indoors, keeper rates stayed impressively high."
+    },
+    {
+      "zh": "用「stays glued to」描述对焦不丢",
+      "en": "The AF box stays glued to her eye the whole time."
+    }
+  ],
+  "tags": [
+    "xiaohongshu"
+  ]
+}

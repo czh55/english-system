@@ -1,0 +1,17 @@
+{
+  "id": "fn-truth",
+  "module": "function",
+  "lemma": "truth",
+  "zh": "真相",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "The truth is, over these months Chenxing's finances have been far worse than they look on the surface.",
+      "zh": "实际上这几个月以来，茞星的财务远远要比表面上看到的糟糕得多。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 53
+}

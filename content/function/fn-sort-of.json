@@ -1,0 +1,17 @@
+{
+  "id": "fn-sort-of",
+  "module": "function",
+  "lemma": "sort of",
+  "zh": "有点像",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "He calls me 'Fudai'... do you know what sort of identity in this jianghu is called 'Fudai'?",
+      "zh": "他叫我'福袋'……你知不知道，这江湖上有什么身份叫做福袋？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1
+}

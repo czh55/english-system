@@ -1,0 +1,17 @@
+{
+  "id": "fn-take-off",
+  "module": "function",
+  "lemma": "take off",
+  "zh": "脱下/起飞",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Play your part well, then take off the makeup and leave the stage. The roles differ, but the exit is the same. As they …",
+      "zh": "演好了，下台卸妆；角色不一样，流程都一样。真所谓，唱戏不如听戏，上台容易下台难。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 2
+}

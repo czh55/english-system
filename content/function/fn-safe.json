@@ -1,0 +1,17 @@
+{
+  "id": "fn-safe",
+  "module": "function",
+  "lemma": "safe",
+  "zh": "安全",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "If that ex comes looking for trouble and wants to smash your place, keep everyone safe. If things get wrecked, I'll get…",
+      "zh": "如果那前对象要上来找麻烦、要砸你的房子，你一定要把人保护好。东西砸坏了，我给你弄新的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 65
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-look-after",
+  "module": "function",
+  "lemma": "look after",
+  "zh": "照顾",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "I care for you and look after you because I'm your boss and you're my employee. We can talk money, we can talk cooperat…",
+      "zh": "我关心你、照顾你，因为我是你的老板，你是我的员工。我们谈钱、谈合作都可以，就是不谈感情。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 25
+}

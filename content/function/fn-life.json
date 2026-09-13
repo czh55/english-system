@@ -1,0 +1,17 @@
+{
+  "id": "fn-life",
+  "module": "function",
+  "lemma": "life",
+  "zh": "生活/生命",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Love life, and get plenty of sleep.",
+      "zh": "热爱生活，多睡觉。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 481
+}

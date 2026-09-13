@@ -1,0 +1,21 @@
+{
+  "id": "ent-shan-yao-de-ta-0f9fe690f3",
+  "module": "entity",
+  "lemma": "Matt",
+  "zh": "Matt",
+  "type": "person",
+  "aliases": [],
+  "drama": "shan-yao-de-ta",
+  "examples": [
+    {
+      "en": "So you're really retaliating over the Matt matter. He deserved it — he wasn't clean.",
+      "zh": "原来你是因为Matt的事情在报复我。他活该，谁叫他不干净的。",
+      "source": "drama:shan-yao-de-ta:3:s1-q3"
+    }
+  ],
+  "tags": [
+    "谭凯",
+    "特别出演"
+  ],
+  "freq": 1
+}

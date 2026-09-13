@@ -1,0 +1,17 @@
+{
+  "id": "fn-want",
+  "module": "function",
+  "lemma": "want",
+  "zh": "想要",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "If he doesn't want me to be innocent, then I'll show him just how guilty I can be.",
+      "zh": "他不想要我清白，我就不清白给他看。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 634
+}

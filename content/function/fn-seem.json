@@ -1,0 +1,17 @@
+{
+  "id": "fn-seem",
+  "module": "function",
+  "lemma": "seem",
+  "zh": "似乎",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "We used to be struggling together. Now we can't seem to succeed together.",
+      "zh": "以前我们是一起差，现在我们不能一起好。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 18
+}

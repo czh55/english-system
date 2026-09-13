@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-shi-yu-huan-shui-84b4713cc2",
+  "module": "entity",
+  "lemma": "赵觉民",
+  "zh": "赵觉民",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-shi-yu-huan-shui",
+  "examples": [
+    {
+      "en": "What do you take me for, Zhao Juemin? I just go to bed with whoever you say?",
+      "zh": "你把我当什么呢，赵觉民！想让我跟谁睡，我就跟谁睡？",
+      "source": "drama:wo-shi-yu-huan-shui:3:s6-q3"
+    },
+    {
+      "en": "Headquarters has approved my application. You're now the sales manager of our branch, succeeding Zhao Juemin.",
+      "zh": "集团总公司已经批准了我的申请，任命你为咱们分公司销售部经理，在赵觉民之后。",
+      "source": "drama:wo-shi-yu-huan-shui:4:s8-q3"
+    }
+  ],
+  "tags": [
+    "岳旸",
+    "弘强公司领导，意图贪钱不成，威胁余欢水"
+  ],
+  "freq": 2
+}

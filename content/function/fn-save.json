@@ -1,0 +1,23 @@
+{
+  "id": "fn-save",
+  "module": "function",
+  "lemma": "save",
+  "zh": "救/省",
+  "tags": [
+    "priority",
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "I'm going to save his marriage. He should be thanking me.\" \"With a face like yours, you couldn't save anyone'…",
+      "zh": "我是去拯救他的婚姻的，他应该感谢我才是。」「你这张脸啊，谁的婚姻都救不了。",
+      "source": "drama:english-vocab"
+    },
+    {
+      "en": "I'm going to save his marriage. He should be thanking me.\" \"With a face like yours, you couldn't save anyone's marriage.",
+      "zh": "我是去拯救他的婚姻的，他应该感谢我才是。」「你这张脸啊，谁的婚姻都救不了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 121
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-may",
+  "module": "function",
+  "lemma": "may",
+  "zh": "可能/可以",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "Under the contract, you may decline to renew with us after it expires. And under the same contract, I may withhold the …",
+      "zh": "按照合约，您在期满之后可以不跟我们续约；按照合约，我也可以不给您首页的资源。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 246
+}

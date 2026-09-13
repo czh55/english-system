@@ -1,0 +1,17 @@
+{
+  "id": "fn-in-fact",
+  "module": "function",
+  "lemma": "in fact",
+  "zh": "事实上",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Up until this moment, I never realized we were heading in two opposite directions. What I took for drawing closer was, …",
+      "zh": "在这一刻之前，我从没有意识到，我们走向的是两个相反的方向。曾经以为的彼此靠近，其实只是擦身而过。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1
+}

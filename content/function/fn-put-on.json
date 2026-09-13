@@ -1,0 +1,17 @@
+{
+  "id": "fn-put-on",
+  "module": "function",
+  "lemma": "put on",
+  "zh": "穿上",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "These companies are just sedan-bearers for you. Put on a lively show — that's enough to catch Uncle Fan's attention.",
+      "zh": "这些公司就是来给你抬轿子的。把戏演得热闹朝天，吸引范叔的注意力就够了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 16
+}

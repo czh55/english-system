@@ -1,0 +1,18 @@
+{
+  "id": "fn-again",
+  "module": "function",
+  "lemma": "again",
+  "zh": "再次",
+  "tags": [
+    "priority",
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "If he can seize this chance, he can rise again from the ashes.",
+      "zh": "他要是能抓住这个机会，他就能东山再起。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 267
+}

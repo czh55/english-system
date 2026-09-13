@@ -1,0 +1,17 @@
+{
+  "id": "fn-as-for",
+  "module": "function",
+  "lemma": "as for",
+  "zh": "至于",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "As for how much he's really worth—we'll see once He Han comes back and we settle who's on top.",
+      "zh": "具体他有多大能力、多大价值，等一个月之后何韩出手，再定输赢。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 49
+}

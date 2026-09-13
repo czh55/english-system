@@ -1,0 +1,17 @@
+{
+  "id": "fn-message",
+  "module": "function",
+  "lemma": "message",
+  "zh": "消息",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Uncle, I can pass along your message — but as for meeting him in person, Gu Yan isn't available for now.",
+      "zh": "大叔，话我可以帮你们带到，但是想要见面，孤烟暂时还不方便。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 12
+}

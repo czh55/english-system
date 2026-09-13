@@ -1,0 +1,18 @@
+{
+  "id": "fn-always",
+  "module": "function",
+  "lemma": "always",
+  "zh": "总是",
+  "tags": [
+    "priority",
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "It's always wait for you, wait for you. Wait until when?",
+      "zh": "你每次都是要等等你，等到什么时候？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 268
+}

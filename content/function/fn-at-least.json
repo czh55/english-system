@@ -1,0 +1,17 @@
+{
+  "id": "fn-at-least",
+  "module": "function",
+  "lemma": "at least",
+  "zh": "至少",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "At least part of this space now belongs to me.",
+      "zh": "这个空间里面，有一部分是跟我有关的了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 99
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fn-same",
+  "module": "function",
+  "lemma": "same",
+  "zh": "一样",
+  "tags": [
+    "priority",
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "The same mistake can only be made once in a lifetime.",
+      "zh": "同样的错，一辈子只能错一次。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 150
+}

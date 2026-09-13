@@ -1,0 +1,17 @@
+{
+  "id": "fn-rather-than",
+  "module": "function",
+  "lemma": "rather than",
+  "zh": "与其…不如",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "Rather than sit here all night writing nothing, I'd rather go out and do something real.",
+      "zh": "与其我一个晚上在这儿什么也写不出来，我还不如出去干点什么。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 7
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-need",
+  "module": "function",
+  "lemma": "need",
+  "zh": "需要",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "In my world, I no longer need a man named He Han.",
+      "zh": "我在世界里，不再需要一个叫何韩的人了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 360
+}

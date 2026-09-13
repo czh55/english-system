@@ -1,0 +1,18 @@
+{
+  "id": "fn-find",
+  "module": "function",
+  "lemma": "find",
+  "zh": "发现/找到",
+  "tags": [
+    "priority",
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "Tame the white horse first; find the prince later.",
+      "zh": "先驯白马，再找王子。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 297
+}

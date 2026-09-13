@@ -1,0 +1,17 @@
+{
+  "id": "fn-otherwise",
+  "module": "function",
+  "lemma": "otherwise",
+  "zh": "否则",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "Between editor and author there should be no romantic relationship — otherwise how can you stay objective about the wor…",
+      "zh": "编辑和作者之间，不需要情感关系，否则对待作品还怎么客观呢？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 44
+}

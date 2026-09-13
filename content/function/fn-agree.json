@@ -1,0 +1,17 @@
+{
+  "id": "fn-agree",
+  "module": "function",
+  "lemma": "agree",
+  "zh": "同意",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "Uncle Fan, if you still want Six Weeks, add five million more to your offer. Agree to that, and the deal is done.",
+      "zh": "喂，范叔，《六周》如果你想要的话，你给出的价钱再多五百万，你如果同意，我们就成交。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 35
+}

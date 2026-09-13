@@ -1,0 +1,17 @@
+{
+  "id": "fn-well",
+  "module": "function",
+  "lemma": "well",
+  "zh": "嗯/这个",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Being well-liked is an advantage, but sometimes it's a disadvantage too.",
+      "zh": "好人喜欢是优势，但有时候也是一种劣势。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 260
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-impossible",
+  "module": "function",
+  "lemma": "impossible",
+  "zh": "不可能",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "Six Weeks isn't even half written yet — who knows if it'll turn into an unfinished mess?\" \"Impossible. Because Six Week…",
+      "zh": "你的《六周》到现在都还没写过一半，会不会烂尾谁知道？」「不可能，因为《六周》是何韩自己写的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 39
+}

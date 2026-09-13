@@ -1,0 +1,17 @@
+{
+  "id": "fn-doubt",
+  "module": "function",
+  "lemma": "doubt",
+  "zh": "怀疑",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "I barely cried since I was five or six. I doubt I'll ever cry again after this, so it feels like I'm crying a lifetime'…",
+      "zh": "好像从五六岁起就不怎么哭了。我觉得我以后应该也不会再哭了，所以我感觉要把这辈子的眼泪都哭干。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 10
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-certainly",
+  "module": "function",
+  "lemma": "certainly",
+  "zh": "当然",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "Teacher He Han is coming back — almost certainly. ...Let her announce it herself.",
+      "zh": "何韩老师要回来了，八九不离十吧？……这事，让她自己公布。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 22
+}

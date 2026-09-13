@@ -1,0 +1,17 @@
+{
+  "id": "fn-come-on",
+  "module": "function",
+  "lemma": "come on",
+  "zh": "拜托/加油",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "We'll announce soon that Sansan will become one of your pen names. The top two books on the charts—both written by you.",
+      "zh": "我们很快就会宣布，三三会成为你的另外一个笔名。目前点击榜前两位的作品，都是你写的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 25
+}

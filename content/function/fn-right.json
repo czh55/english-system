@@ -1,0 +1,17 @@
+{
+  "id": "fn-right",
+  "module": "function",
+  "lemma": "right",
+  "zh": "对的",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "Right now we've lost the wife and lost the army too.",
+      "zh": "现在我们是赔了夫人又折兵。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 490
+}

@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-de-qian-ban-sheng-4348bb6bb9",
+  "module": "entity",
+  "lemma": "罗子群",
+  "zh": "罗子群",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-de-qian-ban-sheng",
+  "examples": [
+    {
+      "en": "Listen—even if I end up begging on the street, Luo Ziqun will never borrow money for you again.",
+      "zh": "我告诉你，我罗子群就算到马路上要饭，也再也不为你借钱了。",
+      "source": "drama:wo-de-qian-ban-sheng:2:s4-q2"
+    },
+    {
+      "en": "You're the one who can walk away from a marriage without looking back. Your sister must never divorce—not even if it kills her.",
+      "zh": "要头也不回离婚的是你罗子群；打死也不能离婚的是你姐。",
+      "source": "drama:wo-de-qian-ban-sheng:4:s9-q3"
+    }
+  ],
+  "tags": [
+    "张龄心",
+    "子君妹妹，婚姻反复，丈夫白光"
+  ],
+  "freq": 2
+}

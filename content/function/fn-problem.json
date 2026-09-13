@@ -1,0 +1,17 @@
+{
+  "id": "fn-problem",
+  "module": "function",
+  "lemma": "problem",
+  "zh": "问题",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "Every time a problem comes up, you just run away from it!",
+      "zh": "你每次遇到任何问题，都是在逃避问题！",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 74
+}

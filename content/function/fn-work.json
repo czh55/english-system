@@ -1,0 +1,18 @@
+{
+  "id": "fn-work",
+  "module": "function",
+  "lemma": "work",
+  "zh": "工作",
+  "tags": [
+    "priority",
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "It was him who pursued me the whole time. Apart from work, I never replied.",
+      "zh": "从头到尾都是他主动表白我，我除了工作没有回复。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 345
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fn-wrong",
+  "module": "function",
+  "lemma": "wrong",
+  "zh": "错的",
+  "tags": [
+    "priority",
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "I did nothing wrong. Why should I apologize?",
+      "zh": "我没有做错，我为什么要道歉？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 167
+}

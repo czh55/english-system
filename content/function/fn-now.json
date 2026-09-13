@@ -1,0 +1,17 @@
+{
+  "id": "fn-now",
+  "module": "function",
+  "lemma": "now",
+  "zh": "现在",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "At least part of this space now belongs to me.",
+      "zh": "这个空间里面，有一部分是跟我有关的了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 934
+}

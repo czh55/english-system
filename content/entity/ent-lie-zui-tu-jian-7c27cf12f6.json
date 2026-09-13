@@ -1,0 +1,26 @@
+{
+  "id": "ent-lie-zui-tu-jian-7c27cf12f6",
+  "module": "entity",
+  "lemma": "沈翊",
+  "zh": "沈翊",
+  "type": "person",
+  "aliases": [],
+  "drama": "lie-zui-tu-jian",
+  "examples": [
+    {
+      "en": "Du Cheng—you'll work with Shen Yi on this.",
+      "zh": "杜城，你跟沈翊一起吧。",
+      "source": "drama:lie-zui-tu-jian:2:s4-q3"
+    },
+    {
+      "en": "He can draw her that accurately even with a mask on—Shen Yi is a miracle worker.",
+      "zh": "戴着口罩都画得这么像，沈翊也太神了吧。",
+      "source": "drama:lie-zui-tu-jian:2:s7-q2"
+    }
+  ],
+  "tags": [
+    "檀健次",
+    "北江分局模拟画像师，原是天才画家，拥有过目不忘、百分百还原人像的能力"
+  ],
+  "freq": 2
+}

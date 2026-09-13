@@ -1,0 +1,17 @@
+{
+  "id": "fn-instead-of",
+  "module": "function",
+  "lemma": "instead of",
+  "zh": "而不是",
+  "tags": [
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "I'm no fool, Lingzi. I could go out and work and support myself, instead of living off your moods every single day!",
+      "zh": "我玲子也不是傻瓜。我出去打工一样能赚钱养活自己，好过天天在这里看你的脸色！",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 8
+}

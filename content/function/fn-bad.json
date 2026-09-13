@@ -1,0 +1,17 @@
+{
+  "id": "fn-bad",
+  "module": "function",
+  "lemma": "bad",
+  "zh": "坏",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "If He Han were to come back, it wouldn't be a bad story at all.",
+      "zh": "如果何韩能回来的话，倒也不失为一桩美谈。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 71
+}

@@ -1,0 +1,26 @@
+{
+  "id": "ent-wo-shi-yu-huan-shui-3fc6e2a5dd",
+  "module": "entity",
+  "lemma": "余欢水",
+  "zh": "余欢水",
+  "type": "person",
+  "aliases": [],
+  "drama": "wo-shi-yu-huan-shui",
+  "examples": [
+    {
+      "en": "Yu Huanshui, five straight months of failing your targets. One month left. What do you plan to do about it?",
+      "zh": "余欢水，连续五个月业绩不合格，还有一个月，你说怎么办？",
+      "source": "drama:wo-shi-yu-huan-shui:1:s4-q3"
+    },
+    {
+      "en": "Yu Huanshui, I don't care whether what you say is true or false. If Yuchen gets sick and can't go to school tomorrow, I'll never let you hear the end of it.",
+      "zh": "余欢水，我不管你说的话是真话还是假话，如果余晨生病了，明天上不了学，我跟你没完。",
+      "source": "drama:wo-shi-yu-huan-shui:1:s8-q2"
+    }
+  ],
+  "tags": [
+    "郭京飞",
+    "主角，弘强公司销售，被误诊癌症后性情大变"
+  ],
+  "freq": 2
+}

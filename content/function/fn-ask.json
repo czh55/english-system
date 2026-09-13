@@ -1,0 +1,18 @@
+{
+  "id": "fn-ask",
+  "module": "function",
+  "lemma": "ask",
+  "zh": "问",
+  "tags": [
+    "priority",
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "I think you should go talk to Lin Zhanqiao.\" \"About what?\" \"Too proud to ask, huh?\" \"Fine, I'll go.",
+      "zh": "我觉得你应该去跟林展翘聊聊。」「聊什么？」「拉不下脸。」「行，我去。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 153
+}

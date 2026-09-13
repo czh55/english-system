@@ -1,0 +1,17 @@
+{
+  "id": "fn-think-about",
+  "module": "function",
+  "lemma": "think about",
+  "zh": "考虑",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Think about it—once this passes... why not sign Guyin yourself? Then we'd be unstoppable.",
+      "zh": "你想想看，等过段时间……你不如拿下孤烟，那我们就是最好的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 21
+}

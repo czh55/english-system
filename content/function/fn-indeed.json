@@ -1,0 +1,17 @@
+{
+  "id": "fn-indeed",
+  "module": "function",
+  "lemma": "indeed",
+  "zh": "确实",
+  "tags": [
+    "filler"
+  ],
+  "examples": [
+    {
+      "en": "This is indeed a marching pill... More than a decade ago, White Grass Valley brewed this thing, intending to send it to…",
+      "zh": "这的确是行军丹……十几年前，白草谷造出了此物，企图送给北荒人。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 21
+}

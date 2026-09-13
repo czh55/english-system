@@ -1,0 +1,17 @@
+{
+  "id": "fn-will",
+  "module": "function",
+  "lemma": "will",
+  "zh": "会/将",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "Being busy depends on who it is. Some people don't have a second to spare you; others will fly around the world and sti…",
+      "zh": "忙也是要看对象的。对有的人，看你一眼都没有空；有的人呢，三天绕地球飞一圈，还要专程来跟你请安。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 756
+}

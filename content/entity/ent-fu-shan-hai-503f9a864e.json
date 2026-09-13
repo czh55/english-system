@@ -1,0 +1,26 @@
+{
+  "id": "ent-fu-shan-hai-503f9a864e",
+  "module": "entity",
+  "lemma": "燕狂徒",
+  "zh": "燕狂徒",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "It's said that Yan Kuangtu even hid the martial world's supreme manual, the Book of Forgetfulness, inside it.",
+      "zh": "传闻燕狂徒，还把武林绝学忘情天书，也藏在了里面。",
+      "source": "drama:fu-shan-hai:3:s2-q2"
+    },
+    {
+      "en": "Ever since Yan Kuangtu entrusted the Realm's Heroic Command to me, the jianghu has seen no end of blood and storm.",
+      "zh": "自从燕狂徒将天下英雄令托付于我，江湖中便多了不少腥风血雨。",
+      "source": "drama:fu-shan-hai:4:s8-q2"
+    }
+  ],
+  "tags": [
+    "张智霖",
+    "江湖绝顶高手"
+  ],
+  "freq": 2
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-sure",
+  "module": "function",
+  "lemma": "sure",
+  "zh": "确定",
+  "tags": [
+    "adj"
+  ],
+  "examples": [
+    {
+      "en": "I just wanted to be sure that the person I work with, the person I trust, will always stand by my side no matter what.",
+      "zh": "我只是想确定，我合作的人、我信任的人，无论发生任何事情，都会站在我身边。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 72
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ent-fu-shan-hai-a45d60c857",
+  "module": "entity",
+  "lemma": "萧易人",
+  "zh": "萧易人",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [
+    {
+      "en": "From this day on, the Sect Leader's token of the Huanhua Sword Sect shall be held on behalf by Xiao Yiren. As for the Young Leader's seat, we will hold off on deciding.",
+      "zh": "浣花剑派掌门之令牌，即日起就由萧易人代为掌管。但少掌门之位，姑且暂缓决定。",
+      "source": "drama:fu-shan-hai:6:s3-q1"
+    }
+  ],
+  "tags": [
+    "张峻宁",
+    "萧秋水兄长"
+  ],
+  "freq": 1
+}

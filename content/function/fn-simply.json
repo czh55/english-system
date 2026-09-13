@@ -1,0 +1,17 @@
+{
+  "id": "fn-simply",
+  "module": "function",
+  "lemma": "simply",
+  "zh": "简直/仅仅",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "It's not that I'm being generous—that's simply what she deserves.",
+      "zh": "不是我仗义，那是她应得的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 60
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fn-wake-up",
+  "module": "function",
+  "lemma": "wake up",
+  "zh": "醒来",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Wake up. Go home and get some sleep.",
+      "zh": "醒醒，快回去睡觉吧。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 19
+}

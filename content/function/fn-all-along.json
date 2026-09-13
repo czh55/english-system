@@ -1,0 +1,17 @@
+{
+  "id": "fn-all-along",
+  "module": "function",
+  "lemma": "all along",
+  "zh": "一直/原来",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "I even suspect this whole He Han versus Spirit Knight circus was choreographed by him all along.",
+      "zh": "我甚至都认为，这场所谓的何韩跟闪灵骑士的闹剧，也是他一手策划的。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 32
+}

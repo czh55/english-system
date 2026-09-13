@@ -1,0 +1,18 @@
+{
+  "id": "fn-already",
+  "module": "function",
+  "lemma": "already",
+  "zh": "已经",
+  "tags": [
+    "priority",
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "The hardest thing is finding a good editor — and fortunately, I've already found one.",
+      "zh": "最难的是找到一个好编辑，所幸我已经找到了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 325
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fn-even-if",
+  "module": "function",
+  "lemma": "even if",
+  "zh": "即使",
+  "tags": [
+    "priority",
+    "connect"
+  ],
+  "examples": [
+    {
+      "en": "Who told you I wasn't renewing my contract? Even if someone told you that, shouldn't you have asked me first?",
+      "zh": "是谁告诉你我不跟你续约的？就算有人告诉你，你是不是可以先来问问我？",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 122
+}

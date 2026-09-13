@@ -1,0 +1,17 @@
+{
+  "id": "fn-friend",
+  "module": "function",
+  "lemma": "friend",
+  "zh": "朋友",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "That woman just now — she looks a little like a friend I used to know.",
+      "zh": "刚刚那个人，有点像我以前一个朋友。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 80
+}

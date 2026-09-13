@@ -1,0 +1,17 @@
+{
+  "id": "fn-think",
+  "module": "function",
+  "lemma": "think",
+  "zh": "想/认为",
+  "tags": [
+    "verb"
+  ],
+  "examples": [
+    {
+      "en": "Are you trying to get yourself killed? This is how people end up dead! How many lives do you think you have to throw ar…",
+      "zh": "你是不是要死啊？这种事情是要闹出人命的，你有几条命可以这样乱来啊！",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 338
+}

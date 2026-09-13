@@ -1,0 +1,12 @@
+{
+  "id": "ent-meigui-de-gushi-eric",
+  "module": "entity",
+  "lemma": "Eric",
+  "zh": "庄国栋",
+  "type": "person",
+  "aliases": ["Eric"],
+  "drama": "meigui-de-gushi",
+  "examples": [],
+  "tags": ["彭冠英"],
+  "freq": 0
+}

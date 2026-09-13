@@ -1,0 +1,17 @@
+{
+  "id": "fn-control",
+  "module": "function",
+  "lemma": "control",
+  "zh": "控制",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "He can't just pretend nothing ever happened. Right now he's trying to control and manipulate you. If you go, you're pla…",
+      "zh": "他不能当做什么事情都没有发生过，他现在就是在控制你、想要摆布你。你要是去了，就是中了他的算计了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 33
+}

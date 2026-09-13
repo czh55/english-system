@@ -1,0 +1,17 @@
+{
+  "id": "fn-wish",
+  "module": "function",
+  "lemma": "wish",
+  "zh": "希望",
+  "tags": [
+    "modal"
+  ],
+  "examples": [
+    {
+      "en": "I wish I'd known you back then... I'd pretend to come along and tell her: Auntie, don't worry, I'll protect her forever.",
+      "zh": "我真希望当时就认识你……我就假装跟着过来吃，跟她说：阿姨你放心，我会永远保护她。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 68
+}

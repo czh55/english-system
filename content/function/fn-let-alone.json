@@ -1,0 +1,17 @@
+{
+  "id": "fn-let-alone",
+  "module": "function",
+  "lemma": "let alone",
+  "zh": "更别说",
+  "tags": [
+    "degree"
+  ],
+  "examples": [
+    {
+      "en": "Your terms are humiliating. Even a third-rate author wouldn't take them, let alone He Han.",
+      "zh": "就你那条件，丧权辱国。三流作者都不一定愿意，更别说他是何韩。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 6
+}

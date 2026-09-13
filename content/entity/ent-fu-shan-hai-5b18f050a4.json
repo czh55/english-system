@@ -1,0 +1,15 @@
+{
+  "id": "ent-fu-shan-hai-5b18f050a4",
+  "module": "entity",
+  "lemma": "铁星月",
+  "zh": "铁星月",
+  "type": "person",
+  "aliases": [],
+  "drama": "fu-shan-hai",
+  "examples": [],
+  "tags": [
+    "张赫",
+    "神州结义成员"
+  ],
+  "freq": 0
+}

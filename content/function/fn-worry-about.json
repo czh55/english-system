@@ -1,0 +1,17 @@
+{
+  "id": "fn-worry-about",
+  "module": "function",
+  "lemma": "worry about",
+  "zh": "担心",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "You're my friend and he's your friend — and because you're mine, that's exactly why I worry about him.",
+      "zh": "你是你朋友，他是你朋友——就因为你是我朋友，所以我才担心人家呢。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 22
+}

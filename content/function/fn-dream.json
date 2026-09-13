@@ -1,0 +1,17 @@
+{
+  "id": "fn-dream",
+  "module": "function",
+  "lemma": "dream",
+  "zh": "梦想",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "That day, I already knew he'd drawn the Soul Knight. Of course I knew He Han always wanted to keep writing... Maybe tha…",
+      "zh": "其实那天我知道，他抽中了闪灵骑士。我当然知道，何韩是想要一直写小说的……可能那就是爱情吧，可以以此，为对方舍弃自己的一部分理想。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 33
+}

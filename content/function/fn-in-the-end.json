@@ -1,0 +1,17 @@
+{
+  "id": "fn-in-the-end",
+  "module": "function",
+  "lemma": "in the end",
+  "zh": "最终",
+  "tags": [
+    "time"
+  ],
+  "examples": [
+    {
+      "en": "He probably had a rough night too. He knows he can't afford to lose, so in the end he handed in the manuscript.",
+      "zh": "他这一晚上应该也不好过。他知道自己输不起，所以到最后还是把稿交了。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 45
+}

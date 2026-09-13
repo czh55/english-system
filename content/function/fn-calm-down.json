@@ -1,0 +1,17 @@
+{
+  "id": "fn-calm-down",
+  "module": "function",
+  "lemma": "calm down",
+  "zh": "冷静",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Qiushui, calm down—look at who they are!",
+      "zh": "秋水，你冷静一点，你看看他们是谁！",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 1
+}

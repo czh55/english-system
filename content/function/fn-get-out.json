@@ -1,0 +1,17 @@
+{
+  "id": "fn-get-out",
+  "module": "function",
+  "lemma": "get out",
+  "zh": "出去/滚开",
+  "tags": [
+    "phrasal"
+  ],
+  "examples": [
+    {
+      "en": "Don't want to eat? Then get out.\" \"Fine, I'm eating.",
+      "zh": "不想吃你滚出去。」「对嘛，我吃吃吃。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 29
+}

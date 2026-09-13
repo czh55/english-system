@@ -1,0 +1,17 @@
+{
+  "id": "fn-past",
+  "module": "function",
+  "lemma": "past",
+  "zh": "过去",
+  "tags": [
+    "noun"
+  ],
+  "examples": [
+    {
+      "en": "From now on, well water and river water never mix. Keep your No. 1 if you can—I'll take my authors past yours. From now…",
+      "zh": "从此以后我们井水不犯河水。你要本事你保持你的第一，我要本事我的作者超过你的第一。我们以后用作品说话，不交流不互动。",
+      "source": "drama:english-vocab"
+    }
+  ],
+  "freq": 97
+}
